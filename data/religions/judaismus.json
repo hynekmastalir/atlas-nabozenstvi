@@ -1,0 +1,61 @@
+{
+  "id": "judaismus",
+  "name": "Judaismus",
+  "color": "#e879f9",
+  "icon": "star",
+  "share": [0, 1, 2, 0.5, 0.3, 0.2],
+  "zones": {
+    "1": ["ISR","PSE","IRQ"],
+    "2": ["ISR","PSE","IRQ","EGY","SYR","TUR","GRC","ITA","LBY"],
+    "3": ["ISR","PSE","IRQ","IRN","YEM","EGY","SYR","TUR","ESP","ITA","FRA","TUN","MAR"],
+    "4": ["TUR","MAR","DZA","TUN","EGY","ISR","POL","LTU","ITA","NLD","DEU","CZE","HUN","GRC","YEM","IRN","IRQ","UKR"],
+    "5": ["ISR","USA","FRA","CAN","GBR","ARG","RUS","DEU","AUS","BRA","UKR","HUN","MEX","ZAF"]
+  },
+  "places": [
+    {
+      "id": "jeruzalem", "name": "Jeruzalém", "lat": 31.78, "lon": 35.22, "era": 1,
+      "text": "Svaté město tří náboženství. Pro židy je to místo Prvního a Druhého chrámu a Zdi nářků, pro křesťany místo ukřižování a vzkříšení Ježíše, pro muslimy místo Mohamedova nočního vzestupu k nebi.",
+      "fact": "Římané zničili Druhý chrám v roce 70 n. l. Dóm na skále byl dokončen kolem roku 691.",
+      "source": "https://cs.wikipedia.org/wiki/Jeruzalém"
+    },
+    {
+      "id": "babylon", "name": "Babylon", "lat": 32.54, "lon": 44.42, "era": 1,
+      "text": "Do Babylonu byli roku 586 př. n. l. odvedeni Židé po zničení Jeruzaléma. V exilu se zformovala řada textů Písma a později tu vznikl babylonský Talmud.",
+      "fact": "Návrat z exilu povolil perský král Kýros roku 539 př. n. l.",
+      "source": "https://cs.wikipedia.org/wiki/Babylon"
+    },
+    {
+      "id": "praha", "name": "Pražské Židovské Město", "lat": 50.09, "lon": 14.42, "era": 4,
+      "text": "Staronová synagoga z konce 13. století je nejstarší dochovanou činnou synagogou v Evropě. Se Starým židovským hřbitovem patří k nejznámějším památkám aškenázské kultury.",
+      "fact": "Podle pověsti zde rabi Löw vytvořil Golema.",
+      "source": "https://cs.wikipedia.org/wiki/Staronová_synagoga"
+    }
+  ],
+  "events": [
+    {
+      "era": 1, "title": "Babylonské zajetí a druhý chrám", "date": "586 až 516 př. n. l.",
+      "text": "Po zničení prvního chrámu žijí Židé v exilu. Po návratu vzniká Druhý chrám a texty Tóry získávají konečnou podobu.",
+      "source": "https://cs.wikipedia.org/wiki/Babylonské_zajetí"
+    },
+    {
+      "era": 2, "title": "Zničení druhého chrámu", "date": "70 n. l.",
+      "text": "Římské legie dobývají Jeruzalém a ničí chrám. Židé se rozptylují po říši a těžiště náboženského života se přesouvá do synagog a studia Tóry.",
+      "source": "https://cs.wikipedia.org/wiki/Zničení_Jeruzaléma"
+    },
+    {
+      "era": 3, "title": "Talmud a diaspora", "date": "do 6. století n. l.",
+      "text": "Dokončen je Jeruzalémský a babylonský Talmud. Židovské obce žijí od Španělska po Persii.",
+      "source": "https://cs.wikipedia.org/wiki/Talmud"
+    },
+    {
+      "era": 4, "title": "Vyhnání ze Španělska", "date": "1492",
+      "text": "Sefardští Židé jsou vyhnáni a usazují se v Osmanské říši, severní Africe a Nizozemsku.",
+      "source": "https://cs.wikipedia.org/wiki/Alhambrský_edikt"
+    },
+    {
+      "era": 5, "title": "Stát Izrael", "date": "1948",
+      "text": "Vzniká stát Izrael. V současnosti žije ve světě kolem 15 milionů Židů, zhruba polovina v Izraeli a čtvrtina v USA.",
+      "source": "https://cs.wikipedia.org/wiki/Izrael"
+    }
+  ]
+}

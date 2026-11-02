@@ -1,0 +1,28 @@
+{
+  "id": "nove-nabozenstvi",
+  "name": "Název náboženství",
+  "color": "#ff5fa8",
+  "icon": "star",
+  "share": [0, 0, 0, 0, 0, 0],
+  "zones": {
+    "3": ["IND"],
+    "5": ["IND", "NPL"]
+  },
+  "places": [
+    {
+      "id": "unikatni-id-mista", "name": "Název místa", "lat": 0, "lon": 0, "era": 3,
+      "text": "Popis a historie místa.",
+      "fact": "Jedna zajímavost.",
+      "source": "https://cs.wikipedia.org/wiki/",
+      "image": ""
+    }
+  ],
+  "events": [
+    {
+      "era": 3, "title": "Název události", "date": "rok nebo období",
+      "text": "Krátký popis události.",
+      "source": "https://cs.wikipedia.org/wiki/",
+      "image": ""
+    }
+  ]
+}

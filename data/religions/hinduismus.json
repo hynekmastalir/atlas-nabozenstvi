@@ -1,0 +1,73 @@
+{
+  "id": "hinduismus",
+  "name": "Hinduismus",
+  "color": "#ff7a3d",
+  "icon": "lotus",
+  "share": [3, 12, 20, 22, 20, 14.9],
+  "zones": {
+    "0": ["PAK","IND"],
+    "1": ["PAK","IND","NPL"],
+    "2": ["IND","NPL","LKA","PAK","BGD"],
+    "3": ["IND","NPL","LKA","PAK","BGD","KHM","VNM","THA","IDN","MYS","MMR"],
+    "4": ["IND","NPL","LKA","BGD","KHM","VNM","THA","LAO","IDN","MYS","MMR"],
+    "5": ["IND","NPL","BGD","LKA","FJI","GUY","SUR","TTO","IDN"]
+  },
+  "places": [
+    {
+      "id": "mohendzodaro", "name": "Mohendžo-daro", "lat": 27.33, "lon": 68.14, "era": 0,
+      "text": "Jedno z největších měst civilizace údolí Indu. Rozsáhlá zděná lázeň a pečeti s postavami podobnými pozdějším hinduistickým motivům naznačují rituální život, jehož souvislost s pozdějším hinduismem je dodnes předmětem sporů.",
+      "fact": "Město bylo obydleno zhruba od roku 2500 př. n. l. a opuštěno kolem roku 1900 př. n. l.",
+      "source": "https://cs.wikipedia.org/wiki/Mohendžodaro"
+    },
+    {
+      "id": "varanasi", "name": "Váránasí (Benares)", "lat": 25.32, "lon": 83.01, "era": 1,
+      "text": "Jedno z nejstarších nepřetržitě obydlených měst světa a nejposvátnější místo hinduismu. Poutníci se koupou v Ganze na kamenných schodech zvaných ghát a věří, že smrt zde přináší vysvobození.",
+      "fact": "V nedalekém Sárnáthu pronesl Buddha své první kázání.",
+      "source": "https://cs.wikipedia.org/wiki/Váránasí"
+    },
+    {
+      "id": "angkor", "name": "Angkor Wat", "lat": 13.41, "lon": 103.87, "era": 4,
+      "text": "Chrám z 12. století postavený králem Súrjavarmanem II. původně jako hinduistické zasvěcení bohu Višnuovi. Později se stal buddhistickým.",
+      "fact": "Je považován za největší náboženskou stavbu světa.",
+      "source": "https://cs.wikipedia.org/wiki/Angkor_Wat"
+    },
+    {
+      "id": "madurai", "name": "Madurai", "lat": 9.92, "lon": 78.12, "era": 3,
+      "text": "Chrám bohyně Mínákší je střediskem tamilského hinduismu. Dnešní stavba pochází především ze 16. až 17. století a je pokrytá tisíci barevných soch na věžích gópuram.",
+      "fact": "Nejvyšší věž chrámu měří přes 50 metrů.",
+      "source": "https://cs.wikipedia.org/wiki/Mínákšíin_chrám"
+    }
+  ],
+  "events": [
+    {
+      "era": 0, "title": "Civilizace údolí Indu", "date": "kolem 2600 až 1900 př. n. l.",
+      "text": "Vznikají města s vodovody a kanalizací. Písmo se nepodařilo dešifrovat, takže o víře víme jen z nálezů.",
+      "source": "https://cs.wikipedia.org/wiki/Civilizace_Indu"
+    },
+    {
+      "era": 1, "title": "Védy a Upanišady", "date": "1500 až 500 př. n. l.",
+      "text": "Vznikají nejstarší posvátné texty a rozvíjí se pojmy karma, samsára a átman.",
+      "source": "https://cs.wikipedia.org/wiki/Védy"
+    },
+    {
+      "era": 2, "title": "Eposy a puránská tradice", "date": "kolem 400 př. n. l. až 400 n. l.",
+      "text": "Dostávají podobu eposy Mahábhárata (s Bhagavadgítou) a Rámájana. Bohové Višnu, Šiva a Dévi získávají centrální místo.",
+      "source": "https://cs.wikipedia.org/wiki/Mahábhárata"
+    },
+    {
+      "era": 3, "title": "Hnutí bhakti", "date": "6. až 9. století n. l.",
+      "text": "V jižní Indii se šíří zbožnost zaměřená na osobní vztah k bohu, vyjadřovaná v tamilských hymnech.",
+      "source": "https://cs.wikipedia.org/wiki/Bhakti"
+    },
+    {
+      "era": 4, "title": "Říše Vidžajanagar", "date": "1336 až 1646",
+      "text": "Hinduistická říše na jihu Indie podporuje stavbu chrámů, umění a literaturu v době, kdy sever ovládají muslimští vládci.",
+      "source": "https://cs.wikipedia.org/wiki/Vidžajanagar"
+    },
+    {
+      "era": 5, "title": "Většina v Indii, menšiny po světě", "date": "21. století",
+      "text": "Převážná většina hinduistů žije v Indii. Početné komunity jsou také v Nepálu, Bangladéši a v diaspoře od Spojených států po Mauricius.",
+      "source": "https://www.pewresearch.org/religion/"
+    }
+  ]
+}

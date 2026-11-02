@@ -1,0 +1,75 @@
+{
+  "id": "buddhismus",
+  "name": "Buddhismus",
+  "color": "#ffbe3d",
+  "icon": "wheel",
+  "share": [0, 1, 8, 14, 9, 4.1],
+  "zones": {
+    "1": ["IND","NPL"],
+    "2": ["IND","NPL","LKA","PAK","AFG","MMR"],
+    "3": ["IND","NPL","BGD","LKA","PAK","AFG","MMR","THA","KHM","VNM","LAO","IDN","CHN","KOR","JPN","BTN","UZB","TJK","TKM"],
+    "4": ["LKA","MMR","THA","KHM","LAO","VNM","CHN","MNG","KOR","PRK","JPN","BTN","TWN"],
+    "5": ["LKA","MMR","THA","KHM","LAO","VNM","CHN","MNG","KOR","PRK","JPN","BTN","TWN"]
+  },
+  "places": [
+    {
+      "id": "lumbini", "name": "Lumbiní", "lat": 27.47, "lon": 83.28, "era": 1,
+      "text": "Podle tradice se zde kolem roku 563 př. n. l. narodil Siddhártha Gautama, pozdější Buddha. Císař Ašóka sem později nechal postavit pilíř s nápisem.",
+      "fact": "Místo je dnes na seznamu světového dědictví UNESCO.",
+      "source": "https://cs.wikipedia.org/wiki/Lumbiní"
+    },
+    {
+      "id": "bodhgaja", "name": "Bódhgaja", "lat": 24.7, "lon": 84.99, "era": 1,
+      "text": "Podle tradice zde Siddhártha Gautama pod stromem bódhi dosáhl osvícení. Poutní místo je spojeno s císařem Ašókou ze 3. století př. n. l.",
+      "fact": "Dnešní podoba chrámu Mahábódhi pochází asi z 5. až 6. století n. l.",
+      "source": "https://cs.wikipedia.org/wiki/Bódhgaja"
+    },
+    { "id": "varanasi", "name": "Váránasí (Benares)", "lat": 25.32, "lon": 83.01, "era": 1 },
+    {
+      "id": "anuradhapura", "name": "Anurádhapura", "lat": 8.35, "lon": 80.4, "era": 2,
+      "text": "Dávné hlavní město Cejlonu. Roste zde posvátný strom Šrí Mahá bódhi, výhonek stromu z Bódhgaji, který sem podle tradice přivezla v 3. století př. n. l. Ašókova dcera Sanghamittá.",
+      "fact": "Strom z roku 288 př. n. l. je považován za nejstarší doloženě zasazený strom na světě.",
+      "source": "https://cs.wikipedia.org/wiki/Anurádhapura"
+    },
+    {
+      "id": "lhasa", "name": "Lhasa", "lat": 29.65, "lon": 91.1, "era": 3,
+      "text": "Duchovní centrum tibetského buddhismu. Chrám Džokhang založil v 7. století král Songcän Gampo, palác Potala byl sídlem dalajlámů.",
+      "fact": "Lhasa leží ve výšce asi 3 650 m n. m.",
+      "source": "https://cs.wikipedia.org/wiki/Lhasa"
+    },
+    {
+      "id": "borobudur", "name": "Borobudur", "lat": -7.61, "lon": 110.2, "era": 3,
+      "text": "Největší buddhistický chrám světa na Jávě, postavený kolem roku 800. Devět pater je pokryto tisíci reliéfy a vrcholí stúpou.",
+      "fact": "Chrám obsahuje 504 soch Buddhy.",
+      "source": "https://cs.wikipedia.org/wiki/Borobudur"
+    },
+    { "id": "angkor", "name": "Angkor Wat", "lat": 13.41, "lon": 103.87, "era": 4 }
+  ],
+  "events": [
+    {
+      "era": 1, "title": "První kázání v Sárnáthu", "date": "5. století př. n. l.",
+      "text": "Buddha po osvícení káže u Váránasí o čtyřech ušlechtilých pravdách a osmidílné stezce. Vzniká první obec mnichů.",
+      "source": "https://cs.wikipedia.org/wiki/Buddha"
+    },
+    {
+      "era": 2, "title": "Ašóka a misie dharmy", "date": "3. století př. n. l.",
+      "text": "Císař Ašóka z dynastie Maurjů vysílá misionáře na Cejlon, do Střední Asie a k Řekům. Buddhismus se mění z lokálního učení na světové náboženství.",
+      "source": "https://cs.wikipedia.org/wiki/Ašóka"
+    },
+    {
+      "era": 3, "title": "Hedvábná stezka a Tibet", "date": "7. až 8. století n. l.",
+      "text": "Mniši a obchodníci nesou buddhismus z Indie do Číny, Koreje a Japonska. V Tibetu vzniká jeho vlastní tradice. V Indii samotné buddhismus postupně slábne.",
+      "source": "https://cs.wikipedia.org/wiki/Hedvábná_stezka"
+    },
+    {
+      "era": 4, "title": "Dalajláma", "date": "1578",
+      "text": "Mongolský vládce Altan Chán uděluje představenému školy gelug titul dalajláma. Tibetský buddhismus se šíří do Mongolska.",
+      "source": "https://cs.wikipedia.org/wiki/Dalajláma"
+    },
+    {
+      "era": 5, "title": "Buddhismus na Západě", "date": "20. až 21. století",
+      "text": "Většina buddhistů žije v Asii, ale meditační praxe a zenové a tibetské školy mají zájemce i v Evropě a Americe.",
+      "source": "https://www.pewresearch.org/religion/"
+    }
+  ]
+}

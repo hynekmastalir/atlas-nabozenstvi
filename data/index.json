@@ -1,0 +1,85 @@
+{
+  "title": "Atlas náboženství",
+  "subtitle": "Jak se světová náboženství šířila od roku 3000 př. n. l. do současnosti.",
+  "religions": [
+    "krestanstvi.json",
+    "islam.json",
+    "buddhismus.json",
+    "judaismus.json",
+    "hinduismus.json"
+  ],
+  "eras": [
+    {
+      "label": "3000 př. n. l.", "a": "3000", "b": "př. n. l.",
+      "tag": "Rané civilizace",
+      "title": "Rituály u řek: první města",
+      "date": "kolem 3000 až 2500 př. n. l.",
+      "text": "V údolí Indu vznikají plánovaná města. V Mohendžo-daru našli archeologové velkou zděnou lázeň, která mohla sloužit rituálnímu očišťování. Mezopotámie a Egypt zatím budují chrámy mnoha bohů.",
+      "more": [
+        "Písmo v Sumeru (kolem 3300 př. n. l.) umožní zapsat mýty a modlitby",
+        "Egyptský faraon je uctíván jako bůh na zemi",
+        "Védy vzniknou až o více než tisíc let později"
+      ]
+    },
+    {
+      "label": "500 př. n. l.", "a": "500", "b": "př. n. l.",
+      "tag": "Doba osy",
+      "title": "Buddha, Upanišady a babylonské zajetí",
+      "date": "6. až 5. století př. n. l.",
+      "text": "V severní Indii učí Siddhártha Gautama a vzniká buddhismus. Židé v babylonském exilu (586 až 539 př. n. l.) dávají podobu svým Písmům a upevňují víru v jediného Boha.",
+      "more": [
+        "Mahávíra rozvíjí džinismus",
+        "Konfucius a Laozi učí v Číně",
+        "Kýros dovolí Židům návrat do Jeruzaléma (539 př. n. l.)"
+      ]
+    },
+    {
+      "label": "1. století n. l.", "a": "1.", "b": "stol. n. l.",
+      "tag": "Přelom letopočtu",
+      "title": "Ježíš z Nazaretu a první křesťané",
+      "date": "1. století n. l.",
+      "text": "V římské provincii Judea působí Ježíš z Nazaretu. Jeho následovníci šíří učení po Středomoří, hlavně díky cestám apoštola Pavla. Po zničení jeruzalémského chrámu v roce 70 se Židé rozptylují po celé říši.",
+      "more": [
+        "Ašókovi misionáři přinesli buddhismus na Cejlon a do Střední Asie",
+        "Římské silnice a společný jazyk usnadňují misii",
+        "Křesťané jsou v říši střídavě pronásledováni"
+      ]
+    },
+    {
+      "label": "7. století n. l.", "a": "7.", "b": "stol. n. l.",
+      "tag": "Raný středověk",
+      "title": "Vznik a rychlá expanze islámu",
+      "date": "610 až 750 n. l.",
+      "text": "Kolem roku 610 začíná v Mekce Mohamed přijímat zjevení, roku 622 odchází do Mediny. Do sta let po jeho smrti (632) se islám rozšíří od Španělska po údolí Indu. Buddhismus se mezitím po Hedvábné stezce usazuje v Číně a Tibetu.",
+      "more": [
+        "Umajjovci dobývají Hispánii (711)",
+        "Kalifát propojuje obchod i učence",
+        "Buddhismus dorazil do Japonska v 6. století"
+      ]
+    },
+    {
+      "label": "1500 n. l.", "a": "1500", "b": "n. l.",
+      "tag": "Zámořské objevy",
+      "title": "Nové světy, nové mise",
+      "date": "1492 až 1520",
+      "text": "Kolumbus (1492) a Vasco da Gama (1498) otevírají námořní cesty. Španělští a portugalští misionáři přinášejí křesťanství do Ameriky, Afriky a Asie. V Evropě Luther roku 1517 spustí reformaci, islám se šíří do jihovýchodní Asie a přes Saharu.",
+      "more": [
+        "Židé jsou vyhnáni ze Španělska (1492)",
+        "Osmané ovládají Cařihrad od roku 1453",
+        "Krátce nato vzniká Mughalská říše v Indii (1526)"
+      ]
+    },
+    {
+      "label": "Současnost", "a": "Dnes", "b": "současnost",
+      "tag": "Současnost",
+      "title": "Globální a pluralitní svět",
+      "date": "20. léta 21. století",
+      "text": "Křesťanství a islám dohromady tvoří většinu věřících lidstva. Nejrychleji rostou v subsaharské Africe, kdežto v Evropě a východní Asii přibývá lidí bez vyznání. Migrace přenesla všechna velká náboženství do většiny zemí světa.",
+      "more": [
+        "Podle Pew Research je asi čtvrtina lidstva bez vyznání",
+        "Nejvíc muslimů žije v Indonésii, nejvíc hinduistů v Indii",
+        "Většina buddhistů žije ve východní a jihovýchodní Asii"
+      ]
+    }
+  ]
+}
