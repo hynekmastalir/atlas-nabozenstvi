@@ -8,6 +8,7 @@ export function createBrowse(ctx) {
   const info = $('#info');
   const cfg = Object.assign({ color: 'real', ghost: true, strength: 0.85 }, store.get('browse', {}));
   let selected = null;
+  let infoOpen = store.get('infoOpen', false);
 
   root.innerHTML = `
     <div class="section search">
@@ -143,11 +144,15 @@ export function createBrowse(ctx) {
     viewer.setFocus(id, 'focus');
     if (focus) viewer.focusBone(id);
     info.hidden = false;
-    info.innerHTML = `<h2>${esc(b.cs)}</h2><p class="la">${esc(b.la)}</p>
+    const open = infoOpen;
+    info.innerHTML = `<div class="info-head"><h2>${esc(b.cs)}</h2>
+        <button class="icon-sm" data-a="toggle" aria-expanded="${open}" aria-label="${open ? 'Skrýt podrobnosti' : 'Zobrazit podrobnosti'}">${open ? '▲' : '▼'}</button>
+        <button class="icon-sm" data-a="close" aria-label="Zavřít">✕</button></div>
+      <div class="info-body" ${open ? '' : 'hidden'}><p class="la">${esc(b.la)}</p>
       <div><span class="badge">${groupName(b.group)}</span>${b.side !== 'střední' ? `<span class="badge">${b.side} strana</span>` : ''}</div>
       <p class="desc">${esc(b.desc)}</p>
       <div class="row"><button class="btn small" data-a="hide">Skrýt</button><button class="btn small" data-a="iso">Jen tato</button>
-      <button class="btn small" data-a="fly">Najet</button><button class="btn small" data-a="close" aria-label="Zavřít">✕</button></div>`;
+      <button class="btn small" data-a="fly">Najet</button></div></div>`;
     syncUI();
     const det = $(`details[data-g="${b.group}"]`, treeEl); if (det) det.open = true;
     $(`.bone[data-id="${id}"]`, treeEl)?.scrollIntoView({ block: 'nearest' });
@@ -160,6 +165,7 @@ export function createBrowse(ctx) {
     if (a === 'hide') { const id = selected; deselect(); viewer.setVisible(id, false); }
     else if (a === 'iso') { const id = selected; viewer.setMany(bones.map(b => b.id), false); viewer.setVisible(id, true); viewer.focusBone(id); }
     else if (a === 'fly') viewer.focusBone(selected);
+    else if (a === 'toggle') { infoOpen = !infoOpen; store.set('infoOpen', infoOpen); select(selected, { focus: false }); }
     else deselect();
   });
 

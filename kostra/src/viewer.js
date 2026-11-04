@@ -209,7 +209,16 @@ export class Viewer {
   }
   setMany(ids, v) { ids.forEach(id => this.setVisible(id, v, true)); this._visChanged(); }
   showAll() { this.setMany([...this.meshes.keys()], true); }
-  _visChanged() { this._rebuildPickables(); this.refreshMaterials(); this.onVisibility(); }
+  _visChanged() { this._rebuildPickables(); this.refreshMaterials(); this.onVisibility(); this.recenter(); }
+
+  // Střed otáčení = střed viditelných kostí; pohled (směr i vzdálenost) se přitom nemění.
+  recenter() {
+    const box = this._boundsOfVisible(); if (box.isEmpty()) return;
+    const c = box.getCenter(new THREE.Vector3());
+    const delta = c.clone().sub(this.controls.target);
+    if (delta.lengthSq() < 0.01) return;
+    this._flyTo(this.camera.position.clone().add(delta), c, 450);
+  }
   _rebuildPickables() { this.pickables = [...this.meshes.values()].filter(m => m.visible); }
 
   // ---------- rozložení ----------

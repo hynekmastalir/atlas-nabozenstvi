@@ -21,7 +21,32 @@ paintTheme();
 // ---------- spodní panel (mobil) ----------
 const panel = $('#panel'), handle = $('#sheet-handle');
 function setSheet(open) { panel.dataset.sheet = open ? 'open' : 'closed'; handle.setAttribute('aria-expanded', String(open)); }
-handle.onclick = () => setSheet(panel.dataset.sheet !== 'open');
+const saved = store.get('sheetH', null);
+if (saved) panel.style.setProperty('--sheet-h', saved + 'px');
+// Tažení úchytu mění výšku panelu (kosti nahoře se tím zvětší nebo zmenší); krátké klepnutí panel sbalí/rozbalí.
+let drag = null;
+handle.addEventListener('pointerdown', e => {
+  drag = { y: e.clientY, h: panel.getBoundingClientRect().height, moved: false };
+  handle.setPointerCapture(e.pointerId);
+});
+handle.addEventListener('pointermove', e => {
+  if (!drag) return;
+  const dy = drag.y - e.clientY;
+  if (!drag.moved && Math.abs(dy) < 6) return;
+  drag.moved = true;
+  if (panel.dataset.sheet !== 'open') setSheet(true);
+  const max = innerHeight * 0.85, min = 120;
+  const h = Math.max(min, Math.min(max, drag.h + dy));
+  panel.style.setProperty('--sheet-h', h + 'px'); drag.last = h;
+});
+const endDrag = () => {
+  if (!drag) return;
+  if (!drag.moved) setSheet(panel.dataset.sheet !== 'open');
+  else if (drag.last) store.set('sheetH', Math.round(drag.last));
+  drag = null;
+};
+handle.addEventListener('pointerup', endDrag);
+handle.addEventListener('pointercancel', () => { drag = null; });
 
 // ---------- start ----------
 const bar = $('#loading-bar'), text = $('#loading-text');
