@@ -50,3 +50,8 @@ Soubor vznikl skriptem `tools/build-world.mjs`.
 ## Barvy a vzhled
 
 Všechny barvy jsou na začátku `css/style.css` v blocích `:root`.
+
+## Kostra 3D
+
+Ve složce `kostra/` je samostatná aplikace Kostra 3D (Vite + Three.js). Nasazuje se přes GitHub Actions společně s tímto atlasem
+(viz `.github/workflows/deploy.yml`, v Settings, Pages nastav Source na „GitHub Actions“). Podrobnosti: `kostra/README.md`.
