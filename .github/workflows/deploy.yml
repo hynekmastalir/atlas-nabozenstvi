@@ -15,35 +15,19 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: kostra/package-lock.json
-      - name: Sestavení aplikace Kostra 3D
-        working-directory: kostra
-        run: |
-          npm ci
-          npm run build
-      - name: Složení webu (Atlas náboženství v kořeni, Kostra 3D v /kostra/)
-        run: |
-          mkdir _site
-          cp -r index.html css data js _site/
-          cp -r kostra/dist _site/kostra
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+      - name: Složení webu
+        run: |
+          mkdir _site
+          cp -r index.html css data js _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
