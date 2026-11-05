@@ -3,40 +3,55 @@
   "name": "Křesťanství",
   "color": "#4cc9ff",
   "icon": "cross",
-  "share": [0, 0, 1, 22, 23, 28.8],
+  "share": [0,  0,  0,  0,  1,  8,  22,  23,  23,  24,  34,  28.8],
   "zones": {
-    "2": ["ISR","PSE","LBN","SYR","TUR","GRC","ITA","EGY","CYP"],
-    "3": ["ISR","PSE","LBN","SYR","TUR","GRC","ITA","CYP","ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","BGR","ROU","SRB","MKD","ALB","HRV","ARM","GEO","ETH","ERI","EGY","SDN"],
-    "4": ["ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","LUX","ITA","POL","CZE","SVK","HUN","HRV","SVN","DNK","NOR","SWE","FIN","EST","LVA","LTU","UKR","BLR","RUS","ROU","BGR","SRB","MKD","GRC","ARM","GEO","ETH","ERI","DOM","HTI","CUB"],
-    "5": ["USA","CAN","MEX","GTM","HND","SLV","NIC","CRI","PAN","CUB","DOM","HTI","JAM","COL","VEN","ECU","PER","BOL","BRA","CHL","ARG","URY","PRY","GUY","SUR","ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","LUX","ITA","POL","CZE","SVK","HUN","HRV","SVN","DNK","NOR","SWE","FIN","EST","LVA","LTU","UKR","BLR","RUS","ROU","BGR","SRB","MKD","GRC","ARM","GEO","ETH","ERI","AGO","COD","COG","ZAF","NAM","BWA","ZMB","ZWE","MWI","MOZ","TZA","KEN","UGA","RWA","BDI","GAB","CMR","GHA","NGA","SSD","CAF","MDG","PHL","TLS","PNG","AUS","NZL","KOR","LBN"]
+    "4": ["ISR","PSE","LBN","SYR","TUR","GRC","ITA","EGY","CYP"],
+    "5": ["ISR","PSE","LBN","SYR","JOR","TUR","GRC","ITA","EGY","CYP","LBY","TUN","DZA","ESP","PRT","FRA","GBR","ARM","GEO","ETH","ERI","IRQ","BGR","ROU","HRV","SRB","MKD","ALB"],
+    "6": ["ISR","PSE","LBN","SYR","TUR","GRC","ITA","CYP","ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","BGR","ROU","SRB","MKD","ALB","HRV","ARM","GEO","ETH","ERI","EGY","SDN"],
+    "7": ["ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","LUX","ITA","POL","CZE","SVK","HUN","HRV","SVN","DNK","NOR","SWE","ISL","UKR","BLR","RUS","ROU","BGR","SRB","MKD","ALB","GRC","TUR","CYP","LBN","SYR","EGY","SDN","ARM","GEO","ETH","ERI"],
+    "8": ["ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","LUX","ITA","POL","CZE","SVK","HUN","HRV","SVN","DNK","NOR","SWE","FIN","EST","LVA","LTU","UKR","BLR","RUS","ROU","BGR","SRB","MKD","GRC","ARM","GEO","ETH","ERI","DOM","HTI","CUB"],
+    "9": ["ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","LUX","ITA","POL","CZE","SVK","HUN","HRV","SVN","DNK","NOR","SWE","FIN","EST","LVA","LTU","UKR","BLR","RUS","ROU","BGR","SRB","MKD","GRC","ARM","GEO","ETH","ERI","DOM","HTI","CUB","USA","CAN","MEX","GTM","HND","SLV","NIC","CRI","PAN","JAM","COL","VEN","ECU","PER","BOL","BRA","CHL","ARG","URY","PRY","GUY","SUR","PHL","AUS","NZL","ZAF","AGO","MOZ"],
+    "10": ["USA","CAN","MEX","GTM","HND","SLV","NIC","CRI","PAN","CUB","DOM","HTI","JAM","COL","VEN","ECU","PER","BOL","BRA","CHL","ARG","URY","PRY","GUY","SUR","ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","LUX","ITA","POL","CZE","SVK","HUN","HRV","SVN","DNK","NOR","SWE","FIN","EST","LVA","LTU","UKR","BLR","RUS","ROU","BGR","SRB","MKD","GRC","ARM","GEO","ETH","ERI","AGO","COD","COG","ZAF","NAM","BWA","ZMB","ZWE","MWI","MOZ","TZA","KEN","UGA","RWA","BDI","GAB","CMR","GHA","NGA","CAF","MDG","PHL","PNG","AUS","NZL","LBN"],
+    "11": ["USA","CAN","MEX","GTM","HND","SLV","NIC","CRI","PAN","CUB","DOM","HTI","JAM","COL","VEN","ECU","PER","BOL","BRA","CHL","ARG","URY","PRY","GUY","SUR","ESP","PRT","FRA","GBR","IRL","DEU","AUT","CHE","BEL","NLD","LUX","ITA","POL","CZE","SVK","HUN","HRV","SVN","DNK","NOR","SWE","FIN","EST","LVA","LTU","UKR","BLR","RUS","ROU","BGR","SRB","MKD","GRC","ARM","GEO","ETH","ERI","AGO","COD","COG","ZAF","NAM","BWA","ZMB","ZWE","MWI","MOZ","TZA","KEN","UGA","RWA","BDI","GAB","CMR","GHA","NGA","SSD","CAF","MDG","PHL","TLS","PNG","AUS","NZL","KOR","LBN"]
   },
   "places": [
     {
-      "id": "jeruzalem", "name": "Jeruzalém", "lat": 31.78, "lon": 35.22, "era": 2,
+      "id": "jeruzalem", "name": "Jeruzalém", "lat": 31.78, "lon": 35.22, "era": 4,
       "text": "Svaté město tří náboženství. Pro židy je to místo Prvního a Druhého chrámu a Zdi nářků, pro křesťany místo ukřižování a vzkříšení Ježíše, pro muslimy místo Mohamedova nočního vzestupu k nebi.",
       "fact": "Římané zničili Druhý chrám v roce 70 n. l. Dóm na skále byl dokončen kolem roku 691.",
       "source": "https://cs.wikipedia.org/wiki/Jeruzalém"
     },
     {
-      "id": "rim", "name": "Vatikán a Řím", "lat": 41.9, "lon": 12.45, "era": 2,
+      "id": "rim", "name": "Vatikán a Řím", "lat": 41.9, "lon": 12.45, "era": 4,
       "text": "Sídlo papeže a střed katolické církve. Podle tradice stojí Svatopetrská bazilika nad hrobem apoštola Petra. Dnešní stavba vznikala od roku 1506.",
       "fact": "Vatikán je nejmenší stát světa, má rozlohu asi 0,44 km².",
       "source": "https://cs.wikipedia.org/wiki/Vatikán"
     },
     {
-      "id": "carihrad", "name": "Cařihrad", "lat": 41.01, "lon": 28.98, "era": 3,
+      "id": "carihrad", "name": "Cařihrad", "lat": 41.01, "lon": 28.98, "era": 5,
       "text": "Od roku 330 hlavní město Východořímské říše. Chrám Hagia Sofia z roku 537 byl tisíc let největší křesťanskou stavbou. Po dobytí Osmany roku 1453 se z něj stala mešita.",
       "fact": "Dnes se město jmenuje Istanbul.",
       "source": "https://cs.wikipedia.org/wiki/Hagia_Sofia"
     },
     {
-      "id": "lalibela", "name": "Lalibela", "lat": 12.03, "lon": 39.04, "era": 4,
+      "id": "aksum", "name": "Aksúm", "lat": 14.12, "lon": 38.72, "era": 5,
+      "text": "Hlavní město stejnojmenného království. Král Ezana přijal křesťanství ve 330. letech, Aksúm se tak stal jedním z prvních křesťanských států na světě.",
+      "fact": "Podle etiopské tradice zde leží Archa úmluvy."
+    },
+    {
+      "id": "kyjev", "name": "Kyjev", "lat": 50.45, "lon": 30.52, "era": 7,
+      "text": "Roku 988 přijal kníže Vladimír křesťanství byzantského ritu a nechal pokřtít obyvatele Kyjeva. Kyjevská Rus se tak připojila ke křesťanskému světu.",
+      "fact": "Sofijský chrám v Kyjevě vznikl v 11. století.",
+      "source": "https://cs.wikipedia.org/wiki/Kyjevská_Rus"
+    },
+    {
+      "id": "lalibela", "name": "Lalibela", "lat": 12.03, "lon": 39.04, "era": 8,
       "text": "Skalní kostely vytesané ve 12. a 13. století, kterým se přezdívá Nový Jeruzalém. Etiopie přijala křesťanství už ve 4. století a patří k nejstarším křesťanským zemím.",
       "fact": "Jedenáct kostelů je vytesáno do skály shora dolů, každý z jednoho kusu.",
       "source": "https://cs.wikipedia.org/wiki/Lalibela"
     },
     {
-      "id": "santiago", "name": "Santiago de Compostela", "lat": 42.88, "lon": -8.54, "era": 4,
+      "id": "santiago", "name": "Santiago de Compostela", "lat": 42.88, "lon": -8.54, "era": 8,
       "text": "Cíl Svatojakubské cesty, jedné z nejvýznamnějších poutních tras středověké Evropy. Podle tradice tu leží hrob apoštola Jakuba.",
       "fact": "Poutníci jdou po cestě už od 9. století.",
       "source": "https://cs.wikipedia.org/wiki/Santiago_de_Compostela"
@@ -44,22 +59,36 @@
   ],
   "events": [
     {
-      "era": 2, "title": "Pavlovy misijní cesty", "date": "kolem 46 až 60 n. l.",
+      "era": 4, "title": "Pavlovy misijní cesty", "date": "kolem 46 až 60 n. l.",
       "text": "Apoštol Pavel zakládá obce ve městech jako Efesos, Korint nebo Filipy a otevírá křesťanství nežidům.",
       "source": "https://cs.wikipedia.org/wiki/Pavel_z_Tarsu"
     },
     {
-      "era": 3, "title": "Od pronásledování ke státnímu náboženství", "date": "313 a 380 n. l.",
+      "era": 5, "title": "Od pronásledování ke státnímu náboženství", "date": "313 a 380 n. l.",
       "text": "Milánský edikt povoluje křesťanům veřejně vyznávat víru. Roku 380 se křesťanství stává státním náboženstvím Římské říše.",
       "source": "https://cs.wikipedia.org/wiki/Milánský_edikt"
     },
     {
-      "era": 4, "title": "Velké schizma a reformace", "date": "1054 a 1517",
+      "era": 7, "title": "Pokřtění střední a východní Evropy", "date": "9. až 11. století",
+      "text": "Křesťanství přijímají Velká Morava, Čechy, Polsko, Uhry a Kyjevská Rus. Roku 1054 se církev dělí na západní a východní.",
+      "source": "https://cs.wikipedia.org/wiki/Kyjevská_Rus"
+    },
+    {
+      "era": 8, "title": "Velké schizma a reformace", "date": "1054 a 1517",
       "text": "Církev se dělí na západní a východní. O pět set let později Martin Luther spouští reformaci a vzniká protestantismus.",
       "source": "https://cs.wikipedia.org/wiki/Reformace"
     },
     {
-      "era": 5, "title": "Těžiště se přesouvá na jih", "date": "20. až 21. století",
+      "era": 9, "title": "Misijní hnutí a osvícenství", "date": "18. až 19. století",
+      "text": "Protestantské i katolické misie míří do Afriky, Asie a Oceánie. Zároveň osvícenství a revoluce vedou v Evropě k odluce církve od státu."
+    },
+    {
+      "era": 10, "title": "Druhý vatikánský koncil", "date": "1962 až 1965",
+      "text": "Katolická církev reformuje liturgii a otevírá se dialogu s jinými církvemi i náboženstvími. Mše se slouží v národních jazycích.",
+      "source": "https://cs.wikipedia.org/wiki/Druhý_vatikánský_koncil"
+    },
+    {
+      "era": 11, "title": "Těžiště se přesouvá na jih", "date": "20. až 21. století",
       "text": "Nejvíce nových křesťanů přibývá v Africe a Latinské Americe, zatímco v Evropě jejich podíl klesá.",
       "source": "https://www.pewresearch.org/religion/"
     }

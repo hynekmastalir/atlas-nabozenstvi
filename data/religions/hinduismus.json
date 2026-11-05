@@ -3,14 +3,16 @@
   "name": "Hinduismus",
   "color": "#ff7a3d",
   "icon": "lotus",
-  "share": [3, 12, 20, 22, 20, 14.9],
+  "share": [3,  7,  12,  15,  20,  21,  22,  21,  20,  20,  14,  14.9],
   "zones": {
     "0": ["PAK","IND"],
-    "1": ["PAK","IND","NPL"],
-    "2": ["IND","NPL","LKA","PAK","BGD"],
-    "3": ["IND","NPL","LKA","PAK","BGD","KHM","VNM","THA","IDN","MYS","MMR"],
-    "4": ["IND","NPL","LKA","BGD","KHM","VNM","THA","LAO","IDN","MYS","MMR"],
-    "5": ["IND","NPL","BGD","LKA","FJI","GUY","SUR","TTO","IDN"]
+    "2": ["PAK","IND","NPL"],
+    "4": ["IND","NPL","LKA","PAK","BGD"],
+    "6": ["IND","NPL","LKA","PAK","BGD","KHM","VNM","THA","IDN","MYS","MMR"],
+    "8": ["IND","NPL","LKA","BGD","KHM","VNM","THA","LAO","IDN","MYS","MMR"],
+    "9": ["IND","NPL","LKA","BGD","PAK","IDN"],
+    "10": ["IND","NPL","BGD","LKA","PAK","FJI","GUY","SUR","TTO","IDN"],
+    "11": ["IND","NPL","BGD","LKA","FJI","GUY","SUR","TTO","IDN"]
   },
   "places": [
     {
@@ -20,22 +22,27 @@
       "source": "https://cs.wikipedia.org/wiki/Mohendžodaro"
     },
     {
-      "id": "varanasi", "name": "Váránasí (Benares)", "lat": 25.32, "lon": 83.01, "era": 1,
+      "id": "varanasi", "name": "Váránasí (Benares)", "lat": 25.32, "lon": 83.01, "era": 2,
       "text": "Jedno z nejstarších nepřetržitě obydlených měst světa a nejposvátnější místo hinduismu. Poutníci se koupou v Ganze na kamenných schodech zvaných ghát a věří, že smrt zde přináší vysvobození.",
       "fact": "V nedalekém Sárnáthu pronesl Buddha své první kázání.",
       "source": "https://cs.wikipedia.org/wiki/Váránasí"
     },
     {
-      "id": "angkor", "name": "Angkor Wat", "lat": 13.41, "lon": 103.87, "era": 4,
-      "text": "Chrám z 12. století postavený králem Súrjavarmanem II. původně jako hinduistické zasvěcení bohu Višnuovi. Později se stal buddhistickým.",
-      "fact": "Je považován za největší náboženskou stavbu světa.",
-      "source": "https://cs.wikipedia.org/wiki/Angkor_Wat"
-    },
-    {
-      "id": "madurai", "name": "Madurai", "lat": 9.92, "lon": 78.12, "era": 3,
+      "id": "madurai", "name": "Madurai", "lat": 9.92, "lon": 78.12, "era": 6,
       "text": "Chrám bohyně Mínákší je střediskem tamilského hinduismu. Dnešní stavba pochází především ze 16. až 17. století a je pokrytá tisíci barevných soch na věžích gópuram.",
       "fact": "Nejvyšší věž chrámu měří přes 50 metrů.",
       "source": "https://cs.wikipedia.org/wiki/Mínákšíin_chrám"
+    },
+    {
+      "id": "thandzavur", "name": "Thandžávúr", "lat": 10.79, "lon": 79.14, "era": 7,
+      "text": "Cholský vládce Rádžaradža I. zde dal vystavět chrám Brihadíšvara, dokončený roku 1010. Patří k největším chrámům jižní Indie.",
+      "fact": "Věž nad svatyní je vysoká asi 66 metrů."
+    },
+    {
+      "id": "angkor", "name": "Angkor Wat", "lat": 13.41, "lon": 103.87, "era": 8,
+      "text": "Chrám z 12. století postavený králem Súrjavarmanem II. původně jako hinduistické zasvěcení bohu Višnuovi. Později se stal buddhistickým.",
+      "fact": "Je považován za největší náboženskou stavbu světa.",
+      "source": "https://cs.wikipedia.org/wiki/Angkor_Wat"
     }
   ],
   "events": [
@@ -45,27 +52,48 @@
       "source": "https://cs.wikipedia.org/wiki/Civilizace_Indu"
     },
     {
-      "era": 1, "title": "Védy a Upanišady", "date": "1500 až 500 př. n. l.",
+      "era": 1, "title": "Rigvéda", "date": "kolem 1500 až 1200 př. n. l.",
+      "text": "Vznikají nejstarší védské hymny na počest bohů, jako jsou Indra, Agni a Varuna. Předávají se ústně a později tvoří základ hinduistické tradice.",
+      "source": "https://cs.wikipedia.org/wiki/Rigvéda"
+    },
+    {
+      "era": 2, "title": "Védy a Upanišady", "date": "1500 až 500 př. n. l.",
       "text": "Vznikají nejstarší posvátné texty a rozvíjí se pojmy karma, samsára a átman.",
       "source": "https://cs.wikipedia.org/wiki/Védy"
     },
     {
-      "era": 2, "title": "Eposy a puránská tradice", "date": "kolem 400 př. n. l. až 400 n. l.",
+      "era": 4, "title": "Eposy a puránská tradice", "date": "kolem 400 př. n. l. až 400 n. l.",
       "text": "Dostávají podobu eposy Mahábhárata (s Bhagavadgítou) a Rámájana. Bohové Višnu, Šiva a Dévi získávají centrální místo.",
       "source": "https://cs.wikipedia.org/wiki/Mahábhárata"
     },
     {
-      "era": 3, "title": "Hnutí bhakti", "date": "6. až 9. století n. l.",
+      "era": 5, "title": "Zlatý věk Guptovců", "date": "4. až 5. století",
+      "text": "Za dynastie Guptovců se rozvíjí klasické hinduistické umění, chrámová architektura a sanskrtská literatura."
+    },
+    {
+      "era": 6, "title": "Hnutí bhakti", "date": "6. až 9. století n. l.",
       "text": "V jižní Indii se šíří zbožnost zaměřená na osobní vztah k bohu, vyjadřovaná v tamilských hymnech.",
       "source": "https://cs.wikipedia.org/wiki/Bhakti"
     },
     {
-      "era": 4, "title": "Říše Vidžajanagar", "date": "1336 až 1646",
+      "era": 7, "title": "Chrám Brihadíšvara", "date": "1010",
+      "text": "Cholský panovník Rádžaradža I. dokončuje v Thandžávúru obrovský chrám boha Šivy."
+    },
+    {
+      "era": 8, "title": "Říše Vidžajanagar", "date": "1336 až 1646",
       "text": "Hinduistická říše na jihu Indie podporuje stavbu chrámů, umění a literaturu v době, kdy sever ovládají muslimští vládci.",
       "source": "https://cs.wikipedia.org/wiki/Vidžajanagar"
     },
     {
-      "era": 5, "title": "Většina v Indii, menšiny po světě", "date": "21. století",
+      "era": 9, "title": "Hinduistická reforma", "date": "první polovina 19. století",
+      "text": "V Bengálsku vzniká roku 1828 Brahmó samádž, který usiluje o reformu hinduismu a odmítá například pálení vdov."
+    },
+    {
+      "era": 10, "title": "Dělení Indie", "date": "1947 až 1950",
+      "text": "Po nezávislosti Indie (1947) vzniká muslimský Pákistán a Indie se roku 1950 stává republikou s hinduistickou většinou a sekulární ústavou."
+    },
+    {
+      "era": 11, "title": "Většina v Indii, menšiny po světě", "date": "21. století",
       "text": "Převážná většina hinduistů žije v Indii. Početné komunity jsou také v Nepálu, Bangladéši a v diaspoře od Spojených států po Mauricius.",
       "source": "https://www.pewresearch.org/religion/"
     }

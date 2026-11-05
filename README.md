@@ -31,8 +31,8 @@ Když je v souboru chyba, stránka ostatní náboženství načte a nahoře vyp�
 | `name` | Název ve filtru a v grafu. |
 | `color` | Barva ve tvaru `#rrggbb`. |
 | `icon` | `cross`, `crescent`, `star`, `wheel`, `lotus`, nebo adresa vlastního obrázku. |
-| `share` | 6 čísel, podíl na světové populaci v % pro každou éru (pořadí jako `eras` v index.json). |
-| `zones` | Klíč je číslo éry 0 až 5, hodnota je seznam kódů zemí ISO alfa-3 (např. `CZE`, `IND`). Když éra chybí, převezme se předchozí. Prázdný seznam `[]` zónu ukončí. |
+| `share` | 12 čísel, podíl na světové populaci v % pro každou éru (pořadí jako `eras` v index.json). |
+| `zones` | Klíč je číslo éry 0 až 11, hodnota je seznam kódů zemí ISO alfa-3 (např. `CZE`, `IND`). Když éra chybí, převezme se předchozí. Prázdný seznam `[]` zónu ukončí. |
 | `places` | Posvátná místa: `id`, `name`, `lat`, `lon`, `era` (od které éry se zobrazí), `text`, `fact`, volitelně `source` (odkaz) a `image` (adresa fotky). |
 | `events` | Události: `era`, `title`, `date`, `text`, volitelně `source` a `image`. |
 
@@ -42,7 +42,7 @@ Fotky: dej soubor do složky `assets/` a do `image` napiš `assets/nazev.jpg`, n
 
 ## Éry
 
-Šest milníků je v `data/index.json` v poli `eras`. Každá éra má titulek a hlavní událost, která se zobrazí v kartě události.
+Dvanáct milníků je v `data/index.json` v poli `eras`. Každá éra má titulek a hlavní událost, která se zobrazí v kartě události.
 
 ## Mapa
 

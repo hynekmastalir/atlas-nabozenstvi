@@ -3,35 +3,47 @@
   "name": "Islám",
   "color": "#2fe0a0",
   "icon": "crescent",
-  "share": [0, 0, 0, 2, 14, 25.6],
+  "share": [0,  0,  0,  0,  0,  0,  2,  10,  14,  13,  14,  25.6],
   "zones": {
-    "3": ["SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","ISR","PSE","LBN","EGY","LBY","TUN","DZA","MAR","ESP","IRN","AFG","PAK","UZB","TKM","TJK"],
-    "4": ["SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","ISR","PSE","LBN","EGY","LBY","TUN","DZA","MAR","IRN","AFG","PAK","UZB","TKM","TJK","TUR","AZE","KAZ","KGZ","BGD","IDN","MYS","BRN","SEN","MLI","NER","TCD","SDN","SOM","DJI","ALB","BIH","MKD"],
-    "5": ["MAR","DZA","TUN","LBY","EGY","SDN","TCD","NER","MLI","MRT","SEN","GMB","GIN","SLE","NGA","SOM","DJI","SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","LBN","PSE","TUR","IRN","AFG","PAK","BGD","IND","UZB","TKM","TJK","KGZ","KAZ","AZE","IDN","MYS","BRN","ALB","BIH"]
+    "6": ["SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","ISR","PSE","LBN","EGY","LBY","TUN","DZA","MAR","ESP","IRN","AFG","PAK","UZB","TKM","TJK"],
+    "7": ["SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","ISR","PSE","LBN","EGY","LBY","TUN","DZA","MAR","ESP","IRN","AFG","PAK","UZB","TKM","TJK","AZE","KAZ","KGZ"],
+    "8": ["SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","ISR","PSE","LBN","EGY","LBY","TUN","DZA","MAR","IRN","AFG","PAK","UZB","TKM","TJK","TUR","AZE","KAZ","KGZ","BGD","IDN","MYS","BRN","SEN","MLI","NER","TCD","SDN","SOM","DJI","ALB","BIH","MKD"],
+    "9": ["SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","ISR","PSE","LBN","EGY","LBY","TUN","DZA","MAR","IRN","AFG","PAK","UZB","TKM","TJK","TUR","AZE","KAZ","KGZ","BGD","IDN","MYS","BRN","SEN","MLI","NER","TCD","SDN","SOM","DJI","ALB","BIH","MKD","IND","NGA"],
+    "10": ["SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","ISR","PSE","LBN","EGY","LBY","TUN","DZA","MAR","IRN","AFG","PAK","UZB","TKM","TJK","TUR","AZE","KAZ","KGZ","BGD","IDN","MYS","BRN","SEN","MLI","NER","TCD","SDN","SOM","DJI","ALB","BIH","MKD","IND","NGA","MRT","GMB","GIN","SLE"],
+    "11": ["MAR","DZA","TUN","LBY","EGY","SDN","TCD","NER","MLI","MRT","SEN","GMB","GIN","SLE","NGA","SOM","DJI","SAU","YEM","OMN","ARE","QAT","KWT","IRQ","SYR","JOR","LBN","PSE","TUR","IRN","AFG","PAK","BGD","IND","UZB","TKM","TJK","KGZ","KAZ","AZE","IDN","MYS","BRN","ALB","BIH"]
   },
   "places": [
     {
-      "id": "mekka", "name": "Mekka", "lat": 21.42, "lon": 39.83, "era": 3,
+      "id": "mekka", "name": "Mekka", "lat": 21.42, "lon": 39.83, "era": 6,
       "text": "Rodiště proroka Mohameda a cíl pouti hadždž. Při modlitbě se muslimové na celém světě obracejí ke Kaabě v Masdžid al-Harám.",
       "fact": "Pouť do Mekky alespoň jednou za život patří k pěti pilířům islámu. Nemuslimové do města nesmějí.",
       "source": "https://cs.wikipedia.org/wiki/Mekka"
     },
     {
-      "id": "medina", "name": "Medína", "lat": 24.47, "lon": 39.61, "era": 3,
+      "id": "medina", "name": "Medína", "lat": 24.47, "lon": 39.61, "era": 6,
       "text": "Do Medíny odešel Mohamed roku 622 a vytvořil zde první muslimskou obec. Stojí tu Prorokova mešita s jeho hrobem.",
       "fact": "Rok 622, hidžra, je začátek islámského letopočtu.",
       "source": "https://cs.wikipedia.org/wiki/Medína"
     },
-    { "id": "jeruzalem", "name": "Jeruzalém", "lat": 31.78, "lon": 35.22, "era": 3 },
-    { "id": "carihrad", "name": "Cařihrad", "lat": 41.01, "lon": 28.98, "era": 4 },
     {
-      "id": "kajrawan", "name": "Kajrawán", "lat": 35.68, "lon": 10.1, "era": 3,
+      "id": "jeruzalem", "name": "Jeruzalém", "lat": 31.78, "lon": 35.22, "era": 6
+    },
+    {
+      "id": "kajrawan", "name": "Kajrawán", "lat": 35.68, "lon": 10.1, "era": 6,
       "text": "Město v dnešním Tunisku založené roku 670 jako základna arabských vojsk. Velká mešita z 9. století patří k nejstarším v Africe a město je dodnes důležitým poutním místem Maghrebu.",
       "fact": "Mešita má minaret, který patří k nejstarším dochovaným na světě.",
       "source": "https://cs.wikipedia.org/wiki/Kajrawán"
     },
     {
-      "id": "cordoba", "name": "Córdoba", "lat": 37.88, "lon": -4.78, "era": 4,
+      "id": "bagdad", "name": "Bagdád", "lat": 33.31, "lon": 44.37, "era": 7,
+      "text": "Kalif al-Mansúr založil Bagdád roku 762. V 9. století zde Dům moudrosti shromažďoval a překládal řecké, perské i indické spisy.",
+      "fact": "Bagdád byl v 9. a 10. století jedním z největších měst světa."
+    },
+    {
+      "id": "carihrad", "name": "Cařihrad", "lat": 41.01, "lon": 28.98, "era": 8
+    },
+    {
+      "id": "cordoba", "name": "Córdoba", "lat": 37.88, "lon": -4.78, "era": 8,
       "text": "Hlavní město al-Andalusu. Velká mešita začala vznikat roku 784 a později se stala katedrálou. Ve městě pracovali učenci jako Averroes nebo Maimonides.",
       "fact": "Les sloupů v mešitě tvoří přes 800 sloupů.",
       "source": "https://cs.wikipedia.org/wiki/Mezquita-Catedral_de_Córdoba"
@@ -39,17 +51,30 @@
   ],
   "events": [
     {
-      "era": 3, "title": "Hidžra a první chalífové", "date": "622 až 661",
+      "era": 6, "title": "Hidžra a první chalífové", "date": "622 až 661",
       "text": "Mohamed odchází z Mekky do Mediny. Po jeho smrti (632) vládnou čtyři spravedliví chalífové a obec se rychle rozšiřuje za hranice Arábie.",
       "source": "https://cs.wikipedia.org/wiki/Hidžra"
     },
     {
-      "era": 4, "title": "Osmané dobývají Cařihrad", "date": "29. května 1453",
+      "era": 7, "title": "Zlatý věk islámské vědy", "date": "9. až 11. století",
+      "text": "V Bagdádu, Káhiře i Córdobě vznikají významné práce z matematiky, medicíny a astronomie. Učenci překládají a rozvíjejí řecké i indické poznání.",
+      "source": "https://cs.wikipedia.org/wiki/Bagdád"
+    },
+    {
+      "era": 8, "title": "Osmané dobývají Cařihrad", "date": "29. května 1453",
       "text": "Sultán Mehmed II. dobývá hlavní město Byzance a z Hagie Sofie dělá mešitu. Osmanská říše se stává velmocí Středomoří.",
       "source": "https://cs.wikipedia.org/wiki/Dobytí_Konstantinopole"
     },
     {
-      "era": 5, "title": "Největší muslimská země", "date": "21. století",
+      "era": 9, "title": "Islám pod koloniální nadvládou", "date": "19. století",
+      "text": "Velká část muslimského světa se dostává pod vliv evropských mocností. Britové ovládají Indii a Egypt, Francouzi Alžírsko a Nizozemci dnešní Indonésii."
+    },
+    {
+      "era": 10, "title": "Nezávislé muslimské státy", "date": "1947 až 1962",
+      "text": "Pákistán (1947), Indonésie (1949) a další země získávají nezávislost. Roku 1962 se stává nezávislým i Alžírsko."
+    },
+    {
+      "era": 11, "title": "Největší muslimská země", "date": "21. století",
       "text": "Nejvíce muslimů dnes žije v Indonésii. Většina muslimů žije v Asii, ne na Blízkém východě.",
       "source": "https://www.pewresearch.org/religion/"
     }

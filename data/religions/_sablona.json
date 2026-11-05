@@ -3,14 +3,14 @@
   "name": "Název náboženství",
   "color": "#ff5fa8",
   "icon": "star",
-  "share": [0, 0, 0, 0, 0, 0],
+  "share": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   "zones": {
-    "3": ["IND"],
-    "5": ["IND", "NPL"]
+    "6": ["IND"],
+    "11": ["IND", "NPL"]
   },
   "places": [
     {
-      "id": "unikatni-id-mista", "name": "Název místa", "lat": 0, "lon": 0, "era": 3,
+      "id": "unikatni-id-mista", "name": "Název místa", "lat": 0, "lon": 0, "era": 6,
       "text": "Popis a historie místa.",
       "fact": "Jedna zajímavost.",
       "source": "https://cs.wikipedia.org/wiki/",
@@ -19,7 +19,7 @@
   ],
   "events": [
     {
-      "era": 3, "title": "Název události", "date": "rok nebo období",
+      "era": 6, "title": "Název události", "date": "rok nebo období",
       "text": "Krátký popis události.",
       "source": "https://cs.wikipedia.org/wiki/",
       "image": ""

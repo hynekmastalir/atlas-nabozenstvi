@@ -74,7 +74,7 @@ function ui(name, extra = {}) {
 }
 
 /* ---------- stav ---------- */
-const state = { era: 2, view: 'zones', active: new Set(), playing: false };
+const state = { era: 4, view: 'zones', active: new Set(), playing: false };
 let DATA = null;          // { base, world, rels, places }
 const refs = {};          // odkazy na prvky UI
 let timer = null;
@@ -272,7 +272,7 @@ function buildChart() {
   return h('section', { class: 'card pad g-chart', 'aria-label': 'Zastoupení náboženství' },
     h('h2', { class: 'eyebrow' }, 'Podíl na světové populaci'), refs.chartEra,
     h('div', { class: 'chart-row' }, donut, h('ul', { class: 'bars' }, refs.bars.map(b => b.row))),
-    h('p', { class: 'chart-note' }, 'Šířka sloupců se řídí největším podílem (nejméně 40 %). Hodnoty před 20. stoletím jsou hrubé odhady.'));
+    h('p', { class: 'chart-note' }, 'Šířka sloupců se řídí největším podílem (nejméně 40 %). Hodnoty před rokem 2020 jsou hrubé odhady.'));
 }
 
 /* ---------- aktualizace ---------- */

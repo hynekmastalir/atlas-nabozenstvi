@@ -179,7 +179,11 @@ dialog[open]{animation:fade .3s ease both}
   .view-toggle button{padding:6px 10px;font-size:12px}
   .timeline{padding:12px 14px 4px}
   .slider-wrap{padding:6px 20px 0}
-  .tick{width:54px}
+  .tick{width:30px}
+  .tick b{font-size:10px}
+  .tick span{display:none}
+  .tick:nth-child(even):not(:last-child):not([aria-current=true]) b,.tick:nth-child(11):not([aria-current=true]) b{visibility:hidden}
+  .tick[aria-current=true] span{display:block;position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}

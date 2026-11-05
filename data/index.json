@@ -22,6 +22,18 @@
       ]
     },
     {
+      "label": "1000 př. n. l.", "a": "1000", "b": "př. n. l.",
+      "tag": "Doba bronzová a železná",
+      "title": "Védy, Davidův Jeruzalém a první velké chrámy",
+      "date": "kolem 1500 až 900 př. n. l.",
+      "text": "Ve starověké Indii se ústně předávají Védy, nejstarší hymny Rigvédy vznikly zhruba mezi 1500 a 1200 př. n. l. V Izraeli podle tradice král Šalamoun staví v Jeruzalémě První chrám (kolem 960 př. n. l.). Egypt, Mezopotámie i Řecko dál uctívají mnoho bohů.",
+      "more": [
+        "Védští bohové jako Indra, Agni a Varuna jsou uctíváni obětními obřady",
+        "Féničané šíří obchodem svá božstva po Středomoří",
+        "Doba života Zarathuštry, zakladatele zarathuštrismu, je sporná (odhady 1500 až 600 př. n. l.)"
+      ]
+    },
+    {
       "label": "500 př. n. l.", "a": "500", "b": "př. n. l.",
       "tag": "Doba osy",
       "title": "Buddha, Upanišady a babylonské zajetí",
@@ -31,6 +43,19 @@
         "Mahávíra rozvíjí džinismus",
         "Konfucius a Laozi učí v Číně",
         "Kýros dovolí Židům návrat do Jeruzaléma (539 př. n. l.)"
+      ]
+    },
+    {
+      "label": "250 př. n. l.", "a": "250", "b": "př. n. l.",
+      "tag": "Helénismus a říše Maurjů",
+      "title": "Ašóka a šíření dharmy",
+      "date": "3. až 2. století př. n. l.",
+      "text": "Maurjský císař Ašóka (vládl asi 268 až 232 př. n. l.) přijímá buddhismus a vysílá misionáře do Indie, na Cejlon i do helénistických států. Židé žijí pod vládou Ptolemaiovců a Seleukovců, v Alexandrii vzniká řecký překlad Písma, Septuaginta, a roku 167 př. n. l. propukne Makabejské povstání.",
+      "more": [
+        "Ašókovy edikty vytesané do skal vyzývají k toleranci a soucitu",
+        "Septuaginta vzniká ve 3. a 2. století př. n. l.",
+        "Chanuka připomíná znovuposvěcení jeruzalémského chrámu po Makabejcích (164 př. n. l.)",
+        "Alexandr Veliký přinesl řeckou kulturu až k Indu (326 př. n. l.)"
       ]
     },
     {
@@ -46,6 +71,19 @@
       ]
     },
     {
+      "label": "4. století n. l.", "a": "4.", "b": "stol. n. l.",
+      "tag": "Pozdní antika",
+      "title": "Křesťanství ve státních službách a zlatý věk Guptovců",
+      "date": "313 až 395 n. l.",
+      "text": "Císař Konstantin dává Milánským ediktem (313) křesťanům svobodu a první nicejský koncil (325) formuluje společné vyznání víry. Roku 380 se křesťanství stává státním náboženstvím Římské říše. V Indii vládnou Guptovci, rozkvétá hinduistické umění a buddhistické kláštery.",
+      "more": [
+        "Arménie přijala křesťanství jako první stát kolem roku 301",
+        "Království Aksúm (dnešní Etiopie a Eritrea) se stává křesťanským ve 330. letech",
+        "Čínský mnich Fa-sien putuje do Indie (399 až 412) a přiváží buddhistické spisy",
+        "V Galileji vzniká Jeruzalémský talmud"
+      ]
+    },
+    {
       "label": "7. století n. l.", "a": "7.", "b": "stol. n. l.",
       "tag": "Raný středověk",
       "title": "Vznik a rychlá expanze islámu",
@@ -58,6 +96,19 @@
       ]
     },
     {
+      "label": "1000 n. l.", "a": "1000", "b": "n. l.",
+      "tag": "Vrcholný středověk",
+      "title": "Christianizace Evropy a zlatý věk islámu",
+      "date": "9. až 11. století",
+      "text": "Křesťanství se rozšiřuje do střední a východní Evropy: Čechy se křtí za Bořivoje (kolem 880), Polsko roku 966, Kyjevská Rus roku 988. Roku 1054 se církev rozdělí na západní a východní. Islámský svět zažívá zlatý věk věd a Mahmúd z Ghazny podniká výpravy do severní Indie, kde se islám postupně usazuje.",
+      "more": [
+        "Bagdád s Domem moudrosti je ve 9. století střediskem vědy a překladů",
+        "Židé v islámském Španělsku zažívají kulturní rozkvět",
+        "Tibet znovu přijímá buddhismus v tzv. druhém šíření (10. až 11. století)",
+        "Khmerové staví velké chrámové komplexy v Angkoru"
+      ]
+    },
+    {
       "label": "1500 n. l.", "a": "1500", "b": "n. l.",
       "tag": "Zámořské objevy",
       "title": "Nové světy, nové mise",
@@ -67,6 +118,32 @@
         "Židé jsou vyhnáni ze Španělska (1492)",
         "Osmané ovládají Cařihrad od roku 1453",
         "Krátce nato vzniká Mughalská říše v Indii (1526)"
+      ]
+    },
+    {
+      "label": "1800 n. l.", "a": "1800", "b": "n. l.",
+      "tag": "Kolonialismus a osvícenství",
+      "title": "Misie, kolonie a první pochybnosti",
+      "date": "1750 až 1850",
+      "text": "Evropské mocnosti ovládají velkou část světa a s nimi přicházejí protestantští i katoličtí misionáři. Osvícenství a Velká francouzská revoluce (1789) oslabují vliv církví a v Evropě začíná sekularizace. V Indii vznikají reformní hnutí jako Brahmó samádž (1828) a Židé v Evropě postupně získávají občanská práva.",
+      "more": [
+        "Britská Východoindická společnost ovládá velkou část Indie",
+        "Misijní společnosti vysílají misionáře do Asie a Afriky",
+        "Židovská emancipace začíná ve Francii roku 1791",
+        "Sokotský chalífát vzniká v západní Africe roku 1804"
+      ]
+    },
+    {
+      "label": "1950 n. l.", "a": "1950", "b": "n. l.",
+      "tag": "Po válce a dekolonizace",
+      "title": "Dělení Indie, stát Izrael a ateistické režimy",
+      "date": "1945 až 1965",
+      "text": "Roku 1947 se britská Indie dělí na převážně hinduistickou Indii a muslimský Pákistán. Po holokaustu vzniká roku 1948 stát Izrael. V Sovětském svazu a po roce 1949 i v Číně stát omezuje náboženský život. Dekolonizace mění náboženskou mapu Afriky a Asie a Druhý vatikánský koncil (1962 až 1965) reformuje katolickou církev.",
+      "more": [
+        "Čína obsazuje Tibet (1950), dalajláma odchází do exilu roku 1959",
+        "V holokaustu zahynulo asi šest milionů Židů",
+        "V západní Evropě začíná rychlý pokles návštěvnosti bohoslužeb",
+        "Indonésie zakotvuje roku 1945 víru v jediného Boha mezi základy státu (Pančasíla)"
       ]
     },
     {
