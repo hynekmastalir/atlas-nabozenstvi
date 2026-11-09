@@ -92,7 +92,8 @@
    "c": "zaklad",
    "t": "Ukřižování Ježíše z Nazaretu",
    "x": "V Jeruzalémě je za prefekta Pontia Pilata ukřižován Ježíš. Jeho následovníci věří v jeho vzkříšení a z jejich obce vzniká křesťanství.",
-   "ap": 1
+   "ap": 1,
+   "d": "Ježíš z Nazaretu působil v Galileji a v Judeji jako putující učitel a kazatel o Božím království. Podle evangelií byl v Jeruzalémě zatčen o svátcích Pesach, odsouzen římským prefektem Pontiem Pilátem a popraven ukřižováním. Přesný rok se odhaduje na 30 nebo 33. Křesťané věří, že třetího dne vstal z mrtvých, a právě tato víra dala vzniknout prvním křesťanským obcím. Ukřižování a vzkříšení dodnes tvoří střed křesťanské víry a svátků Velikonoc."
   },
   {
    "id": "kre2",
@@ -101,7 +102,8 @@
    "c": "uceni",
    "t": "Apoštolský koncil v Jeruzalémě",
    "x": "Apoštolové rozhodují, že pohanští křesťané nemusí zachovávat celý židovský zákon. Tím se církev otevírá všem národům.",
-   "ap": 1
+   "ap": 1,
+   "d": "Prvním velkým sporem rané církve byla otázka, zda se pohané, kteří uvěří v Krista, musí napřed stát Židy: nechat se obřezat a zachovávat celé Mojžíšovo právo. V Jeruzalémě se kolem roku 49 sešli Petr, Jakub a Pavel s Barnabášem. Rozhodli, že pohanští křesťané obřízku nepotřebují, mají se ale vyvarovat modlosluzebnictví a některých jiných věcí. Tím se církev otevřela všem národům a přestala být jen židovskou sektou."
   },
   {
    "id": "kre3",
@@ -109,7 +111,8 @@
    "y": 64,
    "c": "moc",
    "t": "Neronovo pronásledování",
-   "x": "Po požáru Říma císař Nero obviňuje křesťany a nechává je popravovat. Podle tradice umírají apoštolové Petr a Pavel."
+   "x": "Po požáru Říma císař Nero obviňuje křesťany a nechává je popravovat. Podle tradice umírají apoštolové Petr a Pavel.",
+   "d": "V červenci roku 64 vyhořela velká část Říma. Lidé podezřívali samotného císaře Nerona, a ten obvinil křesťany, kteří žili stranou veřejného života a byli nepopulární. Římský historik Tacitus popisuje, že byli popravováni krutými způsoby, například zašití do zvířecích kůží nebo spalováni jako pochodně. Podle křesťanské tradice tehdy v Římě zahynuli apoštolové Petr a Pavel. Pronásledování zůstalo místní, ale vtisklo křesťanům obraz mučedníků."
   },
   {
    "id": "kre4",
@@ -118,7 +121,8 @@
    "c": "uceni",
    "t": "Markovo evangelium",
    "x": "Vzniká nejstarší z kanonických evangelií, které později využijí Matouš a Lukáš.",
-   "ap": 1
+   "ap": 1,
+   "d": "Evangelium podle Marka je nejkratší a pravděpodobně nejstarší ze čtyř kanonických evangelií. Badatelé je kladou do doby kolem roku 70, tedy do doby války v Judeji. Autor líčí Ježíše jako činorodého, skrytého Božího syna a velkou část textu věnuje utrpení a smrti. Matouš a Lukáš ho později použili jako jeden ze svých pramenů. Vznik evangelií znamenal přechod od ústního předávání ke psané tradici."
   },
   {
    "id": "kre5",
@@ -126,7 +130,8 @@
    "y": 250,
    "c": "moc",
    "t": "Decijovo pronásledování",
-   "x": "Císař Decius nařizuje všem obyvatelům říše obětovat bohům. Křesťané, kteří odmítnou, jsou vězněni a popravováni."
+   "x": "Císař Decius nařizuje všem obyvatelům říše obětovat bohům. Křesťané, kteří odmítnou, jsou vězněni a popravováni.",
+   "d": "Císař Decius v roce 250 nařídil, aby všichni obyvatelé říše obětovali císařovu ochrannému božstvu a dostali o tom potvrzení (libellus). Šlo o první pronásledování zasahující celou říši. Mnoho křesťanů odolalo a zemřelo, jiní ale obětovali nebo si potvrzení koupili. Po skončení pronásledování se církev dlouho hádala, zda a jak mají být „odpadlíci“ (lapsi) přijati zpět, což vedlo i k rozkolům."
   },
   {
    "id": "kre6",
@@ -135,7 +140,8 @@
    "c": "moc",
    "t": "Diokleciánovo pronásledování",
    "x": "Poslední a nejtvrdší pronásledování: ničení kostelů a písem, popravy. Končí Galeriovým ediktem tolerance (311).",
-   "e": 311
+   "e": 311,
+   "d": "Pronásledování začalo roku 303 edikty císaře Diokleciána a jeho spoluvládců. Nařizovaly zbourat kostely, spálit posvátné knihy a zbavit křesťany úřadů. Později přibyly vězení a popravy duchovních. Bylo to největší a poslední pronásledování před přijetím křesťanství říší. Ve východní části říše trvalo do Galeriova ediktu tolerance roku 311, na Západě skončilo dřív. Ukázalo se, že křesťanství již nelze násilím vymýtit."
   },
   {
    "id": "kre7",
@@ -144,7 +150,8 @@
    "c": "moc",
    "t": "Milánský edikt",
    "x": "Konstantin a Licinius dávají křesťanům svobodu vyznání. Skončilo období velkých pronásledování.",
-   "s": "https://cs.wikipedia.org/wiki/Milánský_edikt"
+   "s": "https://cs.wikipedia.org/wiki/Milánský_edikt",
+   "d": "Roku 313 se císaři Konstantin a Licinius dohodli v Miláně na společné politice vůči náboženstvím. Křesťané i ostatní kulty dostali svobodu vyznání a církevní majetek zabavený za pronásledování se měl vrátit. Edikt nebyl vyhlášením křesťanství státním náboženstvím, ale konec pronásledování otevřel církvi cestu k majetku, stavbám a vlivu. Konstantin sám později církev výrazně podporoval."
   },
   {
    "id": "kre8",
@@ -152,7 +159,8 @@
    "y": 325,
    "c": "uceni",
    "t": "První nicejský koncil",
-   "x": "Biskupové z celé říše formulují vyznání víry a odmítají učení Aria o Kristu jako stvoření."
+   "x": "Biskupové z celé říše formulují vyznání víry a odmítají učení Aria o Kristu jako stvoření.",
+   "d": "Koncil svolal císař Konstantin roku 325, aby urovnal spor o učení kněze Aria z Alexandrie. Arius tvrdil, že Syn Boží je stvořen a podřízen Otci. Koncil schválil vyznání, podle něhož je Syn „jedné podstaty“ s Otcem. Dohodl se také na společném výpočtu data Velikonoc. Spor tím nekončil, ale nicejské vyznání se stalo základem pozdější křesťanské nauky o Trojici."
   },
   {
    "id": "kre9",
@@ -160,7 +168,8 @@
    "y": 380,
    "c": "moc",
    "t": "Křesťanství státním náboženstvím",
-   "x": "Císař Theodosius I. nařizuje, aby všichni poddaní přijali nicejskou víru. Křesťanství se stává státním náboženstvím Říma."
+   "x": "Císař Theodosius I. nařizuje, aby všichni poddaní přijali nicejskou víru. Křesťanství se stává státním náboženstvím Říma.",
+   "d": "Dekretem „Cunctos populos“ z roku 380 nařídil císař Theodosius I., aby všichni poddaní vyznávali víru podle Říma a Alexandrie, tedy nicejské křesťanství. Další zákony postupně omezovaly pohanské kulty. Z pronásledované menšiny se tak za jedno století stalo státní náboženství. Spolu s mocí ale církev získala i nové konflikty o to, kdo smí církev vést a co je správná víra."
   },
   {
    "id": "kre10",
@@ -168,7 +177,8 @@
    "y": 381,
    "c": "uceni",
    "t": "První konstantinopolský koncil",
-   "x": "Koncil potvrzuje nicejské učení a dává vzniknout Nicejsko-cařihradskému vyznání víry, které se užívá dodnes."
+   "x": "Koncil potvrzuje nicejské učení a dává vzniknout Nicejsko-cařihradskému vyznání víry, které se užívá dodnes.",
+   "d": "Koncil v roce 381 doplnil a potvrdil nicejské učení, hlavně o Duchu svatém. Vznikla tak podoba vyznání víry, kterou dnes nazýváme Nicejsko-cařihradské. Užívá se v bohoslužbách katolíků, pravoslavných i většiny protestantů. Koncil také povýšil biskupa Konstantinopole na druhé místo hned po římském, což se později stalo zdrojem napětí mezi Východem a Západem."
   },
   {
    "id": "kre11",
@@ -176,7 +186,8 @@
    "y": 397,
    "c": "uceni",
    "t": "Kánon Nového zákona",
-   "x": "Synoda v Kartágu potvrzuje seznam 27 spisů Nového zákona, tak jak ho známe dnes."
+   "x": "Synoda v Kartágu potvrzuje seznam 27 spisů Nového zákona, tak jak ho známe dnes.",
+   "d": "Už ve 2. století kolovala řada křesťanských spisů a církve se rozcházely v tom, které z nich mají platit za Písmo. Seznam 27 spisů, jak ho dnes známe, poprvé uvádí velikonoční list biskupa Athanasia z roku 367. Synoda v Kartágu (397) ho potvrdila pro latinskou církev. Východ přijímal některé knihy, například Zjevení, pomaleji. Vznik kánonu je dlouhý proces, nikoli jedno rozhodnutí."
   },
   {
    "id": "kre12",
@@ -184,7 +195,8 @@
    "y": 431,
    "c": "rozkol",
    "t": "Efezský koncil",
-   "x": "Koncil odsuzuje Nestoria, patriarchu Konstantinopole. Jeho stoupenci vytvoří východosyrskou církev, která se šíří až do Číny."
+   "x": "Koncil odsuzuje Nestoria, patriarchu Konstantinopole. Jeho stoupenci vytvoří východosyrskou církev, která se šíří až do Číny.",
+   "d": "Spor vznikl kolem názvu „Boží rodička“ (Theotokos) pro Marii. Konstantinopolský patriarcha Nestorios odmítal, že by Bůh mohl být narozen, a zdůrazňoval odlišnost lidské a božské přirozenosti Krista. Koncil roku 431 jeho učení odsoudil. Nestorovi stoupenci odešli do Persie a později založili východosyrskou církev, která v dalších stoletích šířila křesťanství po Hedvábné stezce až do Číny."
   },
   {
    "id": "kre13",
@@ -192,7 +204,8 @@
    "y": 451,
    "c": "rozkol",
    "t": "Chalkedonský koncil",
-   "x": "Koncil formuluje učení o dvou přirozenostech Krista. Koptská, syrská a arménská církev je odmítají a jdou vlastní cestou."
+   "x": "Koncil formuluje učení o dvou přirozenostech Krista. Koptská, syrská a arménská církev je odmítají a jdou vlastní cestou.",
+   "d": "Koncil roku 451 vyhlásil, že Kristus je jedna osoba ve dvou přirozenostech, božské a lidské. Toto vyjádření se stalo normou pro většinu křesťanů. Odmítly je ale církve v Egyptě, Sýrii, Arménii a Etiopii, dnes označované jako orientální pravoslavné (koptská, syrská, arménská, etiopská). Tato dělení trvají dodnes, i když teologové dnes uznávají, že spor byl z části o slova."
   },
   {
    "id": "kre14",
@@ -201,7 +214,8 @@
    "c": "sireni",
    "t": "Křest franského krále Chlodvíka",
    "x": "Chlodvík přijímá katolickou víru a získává podporu církve. Franská říše se stává oporou západního křesťanství.",
-   "ap": 1
+   "ap": 1,
+   "d": "Chlodvík, král Franků, přijal křest pravděpodobně kolem roku 496 (někteří historici uvádějí až kolem roku 508). Na rozdíl od jiných germánských králů, kteří byli arijci, přijal katolickou víru. Tím získal podporu římských biskupů a obyvatel Galie. Spojenectví franské říše a katolické církve se stalo jedním ze základů středověké Evropy."
   },
   {
    "id": "kre15",
@@ -210,7 +224,8 @@
    "c": "stavba",
    "t": "Klášter Monte Cassino",
    "x": "Benedikt z Nursie zakládá klášter a sepisuje řeholi. Benediktinská pravidla ovlivní celé evropské mnišství.",
-   "ap": 1
+   "ap": 1,
+   "d": "Benedikt z Nursie založil kolem roku 529 klášter na hoře nad městem Cassino v Itálii. Sepsal pro mnichy řeholi, která stojí na modlitbě, práci a poslušnosti („Ora et labora“). Benediktinská pravidla se rozšířila po celé Evropě a kláštery se staly středisky vzdělanosti, opisování knih a zemědělství. Klášter byl několikrát zničen, naposledy za druhé světové války, a vždy znovu postaven."
   },
   {
    "id": "kre16",
@@ -218,7 +233,8 @@
    "y": 597,
    "c": "sireni",
    "t": "Augustin z Canterbury v Anglii",
-   "x": "Papež Řehoř I. vysílá mnicha Augustina, který pokřtí krále Æthelberhta z Kentu a zakládá arcibiskupství v Canterbury."
+   "x": "Papež Řehoř I. vysílá mnicha Augustina, který pokřtí krále Æthelberhta z Kentu a zakládá arcibiskupství v Canterbury.",
+   "d": "Papež Řehoř Veliký vyslal roku 596 mnicha Augustina s asi čtyřiceti druhy do Anglie. V roce 597 přistál v Kentu, kde ho přijal král Æthelberht, jehož manželka byla již křesťankou. Král se nechal pokřtít a Augustin se stal prvním arcibiskupem v Canterbury. Canterbury zůstalo duchovním centrem anglické církve dodnes."
   },
   {
    "id": "kre17",
@@ -226,7 +242,8 @@
    "y": 800,
    "c": "moc",
    "t": "Karel Veliký císařem",
-   "x": "Papež Lev III. korunuje na Vánoce franského krále Karla císařem. Vzniká středověká představa křesťanského císařství."
+   "x": "Papež Lev III. korunuje na Vánoce franského krále Karla císařem. Vzniká středověká představa křesťanského císařství.",
+   "d": "Na Boží hod vánoční roku 800 korunoval papež Lev III. v bazilice sv. Petra franského krále Karla císařem. Šlo o obnovu císařského titulu na Západě po více než tři sta letech. Karel pečoval o církev, vzdělanost a kláštery. Spojení císařské a papežské moci ale vytvořilo trvalý spor o to, kdo je nadřazen. Tím byla připravena půda pro pozdější střety."
   },
   {
    "id": "kre18",
@@ -234,7 +251,8 @@
    "y": 863,
    "c": "sireni",
    "t": "Cyril a Metoděj na Velké Moravě",
-   "x": "Byzantští bratři přinášejí do slovanských zemí hlaholici a slovanskou liturgii. Základ pro křesťanství v Čechách a na Moravě."
+   "x": "Byzantští bratři přinášejí do slovanských zemí hlaholici a slovanskou liturgii. Základ pro křesťanství v Čechách a na Moravě.",
+   "d": "Roku 863 přišli ze Soluně na pozvání knížete Rastislava dva bratři, Konstantin (Cyril) a Metoděj. Přinesli nové písmo (hlaholici), přeložili texty do staroslověnštiny a zavedli slovanskou liturgii. Naráželi na odpor franských duchovních, ale papež slovanské bohoslužby povolil. Jejich dílo ovlivnilo kulturu Slovanů a v Evropě je Cyril a Metoděj uctíváni jako spolupatroni."
   },
   {
    "id": "kre19",
@@ -244,7 +262,8 @@
    "t": "Křest Kyjevské Rusi",
    "x": "Kníže Vladimír Veliký přijímá křesťanství byzantského ritu a nechává pokřtít Kyjevany.",
    "ap": 1,
-   "s": "https://cs.wikipedia.org/wiki/Kyjevská_Rus"
+   "s": "https://cs.wikipedia.org/wiki/Kyjevská_Rus",
+   "d": "Kníže Vladimír Veliký se kolem roku 988 nechal pokřtít podle východního (byzantského) obřadu a oženil se se sestrou byzantského císaře. Poté nechal pokřtít obyvatele Kyjeva, podle tradice v řece Dněpr. Křesťanství přišlo do východoslovanských zemí z Byzance, takže se tam rozvinul pravoslavný obřad, kyrilice a vlastní církevní kultura. Je to jeden ze základů východoevropské identity."
   },
   {
    "id": "kre20",
@@ -252,7 +271,8 @@
    "y": 1054,
    "c": "rozkol",
    "t": "Velké schizma",
-   "x": "Vzájemná exkomunikace římského legáta a cařihradského patriarchy završuje rozdělení církve na západní (katolickou) a východní (pravoslavnou)."
+   "x": "Vzájemná exkomunikace římského legáta a cařihradského patriarchy završuje rozdělení církve na západní (katolickou) a východní (pravoslavnou).",
+   "d": "Rozdělení církve na západní a východní nevzniklo v jednom okamžiku. Roku 1054 papežský legát Humbert položil v Hagia Sofia listinu s exkomunikací patriarchy Michaela Kerularia, a ten odpověděl stejně. Příčin bylo více: spor o papežský primát, o dodatek „a Syna“ (filioque) k vyznání víry i odlišné obřady a jazyk. Úplné vzájemné odloučení se utvrdilo až v následujících stoletích, zejména po dobytí Konstantinopole roku 1204. Vzájemné exkomunikace byly zrušeny roku 1965."
   },
   {
    "id": "kre21",
@@ -260,7 +280,8 @@
    "y": 1077,
    "c": "moc",
    "t": "Cesta do Canossy",
-   "x": "Císař Jindřich IV. stojí tři dny před branou hradu a prosí papeže Řehoře VII. o zrušení klatby. Spor o investituru."
+   "x": "Císař Jindřich IV. stojí tři dny před branou hradu a prosí papeže Řehoře VII. o zrušení klatby. Spor o investituru.",
+   "d": "Papež Řehoř VII. chtěl zabránit tomu, aby světští panovníci jmenovali biskupy (spor o investituru). Když ho roku 1076 císař Jindřich IV. prohlásil za sesazeného, papež ho vyobcoval z církve. Na začátku roku 1077 stál Jindřich několik dnů v zimě před hradem Canossa a žádal o odpuštění. Papež mu je dal. Událost se stala symbolem papežské moci, ale boj o investituru pokračoval až do Wormského konkordátu roku 1122."
   },
   {
    "id": "kre22",
@@ -268,7 +289,8 @@
    "y": 1095,
    "c": "moc",
    "t": "Vyhlášení první křížové výpravy",
-   "x": "Papež Urban II. na koncilu v Clermontu vyzývá k tažení do Svaté země. Křižáci roku 1099 dobývají Jeruzalém."
+   "x": "Papež Urban II. na koncilu v Clermontu vyzývá k tažení do Svaté země. Křižáci roku 1099 dobývají Jeruzalém.",
+   "d": "Na koncilu v Clermontu v listopadu 1095 vyzval papež Urban II. rytíře k tažení na pomoc Byzanci a k osvobození Jeruzaléma. Výzvu přijaly tisíce lidí a roku 1099 křižáci Jeruzalém dobyli. Vznikly křižácké státy na Blízkém východě. Výpravy provázelo násilí, například vyvražděné židovské obce v Porýní. Další křížové výpravy trvaly až do 13. století a zanechaly trvalou stopu ve vztazích mezi křesťany a muslimy."
   },
   {
    "id": "kre23",
@@ -276,7 +298,8 @@
    "y": 1204,
    "c": "moc",
    "t": "Dobytí Konstantinopole křižáky",
-   "x": "Čtvrtá křížová výprava se obrací proti křesťanskému Konstantinopoli a vyplení ho. Východní a západní církev se dále odcizují."
+   "x": "Čtvrtá křížová výprava se obrací proti křesťanskému Konstantinopoli a vyplení ho. Východní a západní církev se dále odcizují.",
+   "d": "Čtvrtá křížová výprava se původně měla vydat do Egypta, ale kvůli dluhům vůči Benátkám a politickým intrikám skončila u Konstantinopole. V dubnu 1204 křižáci město dobyli a několik dní plenili, přitom ukradli množství relikvií a uměleckých děl. Vznikla tzv. Latinská říše, která trvala do roku 1261. Událost hluboce poškodila vztahy mezi západními a východními křesťany a oslabila Byzanc."
   },
   {
    "id": "kre24",
@@ -284,7 +307,8 @@
    "y": 1209,
    "c": "zaklad",
    "t": "Řehole svatého Františka",
-   "x": "Papež Innocent III. ústně schvaluje řeholi Františka z Assisi. Vzniká řád chudých bratří, františkáni."
+   "x": "Papež Innocent III. ústně schvaluje řeholi Františka z Assisi. Vzniká řád chudých bratří, františkáni.",
+   "d": "František z Assisi se kolem roku 1206 zřekl bohatství svého otce a začal žít v chudobě a kázat. Kolem sebe shromáždil učedníky a roku 1209 (nebo 1210) získal od papeže Innocence III. ústní schválení jednoduché řehole. Františkáni žili z almužen, zdůrazňovali pokoru a lásku ke stvoření. Řád se rychle rozšířil po celé Evropě a stal se jedním z nejvlivnějších žebravých řádů."
   },
   {
    "id": "kre25",
@@ -292,7 +316,8 @@
    "y": 1215,
    "c": "uceni",
    "t": "Čtvrtý lateránský koncil",
-   "x": "Koncil stanovuje roční zpověď a přijímání a formuluje nauku o přepodstatnění. Jeden z nejvýznamnějších středověkých koncilů."
+   "x": "Koncil stanovuje roční zpověď a přijímání a formuluje nauku o přepodstatnění. Jeden z nejvýznamnějších středověkých koncilů.",
+   "d": "Koncil svolaný roku 1215 papežem Innocencem III. byl největším shromážděním středověké církve. Zavedl povinnost každého křesťana jednou ročně se zpovídat a přijmout eucharistii. Formuloval nauku o přepodstatnění (proměnění chleba a vína v tělo a krev Kristovu), přijal opatření proti herezím a omezil zakládání nových řádů. Jeho ustanovení utvářela církevní život na řadu století."
   },
   {
    "id": "kre26",
@@ -301,7 +326,8 @@
    "c": "uceni",
    "t": "Tomáš Akvinský: Summa theologiae",
    "x": "Dominikán Tomáš Akvinský začíná psát velké shrnutí teologie, které spojuje víru s Aristotelovou filosofií.",
-   "ap": 1
+   "ap": 1,
+   "d": "Dominikán Tomáš Akvinský začal kolem roku 1265 psát Sumu teologickou, rozsáhlé dílo, které se snaží systematicky vysvětlit křesťanskou víru s oporou v rozumu. Využil přitom filosofii Aristotelovu, která byla tehdy znovu objevena. Dílo zůstalo nedokončené, protože Tomáš v roce 1274 zemřel. Stalo se základem scholastické teologie a katolická církev ho dodnes cení jako jednoho ze svých největších učitelů."
   },
   {
    "id": "kre27",
@@ -310,7 +336,8 @@
    "c": "rozkol",
    "t": "Západní schizma",
    "x": "Církev má dva a později tři papeže. Spor končí až Kostnickým koncilem.",
-   "e": 1417
+   "e": 1417,
+   "d": "Po návratu papežů z Avignonu do Říma (1377) se roku 1378 volba papeže stala sporem: kardinálové zvolili Urbana VI., ale pak se rozhodli pro Klementa VII. Ten usedl v Avignonu. Církev se rozdělila a evropské státy se stavěly na jednu či druhou stranu. Později byl zvolen i třetí papež. Řešení přinesl až Kostnický koncil (1414 až 1418), který všechny tři sesadil nebo přiměl k odstoupení a zvolil Martina V."
   },
   {
    "id": "kre28",
@@ -318,7 +345,8 @@
    "y": 1415,
    "c": "rozkol",
    "t": "Upálení mistra Jana Husa",
-   "x": "Kostnický koncil odsuzuje a nechává upálit českého reformátora. Následují husitské války."
+   "x": "Kostnický koncil odsuzuje a nechává upálit českého reformátora. Následují husitské války.",
+   "d": "Jan Hus, kazatel a rektor pražské univerzity, kritizoval mravní úpadek církve a hlásal důraz na Písmo. V roce 1414 odjel na Kostnický koncil, kde byl uvězněn a po soudu odsouzen jako kacíř. Odmítl odvolat učení, které podle svého svědomí nemohl, a 6. července 1415 byl upálen. Jeho smrt vyvolala v Čechách rozhořčení a husitské války. Hus se stal symbolem pravdy a svědomí v českých dějinách."
   },
   {
    "id": "kre29",
@@ -327,7 +355,8 @@
    "c": "uceni",
    "t": "Gutenbergova Bible",
    "x": "Johannes Gutenberg v Mohuči tiskne Bibli pohyblivými literami. Kniha se stává dostupnou mnohem širšímu okruhu lidí.",
-   "ap": 1
+   "ap": 1,
+   "d": "Johannes Gutenberg z Mohuče vynalezl okolo roku 1450 tisk pohyblivými literami. Prvním velkým tiskem byla latinská Bible, dokončená kolem roku 1455. Tištěné knihy byly levnější než rukopisy, a proto se Písmo i další spisy dostávaly k mnohem většímu počtu lidí. Tisk výrazně napomohl šíření reformace, protože Lutherovy spisy se mohly rychle rozšířit."
   },
   {
    "id": "kre30",
@@ -336,7 +365,8 @@
    "c": "rozkol",
    "t": "Lutherových 95 tezí",
    "x": "Martin Luther vystupuje proti odpustkům a spouští reformaci. Vznikají protestantské církve.",
-   "s": "https://cs.wikipedia.org/wiki/Reformace"
+   "s": "https://cs.wikipedia.org/wiki/Reformace",
+   "d": "Martin Luther, augustiniánský mnich a profesor ve Wittenbergu, napsal v říjnu 1517 devadesát pět tezí proti prodeji odpustků. Podle tradice je přibil na dveře zámeckého kostela, jisté je, že je rozeslal. Teze se díky tisku rozšířily po celé Evropě. Luther později učil, že člověk je ospravedlněn z víry, ne ze skutků, a že autoritou je Písmo. Roku 1521 byl vyobcován z církve a započal reformaci, z níž vznikly protestantské církve."
   },
   {
    "id": "kre31",
@@ -344,7 +374,8 @@
    "y": 1534,
    "c": "rozkol",
    "t": "Anglikánská církev",
-   "x": "Anglický parlament vyhlašuje Jindřicha VIII. hlavou církve v Anglii. Rozchod s Římem."
+   "x": "Anglický parlament vyhlašuje Jindřicha VIII. hlavou církve v Anglii. Rozchod s Římem.",
+   "d": "Král Jindřich VIII. chtěl zrušit své manželství s Kateřinou Aragonskou, ale papež s tím nesouhlasil. Roku 1534 vydal anglický parlament Zákon o svrchovanosti, který prohlásil krále za nejvyšší hlavu církve v Anglii. Následovalo rušení klášterů. Teologie se postupně posouvala k reformaci za vlády Eduarda VI. a Alžběty I. Vznikla církev, která mísí katolické a protestantské prvky."
   },
   {
    "id": "kre32",
@@ -352,7 +383,8 @@
    "y": 1536,
    "c": "rozkol",
    "t": "Kalvínova Institutio",
-   "x": "Jan Kalvín v Basileji vydává hlavní spis reformované teologie. Z Ženevy se stává středisko reformace."
+   "x": "Jan Kalvín v Basileji vydává hlavní spis reformované teologie. Z Ženevy se stává středisko reformace.",
+   "d": "Jan Kalvín, francouzský reformátor, vydal v Basileji roku 1536 první verzi spisu „Institutio christianae religionis“ (Zásady křesťanského náboženství). Později jej několikrát rozšířil. V Ženevě pak vybudoval vzorovou reformovanou obec. Kalvínovo učení zdůrazňuje svrchovanost Boží a předurčení. Reformované církve se rozšířily do Švýcarska, Nizozemska, Skotska, Uher a částečně do Čech."
   },
   {
    "id": "kre33",
@@ -360,7 +392,8 @@
    "y": 1540,
    "c": "sireni",
    "t": "Řád jezuitů",
-   "x": "Papež Pavel III. schvaluje řád Ignáce z Loyoly. Jezuité se stávají misionáři i učiteli po celém světě."
+   "x": "Papež Pavel III. schvaluje řád Ignáce z Loyoly. Jezuité se stávají misionáři i učiteli po celém světě.",
+   "d": "Ignác z Loyoly, bývalý voják, založil se společníky roku 1534 v Paříži společenství, které papež Pavel III. roku 1540 potvrdil jako Tovaryšstvo Ježíšovo. Jezuité se vyznačovali přísnou disciplínou, vzděláním a ochotou jít kamkoli, kam je papež pošle. Zakládali školy a univerzity a vysílali misionáře do Indie, Japonska, Číny a Ameriky. V protireformaci hráli klíčovou roli, mimo jiné i v českých zemích."
   },
   {
    "id": "kre34",
@@ -369,7 +402,8 @@
    "c": "rozkol",
    "t": "Tridentský koncil",
    "x": "Katolická církev odpovídá na reformaci: upřesňuje nauku, reformuje kněžství a zakládá semináře.",
-   "e": 1563
+   "e": 1563,
+   "d": "Koncil v Tridentu (1545 až 1563) byl odpovědí katolické církve na reformaci. Vymezil katolickou nauku, potvrdil sedm svátostí a výklad Písma i tradice. Zavedl semináře pro výchovu kněží, přikázal biskupům trvalé bydliště ve svých diecézích a omezil zneužívání odpustků. Jeho rozhodnutí určila podobu katolické církve na čtyři sta let, až do druhého vatikánského koncilu."
   },
   {
    "id": "kre35",
@@ -377,7 +411,8 @@
    "y": 1555,
    "c": "moc",
    "t": "Augsburský mír",
-   "x": "Říšská knížata mohou zvolit katolictví nebo luterství pro své země (zásada cuius regio, eius religio)."
+   "x": "Říšská knížata mohou zvolit katolictví nebo luterství pro své země (zásada cuius regio, eius religio).",
+   "d": "Po dlouhých sporech mezi katolickými a luterskými knížaty se roku 1555 dohodli na zásadě „cuius regio, eius religio“, tedy čí země, toho náboženství. Každý panovník v Německé říši si mohl zvolit mezi katolictvím a luterstvím a jeho poddaní se museli přizpůsobit nebo se vystěhovat. Kalvinisté zahrnuti nebyli. Mír uklidnil poměry, ale nevyřešil základní napětí, které vyústilo roku 1618 v třicetiletou válku."
   },
   {
    "id": "kre36",
@@ -385,7 +420,8 @@
    "y": 1648,
    "c": "moc",
    "t": "Vestfálský mír",
-   "x": "Končí třicetiletá válka. Smlouvy uznávají vedle katolíků a luteránů také kalvinisty."
+   "x": "Končí třicetiletá válka. Smlouvy uznávají vedle katolíků a luteránů také kalvinisty.",
+   "d": "Třicetiletá válka (1618 až 1648) začala v Čechách a postupně zasáhla většinu Evropy. Mírové smlouvy v Münsteru a Osnabrücku roku 1648 ji ukončily. Potvrdily augsburskou zásadu a rozšířily ji na kalvinisty. Zároveň zvýšily suverenitu jednotlivých států. Vestfálský mír je považován za počátek moderního systému suverénních států v Evropě. Náboženská válka už nebyla hlavním způsobem řešení sporů."
   },
   {
    "id": "kre37",
@@ -393,7 +429,8 @@
    "y": 1792,
    "c": "sireni",
    "t": "Moderní misijní hnutí",
-   "x": "William Carey zakládá Baptistickou misijní společnost. Protestantské misie míří do Indie, Afriky a na tichomořské ostrovy."
+   "x": "William Carey zakládá Baptistickou misijní společnost. Protestantské misie míří do Indie, Afriky a na tichomořské ostrovy.",
+   "d": "V roce 1792 založil anglický baptista William Carey Baptistickou misijní společnost a o rok později odjel do Indie. Jeho příklad inspiroval vznik dalších misijních společností. Protestantské církve začaly vysílat misionáře, kteří překládali Bibli do mnoha jazyků, zakládali školy, nemocnice a církve. Misie často souvisely s koloniální expanzí, což vyvolává debaty dodnes. Díky nim však vznikla velká křesťanská společenství v Africe a Asii."
   },
   {
    "id": "kre38",
@@ -402,7 +439,8 @@
    "c": "uceni",
    "t": "První vatikánský koncil",
    "x": "Koncil vyhlašuje dogma o neomylnosti papeže v otázkách víry a mravů.",
-   "e": 1870
+   "e": 1870,
+   "d": "Koncil svolaný papežem Piem IX. se konal v letech 1869 až 1870. Vyhlásil dogma o papežské neomylnosti: papež je neomylný, když ex cathedra, tedy z úřadu nejvyššího učitele, vyhlašuje nauku o víře a mravech. Rozhodnutí vyvolalo odpor části katolíků, z nichž někteří vytvořili starokatolické církve. Koncil byl přerušen vypuknutím prusko-francouzské války a obsazením Říma."
   },
   {
    "id": "kre39",
@@ -410,7 +448,8 @@
    "y": 1906,
    "c": "rozkol",
    "t": "Letniční hnutí",
-   "x": "Probuzenecké shromáždění v ulici Azusa v Los Angeles dává vzniknout letničním církvím, nejrychleji rostoucí větvi křesťanství."
+   "x": "Probuzenecké shromáždění v ulici Azusa v Los Angeles dává vzniknout letničním církvím, nejrychleji rostoucí větvi křesťanství.",
+   "d": "V letech 1906 až 1909 se v misijním domě na ulici Azusa v Los Angeles scházeli lidé k modlitbám. Vyprávěli o zkušenostech duchovního křtu, mluvení jazyky a uzdravení. Vedl je kazatel William Seymour. Hnutí se rychle rozšířilo po světě a vytvořilo letniční a později charismatické církve. Dnes jde o nejrychleji rostoucí proud křesťanství, zejména v Latinské Americe, Africe a Asii."
   },
   {
    "id": "kre40",
@@ -418,7 +457,8 @@
    "y": 1948,
    "c": "uceni",
    "t": "Ekumenická rada církví",
-   "x": "V Amsterdamu vzniká Světová rada církví jako společné fórum protestantských a pravoslavných církví."
+   "x": "V Amsterdamu vzniká Světová rada církví jako společné fórum protestantských a pravoslavných církví.",
+   "d": "V roce 1948 se v Amsterdamu sešli zástupci více než stovky církví a založili Světovou radu církví. Po zkušenostech z války a rozdělení církví se snažili o spolupráci. Zapojily se protestantské, anglikánské a pravoslavné církve, katolická církev není členem, ale spolupracuje. Rada pořádá společná setkání, sociální projekty a teologický dialog."
   },
   {
    "id": "kre41",
@@ -428,7 +468,8 @@
    "t": "Druhý vatikánský koncil",
    "x": "Katolická církev zavádí bohoslužbu v národních jazycích a otevírá se dialogu s jinými církvemi i náboženstvími.",
    "e": 1965,
-   "s": "https://cs.wikipedia.org/wiki/Druhý_vatikánský_koncil"
+   "s": "https://cs.wikipedia.org/wiki/Druhý_vatikánský_koncil",
+   "d": "Koncil svolal papež Jan XXIII. a konal se v letech 1962 až 1965. Zúčastnilo se ho přes dvě tisíce biskupů. Povolil bohoslužbu v národních jazycích, posílil úlohu laiků a biskupů, uznal náboženskou svobodu a otevřel se dialogu s jinými církvemi a náboženstvími, včetně judaismu. Změny zásadně ovlivnily podobu katolické církve a dodnes se o jejich výkladu vedou diskuse."
   },
   {
    "id": "kre42",
@@ -436,7 +477,8 @@
    "y": 2013,
    "c": "moc",
    "t": "Papež František",
-   "x": "Jorge Bergoglio se stává prvním papežem z Latinské Ameriky a prvním jezuitou na stolci svatého Petra."
+   "x": "Jorge Bergoglio se stává prvním papežem z Latinské Ameriky a prvním jezuitou na stolci svatého Petra.",
+   "d": "Dne 13. března 2013 byl po odstoupení Benedikta XVI. zvolen kardinál Jorge Mario Bergoglio z Argentiny, který přijal jméno František. Je prvním papežem z Latinské Ameriky a prvním jezuitou na papežském stolci. Zdůrazňuje chudobu, solidaritu s uprchlíky a péči o životní prostředí (encyklika Laudato si). Jeho pontifikát je provázen diskusemi o reformě církve a jejím poslání."
   },
   {
    "id": "isl1",
@@ -445,7 +487,8 @@
    "c": "zaklad",
    "t": "Narození Mohameda",
    "x": "V Mekce se narodil Muhammad ibn Abdalláh z kmene Kurajšovců, budoucí prorok islámu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle tradice se Mohamed narodil kolem roku 570 v Mekce v kmeni Kurajšovců. Osiřel brzy, vychovával ho děd a pak strýc Abú Tálib. Jako mladý muž pracoval v obchodě a byl znám jako poctivý. V pětadvaceti letech se oženil s vdovou Chadídžou. Zdroje o jeho raném životě jsou pozdější a nejsou vždy jisté."
   },
   {
    "id": "isl2",
@@ -454,7 +497,8 @@
    "c": "zaklad",
    "t": "První zjevení",
    "x": "V jeskyni Hira u Mekky podle tradice přijímá Mohamed první verše Koránu od anděla Džibríla.",
-   "ap": 1
+   "ap": 1,
+   "d": "Mohamed trávil čas v samotě v jeskyni Hira nad Mekkou. Podle islámské tradice mu tam kolem roku 610 zjevil anděl Džibríl první verše Koránu (začínají slovem „Čti!“). Zpočátku se svěřil jen nejbližším, mezi prvními přijali jeho poselství manželka Chadídža a bratranec Alí. Později začal veřejně vyzývat k uctívání jediného Boha, čímž se dostal do sporu s mekkánskou elitou."
   },
   {
    "id": "isl3",
@@ -463,7 +507,8 @@
    "c": "zaklad",
    "t": "Hidžra",
    "x": "Mohamed se stoupenci odchází z Mekky do Medíny. Rok 622 je začátkem islámského letopočtu.",
-   "s": "https://cs.wikipedia.org/wiki/Hidžra"
+   "s": "https://cs.wikipedia.org/wiki/Hidžra",
+   "d": "Mekkánští vládci stále víc pronásledovali první muslimy. Roku 622 odešel Mohamed se svými stoupenci do města Jathrib, později nazvaného Medína (město proroka). Tam vytvořil společenství (umma) s vlastními pravidly. Odchod se nazývá hidžra a rok 622 je začátkem islámského letopočtu. Medína se stala středem rodícího se islámského státu."
   },
   {
    "id": "isl4",
@@ -471,7 +516,8 @@
    "y": 624,
    "c": "moc",
    "t": "Bitva u Badru",
-   "x": "První velké vítězství muslimů nad mekkánskými Kurajšovci. V tradici je považováno za znamení Boží přízně."
+   "x": "První velké vítězství muslimů nad mekkánskými Kurajšovci. V tradici je považováno za znamení Boží přízně.",
+   "d": "V březnu 624 se u studní Badr střetlo asi tři sta muslimů s mnohem početnějším mekkánským vojskem. Muslimové zvítězili. V islámské tradici je to znamení Boží přízně a zlomový okamžik, který upevnil postavení Mohameda v Medíně. Následovaly další střety, mimo jiné bitva u Uhudu (625), kde Mekkáni vyhráli."
   },
   {
    "id": "isl5",
@@ -479,7 +525,8 @@
    "y": 630,
    "c": "moc",
    "t": "Dobytí Mekky",
-   "x": "Muslimové vstupují do Mekky téměř bez boje. Mohamed odstraňuje z Kaaby modly a Mekka se stává středem islámu."
+   "x": "Muslimové vstupují do Mekky téměř bez boje. Mohamed odstraňuje z Kaaby modly a Mekka se stává středem islámu.",
+   "d": "Po roce 628, kdy byla uzavřena dohoda mezi Mohamedem a Mekkou, došlo roku 630 k jejímu porušení. Mohamed s desetitisícovým vojskem vstoupil do Mekky téměř bez boje a obyvatelům dal milost. Zničil modly v Kaabě a svatyně se stala svatým místem islámu. Většina Kurajšovců islám přijala. Mekka od té doby zůstala cílem poutí."
   },
   {
    "id": "isl6",
@@ -487,7 +534,8 @@
    "y": 632,
    "c": "moc",
    "t": "Smrt proroka, první chalífa",
-   "x": "Po Mohamedově smrti je prvním chalífou zvolen Abú Bakr. Spor o nástupnictví později rozdělí islám na sunnity a šíity."
+   "x": "Po Mohamedově smrti je prvním chalífou zvolen Abú Bakr. Spor o nástupnictví později rozdělí islám na sunnity a šíity.",
+   "d": "Mohamed zemřel v roce 632 v Medíně. Hned nato vznikl spor o to, kdo má vést obec. Medínská shromáždění zvolila Abú Bakra, nejbližšího přítele proroka, prvním chalífou (nástupcem). Část muslimů věřila, že měl být nástupcem Alí, Mohamedův bratranec a zeť. Z tohoto sporu se později vyvinulo rozdělení na sunnity a šíity."
   },
   {
    "id": "isl7",
@@ -496,7 +544,8 @@
    "c": "uceni",
    "t": "Sepsání Koránu",
    "x": "Za chalífy Uthmána je pořízeno jednotné znění Koránu a zničeny odlišné opisy.",
-   "ap": 1
+   "ap": 1,
+   "d": "Koránské verše byly po Mohamedově smrti předávány ústně a částečně zapsány. Za prvního chalífy Abú Bakra byly shromážděny, za třetího chalífy Uthmána kolem roku 650 vznikl jednotný text. Z něj se pořídily opisy do hlavních měst a odlišné verze byly zničeny. Korán má 114 súr a muslimové ho považují za doslovné slovo Boží. Text se od té doby dochoval prakticky beze změny."
   },
   {
    "id": "isl8",
@@ -504,7 +553,8 @@
    "y": 656,
    "c": "rozkol",
    "t": "Zavražděn chalífa Uthmán",
-   "x": "Vraždou třetího chalífy a následnou bitvou velbloudů začíná první občanská válka (fitna) mezi muslimy."
+   "x": "Vraždou třetího chalífy a následnou bitvou velbloudů začíná první občanská válka (fitna) mezi muslimy.",
+   "d": "Třetí chalífa Uthmán byl obviňován z nadržování svému rodu a roku 656 ho v Medíně zavraždili vzbouřenci. Novým chalífou se stal Alí, ale část muslimů, vedená Áišou a Muawíjou, požadovala potrestání vrahů. Došlo k bitvě u velbloudů a později k bitvě u Siffínu. Toto období občanské války, zvané první fitna, hluboce poznamenalo islámské společenství."
   },
   {
    "id": "isl9",
@@ -512,7 +562,8 @@
    "y": 661,
    "c": "moc",
    "t": "Umajjovský chalífát",
-   "x": "Muawíja zakládá dynastii s hlavním městem v Damašku. Říše se rozpíná od Španělska po Indii."
+   "x": "Muawíja zakládá dynastii s hlavním městem v Damašku. Říše se rozpíná od Španělska po Indii.",
+   "d": "Po zavraždění Alího se roku 661 stal chalífou Muawíja, který založil dynastii Umajjovců s hlavním městem v Damašku. Říše se rozšířila od Španělska po Indii. Arabština se stala úředním jazykem a vznikly první velké stavby, například Dóm na skále. Umajjovce kritizovali ti, kdo je považovali za příliš světské. V roce 750 byli svrženi Abbásovci."
   },
   {
    "id": "isl10",
@@ -520,7 +571,8 @@
    "y": 680,
    "c": "rozkol",
    "t": "Bitva u Karbalá",
-   "x": "Husajn, vnuk proroka, je zabit vojskem Umajjovců. Událost se stává základem šíitského vyznání a smutečního svátku Ášúrá."
+   "x": "Husajn, vnuk proroka, je zabit vojskem Umajjovců. Událost se stává základem šíitského vyznání a smutečního svátku Ášúrá.",
+   "d": "Husajn, vnuk Mohamedův a syn Alího, odmítl uznat Umajjovce a s hrstkou stoupenců se vydal do Iráku. Dne 10. muharramu roku 61 (říjen 680) ho u Karbalá obklíčilo a pobilo umajjovské vojsko. Šíité tuto událost každoročně připomínají svátkem Ášúrá, truchlením a poutí do Karbalá. Událost se stala symbolem oběti proti nespravedlnosti a zásadním prvkem šíitské identity."
   },
   {
    "id": "isl11",
@@ -528,7 +580,8 @@
    "y": 691,
    "c": "stavba",
    "t": "Dóm na skále",
-   "x": "Umajjovský chalífa Abd al-Malik dokončuje v Jeruzalémě jednu z nejstarších monumentálních staveb islámu."
+   "x": "Umajjovský chalífa Abd al-Malik dokončuje v Jeruzalémě jednu z nejstarších monumentálních staveb islámu.",
+   "d": "Umajjovský chalífa Abd al-Malik dal roku 691 dokončit v Jeruzalémě na Chrámové hoře osmiboký chrám s pozlacenou kupolí. Stojí nad skálou, z níž podle tradice vystoupil Mohamed na nebesa (noční cesta). Je to jedna z nejstarších dochovaných monumentálních staveb islámu a ikona Jeruzaléma. Stavba není mešitou, ale svatyní; vedle stojí mešita al-Aksá."
   },
   {
    "id": "isl12",
@@ -536,7 +589,8 @@
    "y": 711,
    "c": "sireni",
    "t": "Dobytí Hispánie",
-   "x": "Berberský vojevůdce Tárik ibn Zijád překračuje Gibraltar. Většina Pyrenejského poloostrova se na staletí stává muslimskou."
+   "x": "Berberský vojevůdce Tárik ibn Zijád překračuje Gibraltar. Většina Pyrenejského poloostrova se na staletí stává muslimskou.",
+   "d": "V roce 711 překročil berberský velitel Tárik ibn Zijád s vojskem Gibraltar (název pochází od jeho jména: Džabal Tárik). Porazil vizigótského krále Rodriga a za několik let ovládl většinu Pyrenejského poloostrova. Vznikl Al-Andalus, území s vlastní kulturou, ve kterém spolu žili muslimové, křesťané a židé. Reconquista, znovudobývání křesťany, pak trvala až do roku 1492."
   },
   {
    "id": "isl13",
@@ -544,7 +598,8 @@
    "y": 732,
    "c": "moc",
    "t": "Bitva u Tours a Poitiers",
-   "x": "Franský vládce Karel Martel zastavuje muslimské vojsko ve střední Francii. Dál na sever islám nepronikl."
+   "x": "Franský vládce Karel Martel zastavuje muslimské vojsko ve střední Francii. Dál na sever islám nepronikl.",
+   "d": "V říjnu 732 se mezi Tours a Poitiers střetlo franské vojsko Karla Martela s muslimským oddílem z Al-Andalusu. Frankové zvítězili a muslimský předvoj ustoupil. Starší výklady v této bitvě viděly záchranu Evropy, moderní historici ji hodnotí střízlivěji jako velkou výpravu za kořistí. Pro Karla Martela šlo o prestiž, na které stavěl jeho vnuk Karel Veliký."
   },
   {
    "id": "isl14",
@@ -552,7 +607,8 @@
    "y": 750,
    "c": "moc",
    "t": "Abbásovský chalífát",
-   "x": "Abbásovci svrhávají Umajjovce a přenášejí těžiště říše na východ."
+   "x": "Abbásovci svrhávají Umajjovce a přenášejí těžiště říše na východ.",
+   "d": "V letech 747 až 750 vedla vzpoura z východu Íránu (Chorásánu) k pádu Umajjovců. Chalífou se stal as-Saffáh, z rodu Abbásovců, potomků Mohamedova strýce. Hlavním městem se stal Bagdád a říše se kulturně otevřela perské tradici. Abbásovci vládli nominálně až do roku 1258, ale od 10. století měli reálnou moc spíše místní vládci. Zlatý věk trval v 8. a 9. století."
   },
   {
    "id": "isl15",
@@ -560,7 +616,8 @@
    "y": 762,
    "c": "stavba",
    "t": "Založení Bagdádu",
-   "x": "Chalífa al-Mansúr zakládá kruhové město, které se stane střediskem islámského světa."
+   "x": "Chalífa al-Mansúr zakládá kruhové město, které se stane střediskem islámského světa.",
+   "d": "Chalífa al-Mansúr založil roku 762 na řece Tigris město, které nazval Dar as-Salám (Domov míru). Mělo kruhový půdorys s paláci a mešitou uprostřed. Díky poloze na obchodních trasách rychle rostlo a koncem 9. století mělo snad víc než půl milionu obyvatel. Stalo se střediskem obchodu, vědy a umění a po staletí patřilo k největším městům světa."
   },
   {
    "id": "isl16",
@@ -570,7 +627,8 @@
    "t": "Čtyři sunnitské právní školy",
    "x": "V životě Abú Hanífy, Málika, Šáfiího a Ibn Hanbala vznikají čtyři školy práva (fiqh), které sunnité dodržují dodnes.",
    "e": 855,
-   "ap": 1
+   "ap": 1,
+   "d": "V 8. a 9. století vznikaly systematické soubory práva (fiqh), které vykládaly Korán a sunnu. Čtyři z nich se staly hlavními a nesou jména svých zakladatelů: Abú Hanífa (zemřel 767), Málik ibn Anas (795), aš-Šáfiʻí (820) a Ahmad ibn Hanbal (855). Dodnes se liší v detailech, například v postavení zvyku nebo analogie. Sunnité se řídí kterýmkoli z nich a uznávají jejich rovnocennost."
   },
   {
    "id": "isl17",
@@ -579,7 +637,8 @@
    "c": "uceni",
    "t": "Dům moudrosti",
    "x": "Za chalífy al-Mamúna se v Bagdádu překládá řecká, perská a indická věda. Zlatý věk islámské vědy.",
-   "ap": 1
+   "ap": 1,
+   "d": "Za chalífy al-Mamúna (813 až 833) se v Bagdádu rozvinulo hnutí překládání řeckých, perských a indických děl do arabštiny. Dům moudrosti byl knihovnou a překladatelským střediskem. Učenci jako al-Chwárizmí (od jehož jména pochází algoritmus), al-Kindí a Hunajn ibn Ishák rozvíjeli matematiku, astronomii a lékařství. Arabské překlady později pomohly vrátit antickou vědu do Evropy."
   },
   {
    "id": "isl18",
@@ -588,7 +647,8 @@
    "c": "uceni",
    "t": "Sbírky hadísů",
    "x": "Al-Buchárí a Muslim sepisují sbírky výroků a činů proroka, které sunnité považují za druhý zdroj práva po Koránu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Hadísy jsou výroky a skutky proroka Mohameda. Ve 9. století se sunnitští učenci pustili do jejich sbírání a ověřování podle řetězce přenosu. Nejuznávanější jsou sbírky al-Buchárího (zemřel 870) a Muslima (zemřel 875). Spolu s dalšími čtyřmi tvoří šest kanonických sbírek. Šíité mají vlastní sbírky. Hadísy jsou po Koránu druhým pramenem islámského práva a víry."
   },
   {
    "id": "isl19",
@@ -596,7 +656,8 @@
    "y": 909,
    "c": "rozkol",
    "t": "Fátimovský chalífát",
-   "x": "Šíitští ismáílíté zakládají v Tunisku vlastní chalífát a později Káhiru (969)."
+   "x": "Šíitští ismáílíté zakládají v Tunisku vlastní chalífát a později Káhiru (969).",
+   "d": "Šíitská ismáílitská dynastie Fátimovců se prohlásila roku 909 v Tunisku za chalífát, v opozici proti sunnitským Abbásovcům. Roku 969 dobyla Egypt a založila Káhiru, která se stala hlavním městem. Fátimovci založili mešitu a učiliště al-Azhar. Vládli do roku 1171, kdy je svrhl Saladin. Jejich říše byla jedním z nejbohatších států středověku."
   },
   {
    "id": "isl20",
@@ -604,7 +665,8 @@
    "y": 929,
    "c": "moc",
    "t": "Córdobský chalífát",
-   "x": "Abd ar-Rahmán III. se v Córdobě prohlašuje chalífou. Al-Andalus zažívá vrchol moci a kultury."
+   "x": "Abd ar-Rahmán III. se v Córdobě prohlašuje chalífou. Al-Andalus zažívá vrchol moci a kultury.",
+   "d": "Umajjovský emír Abd ar-Rahmán III. se v Córdobě roku 929 prohlásil chalífou, čímž vyslovil nárok na vedení muslimů a nezávislost na Bagdádu. Córdoba se stala jedním z největších a nejkrásnějších měst Evropy, s knihovnami, nemocnicemi a velkou mešitou. Chalífát se rozpadl v roce 1031 na menší království (taify)."
   },
   {
    "id": "isl21",
@@ -612,7 +674,8 @@
    "y": 970,
    "c": "stavba",
    "t": "Univerzita al-Azhar",
-   "x": "Fátimovci zakládají v Káhiře mešitu s učilištěm. Al-Azhar je dodnes jedním z hlavních center sunnitského učení."
+   "x": "Fátimovci zakládají v Káhiře mešitu s učilištěm. Al-Azhar je dodnes jedním z hlavních center sunnitského učení.",
+   "d": "Fátimovci dali roku 970 v nově založené Káhiře vystavět mešitu, jejíž název se vykládá jako „zářící“ (podle Fátimy). Brzy v ní vzniklo učiliště. Po pádu Fátimovců se stala sunnitským centrem a existuje dodnes. Je často označována za jednu z nejstarších univerzit, které fungují nepřetržitě. Dnes učí náboženské i světské obory a její učenci jsou vlivnými hlasy sunnitského islámu."
   },
   {
    "id": "isl22",
@@ -620,7 +683,8 @@
    "y": 1071,
    "c": "moc",
    "t": "Bitva u Manzikertu",
-   "x": "Seldžucký sultán porazil byzantské vojsko a otevřel Anatolii turkickým kmenům. Začíná její islamizace."
+   "x": "Seldžucký sultán porazil byzantské vojsko a otevřel Anatolii turkickým kmenům. Začíná její islamizace.",
+   "d": "V srpnu 1071 porazil seldžucký sultán Alp Arslan u pevnosti Manzikert (dnešní východní Turecko) byzantské vojsko a zajal císaře Romana IV. Diogena. Byzanc ztratila kontrolu nad velkou částí Anatolie, do které začaly pronikat turkické kmeny. Postupně se z křesťanské Malé Asie stala převážně muslimská a turecká země. Události přispěly i ke svolání první křížové výpravy."
   },
   {
    "id": "isl23",
@@ -628,7 +692,8 @@
    "y": 1187,
    "c": "moc",
    "t": "Saladin dobývá Jeruzalém",
-   "x": "Sultán Salah ad-Dín porazil křižáky u Hattínu a vstoupil do Jeruzaléma."
+   "x": "Sultán Salah ad-Dín porazil křižáky u Hattínu a vstoupil do Jeruzaléma.",
+   "d": "Sultán Salah ad-Dín (Saladin), vládce Egypta a Sýrie, porazil v červenci 1187 křižáky v bitvě u Hattínu a v říjnu vstoupil do Jeruzaléma. Na rozdíl od křižáků v roce 1099 se vyhnul masakru, dovolil výkupné a ochránil křesťanské svatyně. Evropa odpověděla třetí křížovou výpravou, která Jeruzalém nedobyla. Saladin se stal v muslimském i evropském světě symbolem rytířství."
   },
   {
    "id": "isl24",
@@ -636,7 +701,8 @@
    "y": 1206,
    "c": "moc",
    "t": "Dillíský sultanát",
-   "x": "V severní Indii vzniká muslimský stát, který ovlivní kulturu a náboženský život subkontinentu na několik staletí."
+   "x": "V severní Indii vzniká muslimský stát, který ovlivní kulturu a náboženský život subkontinentu na několik staletí.",
+   "d": "Roku 1206 založil Kutb ad-Dín Ajbak v Dillí sultanát, který ovládal velkou část severní Indie více než tři století. Sultáni byli turkického původu a podporovali perskou kulturu, mešity a madrasy. Do Indie tak vstoupila jazyková a umělecká tradice, z níž vznikla urdština a nová architektura (např. Kutb Minár). Hinduistická většina žila pod muslimskou vládou, což vedlo ke střetům i k vzájemnému obohacení."
   },
   {
    "id": "isl25",
@@ -644,7 +710,8 @@
    "y": 1258,
    "c": "moc",
    "t": "Mongolové dobývají Bagdád",
-   "x": "Hulagu Chán ničí město a ukončuje abbásovský chalífát v Bagdádu."
+   "x": "Hulagu Chán ničí město a ukončuje abbásovský chalífát v Bagdádu.",
+   "d": "V lednu až únoru 1258 oblehlo mongolské vojsko Hulagu Chána Bagdád. Po dobytí následovalo několikadenní plenění a masakr. Chalífa al-Mustasim byl popraven. Knihovny, včetně Domu moudrosti, byly ničeny a mnoho knih skončilo v Tigridu. Událost je považována za konec zlatého věku islámské civilizace a abbásovský chalífát v Bagdádu zanikl, ale rodina přežila v Káhiře."
   },
   {
    "id": "isl26",
@@ -652,7 +719,8 @@
    "y": 1260,
    "c": "moc",
    "t": "Bitva u Ajn Džalútu",
-   "x": "Egyptští Mamlúkové porážejí Mongoly a zastavují jejich postup do Egypta."
+   "x": "Egyptští Mamlúkové porážejí Mongoly a zastavují jejich postup do Egypta.",
+   "d": "V září 1260 se u pramenů Ajn Džalút v Palestině střetlo mongolské vojsko s egyptskými Mamlúky pod vedením sultána Kutuze a velitele Bajbarse. Mamlúkové zvítězili. Byla to první větší porážka Mongolů v poli a zastavila jejich postup na jih. Mamlúkský sultanát v Egyptě pak patřil k největším mocnostem regionu až do dobytí Osmany roku 1517."
   },
   {
    "id": "isl27",
@@ -660,7 +728,8 @@
    "y": 1273,
    "c": "uceni",
    "t": "Smrt Džalaluddína Rúmího",
-   "x": "Perský básník a súfijský mystik umírá v Konyi. Jeho spisy a řád mevlevíů (tančících dervišů) ovlivnily celý islámský svět."
+   "x": "Perský básník a súfijský mystik umírá v Konyi. Jeho spisy a řád mevlevíů (tančících dervišů) ovlivnily celý islámský svět.",
+   "d": "Džalaluddín Rúmí (1207 až 1273) byl perský básník, právník a súfijský mystik, který žil v Konyi, v dnešním Turecku. Po setkání s potulným dervišem Šamsem Tabrízím se stal básníkem. Jeho dílo, především Masnaví, vyjadřuje lásku k Bohu jako cestu k jednotě. Jeho následovníci založili řád mevlevíů, známých točením dervišů při obřadu sama. Rúmí je dodnes jedním z nejčtenějších básníků na světě."
   },
   {
    "id": "isl28",
@@ -669,7 +738,8 @@
    "c": "sireni",
    "t": "Pouť Mansy Músy",
    "x": "Malijský císař koná pouť do Mekky s obrovským doprovodem a šíří slávu muslimské Afriky.",
-   "ap": 1
+   "ap": 1,
+   "d": "Mansa Músa byl vládce Malijské říše v západní Africe. Roku 1324 podnikl pouť do Mekky s doprovodem, jehož velikost se v pramenech odhaduje na desítky tisíc lidí, a rozdával tolik zlata, že v Káhiře poklesla jeho cena. Cesta Mali proslavila: na katalánských mapách je zobrazen s korunou a zlatem. Mansa Músa podpořil islám, nechal stavět mešity a podporoval vzdělanost v Timbuktu."
   },
   {
    "id": "isl29",
@@ -678,7 +748,8 @@
    "c": "sireni",
    "t": "Cesty Ibn Battúty",
    "x": "Marocký učenec cestuje po celém islámském světě od Afriky po Čínu a zanechává cenný popis tehdejších muslimských zemí.",
-   "e": 1354
+   "e": 1354,
+   "d": "Marocký právník Ibn Battúta vyrazil roku 1325 na pouť do Mekky a z cesty se stala téměř třicetiletá výprava přes celý islámský svět: Egypt, Persii, Indii, Maledivy, Čínu i Mali. Po návratu nadiktoval knihu Rihla (Cesta). Dílo je vzácným svědectvím o životě muslimských zemí ve 14. století, o městech, obchodu, učených lidech i zvycích."
   },
   {
    "id": "isl30",
@@ -686,7 +757,8 @@
    "y": 1453,
    "c": "moc",
    "t": "Pád Konstantinopole",
-   "x": "Osmanský sultán Mehmed II. dobývá hlavní město Byzance a z Hagia Sofia se stává mešita."
+   "x": "Osmanský sultán Mehmed II. dobývá hlavní město Byzance a z Hagia Sofia se stává mešita.",
+   "d": "Osmanský sultán Mehmed II. oblehl Konstantinopol a 29. května 1453 jej dobyl. Poslední byzantský císař Konstantin XI. padl v boji. Hagia Sofia byla přeměněna v mešitu a město se stalo hlavním městem Osmanské říše pod jménem Istanbul. Konec Byzance symbolicky uzavřel středověk. Osmané se na další staletí stali hlavní mocností v jihovýchodní Evropě a na Blízkém východě."
   },
   {
    "id": "isl31",
@@ -694,7 +766,8 @@
    "y": 1492,
    "c": "moc",
    "t": "Pád Granady",
-   "x": "Poslední muslimský stát na Pyrenejském poloostrově zaniká po dobytí Kastilií a Aragonií."
+   "x": "Poslední muslimský stát na Pyrenejském poloostrově zaniká po dobytí Kastilií a Aragonií.",
+   "d": "Granadský emirát byl posledním muslimským státem na Pyrenejském poloostrově. Po dlouhém obléhání se jeho poslední vládce Boabdil vzdal 2. ledna 1492 katolickým panovníkům Ferdinandovi Aragonskému a Isabele Kastilské. Smlouva zaručovala muslimům svobodu vyznání, ale tento slib nebyl dlouho dodržován. Brzy následovaly nucené křty a vyhnání. Ve stejném roce byli ze Španělska vyhnáni také Židé."
   },
   {
    "id": "isl32",
@@ -702,7 +775,8 @@
    "y": 1501,
    "c": "rozkol",
    "t": "Safavidský Írán",
-   "x": "Šáh Ismáíl I. činí z dvanáctiimámovského šíismu státní víru Íránu."
+   "x": "Šáh Ismáíl I. činí z dvanáctiimámovského šíismu státní víru Íránu.",
+   "d": "Šáh Ismáíl I. se roku 1501 v Tabrízu prohlásil vládcem Íránu a dvanáctiimámovský šíismus učinil státním náboženstvím. Do té doby byla většina obyvatel Íránu sunnitská. Nová víra se prosazovala také silou a z Íránu se stala šíitská mocnost obklopená sunnitskými Osmany a Uzbeky. Šíismus zůstal dominantní vírou Íránu dodnes. Safavidé vládli do roku 1736."
   },
   {
    "id": "isl33",
@@ -710,7 +784,8 @@
    "y": 1517,
    "c": "moc",
    "t": "Osmané dobývají Egypt",
-   "x": "Sultán Selim I. ovládne Káhiru, Mekku i Medínu. Osmanská říše se stává největší muslimskou mocností."
+   "x": "Sultán Selim I. ovládne Káhiru, Mekku i Medínu. Osmanská říše se stává největší muslimskou mocností.",
+   "d": "Roku 1516 až 1517 sultán Selim I. porazil Mamlúky v Sýrii a Egyptě a připojil je k Osmanské říši. Osmané tak získali kontrolu nad Mekkou, Medínou a Jeruzalémem. Pozdější tradice hovoří o tom, že Selim převzal od posledního abbásovského chalífy v Káhiře titul chalífy; historici však tuto událost zpochybňují. Říše pak dosáhla největšího rozmachu za Sulejmana Nádherného."
   },
   {
    "id": "isl34",
@@ -718,7 +793,8 @@
    "y": 1526,
    "c": "moc",
    "t": "Mughalská říše",
-   "x": "Bábur zakládá říši, která později ovládne většinu Indie a spojí perskou a indickou kulturu."
+   "x": "Bábur zakládá říši, která později ovládne většinu Indie a spojí perskou a indickou kulturu.",
+   "d": "V roce 1526 porazil Bábur, potomek Timura a Čingischána, u Pánipatu sultána z Dillí a založil Mughalskou říši. Za Akbara (1556 až 1605) se rozrostla a vyznačovala se náboženskou tolerancí. Říše vytvořila rozkvět architektury, malířství a literatury, ze kterého pochází například Tádž Mahal. Ve 18. století slábla a v roce 1858 ji zrušili Britové."
   },
   {
    "id": "isl35",
@@ -727,7 +803,8 @@
    "c": "stavba",
    "t": "Tádž Mahal",
    "x": "Mughalský císař Šáhdžahán nechává u Ágry postavit mauzoleum pro svou ženu. Vrchol indoislámské architektury.",
-   "e": 1653
+   "e": 1653,
+   "d": "Císař Šáhdžahán dal po smrti své manželky Mumtáz Mahal v roce 1631 vystavět u Ágry mauzoleum z bílého mramoru. Stavba trvala asi dvaadvacet let a pracovaly na ní tisíce řemeslníků. Je považována za vrchol mughalské architektury, která spojuje perské, islámské a indické prvky. Dnes patří k nejznámějším stavbám světa a je zapsaná na seznamu UNESCO."
   },
   {
    "id": "isl36",
@@ -735,7 +812,8 @@
    "y": 1744,
    "c": "rozkol",
    "t": "Wahhábismus",
-   "x": "Muhammad ibn Saúd uzavírá spojenectví s kazatelem Muhammadem ibn Abd al-Wahhábem. Základ pozdějšího Saúdského státu."
+   "x": "Muhammad ibn Saúd uzavírá spojenectví s kazatelem Muhammadem ibn Abd al-Wahhábem. Základ pozdějšího Saúdského státu.",
+   "d": "Muhammad ibn Abd al-Wahháb, kazatel ze střední Arábie, volal po návratu k původnímu islámu a odmítal uctívání svatých a hrobů, které považoval za modlářství. Roku 1744 uzavřel spojenectví s místním vládcem Muhammadem ibn Saúdem. Tím vznikl první saúdský stát. Od té doby je saúdská dynastie spojena s tímto učením. Po objevení ropy v 20. století získalo hnutí vliv po celém světě; jeho kritici mu vytýkají přísnost a nesnášenlivost."
   },
   {
    "id": "isl37",
@@ -743,7 +821,8 @@
    "y": 1924,
    "c": "moc",
    "t": "Zrušení chalífátu",
-   "x": "Turecké národní shromáždění ruší osmanský chalífát. Po 1300 letech nemá sunnitský svět společného vůdce."
+   "x": "Turecké národní shromáždění ruší osmanský chalífát. Po 1300 letech nemá sunnitský svět společného vůdce.",
+   "d": "Po první světové válce zanikla Osmanská říše. Mustafa Kemal Atatürk zrušil sultanát v roce 1922 a 3. března 1924 turecké národní shromáždění zrušilo i chalífát. Poslední chalífa Abdülmecid II. musel opustit zemi. Tím skončila instituce, která po staletí symbolicky spojovala sunnitský svět. Od té doby se objevily snahy o její obnovu, žádná neuspěla."
   },
   {
    "id": "isl38",
@@ -751,7 +830,8 @@
    "y": 1928,
    "c": "rozkol",
    "t": "Muslimské bratrstvo",
-   "x": "Hasan al-Banná zakládá v Egyptě hnutí, které spojuje islám s politikou a sociální činností."
+   "x": "Hasan al-Banná zakládá v Egyptě hnutí, které spojuje islám s politikou a sociální činností.",
+   "d": "Učitel Hasan al-Banná založil roku 1928 v egyptském Ismáílíji hnutí, které chtělo obnovit společnost podle islámských zásad. Kromě náboženství se věnovalo školám, zdravotní péči a pomoci chudým. Postupně se stalo masovou organizací a ovlivnilo politické hnutí v mnoha zemích. Často bylo zakazováno a pronásledováno. Je jednou z nejvlivnějších a nejspornějších organizací moderního islámského světa."
   },
   {
    "id": "isl39",
@@ -759,7 +839,8 @@
    "y": 1947,
    "c": "moc",
    "t": "Vznik Pákistánu",
-   "x": "Při dělení britské Indie vzniká stát pro indické muslimy."
+   "x": "Při dělení britské Indie vzniká stát pro indické muslimy.",
+   "d": "V roce 1947 skončila britská nadvláda nad Indií. Země byla rozdělena na převážně hinduistickou Indii a muslimský Pákistán, který vedl Muhammad Alí Džinnáh. Rozdělení provázelo násilí a přesun asi 15 milionů lidí. Pákistán byl původně tvořen dvěma částmi a v roce 1971 se východní část osamostatnila jako Bangladéš. Jde o první moderní stát vytvořený na základě náboženské příslušnosti."
   },
   {
    "id": "isl40",
@@ -767,7 +848,8 @@
    "y": 1969,
    "c": "moc",
    "t": "Organizace islámské spolupráce",
-   "x": "Po požáru mešity al-Aksá vzniká společná organizace muslimských států."
+   "x": "Po požáru mešity al-Aksá vzniká společná organizace muslimských států.",
+   "d": "Po zapálení mešity al-Aksá v Jeruzalémě v srpnu 1969 se sešli vůdci muslimských zemí v Rabatu a založili organizaci, dnes zvanou Organizace islámské spolupráce. Má sídlo v Džiddě v Saúdské Arábii a sdružuje přes padesát členských států. Podle svých stanov hájí zájmy muslimského světa, podporuje spolupráci ve vzdělávání, hospodářství a politice. Její vliv je ale omezen rozdílnými zájmy členů."
   },
   {
    "id": "isl41",
@@ -775,7 +857,8 @@
    "y": 1979,
    "c": "moc",
    "t": "Íránská revoluce",
-   "x": "Ajatolláh Chomejní svrhává šáha a zakládá islámskou republiku."
+   "x": "Ajatolláh Chomejní svrhává šáha a zakládá islámskou republiku.",
+   "d": "V roce 1979 byl po masových protestech svržen íránský šáh Muhammad Rezá Pahlaví. Do země se z exilu vrátil ajatolláh Rúholláh Chomejní a po referendu byla vyhlášena islámská republika. Ústava stanovila vládu právníka-teologa (velájat-e fakíh). Revoluce proměnila Írán v teokratický stát a silně ovlivnila politiku Blízkého východu. Následovala válka s Irákem (1980 až 1988)."
   },
   {
    "id": "bud1",
@@ -784,7 +867,8 @@
    "c": "zaklad",
    "t": "Narození Siddhárthy Gautamy",
    "x": "Podle tradiční datace se v Lumbiní narodil princ, pozdější Buddha. Moderní historici kladou jeho život spíše do 5. století př. n. l.",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle tradice se Siddhártha Gautama narodil jako princ rodu Šákjů v Lumbiní, dnes na jihu Nepálu. Tradiční theravádská datace klade jeho život do let 563 až 483 př. n. l., moderní badatelé ho ale spíše kladou do 5. století př. n. l. Ve dvaceti devíti letech opustil palác, když poznal stáří, nemoc a smrt, a vydal se hledat cestu k vysvobození z utrpení. Lumbiní je dnes poutním místem."
   },
   {
    "id": "bud2",
@@ -793,7 +877,8 @@
    "c": "zaklad",
    "t": "Probuzení a první kázání",
    "x": "Podle tradice dosahuje Siddhárta v Bódhgaji probuzení a v Sárnáthu poprvé káže o čtyřech vznešených pravdách.",
-   "ap": 1
+   "ap": 1,
+   "d": "Po letech askeze a hledání Siddhártha podle tradice seděl v meditaci pod stromem v Bódhgaji a dosáhl probuzení (bódhi). Od té doby byl nazýván Buddha, „probuzený“. Poté odešel do Sárnáthu u Váránasí a v Parku jelenů vyložil svým prvním pěti žákům čtyři vznešené pravdy: utrpení, jeho původ, jeho zánik a osmidílnou stezku k němu. Tímto kázáním se podle tradice roztočilo „kolo učení“ (dharmačakra)."
   },
   {
    "id": "bud3",
@@ -802,7 +887,8 @@
    "c": "uceni",
    "t": "Buddhova smrt a první koncil",
    "x": "Buddha umírá v Kušinagaře (parinirvána). Mniši se sejdou v Rádžagrze a zapamatovávají jeho učení.",
-   "ap": 1
+   "ap": 1,
+   "d": "Buddha čtyřicet pět let putoval severní Indií a učil. Zemřel v Kušinagaře, podle tradice po jídle od kováře Čundy. Tento okamžik se nazývá parinirvána. Krátce nato se v Rádžagrze sešlo pět set mnichů na prvním koncilu, kde se podle tradice odříkávaly Buddhovy výroky (sútry) a mnišská pravidla (vinaja). Učení se zpočátku předávalo pouze ústně."
   },
   {
    "id": "bud4",
@@ -811,7 +897,8 @@
    "c": "rozkol",
    "t": "Druhý koncil ve Vaišáli",
    "x": "Spor o výklad mnišských pravidel. Podle tradice se od té doby buddhisté štěpí na různé školy.",
-   "ap": 1
+   "ap": 1,
+   "d": "O sto let později se podle tradice sešli mniši ve Vaišáli, aby posoudili spor o výklad mnišských pravidel, například o užívání peněz. Starší, přísnější skupina odsoudila uvolněnější postupy. V tradičním podání se právě zde začal buddhismus štěpit na rané školy. Historikové se ale o přesném průběhu a datu dohadují, protože nejstarší prameny jsou pozdější."
   },
   {
    "id": "bud5",
@@ -820,7 +907,8 @@
    "c": "moc",
    "t": "Ašókovo obrácení",
    "x": "Císař Ašóka po krvavé válce v Kalinze obrací svůj pohled k dharmě a šíří toleranci.",
-   "ap": 1
+   "ap": 1,
+   "d": "Císař Ašóka z dynastie Maurjů (vládl asi 268 až 232 př. n. l.) dobyl roku 261 př. n. l. království Kalinga. Podle jeho vlastních nápisů zahynulo při válce mnoho lidí a on pocítil lítost. Obrátil se k buddhistické dharmě, přestal vést dobyvačné války a vyzýval k toleranci a soucitu. Jeho edikty vytesané do skal a pilířů patří k nejstarším písemným památkám Indie."
   },
   {
    "id": "bud6",
@@ -829,7 +917,8 @@
    "c": "sireni",
    "t": "Třetí koncil a vyslání misií",
    "x": "V Pátaliputře se sejdou mniši a Ašóka vysílá misionáře do celé Asie.",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle theravádské tradice se kolem roku 250 př. n. l. konal v Pátaliputře za Ašókovy podpory třetí koncil, na němž byly očištěny nauky. Poté Ašóka vyslal misionáře do různých částí Asie, například do Kašmíru, jižní Indie, Barmy a na Cejlon. Tím se buddhismus z regionálního učení stal světovým náboženstvím. Detaily podání jsou ale známé hlavně z pozdějších cejlonských kronik."
   },
   {
    "id": "bud7",
@@ -838,7 +927,8 @@
    "c": "sireni",
    "t": "Buddhismus na Cejlonu",
    "x": "Ašókův syn Mahinda přináší učení na ostrov a obrací krále Dévánampijatissu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle kronik Dípavamsa a Mahávamsa přivedl Ašókův syn, mnich Mahinda, buddhismus na Cejlon (dnešní Srí Lanka). Obrátil krále Dévánampijatissu, který založil klášter Mahávihára v Anurádhapuře. Se sestrou Sanghamittou přivezli i sazeničku stromu z Bódhgaje, jehož potomek tam roste dodnes. Cejlon se stal centrem théravádového buddhismu."
   },
   {
    "id": "bud8",
@@ -847,7 +937,8 @@
    "c": "uceni",
    "t": "Zapsání páliového kánonu",
    "x": "Na Cejlonu jsou poprvé zapsány buddhistické texty, dosud předávané ústně.",
-   "ap": 1
+   "ap": 1,
+   "d": "Buddhistické texty se po staletí předávaly ústně. Podle cejlonských kronik byly kolem roku 29 př. n. l. v klášteře Aluvihára poprvé zapsány v jazyce páli na palmové listy. Důvodem byly války a hladomor, které ohrožovaly ústní předávání. Soubor se nazývá Tipitaka („Tři koše“): pravidla, výroky a filosofie. Je základem théravádového buddhismu."
   },
   {
    "id": "bud9",
@@ -856,7 +947,8 @@
    "c": "rozkol",
    "t": "Vznik mahájány",
    "x": "Vzniká velký směr mahájána s ideálem bódhisattvy, který odkládá vlastní osvobození, aby pomáhal ostatním.",
-   "ap": 1
+   "ap": 1,
+   "d": "V prvních staletích kolem přelomu letopočtu se v Indii začal prosazovat nový směr, mahájána (Velký vůz). Zdůrazňuje ideál bódhisattvy, bytosti, která odkládá své osvobození, aby pomáhala všem ostatním. Vznikly nové sútry, například Sútra Lotosu a Sútra srdce. Mahájána se rozšířila do Číny, Koreje, Japonska a Vietnamu. Přesné datování vzniku je nejisté, proces trval staletí."
   },
   {
    "id": "bud10",
@@ -864,7 +956,8 @@
    "y": 67,
    "c": "sireni",
    "t": "Buddhismus v Číně",
-   "x": "Podle tradice císař Ming z dynastie Han zve do Luoyangu indické mnichy a zakládá první chrám."
+   "x": "Podle tradice císař Ming z dynastie Han zve do Luoyangu indické mnichy a zakládá první chrám.",
+   "d": "Podle pozdější tradice poslal císař Ming z dynastie Východní Chan kolem roku 67 vyslance pro buddhistické texty a v Luoyangu byl postaven chrám Bílého koně. Skutečný příchod byl pravděpodobně postupný, hlavně po Hedvábné stezce od obchodníků. Buddhismus se v Číně spojil s taoismem a konfucianismem a stal se jedním z hlavních náboženství. Vzniklo několik čínských škol, například čchan (zen) a čistá země."
   },
   {
    "id": "bud11",
@@ -872,7 +965,8 @@
    "y": 148,
    "c": "sireni",
    "t": "An Š’-kao v Luoyangu",
-   "x": "Parthský mnich přijíždí do hlavního města čínské říše Han a začíná překládat buddhistické sútry do čínštiny."
+   "x": "Parthský mnich přijíždí do hlavního města čínské říše Han a začíná překládat buddhistické sútry do čínštiny.",
+   "d": "An Š’-kao byl parthský mnich, který kolem roku 148 přišel do hlavního města Luoyangu a během dvaceti let přeložil kolem třiceti buddhistických textů do čínštiny. Patří k prvním známým překladatelům a položil základ čínské buddhistické terminologie. Ukazuje to, že buddhismus se v Číně neprosazoval jen silou, ale i přes jazyk a překlady."
   },
   {
    "id": "bud12",
@@ -882,7 +976,8 @@
    "t": "Nágárdžuna a filosofie prázdnoty",
    "x": "Indický filosof zakládá školu madhjamaka, která učí, že všechny jevy jsou prázdné od samostatné podstaty.",
    "e": 250,
-   "ap": 1
+   "ap": 1,
+   "d": "Nágárdžuna žil v Indii asi ve 2. až 3. století. Je zakladatelem školy madhjamaka („střední cesta“). Učil, že všechny jevy jsou „prázdné“, to znamená, že nemají samostatnou, neměnnou podstatu a existují jen ve vzájemné závislosti. Hlavní dílo Múlamadhjamakakárika vysvětluje tuto myšlenku logickými argumenty. Jeho učení ovlivnilo celý mahájánový buddhismus, zejména v Tibetu."
   },
   {
    "id": "bud13",
@@ -890,7 +985,8 @@
    "y": 372,
    "c": "sireni",
    "t": "Buddhismus v Koreji",
-   "x": "Do království Koguryo přichází mnich ze severní Číny s buddhistickými sútrami."
+   "x": "Do království Koguryo přichází mnich ze severní Číny s buddhistickými sútrami.",
+   "d": "Podle korejských kronik poslal roku 372 vládce Fu Ťien z raně čínského státu mnicha Sundoa s obrazy Buddhy a sútrami do království Koguryo. Na jihu korejského poloostrova přišel buddhismus kolem roku 384 do Päkče a později do Sillu. Králové ho často podporovali jako způsob upevnění moci. Z Koreje putoval buddhismus dál do Japonska."
   },
   {
    "id": "bud14",
@@ -899,7 +995,8 @@
    "c": "sireni",
    "t": "Pouť čínského mnicha Fa-siena",
    "x": "Mnich Fa-sien putuje do Indie pro rukopisy a zanechává cenný popis tamního buddhismu.",
-   "e": 412
+   "e": 412,
+   "d": "Mnich Fa-sien se v roce 399 vydal ve věku kolem šedesáti let pěšky z Číny do Indie, aby sehnal úplnou mnišskou řeholi. Cestoval přes pouště a hory, navštívil svatá místa a strávil roky na Cejlonu. Vrátil se po moři roku 412 a sepsal záznam cest. Jeho zpráva je důležitým svědectvím o Indii za doby Guptovců a o tehdejším buddhismu."
   },
   {
    "id": "bud15",
@@ -909,7 +1006,8 @@
    "t": "Kumárádžíva překládá sútry",
    "x": "Mnich z Kučy v Čchang-anu překládá desítky textů mahájány do čínštiny. Překlady jsou užívány dodnes.",
    "e": 413,
-   "ap": 1
+   "ap": 1,
+   "d": "Kumárádžíva, narozený v Kuče ve Střední Asii, přišel roku 401 do čínského hlavního města Čchang-anu. Za dvanáct let spolu s týmem překladatelů přeložil desítky textů mahájány, například Sútru lotosu a Diamantovou sútru. Jeho překlady jsou plynulé a čtivé a dodnes se v Číně a východní Asii užívají. Zároveň významně ovlivnily buddhistickou terminologii a filosofii v čínštině."
   },
   {
    "id": "bud16",
@@ -918,7 +1016,8 @@
    "c": "stavba",
    "t": "Univerzita Nálandá",
    "x": "V Biháru vzniká velký klášter a učiliště, kde studují tisíce mnichů z celé Asie.",
-   "ap": 1
+   "ap": 1,
+   "d": "Klášterní univerzita Nálandá v dnešním Biháru vznikla v 5. století za Guptovců. Žilo a studovalo tam tisíce mnichů, přicházeli i cizinci z Číny, Koreje či Tibetu. Učilo se buddhistické filosofii, logice, gramatice i lékařství. Čínský poutník Süan-cang tu strávil několik let. Nálandá patří k nejstarším univerzitám světa a její ruiny jsou na seznamu UNESCO."
   },
   {
    "id": "bud17",
@@ -927,7 +1026,8 @@
    "c": "uceni",
    "t": "Bódhidharma v Číně",
    "x": "Podle tradice přichází z Indie mnich Bódhidharma a stává se prvním patriarchou čchan (zen) buddhismu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle legendy přišel z Indie do Číny mnich Bódhidharma a stal se prvním patriarchou čchan (japonsky zen) buddhismu. Měl devět let meditovat před stěnou v klášteře Šao-lin. Historicky jsou údaje nejisté, pocházejí z pozdějších pramenů. Zen v Číně a později Japonsku klade důraz na přímou zkušenost a meditaci a ne na studium textů."
   },
   {
    "id": "bud18",
@@ -936,7 +1036,8 @@
    "c": "sireni",
    "t": "Buddhismus v Japonsku",
    "x": "Korejské království Päkče posílá japonskému dvoru sochu Buddhy a sútry (tradičně též 552).",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle japonské kroniky Nihon šoki poslal korejský král z Päkče roku 538 (nebo 552) japonskému dvoru sochu Buddhy a sútry. Následoval spor mezi rody, které učení podporovaly a které ho odmítaly, protože mohlo urazit domácí božstva (kami). Prosadil se rod Soga a později princ Šótoku. Buddhismus a domácí šintoismus se v Japonsku dlouho prolínaly."
   },
   {
    "id": "bud19",
@@ -944,7 +1045,8 @@
    "y": 593,
    "c": "moc",
    "t": "Šótoku Taiši",
-   "x": "Japonský regent podporuje buddhismus, staví chrámy a vyhlašuje Sedmnáctičlennou ústavu s buddhistickými principy."
+   "x": "Japonský regent podporuje buddhismus, staví chrámy a vyhlašuje Sedmnáctičlennou ústavu s buddhistickými principy.",
+   "d": "Princ Šótoku (574 až 622) byl od roku 593 regentem císařovny Suiko. Podporoval buddhismus, zakládal chrámy, například Hórjúdži, a vypracoval takzvanou Ústavu sedmnácti článků, v níž se objevují buddhistické a konfuciánské zásady. Stal se v Japonsku uctívaným symbolem prosazení buddhismu a zavedení čínských vzorů."
   },
   {
    "id": "bud20",
@@ -953,7 +1055,8 @@
    "c": "sireni",
    "t": "Cesta mnicha Süan-canga",
    "x": "Čínský mnich putuje do Indie a vrací se s množstvím textů, které přeloží do čínštiny.",
-   "e": 645
+   "e": 645,
+   "d": "Mnich Süan-cang (Xuanzang) vyrazil roku 629 bez povolení z Číny do Indie. Šestnáct let cestoval, studoval v Nálandě a vrátil se roku 645 s asi šesti sty padesáti texty. Zbytek života je překládal do čínštiny. Z jeho cest se zachoval podrobný popis zemí Střední Asie a Indie. Jeho příběh inspiroval slavný román Putování na západ."
   },
   {
    "id": "bud21",
@@ -962,7 +1065,8 @@
    "c": "sireni",
    "t": "Buddhismus v Tibetu",
    "x": "Král Songcän Gampo zve do země indické učitele. Zakládá chrámy v Lhase.",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle tradice přijal král Songcän Gampo (asi 617 až 649) buddhismus, i když vlivem dvou manželek, nepálské a čínské princezny. Založil první chrámy v Lhase, například Džokhang. Nové náboženství se zpočátku prolínalo s domácím náboženstvím bön. Silnější průnik se odehrál až o století později, za krále Trisong Detsena. Dnešní tibetský buddhismus pochází z indických tradic."
   },
   {
    "id": "bud22",
@@ -970,7 +1074,8 @@
    "y": 752,
    "c": "stavba",
    "t": "Velký Buddha v Naře",
-   "x": "V chrámu Tódai-dži je slavnostně otevřena obří bronzová socha Buddhy Vairóčany. Buddhismus je podporován jako státní náboženství."
+   "x": "V chrámu Tódai-dži je slavnostně otevřena obří bronzová socha Buddhy Vairóčany. Buddhismus je podporován jako státní náboženství.",
+   "d": "Císař Šómu nechal v hlavním městě Naře postavit chrám Tódaidži a v něm obří bronzovou sochu Buddhy Vairóčany, vysokou kolem patnácti metrů. Slavnost zahájení („otevření očí“) se konala roku 752. Šlo o největší stavební projekt své doby v Japonsku. Chrám symbolizoval propojení buddhismu se státem. Dnes patří k nejstarším dřevěným budovám světa."
   },
   {
    "id": "bud23",
@@ -979,7 +1084,8 @@
    "c": "stavba",
    "t": "Klášter Samjä",
    "x": "V Tibetu vzniká první buddhistický klášter. Indický učitel Šántarakšita a Padmasambhava ho pomáhají založit.",
-   "ap": 1
+   "ap": 1,
+   "d": "Klášter Samjä vznikl kolem roku 779 za krále Trisong Detsena jako první tibetský buddhistický klášter. Podle tradice se na stavbě podílel indický učitel Šántarakšita a tantrický mistr Padmasambhava (Guru Rinpočhe). Samjä byl i centrem překládání buddhistických textů do tibetštiny. Je považován za jedno z míst, kde buddhismus v Tibetu zapustil kořeny."
   },
   {
    "id": "bud24",
@@ -988,7 +1094,8 @@
    "c": "stavba",
    "t": "Borobudur",
    "x": "Na Jávě vzniká největší buddhistická stavba, stupňovitý chrám ve tvaru mandaly.",
-   "ap": 1
+   "ap": 1,
+   "d": "Na Jávě v Indonésii byl za dynastie Šailéndrů ve druhé polovině 8. století a v 9. století vystavěn Borobudur, největší buddhistická stavba na světě. Má devět úrovní, ozdobených více než dvěma tisíci reliéfů a asi pěti sty sochami Buddhy. Poutníci stoupají nahoru po terasách a symbolicky procházejí cestou k osvícení. Po úpadku buddhismu na Jávě byl zapomenut a skryt pod sopečným popelem a vegetací. Dnes je na seznamu UNESCO."
   },
   {
    "id": "bud25",
@@ -996,7 +1103,8 @@
    "y": 806,
    "c": "uceni",
    "t": "Kúkai a šingon",
-   "x": "Japonský mnich se vrací z Číny a zakládá školu šingon s tantrickou praxí."
+   "x": "Japonský mnich se vrací z Číny a zakládá školu šingon s tantrickou praxí.",
+   "d": "Japonský mnich Kúkai (774 až 835), po smrti nazývaný Kóbó Daiši, odjel roku 804 do Číny. Tam studoval tantrický buddhismus a po návratu roku 806 založil školu šingon („pravé slovo“). Hlavním střediskem je klášter na hoře Kója. Šingon klade důraz na rituály, mantry a mandaly. Kúkai je navíc uctíván jako vzdělanec, kaligraf a zakladatel prvních škol pro obyčejné lidi."
   },
   {
    "id": "bud26",
@@ -1004,7 +1112,8 @@
    "y": 845,
    "c": "moc",
    "t": "Pronásledování buddhismu v Číně",
-   "x": "Císař Wu-cung ničí tisíce klášterů a chrámů a nutí mnichy k návratu do civilního života."
+   "x": "Císař Wu-cung ničí tisíce klášterů a chrámů a nutí mnichy k návratu do civilního života.",
+   "d": "Císař Wu-cung z dynastie Tchang se kolem roku 845 pustil do likvidace buddhismu. Důvody byly hospodářské, protože kláštery vlastnily velkou půdu a neplatily daně, a také náboženské, protože císař podporoval taoismus. Podle dobových záznamů bylo zrušeno přes čtyři tisíce klášterů a kolem 260 tisíc mnichů a jeptišek se vrátilo do civilního života. Buddhismus v Číně se z úderu už zcela nevzpamatoval, hlavně školy závislé na velkých klášterech, přežily čchan a čistá země."
   },
   {
    "id": "bud27",
@@ -1012,7 +1121,8 @@
    "y": 1191,
    "c": "uceni",
    "t": "Zen v Japonsku",
-   "x": "Mnich Eisai přináší do Japonska školu rinzai, která klade důraz na meditaci."
+   "x": "Mnich Eisai přináší do Japonska školu rinzai, která klade důraz na meditaci.",
+   "d": "Mnich Eisai (1141 až 1215) navštívil Čínu a roku 1191 přivezl do Japonska školu rinzai zenu. Zdůrazňuje meditaci a kóany, krátké hádanky, které mají prolomit běžné myšlení. Získala podporu samurajské vrstvy a vlády šógunů. Později přišel do Japonska i Dógen, který založil školu sótó. Zen výrazně ovlivnil japonskou kulturu: čajový obřad, zahradní umění, kaligrafii či bojová umění."
   },
   {
    "id": "bud28",
@@ -1021,7 +1131,8 @@
    "c": "moc",
    "t": "Zničení Nálandy",
    "x": "Vojska Bachtijára Chiladžího ničí klášter. Buddhismus v Indii slábne.",
-   "ap": 1
+   "ap": 1,
+   "d": "Na přelomu 12. a 13. století vtrhla do severní Indie vojska turkického velitele Muhammada Bachtijára Chiladžího. Kolem roku 1193 byla vypleněna a zpustošena Nálandá. Podle muslimských kronik byli mniši pobiti a knihovna spálena. Buddhismus v severní Indii, který už předtím slábl, po těchto událostech do značné míry vymizel. Přežil na okrajích, v Nepálu, Tibetu a jinde v Asii."
   },
   {
    "id": "bud29",
@@ -1029,7 +1140,8 @@
    "y": 1253,
    "c": "rozkol",
    "t": "Ničiren",
-   "x": "Japonský mnich začíná kázat o Lotosové sútře a zakládá vlastní školu."
+   "x": "Japonský mnich začíná kázat o Lotosové sútře a zakládá vlastní školu.",
+   "d": "Japonský mnich Ničiren (1222 až 1282) začal roku 1253 kázat, že pravé učení je obsaženo v Sútře lotosu a že jediná cesta k osvícení je recitovat „Namu-mjóhó-renge-kjó“. Kritizoval ostatní školy a dokonce i vládu, za což byl pronásledován a vyhnán. Jeho škola se stala jednou z největších v Japonsku. Odnože, například Sókagakkai, se rozšířily i do zahraničí."
   },
   {
    "id": "bud30",
@@ -1037,7 +1149,8 @@
    "y": 1260,
    "c": "moc",
    "t": "Pagpa lama a Kublajchán",
-   "x": "Mongolský císař jmenuje tibetského lamu Pagpu císařským učitelem. Začíná spojení tibetského buddhismu s politickou mocí."
+   "x": "Mongolský císař jmenuje tibetského lamu Pagpu císařským učitelem. Začíná spojení tibetského buddhismu s politickou mocí.",
+   "d": "Mongolský velkokán Kublaj, zakladatel čínské dynastie Jüan, jmenoval tibetského lamu Pagpu roku 1260 císařským učitelem. Pagpa vytvořil pro mongolštinu nové písmo a vedl Tibet jako vazalský region Mongolů. Tak vznikl model „kněz a patron“, kdy lama poskytuje duchovní vedení a mocný panovník ochranu. Tento vztah ovlivnil dějiny Tibetu i vztahy mezi Tibetem a Čínou po staletí."
   },
   {
    "id": "bud31",
@@ -1045,7 +1158,8 @@
    "y": 1409,
    "c": "rozkol",
    "t": "Klášter Ganden a škola gelug",
-   "x": "Congkhapa zakládá klášter Ganden a školu gelug, z níž pocházejí dalajlámové."
+   "x": "Congkhapa zakládá klášter Ganden a školu gelug, z níž pocházejí dalajlámové.",
+   "d": "Reformátor Congkhapa (1357 až 1419) založil roku 1409 u Lhasy klášter Ganden. Kladl důraz na kázeň, studium a etiku a jeho přívrženci vytvořili školu gelug („ctnostná“). Svým žlutým pokrývkám hlavy se říkalo žlutí. Gelug se stala dominantní školou tibetského buddhismu a z ní pocházejí dalajlámové a pančhenlámové."
   },
   {
    "id": "bud32",
@@ -1053,7 +1167,8 @@
    "y": 1578,
    "c": "moc",
    "t": "Titul dalajláma",
-   "x": "Mongolský Altan Chán uděluje tibetskému mnichovi titul dalajláma, „oceán moudrosti“."
+   "x": "Mongolský Altan Chán uděluje tibetskému mnichovi titul dalajláma, „oceán moudrosti“.",
+   "d": "Mongolský vládce Altan chán pozval roku 1578 do své země tibetského hierarcha Sönama Gjamccho z gelugské školy. Dal mu titul dalajláma (mongolsky „oceán“, tedy oceán moudrosti). Titul byl zpětně přiznán i dvěma předchůdcům, takže Sönam je považován za třetího dalajlámu. Spojení s Mongoly zvýšilo moc gelugské školy v Tibetu."
   },
   {
    "id": "bud33",
@@ -1061,7 +1176,8 @@
    "y": 1642,
    "c": "moc",
    "t": "Dalajlámové vládnou Tibetu",
-   "x": "Pátý dalajláma stojí v čele tibetské vlády a Lhasa se stává duchovním i politickým střediskem."
+   "x": "Pátý dalajláma stojí v čele tibetské vlády a Lhasa se stává duchovním i politickým střediskem.",
+   "d": "Roku 1642 získal pátý dalajláma Ngawang Lobsang Gjamccho s pomocí mongolského vojska Güši chána vládu nad Tibetem. Vznikla vláda Ganden Phodrang a dalajláma se stal duchovním i politickým vůdcem. Nechal postavit palác Potála v Lhase. Podle víry se dalajláma po smrti reinkarnuje jako dítě, které hledají mniši podle znamení. Tento systém trval až do roku 1959."
   },
   {
    "id": "bud34",
@@ -1069,7 +1185,8 @@
    "y": 1868,
    "c": "moc",
    "t": "Oddělení šintó a buddhismu",
-   "x": "Nová japonská vláda odděluje státní šintó od buddhismu. Řada chrámů je zrušena nebo poškozena."
+   "x": "Nová japonská vláda odděluje státní šintó od buddhismu. Řada chrámů je zrušena nebo poškozena.",
+   "d": "Po obnově císařské moci (Meidži, 1868) nová vláda chtěla učinit ze šintó státní náboženství. Zákony o oddělení šintó a buddhismu (šinbucu bunri) nařizovaly, aby se šintoistické svatyně a buddhistické chrámy oddělily. Došlo k násilí vůči buddhismu, zrušení klášterů a ničení soch. Buddhismus se později vzpamatoval a reformoval, ale vztah se státem zůstal napjatý až do konce druhé světové války."
   },
   {
    "id": "bud35",
@@ -1077,7 +1194,8 @@
    "y": 1893,
    "c": "sireni",
    "t": "Buddhismus na Západě",
-   "x": "Na Parlamentu světových náboženství v Chicagu vystupují buddhističtí představitelé a zahajují zájem Západu."
+   "x": "Na Parlamentu světových náboženství v Chicagu vystupují buddhističtí představitelé a zahajují zájem Západu.",
+   "d": "V září 1893 se v Chicagu konal Světový parlament náboženství. Poprvé zde na jednom místě vystoupili zástupci východních náboženství, mezi nimi japonský zenový mnich Šaku Sóen a cejlonský Anagárika Dharmapála. Jejich vystoupení vzbudila zájem v Evropě a Americe. V dalších desetiletích vznikly první západní buddhistické skupiny. Dnes existují buddhistická centra téměř ve všech zemích."
   },
   {
    "id": "bud36",
@@ -1085,7 +1203,8 @@
    "y": 1950,
    "c": "uceni",
    "t": "Světové společenství buddhistů",
-   "x": "V Kolombu vzniká organizace, která sdružuje buddhisty z různých zemí a směrů."
+   "x": "V Kolombu vzniká organizace, která sdružuje buddhisty z různých zemí a směrů.",
+   "d": "Světové společenství buddhistů vzniklo v květnu 1950 v Kolombu na Srí Lance na konferenci, které se zúčastnili zástupci z 27 zemí. Cílem bylo propojit různé tradice a podporovat vzájemné porozumění, vzdělání a mír. Je jednou z prvních mezinárodních organizací, které spojují théravádu, mahájánu i vadžrajánu."
   },
   {
    "id": "bud37",
@@ -1094,7 +1213,8 @@
    "c": "uceni",
    "t": "Šestý buddhistický koncil",
    "x": "V Rangúnu se sejdou tisíce mnichů a znovu přezkoumají páliový kánon.",
-   "e": 1956
+   "e": 1956,
+   "d": "V letech 1954 až 1956 se v Rangúnu (dnešní Yangon) konal šestý koncil théravádového buddhismu, který podpořila barmská vláda. Zúčastnily se ho tisíce mnichů z Barmy, Srí Lanky, Thajska, Kambodže a Laosu. Cílem bylo znovu přezkoumat páliový kánon a uspořádat jeho vydání. Hlavní část proběhla v umělé jeskyni, postavené jako replika té z prvního koncilu. Konec koncilu se shodoval s 2500 lety od Buddhovy smrti podle barmské tradice."
   },
   {
    "id": "bud38",
@@ -1102,7 +1222,8 @@
    "y": 1956,
    "c": "rozkol",
    "t": "Ambedkarovo obrácení",
-   "x": "Bhímráo Ámbédkar přestupuje se statisíci „nedotknutelných“ k buddhismu a obnovuje jej v Indii."
+   "x": "Bhímráo Ámbédkar přestupuje se statisíci „nedotknutelných“ k buddhismu a obnovuje jej v Indii.",
+   "d": "Bhímráo Rámdží Ámbédkar, právník a tvůrce indické ústavy, pocházel z kasty „nedotknutelných“ (dalitů). Po desetiletích boje proti kastovnímu útlaku se 14. října 1956 v Nágpuru veřejně obrátil k buddhismu spolu s několika statisíci stoupenců. Buddhismus viděl jako cestu rovnosti. Zemřel o několik týdnů později. Dnes je v Indii několik milionů „ambedkarovských“ buddhistů."
   },
   {
    "id": "bud39",
@@ -1110,7 +1231,8 @@
    "y": 1959,
    "c": "moc",
    "t": "Dalajláma v exilu",
-   "x": "Po neúspěšném povstání v Tibetu odchází čtrnáctý dalajláma do Indie."
+   "x": "Po neúspěšném povstání v Tibetu odchází čtrnáctý dalajláma do Indie.",
+   "d": "Po čínském vstupu do Tibetu v roce 1950 napětí rostlo. V březnu 1959 vypuklo v Lhase povstání a čtrnáctý dalajláma Tändzin Gjamccho uprchl s doprovodem do Indie. Za ním odešly desítky tisíc Tibeťanů. V Dharamsale vznikla tibetská exilová vláda. Dalajláma byl roku 1989 oceněn Nobelovou cenou míru a stal se světově známým představitelem buddhismu."
   },
   {
    "id": "jud1",
@@ -1119,7 +1241,8 @@
    "c": "zaklad",
    "t": "Exodus a smlouva na Sinaji",
    "x": "Podle bible vede Mojžíš Izraelity z egyptského otroctví a na hoře Sinaj přijímá Desatero. Datace je nejistá.",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle knihy Exodus vedl prorok Mojžíš Izraelity z egyptského otroctví a na hoře Sinaj od Boha přijal Desatero a zákon. Tato událost je základem židovské identity: smlouva mezi Bohem a jeho lidem. Slaví se každoročně o svátku Pesach (vysvobození) a Šavuot (dar Tóry). Historická podoba a přesné datum se mezi badateli liší, často se uvádí 13. století př. n. l., další prameny ale nemáme."
   },
   {
    "id": "jud2",
@@ -1128,7 +1251,8 @@
    "c": "moc",
    "t": "David v Jeruzalémě",
    "x": "Král David dobývá Jeruzalém a činí z něj hlavní město sjednoceného království.",
-   "ap": 1
+   "ap": 1,
+   "d": "Podle bible se David po vítězství nad Goliášem stal králem a asi kolem roku 1000 př. n. l. dobyl město Jeruzalém, které patřilo Jebusejcům. Učinil z něj hlavní město sjednoceného království a přenesl tam Archu úmluvy. Z Davidova rodu měl podle židovské i křesťanské víry vzejít mesiáš. Jeruzalém zůstal od té doby centrem židovského náboženského života."
   },
   {
    "id": "jud3",
@@ -1137,7 +1261,8 @@
    "c": "stavba",
    "t": "První jeruzalémský chrám",
    "x": "Král Šalamoun podle tradice staví chrám, který se stane středem židovského kultu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Davidův syn, král Šalamoun, postavil podle biblického podání kolem roku 960 př. n. l. v Jeruzalémě chrám pro Hospodina. Stál na Chrámové hoře, ve svatyni svatých byla Archa úmluvy. Chrám byl místem obětí a poutí. Archeologie zatím neposkytla přesvědčivý nález, ale tradice o něm je silná. Chrám stál až do roku 586 př. n. l."
   },
   {
    "id": "jud4",
@@ -1145,7 +1270,8 @@
    "y": -722,
    "c": "moc",
    "t": "Pád Severního království",
-   "x": "Asyrská říše dobývá Samaří. Deset izraelských kmenů mizí z dějin."
+   "x": "Asyrská říše dobývá Samaří. Deset izraelských kmenů mizí z dějin.",
+   "d": "Po Šalamounově smrti se království rozpadlo na severní Izrael a jižní Judsko. Severní království dobyla asyrská armáda roku 722 př. n. l. a hlavní město Samaří padlo. Významná část obyvatelstva byla odvlečena do Asýrie. Deset kmenů tak pro dějiny „zmizelo“. Judsko přežilo a nese dědictví židovské tradice."
   },
   {
    "id": "jud5",
@@ -1153,7 +1279,8 @@
    "y": -586,
    "c": "moc",
    "t": "Zničení chrámu, babylonské zajetí",
-   "x": "Nabuchodonosor dobývá Jeruzalém, zbourá chrám a odvede obyvatele do Babylonu."
+   "x": "Nabuchodonosor dobývá Jeruzalém, zbourá chrám a odvede obyvatele do Babylonu.",
+   "d": "Judské království se vzbouřilo proti Babylonu. Nabuchodonozor II. Jeruzalém dobyl roku 586 př. n. l., zbořil chrám a odvedl velkou část elity do Babylonu. Zajetí trvalo asi půl století. Právě v něm vznikla potřeba psaného textu, studia a společné modlitby bez chrámu, což ovlivnilo celé pozdější židovství. Prorok Jeremjáš a Ezechiel v této době působili."
   },
   {
    "id": "jud6",
@@ -1161,7 +1288,8 @@
    "y": -539,
    "c": "moc",
    "t": "Návrat z Babylonu",
-   "x": "Perský král Kýros dobývá Babylon a dovolí Židům vrátit se do Jeruzaléma."
+   "x": "Perský král Kýros dobývá Babylon a dovolí Židům vrátit se do Jeruzaléma.",
+   "d": "Perský král Kýros Veliký dobyl roku 539 př. n. l. Babylon a podle biblického podání vydal výnos, který Židům dovoloval návrat do Jeruzaléma a obnovu chrámu. Část lidí se vrátila, část zůstala v Babylonu, kde se vyvinula významná židovská obec. Jde o jedno z prvních příkladů tolerantní politiky říše vůči náboženství."
   },
   {
    "id": "jud7",
@@ -1169,7 +1297,8 @@
    "y": -516,
    "c": "stavba",
    "t": "Druhý chrám",
-   "x": "Obnovený chrám v Jeruzalémě je vysvěcen."
+   "x": "Obnovený chrám v Jeruzalémě je vysvěcen.",
+   "d": "Po návratu z Babylonu začali Židé obnovu chrámu a roku 516 př. n. l. byl dokončen a vysvěcen. Byl skromnější než Šalamounův, ale přežil asi pět set let. Později ho Herodes rozšířil. Chrám byl středem židovského života, kde se konaly oběti a hlavní svátky, dokud ho roku 70 n. l. nezničili Římané."
   },
   {
    "id": "jud8",
@@ -1178,7 +1307,8 @@
    "c": "uceni",
    "t": "Ezra a Nehemjáš",
    "x": "Písař Ezra předčítá Tóru veřejně a Nehemjáš obnovuje jeruzalémské hradby.",
-   "ap": 1
+   "ap": 1,
+   "d": "Písař Ezra a vladař Nehemjáš vedli v 5. století př. n. l. obnovu židovské obce v Jeruzalémě. Ezra veřejně předčítal Tóru, takže lidé jí rozuměli, a prosazoval dodržování zákona. Nehemjáš obnovil městské hradby. Tato doba se vnímá jako počátek židovství založeného na knize a zákonu. Přesné datování se v odborné literatuře liší (kolem 458 nebo 398 př. n. l. pro Ezru, 445 př. n. l. pro Nehemjáše)."
   },
   {
    "id": "jud9",
@@ -1188,7 +1318,8 @@
    "t": "Septuaginta",
    "x": "V egyptské Alexandrii vzniká řecký překlad hebrejské Bible.",
    "ap": 1,
-   "s": "https://cs.wikipedia.org/wiki/Septuaginta"
+   "s": "https://cs.wikipedia.org/wiki/Septuaginta",
+   "d": "V egyptské Alexandrii, kde žila velká židovská obec mluvící řecky, vznikl ve 3. a 2. století př. n. l. řecký překlad Tóry a dalších knih. Podle legendy ho vytvořilo 72 překladatelů v 72 dnech, odtud název Septuaginta („sedmdesát“). Překlad využívali řecky mluvící Židé i první křesťané. Pro křesťanství je důležité, že řada citací Starého zákona v Novém zákoně vychází právě z něj."
   },
   {
    "id": "jud10",
@@ -1197,7 +1328,8 @@
    "c": "moc",
    "t": "Makabejské povstání",
    "x": "Židé pod vedením Judy Makabejského povstávají proti seleukovskému králi Antiochovi IV.",
-   "e": -160
+   "e": -160,
+   "d": "Seleukovský král Antiochos IV. Epifanés zakázal roku 167 př. n. l. židovské obřady, obřízku a dodržování soboty a v chrámu nechal postavit oltář Diova. Kněz Matatiáš z Modinu a jeho synové, zejména Juda Makabejský, zahájili povstání. Po letech bojů získali politickou nezávislost a vznikla hasmonejská dynastie. Příběh je zachycen v knihách Makabejských."
   },
   {
    "id": "jud11",
@@ -1205,7 +1337,8 @@
    "y": -164,
    "c": "stavba",
    "t": "Znovuvysvěcení chrámu",
-   "x": "Makabejci očišťují a znovu svěcí chrám. Na jeho památku se slaví Chanuka."
+   "x": "Makabejci očišťují a znovu svěcí chrám. Na jeho památku se slaví Chanuka.",
+   "d": "V prosinci roku 164 př. n. l. dobyl Juda Makabejský Jeruzalém, očistil chrám od pohanských oltářů a znovu ho vysvětil. Tato událost se každoročně připomíná svátkem Chanuka („zasvěcení“), osmidenním svátkem světel. Podle talmudu se stal zázrak: malé množství oleje vydrželo svítit osm dnů. Zapalují se svíce na devítiramenném svícnu (chanukija)."
   },
   {
    "id": "jud12",
@@ -1213,7 +1346,8 @@
    "y": -63,
    "c": "moc",
    "t": "Pompeius v Jeruzalémě",
-   "x": "Římský vojevůdce dobývá Jeruzalém. Judea se stává závislou na Římě."
+   "x": "Římský vojevůdce dobývá Jeruzalém. Judea se stává závislou na Římě.",
+   "d": "Hasmonejští bratři Hyrkanos II. a Aristobúlos II. se přeli o trůn a obrátili se na Řím. Roku 63 př. n. l. Pompeius Veliký dobyl Jeruzalém, údajně vstoupil i do chrámu, a Judea se stala závislou na Římě. Později jmenoval Řím za krále Heroda. Od té chvíle byly dějiny Židů ve Svaté zemi spojeny s Římskou říší."
   },
   {
    "id": "jud13",
@@ -1221,7 +1355,8 @@
    "y": -19,
    "c": "stavba",
    "t": "Herodova přestavba chrámu",
-   "x": "Král Herodes Veliký začíná rozsáhlou přestavbu druhého chrámu. Z této doby pochází i dnešní Zeď nářků."
+   "x": "Král Herodes Veliký začíná rozsáhlou přestavbu druhého chrámu. Z této doby pochází i dnešní Zeď nářků.",
+   "d": "Král Herodes Veliký, vládce Judeje z milosti Říma, začal kolem roku 20 př. n. l. s velkolepou přestavbou chrámu. Rozšířil nádvoří na obrovskou platformu, podepřenou masivními zdmi z kvádrů. Jedna z těchto zdí je dnes Zeď nářků, nejsvatější místo, kde se Židé modlí. Přestavba pokračovala dlouho po jeho smrti a dokončena byla až těsně před zničením roku 70 n. l."
   },
   {
    "id": "jud14",
@@ -1230,7 +1365,8 @@
    "c": "moc",
    "t": "První židovská válka",
    "x": "Povstání proti Římu končí zničením chrámu (70) a pádem pevnosti Masada (73).",
-   "e": 73
+   "e": 73,
+   "d": "Napětí mezi židovským obyvatelstvem a římskou správou vyústilo roku 66 v otevřené povstání. Římské vojsko pod vedením Vespasiana a jeho syna Tita ho potlačilo. Roku 70 padl Jeruzalém a chrám byl zničen, roku 73 padla pevnost Masada, kde se podle Josepha Flavia obránci raději zabili, než se vzdali. Josephus Flavius, který bojoval na židovské straně, válku popsal."
   },
   {
    "id": "jud15",
@@ -1238,7 +1374,8 @@
    "y": 70,
    "c": "moc",
    "t": "Zničení druhého chrámu",
-   "x": "Římané pod vedením Tita dobývají Jeruzalém a spálí chrám. Židé se rozptylují po celé říši."
+   "x": "Římané pod vedením Tita dobývají Jeruzalém a spálí chrám. Židé se rozptylují po celé říši.",
+   "d": "V létě roku 70 po dlouhém obléhání dobyli Římané pod Titem Jeruzalém a spálili chrám. Dodnes zůstala jen část opěrné zdi, Zeď nářků. Zničení chrámu bylo zásadním zlomem: bez obětního kultu musely vzniknout nové formy náboženství, modlitba, studium Tóry a synagoga. Vedení převzali učitelé zákona, rabíni. Dne zničení se Židé každoročně připomínají postním dnem Tiša be-Av."
   },
   {
    "id": "jud16",
@@ -1247,7 +1384,8 @@
    "c": "uceni",
    "t": "Synoda v Javne",
    "x": "Rabíni se podle tradice sejdou v Javne a utvářejí podobu židovství bez chrámu. Datace i význam setkání se v odborné literatuře liší.",
-   "ap": 1
+   "ap": 1,
+   "d": "Po roce 70 se rabín Jochanan ben Zakkaj usadil v městě Javne (Jamnia), kde založil učiliště. Podle tradice se kolem roku 90 konalo setkání rabínů, které prý určilo, které knihy patří do hebrejské Bible. Moderní bádání je ale opatrnější: soudí, že kánon se utvářel postupně a Javne bylo spíše střediskem učenosti. V každém případě šlo o místo, které pomohlo přežít židovství bez chrámu."
   },
   {
    "id": "jud17",
@@ -1256,7 +1394,8 @@
    "c": "moc",
    "t": "Bar Kochbovo povstání",
    "x": "Poslední velké povstání proti Římu končí porážkou. Židé nemají přístup do Jeruzaléma.",
-   "e": 135
+   "e": 135,
+   "d": "Císař Hadrianus chtěl na místě Jeruzaléma vybudovat římské město Aelia Capitolina. Židé pod vedením Šimona bar Kochby se roku 132 vzbouřili a několik let vládli části Judeje. Římané po krvavých bojích roku 135 povstání potlačili. Mnoho lidí zahynulo nebo bylo prodáno do otroctví. Židům bylo zakázáno vstupovat do Jeruzaléma. Judea byla přejmenována na Syria Palaestina."
   },
   {
    "id": "jud18",
@@ -1265,7 +1404,8 @@
    "c": "uceni",
    "t": "Mišna",
    "x": "Rabi Jehuda ha-Nasi sepisuje ústní tradici do souboru Mišna, základ Talmudu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Mišna je první velký písemný soubor ústní tradice, tedy výkladů zákona. Zredigoval ho kolem roku 200 rabi Jehuda ha-Nasi (Rabi). Je rozdělena na šest řádů: zemědělství, svátky, rodinné právo, občanské právo, oběti a čistotu. Je základem pozdějšího Talmudu. Důvodem sepsání byla obava, že se ústní tradice po zničení chrámu a ve válkách ztratí."
   },
   {
    "id": "jud19",
@@ -1274,7 +1414,8 @@
    "c": "uceni",
    "t": "Jeruzalémský talmud",
    "x": "V Galileji vzniká soubor rabínských výkladů, později zastíněný talmudem babylonským (kolem 500).",
-   "ap": 1
+   "ap": 1,
+   "d": "Talmud vzniká tak, že ke každému oddílu Mišny se připojují diskuze učenců (gemara). Jeruzalémský talmud vznikl ve škole v Galileji, v Tiberiadě a Caesareji, a byl uzavřen kolem roku 400. Babylonský talmud vznikl kolem roku 500 a je rozsáhlejší a vlivnější. Obě díla se studují dodnes, zejména babylonský talmud je základem židovského právního myšlení."
   },
   {
    "id": "jud20",
@@ -1283,7 +1424,8 @@
    "c": "rozkol",
    "t": "Karaité",
    "x": "Anan ben David zakládá hnutí, které uznává jen písemnou Tóru a odmítá ústní tradici Talmudu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Anan ben David, který žil v Babylonii v 8. století, prohlásil, že pravé židovství spočívá jen ve psaném zákoně (Tóře) a ne v ústní tradici Talmudu. Jeho následovníci se nazývají karaité („čtenáři Písma“). Po roce 760 vznikla zvláštní komunita, která se rozšířila do Egypta, Palestiny a Krymu. Karaité existují dodnes, ve velmi malém počtu, hlavně v Izraeli."
   },
   {
    "id": "jud21",
@@ -1291,7 +1433,8 @@
    "y": 933,
    "c": "uceni",
    "t": "Saadja Gaon: Kniha víry a názorů",
-   "x": "Gaon Saadja v Bagdádu spojuje židovskou víru s racionální filosofií. Jedno z prvních systematických děl židovské filosofie."
+   "x": "Gaon Saadja v Bagdádu spojuje židovskou víru s racionální filosofií. Jedno z prvních systematických děl židovské filosofie.",
+   "d": "Saadja ben Josef (882 až 942) byl rabín a gaon (hlava) talmudické akademie v Sura v Babylonii. Roku 933 dokončil dílo „Kniha víry a názorů“, jedno z prvních systematických děl židovské filosofie, které využívá rozum při obhajobě víry. Přeložil také Bibli do arabštiny. Bránil rabínské židovství proti kritice karaitů."
   },
   {
    "id": "jud22",
@@ -1300,7 +1443,8 @@
    "c": "uceni",
    "t": "Raši",
    "x": "Francouzský rabín Šlomo ben Jicchak píše výklady Bible a Talmudu, dodnes užívané.",
-   "e": 1105
+   "e": 1105,
+   "d": "Šlomo ben Jicchak, zvaný Raši (1040 až 1105), žil v Troyes ve Francii. Napsal srozumitelné komentáře k Bibli a Talmudu, které se staly základem pro všechny další studenty. Raši psal prostým jazykem a v textu uvádí i staré francouzské výrazy. Jeho komentáře se tisknou téměř ve všech vydáních Talmudu a Tóry dodnes."
   },
   {
    "id": "jud23",
@@ -1308,7 +1452,8 @@
    "y": 1096,
    "c": "moc",
    "t": "Pogromy za první křížové výpravy",
-   "x": "Křižáci vraždí židovské obce v rýnských městech, například ve Wormsu a Mohuči."
+   "x": "Křižáci vraždí židovské obce v rýnských městech, například ve Wormsu a Mohuči.",
+   "d": "Na jaře 1096 se zástupy poutníků, které nebyly ve vojenské výpravě organizovány, vydaly na cestu do Svaté země. Cestou přepadaly židovské obce v Porýní, ve Speyeru, Wormsu a Mohuči. Židé byli vražděni nebo nuceni ke křtu, mnozí volili smrt, aby nepřijali křest. Někteří biskupové se snažili Židy chránit. Tyto události jsou považovány za počátek dlouhé řady násilností v Evropě."
   },
   {
    "id": "jud24",
@@ -1317,7 +1462,8 @@
    "c": "uceni",
    "t": "Maimonidovo Mišne Tora",
    "x": "Rabi Mojžíš ben Maimon shrnuje židovské právo do přehledného kodexu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Mojžíš ben Maimon, známý jako Maimonides nebo Rambam (1138 až 1204), rabín, filosof a lékař, žil v Córdobě, Maroku a Egyptě. Kolem roku 1180 dokončil Mišne Tora, přehledný kodex celého židovského práva ve čtrnácti knihách. Napsal také Průvodce zbloudilých, kde se snažil sladit víru a Aristotelovu filosofii. Patří k nejvlivnějším židovským myslitelům."
   },
   {
    "id": "jud25",
@@ -1326,7 +1472,8 @@
    "c": "uceni",
    "t": "Zohar",
    "x": "Ve Španělsku se objevuje Zohar, hlavní spis kabaly, tradičně připisovaný rabimu Šimonu bar Jochaji.",
-   "ap": 1
+   "ap": 1,
+   "d": "Zohar („Záře“) je hlavním dílem kabaly, židovské mystiky. Objevil se kolem roku 1280 ve Španělsku, kde ho rozšířil Moše de León. Podle tradice ho napsal rabi Šimon bar Jochaj ve 2. století, moderní badatelé ale věří, že autorem je spíše Moše de León. Zohar vykládá Tóru mystickým způsobem, popisuje deset božských sefirot a vztah Boha a světa."
   },
   {
    "id": "jud26",
@@ -1334,7 +1481,8 @@
    "y": 1290,
    "c": "moc",
    "t": "Vyhnání Židů z Anglie",
-   "x": "Král Eduard I. vyhání Židy z Anglie. Návrat je povolen až v 17. století."
+   "x": "Král Eduard I. vyhání Židy z Anglie. Návrat je povolen až v 17. století.",
+   "d": "Král Eduard I. Anglický vydal roku 1290 edikt, jímž vyhnal Židy z Anglie. Příčinami byly nábožensko-lidová nenávist, finanční zájmy koruny i rostoucí omezování Židů, kteří měli jen málo povolání. Odešlo asi dvě až tři tisíce lidí. Návrat byl povolen až roku 1656 za Cromwella. Anglie byla první evropskou zemí, která vyhnala Židy v tak velkém měřítku."
   },
   {
    "id": "jud27",
@@ -1343,7 +1491,8 @@
    "c": "moc",
    "t": "Černá smrt a pogromy",
    "x": "Během morové epidemie jsou Židé obviňováni z otrávení studní. Řada obcí v Evropě je vyvražděna.",
-   "e": 1350
+   "e": 1350,
+   "d": "V letech 1348 až 1350 se Evropou šířila morová epidemie, při níž zemřela snad třetina obyvatelstva. Lidé hledali viníky a rozšířila se pověst, že Židé otrávili studně. Od jihu Francie po Německo následovaly masakry, například ve Štrasburku roku 1349. Papež Klement VI. tyto obvinění odsoudil, což moc nepomohlo. Mnoho židovských obcí bylo zničeno a přeživší odcházeli na východ, do Polska."
   },
   {
    "id": "jud28",
@@ -1351,7 +1500,8 @@
    "y": 1492,
    "c": "moc",
    "t": "Vyhnání ze Španělska",
-   "x": "Alhambrský edikt nutí španělské Židy ke křtu nebo odchodu. Vzniká sefardská diaspora."
+   "x": "Alhambrský edikt nutí španělské Židy ke křtu nebo odchodu. Vzniká sefardská diaspora.",
+   "d": "Alhambrským ediktem z 31. března 1492 nařídili katoličtí králové Ferdinand a Isabela Židům, aby buď přestoupili ke křesťanství, nebo opustili zemi do čtyř měsíců. Odešlo kolem sto tisíc lidí, mnoho do Osmanské říše, Itálie a severní Afriky. Potomci se nazývají sefarďané (podle hebrejského názvu Španělska, Sefarad) a dodnes zachovávají ladino, španělštinu psanou hebrejským písmem."
   },
   {
    "id": "jud29",
@@ -1359,7 +1509,8 @@
    "y": 1497,
    "c": "moc",
    "t": "Nucený křest v Portugalsku",
-   "x": "Král Manuel I. nařizuje Židům křest nebo odchod. Mnoho z nich se stává „novými křesťany“ a tajně zachovávají víru."
+   "x": "Král Manuel I. nařizuje Židům křest nebo odchod. Mnoho z nich se stává „novými křesťany“ a tajně zachovávají víru.",
+   "d": "Portugalský král Manuel I. vydal roku 1496 dekret vyhánějící Židy, ale roku 1497 je nechal násilím pokřtít, aby je udržel v zemi. Takto vznikla skupina „nových křesťanů“ (conversos). Mnozí z nich tajně dále zachovávali židovskou víru a byli později pronásledováni inkvizicí. Jejich potomci se objevují po celém světě, v Amsterdamu, Brazílii, Karibiku."
   },
   {
    "id": "jud30",
@@ -1367,7 +1518,8 @@
    "y": 1516,
    "c": "moc",
    "t": "Benátské ghetto",
-   "x": "V Benátkách vzniká první uzavřená židovská čtvrť, nazvaná ghetto."
+   "x": "V Benátkách vzniká první uzavřená židovská čtvrť, nazvaná ghetto.",
+   "d": "Benátská republika nařídila roku 1516, aby Židé bydleli v uzavřené čtvrti u slévárny (v benátštině „geto“). Na noc se brány zamykaly. Odtud pochází slovo ghetto. Židé zde mohli žít a obchodovat, ale museli nosit označení a platit zvláštní daně. Podobná omezení se rozšířila v mnoha evropských městech. Čtvrť stojí dodnes a je památkou."
   },
   {
    "id": "jud31",
@@ -1375,7 +1527,8 @@
    "y": 1565,
    "c": "uceni",
    "t": "Šulchan aruch",
-   "x": "Rabi Josef Karo vydává ucelený kodex židovského práva, který se stává závazným pro většinu obcí."
+   "x": "Rabi Josef Karo vydává ucelený kodex židovského práva, který se stává závazným pro většinu obcí.",
+   "d": "Rabi Josef Karo (1488 až 1575), který žil v Safedu v Galileji, vydal roku 1565 Šulchan aruch („Prostřený stůl“), stručný kodex židovského práva pro každodenní život. Aškenázský rabín Mojžíš Isserles k němu doplnil poznámky o zvycích Aškenázů. Spojení obou textů se stalo závazným pro většinu ortodoxních Židů a dodnes se používá."
   },
   {
    "id": "jud32",
@@ -1383,7 +1536,8 @@
    "y": 1654,
    "c": "sireni",
    "t": "První Židé v Severní Americe",
-   "x": "Skupina židovských uprchlíků z Brazílie přichází do Nového Amsterdamu, dnešního New Yorku."
+   "x": "Skupina židovských uprchlíků z Brazílie přichází do Nového Amsterdamu, dnešního New Yorku.",
+   "d": "V září 1654 přijelo do Nového Amsterdamu (dnešní New York), tehdy nizozemské kolonie, dvacet tři židovských uprchlíků z Brazílie, kde je ohrožovali Portugalci. Guvernér Peter Stuyvesant je odmítal, ale Nizozemská Západoindická společnost mu nařídila, aby je nechal zůstat. Bylo to začátek židovského osídlení Severní Ameriky. Dnes žije v USA jedna z největších židovských obcí světa."
   },
   {
    "id": "jud33",
@@ -1391,7 +1545,8 @@
    "y": 1666,
    "c": "rozkol",
    "t": "Šabtaj Cvi",
-   "x": "Sebeprohlášený mesiáš nadchne diasporu a roku 1666 konvertuje k islámu. Velké zklamání."
+   "x": "Sebeprohlášený mesiáš nadchne diasporu a roku 1666 konvertuje k islámu. Velké zklamání.",
+   "d": "Šabtaj Cvi z Izmiru se v roce 1665 prohlásil mesiášem. Jeho zprávy rozvášnily židovské obce v Evropě a na Blízkém východě; mnozí věřili, že přichází vykoupení. Roku 1666 ho osmanský sultán zatkl a dal na výběr mezi smrtí a přestoupením k islámu. Šabtaj přestoupil. To bylo pro mnohé velké zklamání. Někteří stoupenci zůstali věrní a tajně pokračovali v jeho učení."
   },
   {
    "id": "jud34",
@@ -1400,7 +1555,8 @@
    "c": "rozkol",
    "t": "Chasidismus",
    "x": "Baal Šem Tov v Podolí zakládá hnutí zdůrazňující radost, modlitbu a blízkost k Bohu.",
-   "ap": 1
+   "ap": 1,
+   "d": "Chasidské hnutí vzniklo v 18. století na Ukrajině a v Polsku. Jeho zakladatelem je Izrael ben Eliezer, zvaný Baal Šem Tov („pán dobrého jména“). Zdůrazňoval radost, upřímnou modlitbu a blízkost Boha každému člověku, nejen učencům. Po vzoru charismatických vůdců (rebe) vznikaly dvory a komunity. Chasidé se poznají podle oblečení a zpěvu; největší skupiny, například Chabad nebo Satmar, jsou dnes po celém světě."
   },
   {
    "id": "jud35",
@@ -1408,7 +1564,8 @@
    "y": 1782,
    "c": "moc",
    "t": "Toleranční patent Josefa II.",
-   "x": "Císař Josef II. uvolňuje omezení pro Židy v habsburských zemích včetně Čech."
+   "x": "Císař Josef II. uvolňuje omezení pro Židy v habsburských zemích včetně Čech.",
+   "d": "Císař Josef II. vydal v roce 1782 pro Čechy a další habsburské země toleranční patent pro Židy. Zrušil část omezení, například povinnost nosit označení, a umožnil jim studovat na školách a provozovat řemesla. Zároveň od nich ale chtěl, aby přijali německá příjmení a německé školy a platili zvláštní daně. Patent byl krokem k emancipaci, ale ne k plné rovnosti."
   },
   {
    "id": "jud36",
@@ -1416,7 +1573,8 @@
    "y": 1791,
    "c": "moc",
    "t": "Občanská práva ve Francii",
-   "x": "Francouzské národní shromáždění uděluje Židům rovná občanská práva."
+   "x": "Francouzské národní shromáždění uděluje Židům rovná občanská práva.",
+   "d": "Během Velké francouzské revoluce schválilo Národní shromáždění 27. září 1791 zákon, který přiznal Židům plná občanská práva. Byl to první takový krok v Evropě. Napoleon později tento proces ovlivnil, ale i omezil. Emancipace vedla k tomu, že mnoho Židů vstoupilo do občanské společnosti, a také ke sporu, zda zůstat věrný tradici nebo se asimilovat."
   },
   {
    "id": "jud37",
@@ -1424,7 +1582,8 @@
    "y": 1810,
    "c": "rozkol",
    "t": "Reformní judaismus",
-   "x": "V Seesenu vzniká škola Israela Jacobsona, počátek reformního hnutí."
+   "x": "V Seesenu vzniká škola Israela Jacobsona, počátek reformního hnutí.",
+   "d": "V německém Seesenu založil Israel Jacobson roku 1810 školu, kde se konaly nové typy bohoslužeb s kázáním v němčině a hudbou. Tak začalo reformní hnutí, které chtělo přizpůsobit židovství moderní době. Později se rozšířilo do USA, kde je dnes největším proudem. Ortodoxní židovstvo tyto změny odmítlo a vznikl i střední směr, konzervativní judaismus."
   },
   {
    "id": "jud38",
@@ -1432,7 +1591,8 @@
    "y": 1881,
    "c": "moc",
    "t": "Pogromy v Rusku",
-   "x": "Vlna násilí po atentátu na cara Alexandra II. nutí statisíce Židů emigrovat, hlavně do Spojených států."
+   "x": "Vlna násilí po atentátu na cara Alexandra II. nutí statisíce Židů emigrovat, hlavně do Spojených států.",
+   "d": "Po atentátu na cara Alexandra II. v březnu 1881 se po jižním Rusku a Ukrajině šířily pogromy, násilné útoky na židovské čtvrti. Úřady je často trpěly. Následovaly přísné zákony, které omezovaly pobyt Židů na vymezeném území. V následujících desetiletích emigrovaly miliony Židů do USA a menší část do Palestiny. Slovo pogrom vzniklo právě z ruského výrazu pro tato násilí."
   },
   {
    "id": "jud39",
@@ -1440,7 +1600,8 @@
    "y": 1897,
    "c": "moc",
    "t": "První sionistický kongres",
-   "x": "Theodor Herzl svolává do Basileje kongres, který vyhlašuje cíl zřídit domov pro Židy v Palestině."
+   "x": "Theodor Herzl svolává do Basileje kongres, který vyhlašuje cíl zřídit domov pro Židy v Palestině.",
+   "d": "Theodor Herzl, vídeňský novinář, byl otřesen antisemitismem, který viděl při aféře Dreyfus. Roku 1896 vydal spis Židovský stát a o rok později svolal do Basileje první sionistický kongres. Zúčastnilo se zhruba dvě stě delegátů. Přijali program, jehož cílem bylo vytvořit pro židovský lid domov v Palestině, zaručený veřejným právem. Tím začalo politické sionistické hnutí."
   },
   {
    "id": "jud40",
@@ -1448,7 +1609,8 @@
    "y": 1917,
    "c": "moc",
    "t": "Balfourova deklarace",
-   "x": "Britská vláda slibuje podporu zřízení „národního domova pro židovský lid“ v Palestině."
+   "x": "Britská vláda slibuje podporu zřízení „národního domova pro židovský lid“ v Palestině.",
+   "d": "Dne 2. listopadu 1917 napsal britský ministr zahraničí Arthur Balfour lordu Rothschildovi, že britská vláda „s přízní hledí na vytvoření národního domova pro židovský lid v Palestině“. Zároveň slíbil, že nebudou dotčena práva existujících nežidovských obyvatel. Deklarace byla později součástí britského mandátu pro Palestinu. Je dodnes předmětem sporů mezi Židy a Araby."
   },
   {
    "id": "jud41",
@@ -1458,7 +1620,8 @@
    "t": "Šoa",
    "x": "Nacistické Německo systematicky vraždí asi šest milionů Židů.",
    "e": 1945,
-   "s": "https://cs.wikipedia.org/wiki/Holokaust"
+   "s": "https://cs.wikipedia.org/wiki/Holokaust",
+   "d": "Šoa (hebrejsky „zkáza“) označuje systematické vyvražďování Židů nacistickým Německem a jeho spojenci v letech 1933 až 1945. Zahrnuje zákony diskriminace, ghetta, hromadné popravy a vyhlazovací tábory jako Osvětim-Birkenau, Treblinka či Sobibor. Zahynulo asi šest milionů Židů, z českých zemí asi 77 tisíc (jejich jména jsou zapsána na stěnách Pinkasovy synagogy v Praze). Šoa hluboce změnila židovský svět i mezinárodní právo, a vedla ke vzniku pojmu genocida."
   },
   {
    "id": "jud42",
@@ -1466,7 +1629,8 @@
    "y": 1948,
    "c": "moc",
    "t": "Vznik státu Izrael",
-   "x": "David Ben Gurion vyhlašuje nezávislý stát Izrael."
+   "x": "David Ben Gurion vyhlašuje nezávislý stát Izrael.",
+   "d": "Dne 14. května 1948, v den skončení britského mandátu, vyhlásil David Ben Gurion v Tel Avivu nezávislý stát Izrael. Rozhodnutí vycházelo z plánu OSN na rozdělení Palestiny z roku 1947. Následující den vtrhla do země vojska okolních arabských států a vypukla první arabsko-izraelská válka. Mnoho Palestinců uprchlo nebo bylo vyhnáno. Do Izraele během následujících let přišly stovky tisíc Židů z Evropy a arabských zemí."
   },
   {
    "id": "jud43",
@@ -1474,7 +1638,8 @@
    "y": 1967,
    "c": "moc",
    "t": "Šestidenní válka",
-   "x": "Izrael ovládá celý Jeruzalém včetně Zdi nářků, kde mohou Židé poprvé po devatenácti letech vstoupit."
+   "x": "Izrael ovládá celý Jeruzalém včetně Zdi nářků, kde mohou Židé poprvé po devatenácti letech vstoupit.",
+   "d": "V červnu 1967 napadl Izrael preventivně Egypt a poté bojoval i proti Jordánsku a Sýrii. Během šesti dnů obsadil Sinajský poloostrov, Pásmo Gazy, Západní břeh Jordánu s východním Jeruzalémem a Golanské výšiny. Židé tak poprvé po devatenácti letech získali přístup ke Zdi nářků. Okupace území vyvolala dlouhodobé spory a je jednou z hlavních překážek míru na Blízkém východě."
   },
   {
    "id": "hin1",
@@ -1484,7 +1649,8 @@
    "t": "Civilizace údolí Indu",
    "x": "Města jako Mohendžo-daro a Harappa mají plánované ulice a velkou zděnou lázeň, pravděpodobně rituální.",
    "e": -1900,
-   "ap": 1
+   "ap": 1,
+   "d": "Civilizace údolí Indu, známá také jako harappská, vzkvétala mezi lety 2600 a 1900 př. n. l. na území dnešního Pákistánu a severozápadní Indie. Měla plánovaná města Mohendžo-daro a Harappa s pravoúhlými ulicemi, kanalizací a velkými lázněmi. Písmo se dosud nepodařilo rozluštit, takže o jejím náboženství víme jen z nálezů: soška tančící dívky, pečeti s postavou připomínající pozdějšího Šivu či posvátné zvíře. Vztah k pozdějšímu hinduismu je předmětem diskuzí."
   },
   {
    "id": "hin2",
@@ -1494,7 +1660,8 @@
    "t": "Rigvéda",
    "x": "Nejstarší védské hymny na počest bohů, jako jsou Indra, Agni a Varuna, se předávají ústně.",
    "e": -1200,
-   "ap": 1
+   "ap": 1,
+   "d": "Rigvéda je nejstarší sbírka hymnů ve védském sanskrtu, sestavená zhruba mezi lety 1500 až 1200 př. n. l. (někteří badatelé uvádějí rozpětí 1700 až 1100). Obsahuje 1028 hymnů, v nichž jsou oslavováni bohové, například Agni (oheň), Indra (bouře) či Varuna. Předávala se ústně s mimořádnou přesností po tisíce let. Je základem védské tradice a nejstarším textem hinduismu."
   },
   {
    "id": "hin3",
@@ -1504,7 +1671,8 @@
    "t": "Upanišady",
    "x": "Filosofické spisy o átmanu a brahmanu, o koloběhu zrození a o osvobození (móksa).",
    "e": -500,
-   "ap": 1
+   "ap": 1,
+   "d": "Upanišady jsou filosofické spisy, které vznikaly zhruba od 8. do 5. století př. n. l. a dále. Jejich název se vykládá jako „sedět blízko učitele“. Zabývají se základními otázkami: co je skutečnost (brahman), co je já (átman) a jak se člověk osvobodí z koloběhu zrození (samsára). Heslo „tat tvam asi“ (to jsi ty) vyjadřuje jednotu já a absolutna. Staly se základem vedánty a ovlivnily i buddhismus."
   },
   {
    "id": "hin4",
@@ -1514,7 +1682,8 @@
    "t": "Mahábhárata a Rámájana",
    "x": "Velké eposy vznikají v průběhu staletí. Součástí Mahábháraty je Bhagavadgíta.",
    "e": 400,
-   "ap": 1
+   "ap": 1,
+   "d": "Dva velké sanskrtské eposy vznikaly v průběhu staletí zhruba mezi 4. stoletím př. n. l. a 4. stoletím n. l. Mahábhárata vypráví o válce mezi dvěma větvemi rodu, Kuruovci a Pándavovci. Je nejdelší básní světa a obsahuje Bhagavadgítu, rozhovor bojovníka Ardžuny s Kršnou o povinnosti a oddanosti. Rámájana popisuje příběh prince Rámy, který se vydává zachránit manželku Sítu. Oba příběhy jsou dodnes živé v divadle, filmu i každodenním životě."
   },
   {
    "id": "hin5",
@@ -1524,7 +1693,8 @@
    "t": "Manuovy zákony",
    "x": "Sanskrtský spis o dharmě popisuje povinnosti podle kast a životních stádií.",
    "e": 200,
-   "ap": 1
+   "ap": 1,
+   "d": "Mánavadharmašástra, známá jako Manuovy zákony, je sanskrtský spis o právu a povinnostech (dharma), vzniklý zhruba mezi 2. stoletím př. n. l. a 3. stoletím n. l. Popisuje čtyři společenské třídy (varny), čtyři životní stupně a povinnosti každého z nich. Měl velký vliv na pozdější právní myšlení. Zároveň je kritizován za zdůvodnění nerovnosti a podřízeného postavení žen a nižších vrstev. Moderní Indie se od něj distancuje."
   },
   {
    "id": "hin6",
@@ -1534,7 +1704,8 @@
    "t": "Purány",
    "x": "Příběhy o bozích Višnuovi, Šivovi a bohyni Dévi se rozšiřují mezi lidmi a tvoří základ chrámového uctívání.",
    "e": 1000,
-   "ap": 1
+   "ap": 1,
+   "d": "Purány jsou rozsáhlé spisy, které vznikaly od 3. století n. l. do zhruba 10. století. Vyprávějí o stvoření světa, rodokmenech králů a o činech božstev, zejména Višnua, Šivy a bohyně Dévi. Díky nim se rozšířilo osobní uctívání bohů v chrámech a vznikly základní příběhy, které lidé dodnes znají, například o Kršnovi. Je jich osmnáct hlavních a mnoho vedlejších."
   },
   {
    "id": "hin7",
@@ -1543,7 +1714,8 @@
    "c": "moc",
    "t": "Guptovská říše",
    "x": "Zlatý věk indické kultury: rozkvět sochařství, chrámů, matematiky a sanskrtské literatury.",
-   "e": 550
+   "e": 550,
+   "d": "Dynastie Guptovců (zhruba 320 až 550) vládla velké části severní Indie. Doba je považována za zlatý věk klasické indické kultury: básník Kálidása, matematik Árjabhata (který určil hodnotu čísla pí s vysokou přesností) či chrámová architektura. Králové byli často vaišnavisté a podporovali hinduistické chrámy, ale podporovali i buddhismus a džinismus, například univerzitu Nálandá. Říše zanikla po vpádech Hunů."
   },
   {
    "id": "hin8",
@@ -1553,7 +1725,8 @@
    "t": "Hnutí bhakti",
    "x": "Tamilští básníci, Álváři a Nájanárové, vyzdvihují osobní lásku k Bohu a zpívají v lidové řeči.",
    "e": 900,
-   "ap": 1
+   "ap": 1,
+   "d": "Bhakti znamená oddanost, osobní láska k Bohu. V Tamilnádu od 6. století zpívali básníci, vaišnavští Álváři a šivovští Nájanárové, hymny v lidovém jazyce a odmítali tehdy rozšířenou důležitost sanskrtu a kast. Hnutí se pak rozšířilo po celé Indii. Jeho básně a písně se zpívají dodnes. Ovlivnilo také mnohá další hnutí, mezi nimi Kabíra a sikhismus."
   },
   {
    "id": "hin9",
@@ -1562,7 +1735,8 @@
    "c": "stavba",
    "t": "Chrám Kailásanáth v Ellóře",
    "x": "Vládce z dynastie Ráštrakútů dává vytesat celý chrám do jediné skály. Jeden z největších monolitů světa.",
-   "ap": 1
+   "ap": 1,
+   "d": "Ve skalním komplexu Ellóra v Maháráštře dal ráštrakútský král Krišna I. kolem roku 756 začít s vytesáváním chrámu Kailásanáth, zasvěceného Šivovi. Chrám nebyl postaven z kamenů, ale vytesán shora dolů z jediné obrovské skály, vyňatých asi 200 tisíc tun horniny. Je vysoký asi třicet metrů. Jde o jeden z největších monolitů a divů starověké architektury. Dokončení trvalo desítky let."
   },
   {
    "id": "hin10",
@@ -1572,7 +1746,8 @@
    "t": "Ádi Šankara",
    "x": "Filosof učí nedualistickou advaita vedántu: brahman a átman jsou jedno.",
    "e": 820,
-   "ap": 1
+   "ap": 1,
+   "d": "Ádi Šankara (asi 788 až 820, datace se liší) byl filosof z Kérale, který krátce žil a velmi mnoho vykonal. Napsal komentáře k Upanišadám, Brahmasútrám a Bhagavadgítě a obhajoval advaita védántu, učení o nedualitě: konečná skutečnost (brahman) je jen jedna a rozlišování světa je klam (májá). Založil čtyři kláštery (mathy) na čtyřech koncích Indie. Jeho vliv na hinduistickou filosofii je obrovský."
   },
   {
    "id": "hin11",
@@ -1580,7 +1755,8 @@
    "y": 1010,
    "c": "stavba",
    "t": "Chrám Brihadíšvara",
-   "x": "Cholský panovník Rádžaradža I. dokončuje v Thandžávúru obrovský chrám boha Šivy."
+   "x": "Cholský panovník Rádžaradža I. dokončuje v Thandžávúru obrovský chrám boha Šivy.",
+   "d": "Čólský král Rádžaradža I. dokončil roku 1010 v Thandžávúru obrovský šivovský chrám Brihadíšvara. Jeho věž (vimána) je vysoká asi 66 metrů a na vrcholu je kamenný blok o váze kolem osmdesáti tun. Stěny zdobí fresky a sochy. Chrám symbolizoval moc dynastie. Je zapsán na seznamu UNESCO jako příklad čólské architektury a stále slouží k bohoslužbám."
   },
   {
    "id": "hin12",
@@ -1589,7 +1765,8 @@
    "c": "uceni",
    "t": "Rámánudža",
    "x": "Teolog zakládá školu višišta-advaita a zdůrazňuje oddanost Višnuovi.",
-   "e": 1137
+   "e": 1137,
+   "d": "Rámánudža (1017 až 1137) byl filosof a reformátor z Tamilnádu. Učil viśiṣṭādvaitu: Bůh (Višnu) a duše nejsou totéž, ale duše je jeho součástí, a cestou k osvobození je oddanost (bhakti). Tím se postavil proti Šankarovu pojetí nedualitu. Dílo rozšířilo vaišnavismus a vlivné hnutí Šrívaišnavů. Podle tradice usiloval o otevření chrámů všem kastám."
   },
   {
    "id": "hin13",
@@ -1597,7 +1774,8 @@
    "y": 1025,
    "c": "moc",
    "t": "Plenění Somnáthu",
-   "x": "Mahmúd z Ghazny vyplení slavný šivovský chrám v Gudžarátu. Událost se stala silnou součástí pozdější paměti."
+   "x": "Mahmúd z Ghazny vyplení slavný šivovský chrám v Gudžarátu. Událost se stala silnou součástí pozdější paměti.",
+   "d": "Chrám Somnáth v Gudžarátu byl proslulou šivovskou svatyní. Mahmúd z Ghazny, vládce z dnešního Afghánistánu, jej roku 1025 vyplenil a údajně odvezl obrovské bohatství. Událost je zmíněna v muslimských i hinduistických pramenech a je dodnes silným symbolem. Chrám byl později několikrát obnoven a naposledy znovu postaven po nezávislosti Indie. Moderní historici debatují o tom, jak moc byly motivy náboženské a jak hospodářské."
   },
   {
    "id": "hin14",
@@ -1606,7 +1784,8 @@
    "c": "stavba",
    "t": "Angkor Wat",
    "x": "Khmerský král Súrjavarman II. nechává postavit chrám zasvěcený bohu Višnuovi, největší náboženskou stavbu světa.",
-   "e": 1150
+   "e": 1150,
+   "d": "Khmerský král Súrjavarman II. nechal v první polovině 12. století postavit chrám Angkor Wat, zasvěcený Višnuovi, v dnešní Kambodži. Stavba je symbolem hory Méru, středu vesmíru, s pěti věžemi. Reliéfy znázorňují scény z eposů, například Rámájany a Mahábháraty. Později se z chrámu stal buddhistický chrám a dodnes je největší náboženskou stavbou na světě. Vyobrazen je na kambodžské vlajce."
   },
   {
    "id": "hin15",
@@ -1616,7 +1795,8 @@
    "t": "Basava a lingájatismus",
    "x": "Básník a ministr Basava v Karnatace kritizuje kasty a obřady a zakládá hnutí uctívající Šivu jako jediné božstvo.",
    "e": 1167,
-   "ap": 1
+   "ap": 1,
+   "d": "Basava (kolem 1131 až 1167) byl básník a ministr v Karnatace. Hlásal uctívání jediného boha Šivy, nošení lingy na krku a odmítal kasty, obřady a modlářství. Jeho verše (vačany) psané v kannadštině jsou prosté a ostré. Z jeho hnutí vznikla komunita Lingájatů (též Vírašaivů), která má dnes miliony členů, zejména v jižní Indii."
   },
   {
    "id": "hin16",
@@ -1625,7 +1805,8 @@
    "c": "stavba",
    "t": "Chrám Slunce v Konáraku",
    "x": "V Urísse vzniká chrám ve tvaru obřího vozu boha Slunce Súrji, tažený sedmi koňmi.",
-   "ap": 1
+   "ap": 1,
+   "d": "Chrám Konárak v Urísse postavil kolem roku 1250 král Narasimhadéva I. z východogangovské dynastie. Má podobu obřího vozu boha Slunce Súrji, tažený sedmi koňmi, se čtyřiadvaceti kamennými koly, která fungují i jako sluneční hodiny. Zdi pokrývají sochy včetně erotických. Hlavní věž se zřítila a chrám zůstal v ruinách, ale dodnes je zapsán na seznamu UNESCO."
   },
   {
    "id": "hin17",
@@ -1634,7 +1815,8 @@
    "c": "moc",
    "t": "Vidžajanagarská říše",
    "x": "Hinduistické království v jižní Indii brání kulturu a staví velké chrámy, například v Hampi.",
-   "e": 1646
+   "e": 1646,
+   "d": "Říše Vidžajanagar v jižní Indii vznikla roku 1336 a vládla jí řada dynastií až do 17. století. Hlavním městem bylo Hampi, nádherné chrámové město. Říše chránila jihoindickou hinduistickou kulturu před muslimskými sultanáty na severu, podporovala telugskou a kannadskou literaturu a stavěla velké chrámy. Její úpadek nastal po porážce u Talikoty roku 1565."
   },
   {
    "id": "hin18",
@@ -1644,7 +1826,8 @@
    "t": "Kabír",
    "x": "Básník a mystik tkadlec hlásá jednotu Boha nad hranicemi hinduismu a islámu. Jeho verše uctívají hinduisté, muslimové i sikhové.",
    "e": 1518,
-   "ap": 1
+   "ap": 1,
+   "d": "Kabír (kolem 1440 až 1518) byl básník z Váránasí, pravděpodobně tkadlec z muslimské rodiny, který se hlásil k hinduistické tradici bhakti i k islámskému súfismu. Jeho krátké básně (dóhá) kritizují prázdné obřady a kasty a hlásají jednoho Boha a jeho lásku. Jeho verše se zpívají v hinduistické, muslimské i sikhské tradici. Část z nich je zahrnuta i ve svatém textu sikhů, Ádi granth."
   },
   {
    "id": "hin19",
@@ -1652,7 +1835,8 @@
    "y": 1486,
    "c": "rozkol",
    "t": "Čaitanja Maháprabhu",
-   "x": "V Bengálsku se narodil kazatel, který rozšířil oddané uctívání Kršny zpěvem a tancem. Zakladatel gaudíja vaišnavismu."
+   "x": "V Bengálsku se narodil kazatel, který rozšířil oddané uctívání Kršny zpěvem a tancem. Zakladatel gaudíja vaišnavismu.",
+   "d": "Čaitanja (1486 až 1534) se narodil v Bengálsku jako Višvambhara Misra. Po zážitku oddanosti k Kršnovi se stal asketou a začal šířit zpěv jména Boha, tzv. kírtan. Učil, že cesta k osvobození vede přes lásku a oddanost. Jeho učení vedlo k založení gaudíja vaišnavismu. Později na něj navázalo i moderní hnutí Haré Kršna (ISKCON)."
   },
   {
    "id": "hin20",
@@ -1660,7 +1844,8 @@
    "y": 1565,
    "c": "moc",
    "t": "Bitva u Talikoty",
-   "x": "Spojená vojska sultánů zničí Vidžajanagarskou říši a její hlavní město Hampi."
+   "x": "Spojená vojska sultánů zničí Vidžajanagarskou říši a její hlavní město Hampi.",
+   "d": "V lednu 1565 se vojska sultanátů z Dekánu spojila proti Vidžajanagaru a u Talikoty porazila vojsko vladaře Ráma Rája. Hlavní město Hampi bylo následně vyplněno a zpustošeno. Dodnes se z něj dochovaly majestátní ruiny. Říše tím pozbyla moc, i když formálně dožívala dál. Šlo o konec poslední velké hinduistické říše jižní Indie."
   },
   {
    "id": "hin21",
@@ -1669,7 +1854,8 @@
    "c": "uceni",
    "t": "Tulsídásův Rámčaritmánas",
    "x": "Básník Tulsídás zpracovává příběh Rámy v lidové hindštině. Kniha se stává jedním z nejčtenějších hinduistických textů.",
-   "ap": 1
+   "ap": 1,
+   "d": "Básník Tulsídás (asi 1532 až 1623) začal roku 1574 v Ajódhji psát svou verzi Rámájany v avadhí, lidové podobě hindštiny. Jmenuje se Rámčaritmánas („Jezero činů Rámových“). Díky tomu byl příběh dostupný i těm, kdo sanskrt neznali. Kniha se stala jedním z nejčtenějších hinduistických textů v severní Indii. Její verše se recitují při slavnostech, například o svátku Rámlílá."
   },
   {
    "id": "hin22",
@@ -1677,7 +1863,8 @@
    "y": 1674,
    "c": "moc",
    "t": "Korunovace Šivádžiho",
-   "x": "Šivádží je korunován králem Maráthské říše. Hinduistické království vzdoruje Mughalům."
+   "x": "Šivádží je korunován králem Maráthské říše. Hinduistické království vzdoruje Mughalům.",
+   "d": "Šivádží Bhonsle vybudoval v 17. století z malého knížectví v Maháráštře silný stát, který vzdoroval Mughalské říši. Roku 1674 se nechal na hradu Raigad slavnostně korunovat podle védských obřadů jako chhatrapati (král). Vznikla tím Maráthská říše, která v 18. století ovládla velkou část Indie. Je symbolem hinduistického odporu proti Mughalům, ale jeho vojsko zahrnovalo i muslimy."
   },
   {
    "id": "hin23",
@@ -1685,7 +1872,8 @@
    "y": 1828,
    "c": "rozkol",
    "t": "Brahmó samádž",
-   "x": "Rám Mohan Ráj zakládá v Kalkatě hnutí, které chce reformovat hinduismus a odmítá modlářství."
+   "x": "Rám Mohan Ráj zakládá v Kalkatě hnutí, které chce reformovat hinduismus a odmítá modlářství.",
+   "d": "Rám Mohan Ráj (1772 až 1833), bengálský myslitel, založil roku 1828 v Kalkatě Brahmó samádž. Hnutí odmítalo uctívání model, kasty a pálení vdov (sati) a zdůrazňovalo jednoho Boha. Čerpalo z upanišad i z křesťanství a západní vědy. Bylo prvním velkým hnutím reformy hinduismu a ovlivnilo další myslitele, například Tagora. Ráj se zasloužil o zákaz sati."
   },
   {
    "id": "hin24",
@@ -1693,7 +1881,8 @@
    "y": 1829,
    "c": "moc",
    "t": "Zákaz sati",
-   "x": "Britský guvernér Bentinck zakazuje pálení vdov, po dlouhé kampani indických reformátorů."
+   "x": "Britský guvernér Bentinck zakazuje pálení vdov, po dlouhé kampani indických reformátorů.",
+   "d": "Sati bylo zvykem, při němž byla vdova upálena na hranici svého manžela. Bylo vzácné, ale vyvolávalo odpor. Po kampani Rám Mohana Ráje vydal britský generální guvernér William Bentinck roku 1829 nařízení, které sati zakázalo. Zákon byl v Indii přijat s různými reakcemi. Vnímá se jako jeden z kroků sociální reformy, i když se tradice ojediněle objevuje i později."
   },
   {
    "id": "hin25",
@@ -1701,7 +1890,8 @@
    "y": 1875,
    "c": "rozkol",
    "t": "Árja samádž",
-   "x": "Dajánanda Sarasvatí zakládá hnutí, které se vrací k Védám."
+   "x": "Dajánanda Sarasvatí zakládá hnutí, které se vrací k Védám.",
+   "d": "Svámí Dajánanda Sarasvatí (1824 až 1883) založil roku 1875 v Bombaji Árja samádž. Hlásal návrat k Védám jako jedinému pramenu pravdy a odmítal uctívání model, kastu podle narození a řadu pozdějších zvyků. Hnutí zakládalo školy a podporovalo vzdělání žen. Ovlivnilo indické národní hnutí. Stoupenci se rozšířili po severní Indii a také mezi indickou diasporou."
   },
   {
    "id": "hin26",
@@ -1709,7 +1899,8 @@
    "y": 1893,
    "c": "sireni",
    "t": "Vivékánanda v Chicagu",
-   "x": "Svámí Vivékánanda zaujme Parlament světových náboženství a přináší hinduismus na Západ."
+   "x": "Svámí Vivékánanda zaujme Parlament světových náboženství a přináší hinduismus na Západ.",
+   "d": "Svámí Vivékánanda (1863 až 1902), žák Rámakrišny, vystoupil 11. září 1893 na Světovém parlamentu náboženství v Chicagu. Jeho úvodní oslovení „Sestry a bratři Ameriky“ vyvolalo velké nadšení. Mluvil o toleranci a o tom, že všechny cesty vedou k Bohu. Poté učil v USA a Anglii a v Indii posilnil sebevědomí hinduistů. Dodnes se jeho narozeniny slaví jako Národní den mládeže."
   },
   {
    "id": "hin27",
@@ -1717,7 +1908,8 @@
    "y": 1897,
    "c": "zaklad",
    "t": "Misie Rámakrišny",
-   "x": "Svámí Vivékánanda zakládá misi na památku svého učitele Rámakrišny. Spojuje duchovní učení se sociální službou."
+   "x": "Svámí Vivékánanda zakládá misi na památku svého učitele Rámakrišny. Spojuje duchovní učení se sociální službou.",
+   "d": "Rámakrišna Paramahamsa (1836 až 1886) byl bengálský mystik, který hlásal, že všechna náboženství vedou ke stejnému cíli. Jeho žák Vivékánanda založil 1. května 1897 Misi Rámakrišny, která spojuje duchovní praxi s pomocí lidem: školy, nemocnice a pomoc při katastrofách. Mise má dnes střediska po celém světě. Je příkladem moderního hinduismu, který klade důraz na službu."
   },
   {
    "id": "hin28",
@@ -1725,7 +1917,8 @@
    "y": 1930,
    "c": "moc",
    "t": "Solný pochod",
-   "x": "Gándhí vede lidi 387 km k moři, aby porušili britský solný zákon. Symbol nenásilného odporu."
+   "x": "Gándhí vede lidi 387 km k moři, aby porušili britský solný zákon. Symbol nenásilného odporu.",
+   "d": "Mahátma Gándhí vedl v březnu a dubnu 1930 pochod dlouhý asi 387 kilometrů z Ahmadábádu do Dandi na pobřeží. Šlo o protest proti britskému solnému zákonu, který zakazoval Indům vyrábět sůl. U moře Gándhí zvedl hrudku soli a porušil tak zákon. Za ním se vydaly tisíce lidí, desítky tisíc byly uvězněny. Akce ukázala sílu nenásilného odporu (satjágraha) a stala se symbolem indického boje za nezávislost."
   },
   {
    "id": "hin29",
@@ -1733,7 +1926,8 @@
    "y": 1947,
    "c": "moc",
    "t": "Nezávislost a dělení Indie",
-   "x": "Indie získává nezávislost a vzniká muslimský Pákistán. Přesuny milionů lidí provázejí násilí."
+   "x": "Indie získává nezávislost a vzniká muslimský Pákistán. Přesuny milionů lidí provázejí násilí.",
+   "d": "Indie získala 15. srpna 1947 nezávislost na Británii. Země byla ale rozdělena na Indii a Pákistán a tato dělba způsobila velké násilí. Přibližně 15 milionů lidí muselo opustit své domovy a odhady obětí se pohybují od několika set tisíc do milionu a více. Hinduisté a sikhové odcházeli z Pákistánu, muslimové do Pákistánu z Indie. Zkušenost dělení doprovází politiku a paměť regionu dodnes."
   },
   {
    "id": "hin30",
@@ -1741,7 +1935,8 @@
    "y": 1948,
    "c": "moc",
    "t": "Zavražděn Gándhí",
-   "x": "Mahátma Gándhí, který ve své politice spojoval hinduistickou víru s nenásilím, je zavražděn v Dillí."
+   "x": "Mahátma Gándhí, který ve své politice spojoval hinduistickou víru s nenásilím, je zavražděn v Dillí.",
+   "d": "Mahátma Gándhí byl zavražděn 30. ledna 1948 v Dillí při večerní modlitbě. Střelcem byl Nathuram Godse, hinduistický nacionalista, který Gándhímu vyčítal příliš smířlivý přístup k muslimům a Pákistánu. Gándhí byl pro mnoho lidí otcem indického národa. Jeho vražda zasáhla zemi, vláda zakázala některé radikální organizace. Narozeniny 2. října se slaví jako Mezinárodní den nenásilí."
   },
   {
    "id": "hin31",
@@ -1749,7 +1944,8 @@
    "y": 1950,
    "c": "moc",
    "t": "Ústava Indie",
-   "x": "Indie se stává sekulární republikou se svobodou vyznání, přestože většina obyvatel jsou hinduisté."
+   "x": "Indie se stává sekulární republikou se svobodou vyznání, přestože většina obyvatel jsou hinduisté.",
+   "d": "Ústavu Indie vypracovalo ústavodárné shromáždění pod vedením Bhímráo Ámbédkara. Vstoupila v platnost 26. ledna 1950, tento den se slaví jako Den republiky. Prohlašuje Indii za suverénní demokratickou republiku, zaručuje svobodu vyznání a zakazuje diskriminaci podle kasty. Slovo „sekulární“ do preambule přibylo až v roce 1976. I když tvoří hinduisté většinu obyvatel, stát se oficiálně k žádnému náboženství nehlásí."
   },
   {
    "id": "hin32",
@@ -1757,7 +1953,8 @@
    "y": 1966,
    "c": "sireni",
    "t": "Hnutí Haré Kršna",
-   "x": "Bhaktivédánta Swámí Prabhupáda zakládá v New Yorku Mezinárodní společnost pro vědomí Kršny (ISKCON)."
+   "x": "Bhaktivédánta Swámí Prabhupáda zakládá v New Yorku Mezinárodní společnost pro vědomí Kršny (ISKCON).",
+   "d": "A. C. Bhaktivédánta Swámí Prabhupáda přijel roku 1965 v 69 letech do USA a o rok později v New Yorku založil Mezinárodní společnost pro vědomí Kršny (ISKCON). Hnutí navazuje na tradici gaudíja vaišnavismu: stoupenci zpívají mantru „Haré Kršna“, drží vegetariánskou stravu a studují Bhagavadgítu. Díky nim se kršnovské uctívání rozšířilo po celém světě. Hnutí mělo často konflikty s okolím, ale dnes má střediska ve stovkách zemí."
   },
   {
    "id": "hin33",
@@ -1765,7 +1962,8 @@
    "y": 1992,
    "c": "moc",
    "t": "Zboření mešity v Ajódhjí",
-   "x": "Davy hinduistických aktivistů ničí mešitu Babrí, což vyvolává velké nepokoje."
+   "x": "Davy hinduistických aktivistů ničí mešitu Babrí, což vyvolává velké nepokoje.",
+   "d": "Mešita Babrí v Ajódhjí, postavená v 16. století, stála na místě, které mnoho hinduistů považuje za rodiště boha Rámy. Spor o místo trval desetiletí. Dne 6. prosince 1992 ji dav hinduistických aktivistů zbořil. Následovaly vlny násilí po celé Indii s tisíci oběťmi. V roce 2019 rozhodl indický nejvyšší soud, že sporné území připadne hinduistům pro stavbu chrámu a muslimům bylo přiděleno náhradní místo pro mešitu."
   },
   {
    "id": "hin34",
@@ -1773,7 +1971,8 @@
    "y": 2024,
    "c": "stavba",
    "t": "Chrám Rámy v Ajódhjí",
-   "x": "V Ajódhjí je slavnostně otevřen chrám zasvěcený Rámovi na sporném místě."
+   "x": "V Ajódhjí je slavnostně otevřen chrám zasvěcený Rámovi na sporném místě.",
+   "d": "Po rozhodnutí nejvyššího soudu z roku 2019 byl v Ajódhjí postaven chrám zasvěcený dítěti Rámovi (Ram Lalla). Slavnostní zasvěcení hlavní sochy (prána pratišthá) se konalo 22. ledna 2024 za účasti premiéra Naréndry Módího. Pro mnoho hinduistů je to splnění dlouhého snu, pro jiné je to politicky citlivá událost spojená s předchozím sporem o místo."
   }
  ]
 }

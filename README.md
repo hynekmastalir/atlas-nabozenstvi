@@ -61,7 +61,7 @@ Běží na `/osa/` (např. `https://TVOJE-JMENO.github.io/NAZEV-REPOZITARE/osa/`
 ### Data
 
 Události jsou v `osa/data/udalosti.json`: `r` (id náboženství), `y` (rok, před naším letopočtem záporně), volitelně `e` (konec období), `ap` (1 = přibližný rok),
-`c` (druh), `t` (název), `x` (popis), `s` (odkaz na zdroj), `i` (odkaz na obrázek). Náboženství, druhy a historická období jsou na začátku téhož souboru.
+`c` (druh), `t` (název), `x` (krátký popis), `d` (podrobný text, volitelný), `s` (odkaz na zdroj), `i` (odkaz na obrázek). Náboženství, druhy a historická období jsou na začátku téhož souboru.
 
 ### Vlastní materiály přímo na stránce
 

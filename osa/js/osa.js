@@ -108,7 +108,7 @@
     });
     document.querySelectorAll('[data-cat]').forEach(b => b.setAttribute('aria-pressed', st.cat.has(b.dataset.cat)));
   }
-  const textMatch = e => !st.q || norm(`${e.t} ${e.x} ${span(e)} ${catById[e.c].name} ${relById[e.r].name}`).includes(norm(st.q));
+  const textMatch = e => !st.q || norm(`${e.t} ${e.x} ${e.d || ''} ${span(e)} ${catById[e.c].name} ${relById[e.r].name}`).includes(norm(st.q));
   const matching = rid => events.filter(e => e.r === rid && (!st.cat.size || st.cat.has(e.c)) && textMatch(e));
   const visibleEvents = () => events.filter(e => st.rel.has(e.r) && (!st.cat.size || st.cat.has(e.c)) && textMatch(e));
   const saveFilters = () => store.set('filters', { rel: [...st.rel], cat: [...st.cat] });
@@ -306,6 +306,14 @@
   }
 
   /* ---------- popis události ---------- */
+  // dlouhý text rozdělí na odstavce po dvou větách (dělí jen před velkým písmenem, aby se nerozdělilo „př. n. l.“)
+  function paragraphs(text) {
+    if (!text) return '';
+    const sent = String(text).replace(/([.!?])\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ„])/g, '$1\u0001').split('\u0001');
+    const out = [];
+    for (let i = 0; i < sent.length; i += 2) out.push(sent.slice(i, i + 2).join(' '));
+    return out.map(p => `<p>${esc(p)}</p>`).join('');
+  }
   function renderDetail() {
     const box = $('#detail');
     const e = st.sel && events.find(x => x.id === st.sel);
@@ -317,7 +325,7 @@
     box.innerHTML = `<div class="scroll" style="--c:${r.color}">
       <div class="meta"><span class="tag rel">${esc(r.name)}</span><span class="tag">${esc(catById[e.c].name)}</span>${e.u ? '<span class="tag own">✦ vlastní</span>' : ''}</div>
       <div class="date">${esc(span(e))}</div>
-      <h2>${esc(e.t)}</h2>${e.x ? `<p>${esc(e.x)}</p>` : ''}
+      <h2>${esc(e.t)}</h2>${paragraphs(e.d || e.x)}
       ${e.i && validUrl(e.i) ? `<img class="ev-img" src="${esc(e.i)}" alt="${esc(e.t)}" loading="lazy" referrerpolicy="no-referrer">` : ''}
       ${e.s && validUrl(e.s) ? `<p class="src"><a href="${esc(e.s)}" target="_blank" rel="noopener noreferrer">Zdroj: ${esc(new URL(e.s).hostname)} ↗</a></p>` : ''}
       <div class="acts">
