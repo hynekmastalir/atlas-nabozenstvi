@@ -11,12 +11,16 @@
     set(k, v) { try { localStorage.setItem('osa:' + k, JSON.stringify(v)); } catch { /* ignoruj */ } },
   };
 
-  const DMIN = -2800, DMAX = 2040, MAXPPY = 60;
+  let DMIN = -2800, DMAX = 2040;
+  const MAXPPY = 60;
   const ICONS = {
     cross: '<path d="M-2.2,-9 h4.4 v5.2 h5.2 v4.4 h-5.2 v9.8 h-4.4 v-9.8 h-5.2 v-4.4 h5.2 z" fill="currentColor"/>',
     crescent: '<path d="M4,-8 A8.5,8.5 0 1 0 4,8 A9,9 0 0 1 4,-8 Z" fill="currentColor"/><path d="M3.5,-2.8 L4.2,-0.9 L6.2,-0.9 L4.6,0.3 L5.2,2.3 L3.5,1.1 L1.8,2.3 L2.4,0.3 L0.8,-0.9 L2.8,-0.9Z" fill="currentColor"/>',
     wheel: '<circle r="7.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle r="2.2" fill="currentColor"/><path d="M0,-7.6V7.6M-7.6,0H7.6M-5.4,-5.4L5.4,5.4M5.4,-5.4L-5.4,5.4" stroke="currentColor" stroke-width="1.4"/>',
     star: '<path d="M0,-9 L8,5 L-8,5Z M0,9 L8,-5 L-8,-5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+    sun: '<circle r="4.6" fill="currentColor"/><path d="M0,-9V-6.5M0,9V6.5M-9,0H-6.5M9,0H6.5M-6.4,-6.4L-4.6,-4.6M6.4,6.4L4.6,4.6M-6.4,6.4L-4.6,4.6M6.4,-6.4L4.6,-4.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>',
+    flame: '<path d="M0,-10 C3,-5 7,-2 6,3 C5.5,7 2.5,9 0,9 C-3,9 -6,6.5 -5.5,2.5 C-5,-1 -1.5,-3 0,-10Z" fill="currentColor"/>',
+    dot: '<circle r="6.5" fill="currentColor"/>',
     lotus: '<g fill="currentColor"><path d="M0,8 C-6,4 -6,-4 0,-9 C6,-4 6,4 0,8Z"/><path d="M-1,8 C-9,6 -11,-1 -8,-5 C-4,-3 -2,2 -1,8Z" opacity=".85"/><path d="M1,8 C9,6 11,-1 8,-5 C4,-3 2,2 1,8Z" opacity=".85"/></g>',
   };
   const SHIELD = 'M0,-10 L8,-7 L8,2 C8,8 3,11 0,13 C-3,11 -8,8 -8,2 L-8,-7 Z';
@@ -24,6 +28,7 @@
   const STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000];
 
   let D, rels = [], relById = {}, catById = {}, events = [];
+  let custom = { religions: [], events: [] };   // vlastní materiály z localStorage
   const st = { rel: new Set(), cat: new Set(), q: '', sel: null };
   const view = { t0: -500, ppy: 0.3 };
   let W = 0, H = 0, gutter = 128, laneH = 150, compact = false, rowsY = [], rulerH = 78, clusters = [], anim = null, raf = 0;
@@ -53,15 +58,41 @@
   });
 
   function init(d) {
-    D = d; rels = d.religions; events = d.events;
-    rels.forEach(r => relById[r.id] = r); d.categories.forEach(c => catById[c.id] = c);
+    D = d; loadCustom(); rebuild();
     const saved = store.get('filters', null);
     st.rel = new Set(saved?.rel?.filter(id => relById[id]) ?? rels.map(r => r.id));
+    rels.forEach(r => { if (r.u && !saved?.rel?.length) st.rel.add(r.id); });
     st.cat = new Set(saved?.cat?.filter(id => catById[id]) ?? []);
-    buildChips(); buildPresets();
+    buildChips(); buildPresets(); buildForm();
     measure(); fit(false);
-    bind(); refresh();
+    bind(); bindForm(); refresh();
     new ResizeObserver(() => { const old = W; measure(); if (old) { clampView(); } refresh(); }).observe(tl);
+  }
+
+  /* ---------- vlastní materiály (ukládají se jen v prohlížeči) ---------- */
+  function loadCustom() {
+    const c = store.get('custom', null);
+    custom = { religions: Array.isArray(c?.religions) ? c.religions.filter(validRel) : [], events: Array.isArray(c?.events) ? c.events.filter(validEv) : [] };
+  }
+  function saveCustom() {
+    try { localStorage.setItem('osa:custom', JSON.stringify(custom)); return true; }
+    catch { alert('Vlastní materiály se nepodařilo uložit (prohlížeč blokuje úložiště nebo je plné). Exportuj je do souboru.'); return false; }
+  }
+  const HEX = /^#[0-9a-f]{6}$/i;
+  const validRel = r => r && typeof r.id === 'string' && typeof r.name === 'string' && HEX.test(r.color) && ICONS[r.icon];
+  const validUrl = u => { try { const x = new URL(u); return x.protocol === 'https:' || x.protocol === 'http:'; } catch { return false; } };
+  const validEv = e => e && typeof e.id === 'string' && typeof e.r === 'string' && Number.isInteger(e.y) && e.y !== 0 && typeof e.t === 'string' && e.t.trim()
+    && (e.e == null || (Number.isInteger(e.e) && e.e !== 0 && e.e >= e.y));
+  // spojí základní a vlastní data a přepočítá rozsah osy
+  function rebuild() {
+    catById = {}; D.categories.forEach(c => catById[c.id] = c);
+    rels = [...D.religions, ...custom.religions.map(r => ({ ...r, u: 1 }))];
+    relById = {}; rels.forEach(r => relById[r.id] = r);
+    events = [...D.events, ...custom.events.map(e => ({ ...e, c: catById[e.c] ? e.c : 'zaklad', x: e.x || '', u: 1 }))]
+      .filter(e => relById[e.r]);
+    const ys = events.flatMap(e => [e.y, e.e ?? e.y]);
+    DMIN = Math.min(-2800, Math.floor((Math.min(...ys) - 60) / 100) * 100);
+    DMAX = Math.max(2040, Math.ceil((Math.max(...ys) + 20) / 10) * 10);
   }
 
   /* ---------- filtry ---------- */
@@ -83,7 +114,7 @@
   const saveFilters = () => store.set('filters', { rel: [...st.rel], cat: [...st.cat] });
 
   /* ---------- období (předvolby zoomu) ---------- */
-  const PRESETS = [['Celá osa', DMIN, DMAX], ['Starověk', -1000, 500], ['Středověk', 450, 1520], ['Novověk', 1480, 1930], ['Dnešek', 1880, 2030]];
+  const PRESETS = [['Celá osa', null, null], ['Starověk', -1000, 500], ['Středověk', 450, 1520], ['Novověk', 1480, 1930], ['Dnešek', 1880, 2030]];
   function buildPresets() {
     $('#presets').innerHTML = PRESETS.map((p, i) => `<button type="button" data-p="${i}">${p[0]}</button>`).join('');
   }
@@ -134,7 +165,7 @@
   }
   function refresh() {
     if (st.sel && !visibleEvents().some(e => e.id === st.sel)) st.sel = null;
-    syncChips(); renderDetail(); renderList(); draw();
+    syncChips(); renderDetail(); renderList(); renderMine(); draw();
   }
 
   function draw() {
@@ -254,12 +285,12 @@
       `<circle r="16" fill="transparent"/>` +
       (sel ? `<circle r="17" fill="none" stroke="#a3281a" stroke-width="2.5"/>` : '') +
       `<path class="shield" d="${SHIELD}" fill="${r.color}" stroke="${sel ? '#a3281a' : '#f0d27a'}" stroke-width="${sel ? 2.2 : 1.6}"${dash}/>` +
-      `<circle cx="0" cy="-1.5" r="2" fill="#f7ecce"/></g>`;
+      `<circle cx="0" cy="-1.5" r="2" fill="#f7ecce"/>` + (e.u ? `<text x="5" y="-8" font-size="11" fill="#b8860b" stroke="#fff6d8" stroke-width=".6" style="pointer-events:none">✦</text>` : '') + `</g>`;
   }
 
   /* ---------- minimapa ---------- */
   function drawMini(vis) {
-    const h = 56, w = pw(); mini.setAttribute('width', W); mini.setAttribute('height', h); mini.setAttribute('viewBox', `0 0 ${W} ${h}`);
+    const h = Math.max(56, 26 + rels.length * 8), w = pw(); mini.setAttribute('width', W); mini.setAttribute('height', h); mini.setAttribute('viewBox', `0 0 ${W} ${h}`);
     const mx = y => gutter + (y - DMIN) / (DMAX - DMIN) * w;
     let o = `<rect width="${W}" height="${h}" fill="#e3cf9b"/>`;
     D.periods.forEach((p, i) => { o += `<rect x="${mx(p.from)}" y="0" width="${mx(p.to) - mx(p.from)}" height="12" fill="${['#d9bf86', '#e6c76a', '#d7b98f', '#cfb69a'][i]}" stroke="#6b4a1e" stroke-width=".6"/>`; });
@@ -284,14 +315,17 @@
     // co se dělo ve stejné době u ostatních náboženství
     const near = visibleEvents().filter(x => x.r !== e.r && Math.abs(x.y - e.y) <= Math.max(25, 0.04 * Math.abs(e.y))).sort((a, b) => Math.abs(a.y - e.y) - Math.abs(b.y - e.y)).slice(0, 4);
     box.innerHTML = `<div class="scroll" style="--c:${r.color}">
-      <div class="meta"><span class="tag rel">${esc(r.name)}</span><span class="tag">${esc(catById[e.c].name)}</span></div>
+      <div class="meta"><span class="tag rel">${esc(r.name)}</span><span class="tag">${esc(catById[e.c].name)}</span>${e.u ? '<span class="tag own">✦ vlastní</span>' : ''}</div>
       <div class="date">${esc(span(e))}</div>
-      <h2>${esc(e.t)}</h2><p>${esc(e.x)}</p>
+      <h2>${esc(e.t)}</h2>${e.x ? `<p>${esc(e.x)}</p>` : ''}
+      ${e.i && validUrl(e.i) ? `<img class="ev-img" src="${esc(e.i)}" alt="${esc(e.t)}" loading="lazy" referrerpolicy="no-referrer">` : ''}
+      ${e.s && validUrl(e.s) ? `<p class="src"><a href="${esc(e.s)}" target="_blank" rel="noopener noreferrer">Zdroj: ${esc(new URL(e.s).hostname)} ↗</a></p>` : ''}
       <div class="acts">
         <button class="btn small" type="button" data-nav="-1" ${i <= 0 ? 'disabled' : ''}>◀ Předchozí</button>
         <button class="btn small" type="button" data-zoom="1">Přiblížit</button>
         <button class="btn small" type="button" data-nav="1" ${i >= list.length - 1 ? 'disabled' : ''}>Další ▶</button>
         <button class="btn small" type="button" data-close="1">Zavřít</button>
+        ${e.u ? '<button class="btn small" type="button" data-edit="1">Upravit</button><button class="btn small danger" type="button" data-del="1">Smazat</button>' : ''}
       </div>
       ${near.length ? `<div class="compare"><b>Ve stejné době jinde:</b><ul>${near.map(x => `<li><button type="button" data-id="${x.id}">${esc(span(x))}: ${esc(x.t)} <i>(${esc(relById[x.r].name)})</i></button></li>`).join('')}</ul></div>` : ''}
     </div>`;
@@ -324,7 +358,7 @@
     });
     $('#q').addEventListener('input', ev => { st.q = ev.target.value.trim(); refresh(); });
     $('#reset-filters').onclick = () => { st.rel = new Set(rels.map(r => r.id)); st.cat.clear(); st.q = ''; $('#q').value = ''; saveFilters(); refresh(); };
-    $('#presets').addEventListener('click', ev => { const b = ev.target.closest('[data-p]'); if (!b) return; const p = PRESETS[+b.dataset.p]; fit(true, p[1], p[2]); });
+    $('#presets').addEventListener('click', ev => { const b = ev.target.closest('[data-p]'); if (!b) return; const p = PRESETS[+b.dataset.p]; fit(true, p[1] ?? DMIN, p[2] ?? DMAX); });
     $('#zoom-in').onclick = () => zoomAnimated(2); $('#zoom-out').onclick = () => zoomAnimated(0.5);
     function zoomAnimated(f) {
       const c = view.t0 + pw() / 2 / view.ppy; const ppy = clampN(view.ppy * f, pw() / (DMAX - DMIN + 80), MAXPPY);
@@ -336,6 +370,8 @@
       if (t.dataset.id) { select(t.dataset.id); return; }
       const e = events.find(x => x.id === st.sel); if (!e) return;
       if (t.dataset.close) { st.sel = null; renderDetail(); draw(); }
+      else if (t.dataset.edit) openForm({ edit: e.id });
+      else if (t.dataset.del) deleteEvent(e.id);
       else if (t.dataset.zoom) { const sp = Math.max(8, ((e.e ?? e.y) - e.y) * 1.4); const ppy = clampN(pw() * 0.35 / sp, view.ppy, 40); go((e.e != null ? (e.y + e.e) / 2 : e.y) - pw() / 2 / ppy, ppy); }
       else if (t.dataset.nav) {
         const list = visibleEvents().filter(x => x.r === e.r).sort((a, b) => a.y - b.y || (a.e ?? a.y) - (b.e ?? b.y));
@@ -409,5 +445,194 @@
     mini.addEventListener('pointerdown', e => { md = true; mini.setPointerCapture(e.pointerId); miniMove(e); });
     mini.addEventListener('pointermove', e => { if (md) miniMove(e); });
     mini.addEventListener('pointerup', () => { md = false; }); mini.addEventListener('pointercancel', () => { md = false; });
+  }
+  /* ---------- formulář pro vlastní události ---------- */
+  const PALETTE = ['#2b4c8f', '#2e7d5b', '#b9801a', '#703a82', '#b4452b', '#1f6f78', '#8a5a2b', '#a3281a', '#4b5563', '#c2410c'];
+  const ICON_NAMES = ['cross', 'crescent', 'wheel', 'star', 'lotus', 'sun', 'flame', 'dot'];
+  const dlg = $('#dlg');
+  let editId = null, pickedIcon = 'dot', pickedColor = PALETTE[6];
+  const clean = (v, n) => String(v ?? '').trim().slice(0, n);
+  const rid = () => Math.random().toString(36).slice(2, 7);
+
+  function buildForm() {
+    $('#f-cat').innerHTML = D.categories.map(c => `<option value="${c.id}">${esc(c.name)}</option>`).join('');
+    $('#f-swatches').innerHTML = PALETTE.map(c => `<button type="button" class="swb" data-color="${c}" style="background:${c}" aria-label="Barva ${c}"></button>`).join('');
+    $('#f-icons').innerHTML = ICON_NAMES.map(n => `<button type="button" class="ic" data-icon="${n}" aria-pressed="false" aria-label="Ikona ${n}"><svg viewBox="-11 -11 22 22" aria-hidden="true">${ICONS[n]}</svg></button>`).join('');
+  }
+  function fillRelSelect(sel) {
+    const el = $('#f-rel');
+    el.innerHTML = rels.map(r => `<option value="${r.id}">${esc(r.name)}</option>`).join('') + '<option value="__new__">➕ Nové náboženství…</option>';
+    el.value = sel && (sel === '__new__' || relById[sel]) ? sel : rels[0].id;
+    $('#new-rel').hidden = el.value !== '__new__';
+  }
+  function setPicked(color, icon) {
+    pickedColor = color; pickedIcon = icon;
+    $('#f-color').value = color;
+    document.querySelectorAll('#f-icons .ic').forEach(b => b.setAttribute('aria-pressed', b.dataset.icon === icon));
+    document.querySelectorAll('#f-swatches .swb').forEach(b => b.setAttribute('aria-pressed', b.dataset.color === color));
+  }
+  const showErr = (msg, field) => { const el = $('#f-err'); el.textContent = msg; el.hidden = !msg; if (field && $(field)) $(field).focus(); };
+
+  function openForm({ edit = null, rel = null, year = null } = {}) {
+    editId = edit;
+    const e = edit && events.find(x => x.id === edit);
+    $('#ev-form').reset(); showErr('');
+    $('#dlg-title').textContent = e ? 'Upravit událost' : 'Přidat vlastní událost';
+    $('#f-save').textContent = e ? 'Uložit změny' : 'Uložit na osu';
+    fillRelSelect(e ? e.r : rel);
+    setPicked(PALETTE[custom.religions.length % PALETTE.length], 'dot');
+    if (e) {
+      $('#f-y').value = Math.abs(e.y); $('#f-era').value = e.y < 0 ? 'bce' : 'ce';
+      if (e.e != null) { $('#f-range').checked = true; $('#f-e').value = Math.abs(e.e); $('#f-era2').value = e.e < 0 ? 'bce' : 'ce'; }
+      $('#f-ap').checked = !!e.ap; $('#f-cat').value = e.c; $('#f-t').value = e.t; $('#f-x').value = e.x || ''; $('#f-s').value = e.s || ''; $('#f-i').value = e.i || '';
+    } else if (year != null) {
+      const y = year === 0 ? 1 : year; $('#f-y').value = Math.abs(y); $('#f-era').value = y < 0 ? 'bce' : 'ce';
+    }
+    $('#end-row').hidden = !$('#f-range').checked;
+    if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+    $('#f-t').focus();
+  }
+  const closeForm = () => { if (typeof dlg.close === 'function') dlg.close(); else dlg.removeAttribute('open'); };
+
+  function signedYear(valId, eraId, label) {
+    const raw = $(valId).value.trim();
+    if (!/^\d{1,4}$/.test(raw) || +raw < 1) return { err: `${label}: zadej celé kladné číslo (rok 0 neexistuje).`, field: valId };
+    const n = +raw, bce = $(eraId).value === 'bce';
+    if (!bce && n > 2100) return { err: `${label}: rok n. l. může být nejvýše 2100.`, field: valId };
+    return { y: bce ? -n : n };
+  }
+
+  function onSubmit(ev) {
+    ev.preventDefault();
+    let relId = $('#f-rel').value; let newRel = null;
+    if (relId === '__new__') {
+      const name = clean($('#f-rname').value, 30);
+      if (!name) return showErr('Vyplň název nového náboženství.', '#f-rname');
+      if (rels.some(r => norm(r.name) === norm(name))) return showErr('Náboženství s tímto názvem už existuje, vyber ho v seznamu.', '#f-rname');
+      if (!HEX.test(pickedColor) || !ICONS[pickedIcon]) return showErr('Vyber barvu a ikonu.');
+      newRel = { id: 'u-' + rid(), name, short: name.length > 12 ? name.slice(0, 11) + '…' : name, color: pickedColor.toLowerCase(), icon: pickedIcon };
+      relId = newRel.id;
+    }
+    const a = signedYear('#f-y', '#f-era', 'Rok'); if (a.err) return showErr(a.err, a.field);
+    let end = null;
+    if ($('#f-range').checked) {
+      const b = signedYear('#f-e', '#f-era2', 'Konec'); if (b.err) return showErr(b.err, b.field);
+      if (b.y < a.y) return showErr('Konec nesmí být před začátkem.', '#f-e');
+      if (b.y !== a.y) end = b.y;
+    }
+    const t = clean($('#f-t').value, 80); if (!t) return showErr('Vyplň název události.', '#f-t');
+    const src = $('#f-s').value.trim(), img = $('#f-i').value.trim();
+    if (src && !validUrl(src)) return showErr('Odkaz na zdroj musí začínat https:// nebo http://.', '#f-s');
+    if (img && !validUrl(img)) return showErr('Odkaz na obrázek musí začínat https:// nebo http://.', '#f-i');
+    if (!editId && custom.events.length >= 500) return showErr('Je dosaženo limitu 500 vlastních událostí. Některé smaž nebo exportuj.');
+    const rec = { id: editId || 'u' + Date.now().toString(36) + rid(), r: relId, y: a.y, c: $('#f-cat').value, t, x: clean($('#f-x').value, 800) };
+    if (end != null) rec.e = end;
+    if ($('#f-ap').checked) rec.ap = 1;
+    if (src) rec.s = src;
+    if (img) rec.i = img;
+    if (newRel) custom.religions.push(newRel);
+    const i = custom.events.findIndex(x => x.id === rec.id);
+    if (i >= 0) custom.events[i] = rec; else custom.events.push(rec);
+    if (!saveCustom()) return;
+    afterChange(rec.id, relId);
+    closeForm();
+  }
+  // po změně dat: přepočítat, zapnout dráhu, zrušit filtry, které by novou událost skryly
+  function afterChange(selectId, relId) {
+    rebuild(); clampView();
+    if (relId) st.rel.add(relId);
+    st.q = ''; $('#q').value = ''; st.cat.clear(); saveFilters();
+    buildChips(); refresh();
+    if (selectId) select(selectId);
+  }
+  function deleteEvent(id) {
+    const e = events.find(x => x.id === id); if (!e || !confirm(`Smazat vlastní událost „${e.t}“?`)) return;
+    custom.events = custom.events.filter(x => x.id !== id); saveCustom();
+    if (st.sel === id) st.sel = null; rebuild(); clampView(); buildChips(); refresh();
+  }
+  function deleteReligion(id) {
+    const r = relById[id]; if (!r || !r.u) return;
+    const n = custom.events.filter(e => e.r === id).length;
+    if (!confirm(`Smazat vlastní náboženství „${r.name}“ i s jeho událostmi (${n})?`)) return;
+    custom.religions = custom.religions.filter(x => x.id !== id); custom.events = custom.events.filter(e => e.r !== id);
+    st.rel.delete(id); saveCustom(); saveFilters(); st.sel = null; rebuild(); clampView(); buildChips(); refresh();
+  }
+
+  /* ---------- panel „Moje materiály“: seznam, export, import ---------- */
+  const mineMsg = (t, bad) => { const el = $('#mine-msg'); el.textContent = t; el.className = bad ? 'bad' : 'ok'; };
+  function renderMine() {
+    const ce = events.filter(e => e.u);
+    $('#mine-n').textContent = `(${ce.length})`;
+    $('#mine-rels').innerHTML = custom.religions.length ? custom.religions.map(r => `<li><span class="sw" style="background:${esc(r.color)}"></span><b>${esc(r.name)}</b> <button type="button" class="lnk" data-act="del-rel" data-id="${esc(r.id)}">smazat</button></li>`).join('') : '<li class="none">Žádné vlastní náboženství.</li>';
+    $('#mine-evs').innerHTML = ce.length ? ce.sort((a, b) => a.y - b.y).map(e => `<li><button type="button" class="lnk" data-act="show" data-id="${e.id}"><time>${esc(span(e))}</time> ${esc(e.t)}</button> <i class="muted">${esc(relById[e.r].name)}</i> <button type="button" class="lnk" data-act="edit" data-id="${e.id}">upravit</button> <button type="button" class="lnk" data-act="del" data-id="${e.id}">smazat</button></li>`).join('') : '<li class="none">Zatím nic. Klikni na „Přidat událost“.</li>';
+  }
+  function exportJson() {
+    const out = { verze: 1, poznamka: 'Vlastní materiály z Časové osy náboženství. Lze importovat zpět, nebo zkopírovat do osa/data/udalosti.json.', religions: custom.religions, events: custom.events };
+    const url = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: 'application/json' }));
+    const a = document.createElement('a'); a.href = url; a.download = 'vlastni-udalosti-osa.json'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+    mineMsg(`Exportováno: ${custom.events.length} událostí, ${custom.religions.length} náboženství.`);
+  }
+  async function importFile(file) {
+    let j; try { j = JSON.parse(await file.text()); } catch { return mineMsg('Soubor není platný JSON.', true); }
+    const rs = Array.isArray(j?.religions) ? j.religions : [], es = Array.isArray(j?.events) ? j.events : [];
+    let nr = 0, ne = 0, skipped = 0; const map = {};
+    for (const r of rs) {
+      if (!validRel(r)) { skipped++; continue; }
+      if (relById[r.id]) { map[r.id] = r.id; continue; }
+      const id = 'u-' + clean(r.id, 40).replace(/[^\w-]/g, '').replace(/^u-/, '');
+      const name = clean(r.name, 30);
+      custom.religions.push({ id, name, short: name.length > 12 ? name.slice(0, 11) + '…' : name, color: r.color.toLowerCase(), icon: r.icon });
+      map[r.id] = id; rebuild(); nr++;
+    }
+    for (const e of es) {
+      const target = map[e.r] || (relById[e.r] ? e.r : null);
+      if (!target || !validEv({ ...e, id: 'x', r: target }) || custom.events.length >= 500) { skipped++; continue; }
+      const rec = { id: 'u' + Date.now().toString(36) + rid(), r: target, y: e.y, c: catById[e.c] ? e.c : 'zaklad', t: clean(e.t, 80), x: clean(e.x, 800) };
+      if (e.e != null && e.e !== e.y) rec.e = e.e;
+      if (e.ap) rec.ap = 1;
+      if (validUrl(e.s)) rec.s = e.s;
+      if (validUrl(e.i)) rec.i = e.i;
+      custom.events.push(rec); ne++;
+    }
+    if (!saveCustom()) return;
+    rebuild(); clampView(); rels.forEach(r => { if (r.u) st.rel.add(r.id); }); saveFilters(); buildChips(); refresh();
+    mineMsg(`Importováno: ${ne} událostí, ${nr} náboženství.` + (skipped ? ` Přeskočeno ${skipped} neplatných záznamů.` : ''), skipped > 0 && ne === 0);
+  }
+
+  function bindForm() {
+    $('#add-ev').onclick = () => openForm({ rel: [...st.rel][0] });
+    $('#mine-add').onclick = () => openForm({ rel: [...st.rel][0] });
+    $('#ev-form').addEventListener('submit', onSubmit);
+    $('#f-cancel').onclick = closeForm;
+    dlg.addEventListener('click', e => { if (e.target === dlg) closeForm(); });   // klepnutí na pozadí zavře
+    $('#f-rel').onchange = () => { $('#new-rel').hidden = $('#f-rel').value !== '__new__'; };
+    $('#f-range').onchange = () => { $('#end-row').hidden = !$('#f-range').checked; };
+    $('#f-swatches').addEventListener('click', e => { const b = e.target.closest('[data-color]'); if (b) setPicked(b.dataset.color, pickedIcon); });
+    $('#f-icons').addEventListener('click', e => { const b = e.target.closest('[data-icon]'); if (b) setPicked(pickedColor, b.dataset.icon); });
+    $('#f-color').addEventListener('input', e => setPicked(e.target.value, pickedIcon));
+    $('#mine').addEventListener('click', e => {
+      const b = e.target.closest('[data-act]'); if (!b) return; const id = b.dataset.id;
+      if (b.dataset.act === 'show') { select(id); $('#tl').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      else if (b.dataset.act === 'edit') openForm({ edit: id });
+      else if (b.dataset.act === 'del') deleteEvent(id);
+      else if (b.dataset.act === 'del-rel') deleteReligion(id);
+    });
+    $('#mine-export').onclick = exportJson;
+    $('#mine-import').onchange = async e => { const f = e.target.files[0]; if (f) await importFile(f); e.target.value = ''; };
+    $('#mine-clear').onclick = () => {
+      if (!custom.events.length && !custom.religions.length) return mineMsg('Není co mazat.');
+      if (!confirm('Opravdu smazat všechny vlastní události a náboženství z tohoto prohlížeče? Nejdřív je případně exportuj.')) return;
+      custom = { religions: [], events: [] }; saveCustom(); st.rel = new Set([...st.rel].filter(id => relById[id] && !relById[id].u)); st.sel = null;
+      rebuild(); clampView(); buildChips(); refresh(); mineMsg('Vlastní materiály smazány.');
+    };
+    // dvojklik do dráhy = nová událost v tom roce a náboženství
+    svg.addEventListener('dblclick', e => {
+      if (e.target.closest('.ev, .cl')) return;
+      const r = svg.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+      if (x < gutter || y < rulerH) return;
+      const lane = rels.filter(q => st.rel.has(q.id))[Math.floor((y - rulerH) / laneH)];
+      openForm({ rel: lane?.id, year: Math.round(view.t0 + (x - gutter) / view.ppy) });
+    });
   }
 })();

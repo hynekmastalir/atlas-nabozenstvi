@@ -33,6 +33,7 @@
       <label class="search"><span class="tool-label">Hledat</span>
         <input id="q" type="search" placeholder="např. koncil, chrám, 1517…" autocomplete="off" spellcheck="false"></label>
       <button id="reset-filters" class="btn small" type="button">Zrušit filtry</button>
+      <button id="add-ev" class="btn primary" type="button">＋ Přidat událost</button>
     </div>
   </section>
 
@@ -52,7 +53,7 @@
     <div class="mini-wrap" title="Přehled celé osy, táhni okno">
       <svg id="mini" aria-hidden="true"></svg>
     </div>
-    <p class="hint">Kolečko myši = zoom, tažení = posun, Shift + kolečko = posun do stran. Na telefonu dva prsty. Klepni na štít a otevře se jeho popis, shluk čísla přiblížíš klepnutím.</p>
+    <p class="hint">Kolečko myši = zoom, tažení = posun, Shift + kolečko = posun do stran. Na telefonu dva prsty. Klepni na štít a otevře se jeho popis, shluk čísla přiblížíš klepnutím. Dvojklik do prázdné dráhy přidá vlastní událost v tom roce.</p>
   </section>
 
   <section id="detail" class="detail" aria-live="polite">
@@ -64,10 +65,59 @@
     <ol id="list"></ol>
   </details>
 
+  <details id="mine" class="list mine">
+    <summary>Moje materiály <span id="mine-n"></span></summary>
+    <div class="mine-body">
+      <p>Vlastní události a náboženství se ukládají jen v tomto prohlížeči (nejsou na serveru ani ve zdrojovém kódu). Aby o ně nepřišly, exportuj je do souboru a v jiném prohlížeči nebo po vymazání dat je zase importuj.</p>
+      <div class="acts">
+        <button id="mine-add" class="btn primary small" type="button">＋ Přidat událost</button>
+        <button id="mine-export" class="btn small" type="button">Exportovat (JSON)</button>
+        <label class="btn small filebtn">Importovat<input id="mine-import" type="file" accept=".json,application/json" hidden></label>
+        <button id="mine-clear" class="btn small danger" type="button">Smazat vše vlastní</button>
+      </div>
+      <p id="mine-msg" role="status"></p>
+      <h3>Vlastní náboženství</h3><ul id="mine-rels" class="mine-list"></ul>
+      <h3>Vlastní události</h3><ul id="mine-evs" class="mine-list"></ul>
+      <details class="how"><summary>Jak přidat události trvale pro všechny návštěvníky</summary>
+        <p>Otevři <code>osa/data/udalosti.json</code> v repozitáři a vlož záznamy z exportovaného souboru do polí <code>events</code> (a <code>religions</code>). Po nahrání do větve <code>main</code> se stránka sama znovu nasadí.</p>
+      </details>
+    </div>
+  </details>
+
   <footer class="foot">
     <p>Letopočty označené „kolem“ jsou přibližné nebo se u nich historici neshodují (například datace Buddhy, exodu či védských textů). Období jsou schematická. Data vznikla pro tuto ukázku a je rozumné je před studijním použitím ověřit v odborné literatuře.</p>
   </footer>
 </div>
+<dialog id="dlg" class="dlg" aria-labelledby="dlg-title">
+  <form id="ev-form" method="dialog" novalidate autocomplete="off">
+    <h2 id="dlg-title">Přidat vlastní událost</h2>
+    <label class="f"><span>Náboženství</span><select id="f-rel"></select></label>
+    <fieldset id="new-rel" class="f-box" hidden>
+      <legend>Nové náboženství</legend>
+      <label class="f"><span>Název (nejvýše 30 znaků)</span><input id="f-rname" type="text" maxlength="30"></label>
+      <div class="f"><span>Barva</span>
+        <div class="colors"><div id="f-swatches" class="swatches"></div><input id="f-color" type="color" value="#8a5a2b" aria-label="Vlastní barva"></div></div>
+      <div class="f"><span>Ikona</span><div id="f-icons" class="icons"></div></div>
+    </fieldset>
+    <div class="f-row">
+      <label class="f"><span>Rok</span><input id="f-y" type="text" inputmode="numeric" maxlength="4" placeholder="např. 1415"></label>
+      <label class="f"><span>Letopočet</span><select id="f-era"><option value="ce">n. l.</option><option value="bce">př. n. l.</option></select></label>
+    </div>
+    <label class="check"><input type="checkbox" id="f-range"><span>Trvá delší dobu (zadat i konec)</span></label>
+    <div id="end-row" class="f-row" hidden>
+      <label class="f"><span>Konec (rok)</span><input id="f-e" type="text" inputmode="numeric" maxlength="4"></label>
+      <label class="f"><span>Letopočet</span><select id="f-era2"><option value="ce">n. l.</option><option value="bce">př. n. l.</option></select></label>
+    </div>
+    <label class="check"><input type="checkbox" id="f-ap"><span>Přibližný rok („kolem“)</span></label>
+    <label class="f"><span>Druh události</span><select id="f-cat"></select></label>
+    <label class="f"><span>Název události</span><input id="f-t" type="text" maxlength="80" placeholder="např. Upálení mistra Jana Husa"></label>
+    <label class="f"><span>Popis (volitelné)</span><textarea id="f-x" rows="4" maxlength="800"></textarea></label>
+    <label class="f"><span>Odkaz na zdroj (volitelné)</span><input id="f-s" type="url" inputmode="url" placeholder="https://…"></label>
+    <label class="f"><span>Odkaz na obrázek (volitelné)</span><input id="f-i" type="url" inputmode="url" placeholder="https://…"></label>
+    <p id="f-err" class="f-err" role="alert" hidden></p>
+    <div class="acts"><button id="f-save" class="btn primary" type="submit">Uložit na osu</button><button id="f-cancel" class="btn" type="button">Zrušit</button></div>
+  </form>
+</dialog>
 <script src="js/osa.js"></script>
 </body>
 </html>

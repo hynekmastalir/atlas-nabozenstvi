@@ -58,5 +58,14 @@ Všechny barvy jsou na začátku `css/style.css` v blocích `:root`.
 Ve složce `osa/` je samostatná verze s jednou zoomovací osou pro všechna náboženství a konkrétními letopočty. Původní atlas zůstává beze změny.
 Běží na `/osa/` (např. `https://TVOJE-JMENO.github.io/NAZEV-REPOZITARE/osa/`), lokálně `python3 -m http.server` a otevři `/osa/`.
 
-Události jsou v `osa/data/udalosti.json`: `r` (id náboženství), `y` (rok, před naším letopočtem záporně), volitelně `e` (konec období), `ap` (1 = přibližný rok), `c` (druh), `t` (název), `x` (popis).
-Náboženství, druhy a historická období jsou na začátku téhož souboru.
+### Data
+
+Události jsou v `osa/data/udalosti.json`: `r` (id náboženství), `y` (rok, před naším letopočtem záporně), volitelně `e` (konec období), `ap` (1 = přibližný rok),
+`c` (druh), `t` (název), `x` (popis), `s` (odkaz na zdroj), `i` (odkaz na obrázek). Náboženství, druhy a historická období jsou na začátku téhož souboru.
+
+### Vlastní materiály přímo na stránce
+
+Tlačítko **Přidat událost** (nebo dvojklik do dráhy na ose) otevře formulář: náboženství (i nové s vlastní barvou a ikonou), rok a letopočet, případný konec a „kolem“,
+druh, název, popis, odkaz na zdroj a obrázek. Událost se hned objeví na ose. Dá se upravit i smazat.
+Vlastní data se ukládají do `localStorage` v prohlížeči, nejsou na serveru. Panel **Moje materiály** je umí exportovat do JSON souboru a zpět importovat.
+Aby byly události trvale vidět všem, vlož záznamy z exportu do polí `events` a `religions` v `osa/data/udalosti.json`.
