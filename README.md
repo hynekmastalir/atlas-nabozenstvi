@@ -52,3 +52,11 @@ Soubor vznikl skriptem `tools/build-world.mjs`.
 ## Barvy a vzhled
 
 Všechny barvy jsou na začátku `css/style.css` v blocích `:root`.
+
+## Časová osa (druhá verze)
+
+Ve složce `osa/` je samostatná verze s jednou zoomovací osou pro všechna náboženství a konkrétními letopočty. Původní atlas zůstává beze změny.
+Běží na `/osa/` (např. `https://TVOJE-JMENO.github.io/NAZEV-REPOZITARE/osa/`), lokálně `python3 -m http.server` a otevři `/osa/`.
+
+Události jsou v `osa/data/udalosti.json`: `r` (id náboženství), `y` (rok, před naším letopočtem záporně), volitelně `e` (konec období), `ap` (1 = přibližný rok), `c` (druh), `t` (název), `x` (popis).
+Náboženství, druhy a historická období jsou na začátku téhož souboru.

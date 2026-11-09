@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Časová osa náboženství</title>
+<meta name="description" content="Zoomovací časová osa křesťanství, islámu, buddhismu, judaismu a hinduismu s konkrétními letopočty. Filtrování podle náboženství a typu události.">
+<meta name="theme-color" content="#d9c08a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=MedievalSharp&display=swap">
+<link rel="stylesheet" href="css/osa.css">
+</head>
+<body>
+<div class="page">
+  <header class="banner">
+    <a class="back" href="../">← Původní atlas</a>
+    <div class="fleuron" aria-hidden="true">⚜ ❦ ⚜</div>
+    <h1><span class="drop">Č</span>asová osa náboženství</h1>
+    <p class="sub">Pět světových náboženství na jedné ose, od Mohendžo-dara po dnešek. Přibližuj kolečkem nebo dvěma prsty, táhni do stran a filtruj.</p>
+  </header>
+
+  <section class="tools" aria-label="Filtry">
+    <div class="tool-row">
+      <span class="tool-label">Náboženství</span>
+      <div id="rel-chips" class="chips"></div>
+    </div>
+    <div class="tool-row">
+      <span class="tool-label">Druh události</span>
+      <div id="cat-chips" class="chips"></div>
+    </div>
+    <div class="tool-row">
+      <label class="search"><span class="tool-label">Hledat</span>
+        <input id="q" type="search" placeholder="např. koncil, chrám, 1517…" autocomplete="off" spellcheck="false"></label>
+      <button id="reset-filters" class="btn small" type="button">Zrušit filtry</button>
+    </div>
+  </section>
+
+  <section class="view" aria-label="Časová osa">
+    <div class="viewbar">
+      <div class="zoom">
+        <button id="zoom-out" class="seal" type="button" aria-label="Oddálit" title="Oddálit">−</button>
+        <button id="zoom-in" class="seal" type="button" aria-label="Přiblížit" title="Přiblížit">+</button>
+      </div>
+      <div id="presets" class="presets" role="group" aria-label="Období"></div>
+      <div id="range" class="range" aria-live="polite"></div>
+    </div>
+    <div id="tl" class="tl" tabindex="0" aria-label="Časová osa. Šipky posouvají, plus a mínus mění měřítko.">
+      <svg id="svg" role="img" aria-label="Časová osa náboženství"></svg>
+      <p id="empty" class="empty" hidden>Žádná událost neodpovídá filtru.</p>
+    </div>
+    <div class="mini-wrap" title="Přehled celé osy, táhni okno">
+      <svg id="mini" aria-hidden="true"></svg>
+    </div>
+    <p class="hint">Kolečko myši = zoom, tažení = posun, Shift + kolečko = posun do stran. Na telefonu dva prsty. Klepni na štít a otevře se jeho popis, shluk čísla přiblížíš klepnutím.</p>
+  </section>
+
+  <section id="detail" class="detail" aria-live="polite">
+    <p class="detail-empty">Klepni na štít na ose. Tady se objeví podrobnosti události.</p>
+  </section>
+
+  <details class="list">
+    <summary>Seznam všech zobrazených událostí podle roku</summary>
+    <ol id="list"></ol>
+  </details>
+
+  <footer class="foot">
+    <p>Letopočty označené „kolem“ jsou přibližné nebo se u nich historici neshodují (například datace Buddhy, exodu či védských textů). Období jsou schematická. Data vznikla pro tuto ukázku a je rozumné je před studijním použitím ověřit v odborné literatuře.</p>
+  </footer>
+</div>
+<script src="js/osa.js"></script>
+</body>
+</html>

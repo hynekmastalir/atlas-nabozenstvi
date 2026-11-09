@@ -1,0 +1,1224 @@
+{
+ "religions": [
+  {
+   "id": "krestanstvi",
+   "name": "Křesťanství",
+   "short": "Křesťanství",
+   "color": "#2b4c8f",
+   "icon": "cross"
+  },
+  {
+   "id": "islam",
+   "name": "Islám",
+   "short": "Islám",
+   "color": "#2e7d5b",
+   "icon": "crescent"
+  },
+  {
+   "id": "buddhismus",
+   "name": "Buddhismus",
+   "short": "Buddhismus",
+   "color": "#b9801a",
+   "icon": "wheel"
+  },
+  {
+   "id": "judaismus",
+   "name": "Judaismus",
+   "short": "Judaismus",
+   "color": "#703a82",
+   "icon": "star"
+  },
+  {
+   "id": "hinduismus",
+   "name": "Hinduismus",
+   "short": "Hinduismus",
+   "color": "#b4452b",
+   "icon": "lotus"
+  }
+ ],
+ "categories": [
+  {
+   "id": "zaklad",
+   "name": "Vznik a zakladatelé"
+  },
+  {
+   "id": "uceni",
+   "name": "Texty a učení"
+  },
+  {
+   "id": "rozkol",
+   "name": "Rozkoly a reformy"
+  },
+  {
+   "id": "sireni",
+   "name": "Šíření a mise"
+  },
+  {
+   "id": "stavba",
+   "name": "Stavby a místa"
+  },
+  {
+   "id": "moc",
+   "name": "Moc a války"
+  }
+ ],
+ "periods": [
+  {
+   "name": "Starověk",
+   "from": -3000,
+   "to": 476
+  },
+  {
+   "name": "Středověk",
+   "from": 476,
+   "to": 1492
+  },
+  {
+   "name": "Novověk",
+   "from": 1492,
+   "to": 1914
+  },
+  {
+   "name": "Nejnovější doba",
+   "from": 1914,
+   "to": 2030
+  }
+ ],
+ "events": [
+  {
+   "id": "kre1",
+   "r": "krestanstvi",
+   "y": 30,
+   "c": "zaklad",
+   "t": "Ukřižování Ježíše z Nazaretu",
+   "x": "V Jeruzalémě je za prefekta Pontia Pilata ukřižován Ježíš. Jeho následovníci věří v jeho vzkříšení a z jejich obce vzniká křesťanství.",
+   "ap": 1
+  },
+  {
+   "id": "kre2",
+   "r": "krestanstvi",
+   "y": 49,
+   "c": "uceni",
+   "t": "Apoštolský koncil v Jeruzalémě",
+   "x": "Apoštolové rozhodují, že pohanští křesťané nemusí zachovávat celý židovský zákon. Tím se církev otevírá všem národům.",
+   "ap": 1
+  },
+  {
+   "id": "kre3",
+   "r": "krestanstvi",
+   "y": 64,
+   "c": "moc",
+   "t": "Neronovo pronásledování",
+   "x": "Po požáru Říma císař Nero obviňuje křesťany a nechává je popravovat. Podle tradice umírají apoštolové Petr a Pavel."
+  },
+  {
+   "id": "kre4",
+   "r": "krestanstvi",
+   "y": 313,
+   "c": "moc",
+   "t": "Milánský edikt",
+   "x": "Konstantin a Licinius dávají křesťanům svobodu vyznání. Skončilo období velkých pronásledování."
+  },
+  {
+   "id": "kre5",
+   "r": "krestanstvi",
+   "y": 325,
+   "c": "uceni",
+   "t": "První nicejský koncil",
+   "x": "Biskupové z celé říše formulují vyznání víry a odmítají učení Aria o Kristu jako stvoření."
+  },
+  {
+   "id": "kre6",
+   "r": "krestanstvi",
+   "y": 380,
+   "c": "moc",
+   "t": "Křesťanství státním náboženstvím",
+   "x": "Císař Theodosius I. nařizuje, aby všichni poddaní přijali nicejskou víru. Křesťanství se stává státním náboženstvím Říma."
+  },
+  {
+   "id": "kre7",
+   "r": "krestanstvi",
+   "y": 397,
+   "c": "uceni",
+   "t": "Kánon Nového zákona",
+   "x": "Synoda v Kartágu potvrzuje seznam 27 spisů Nového zákona, tak jak ho známe dnes."
+  },
+  {
+   "id": "kre8",
+   "r": "krestanstvi",
+   "y": 451,
+   "c": "rozkol",
+   "t": "Chalkedonský koncil",
+   "x": "Koncil formuluje učení o dvou přirozenostech Krista. Koptská, syrská a arménská církev je odmítají a jdou vlastní cestou."
+  },
+  {
+   "id": "kre9",
+   "r": "krestanstvi",
+   "y": 496,
+   "c": "sireni",
+   "t": "Křest franského krále Chlodvíka",
+   "x": "Chlodvík přijímá katolickou víru a získává podporu církve. Franská říše se stává oporou západního křesťanství.",
+   "ap": 1
+  },
+  {
+   "id": "kre10",
+   "r": "krestanstvi",
+   "y": 529,
+   "c": "stavba",
+   "t": "Klášter Monte Cassino",
+   "x": "Benedikt z Nursie zakládá klášter a sepisuje řeholi. Benediktinská pravidla ovlivní celé evropské mnišství.",
+   "ap": 1
+  },
+  {
+   "id": "kre11",
+   "r": "krestanstvi",
+   "y": 597,
+   "c": "sireni",
+   "t": "Augustin z Canterbury v Anglii",
+   "x": "Papež Řehoř I. vysílá mnicha Augustina, který pokřtí krále Æthelberhta z Kentu a zakládá arcibiskupství v Canterbury."
+  },
+  {
+   "id": "kre12",
+   "r": "krestanstvi",
+   "y": 863,
+   "c": "sireni",
+   "t": "Cyril a Metoděj na Velké Moravě",
+   "x": "Byzantští bratři přinášejí do slovanských zemí hlaholici a slovanskou liturgii. Základ pro křesťanství v Čechách a na Moravě."
+  },
+  {
+   "id": "kre13",
+   "r": "krestanstvi",
+   "y": 988,
+   "c": "sireni",
+   "t": "Křest Kyjevské Rusi",
+   "x": "Kníže Vladimír Veliký přijímá křesťanství byzantského ritu a nechává pokřtít Kyjevany.",
+   "ap": 1
+  },
+  {
+   "id": "kre14",
+   "r": "krestanstvi",
+   "y": 1054,
+   "c": "rozkol",
+   "t": "Velké schizma",
+   "x": "Vzájemná exkomunikace římského legáta a cařihradského patriarchy završuje rozdělení církve na západní (katolickou) a východní (pravoslavnou)."
+  },
+  {
+   "id": "kre15",
+   "r": "krestanstvi",
+   "y": 1095,
+   "c": "moc",
+   "t": "Vyhlášení první křížové výpravy",
+   "x": "Papež Urban II. na koncilu v Clermontu vyzývá k tažení do Svaté země. Křižáci roku 1099 dobývají Jeruzalém."
+  },
+  {
+   "id": "kre16",
+   "r": "krestanstvi",
+   "y": 1209,
+   "c": "zaklad",
+   "t": "Řehole svatého Františka",
+   "x": "Papež Innocent III. ústně schvaluje řeholi Františka z Assisi. Vzniká řád chudých bratří, františkáni."
+  },
+  {
+   "id": "kre17",
+   "r": "krestanstvi",
+   "y": 1415,
+   "c": "rozkol",
+   "t": "Upálení mistra Jana Husa",
+   "x": "Kostnický koncil odsuzuje a nechává upálit českého reformátora. Následují husitské války."
+  },
+  {
+   "id": "kre18",
+   "r": "krestanstvi",
+   "y": 1455,
+   "c": "uceni",
+   "t": "Gutenbergova Bible",
+   "x": "Johannes Gutenberg v Mohuči tiskne Bibli pohyblivými literami. Kniha se stává dostupnou mnohem širšímu okruhu lidí.",
+   "ap": 1
+  },
+  {
+   "id": "kre19",
+   "r": "krestanstvi",
+   "y": 1517,
+   "c": "rozkol",
+   "t": "Lutherových 95 tezí",
+   "x": "Martin Luther vystupuje proti odpustkům a spouští reformaci. Vznikají protestantské církve."
+  },
+  {
+   "id": "kre20",
+   "r": "krestanstvi",
+   "y": 1534,
+   "c": "rozkol",
+   "t": "Anglikánská církev",
+   "x": "Anglický parlament vyhlašuje Jindřicha VIII. hlavou církve v Anglii. Rozchod s Římem."
+  },
+  {
+   "id": "kre21",
+   "r": "krestanstvi",
+   "y": 1540,
+   "c": "sireni",
+   "t": "Řád jezuitů",
+   "x": "Papež Pavel III. schvaluje řád Ignáce z Loyoly. Jezuité se stávají misionáři i učiteli po celém světě."
+  },
+  {
+   "id": "kre22",
+   "r": "krestanstvi",
+   "y": 1545,
+   "c": "rozkol",
+   "t": "Tridentský koncil",
+   "x": "Katolická církev odpovídá na reformaci: upřesňuje nauku, reformuje kněžství a zakládá semináře.",
+   "e": 1563
+  },
+  {
+   "id": "kre23",
+   "r": "krestanstvi",
+   "y": 1648,
+   "c": "moc",
+   "t": "Vestfálský mír",
+   "x": "Končí třicetiletá válka. Smlouvy uznávají vedle katolíků a luteránů také kalvinisty."
+  },
+  {
+   "id": "kre24",
+   "r": "krestanstvi",
+   "y": 1792,
+   "c": "sireni",
+   "t": "Moderní misijní hnutí",
+   "x": "William Carey zakládá Baptistickou misijní společnost. Protestantské misie míří do Indie, Afriky a na tichomořské ostrovy."
+  },
+  {
+   "id": "kre25",
+   "r": "krestanstvi",
+   "y": 1906,
+   "c": "rozkol",
+   "t": "Letniční hnutí",
+   "x": "Probuzenecké shromáždění v ulici Azusa v Los Angeles dává vzniknout letničním církvím, nejrychleji rostoucí větvi křesťanství."
+  },
+  {
+   "id": "kre26",
+   "r": "krestanstvi",
+   "y": 1948,
+   "c": "uceni",
+   "t": "Ekumenická rada církví",
+   "x": "V Amsterdamu vzniká Světová rada církví jako společné fórum protestantských a pravoslavných církví."
+  },
+  {
+   "id": "kre27",
+   "r": "krestanstvi",
+   "y": 1962,
+   "c": "uceni",
+   "t": "Druhý vatikánský koncil",
+   "x": "Katolická církev zavádí bohoslužbu v národních jazycích a otevírá se dialogu s jinými církvemi i náboženstvími.",
+   "e": 1965
+  },
+  {
+   "id": "kre28",
+   "r": "krestanstvi",
+   "y": 2013,
+   "c": "moc",
+   "t": "Papež František",
+   "x": "Jorge Bergoglio se stává prvním papežem z Latinské Ameriky a prvním jezuitou na stolci svatého Petra."
+  },
+  {
+   "id": "isl1",
+   "r": "islam",
+   "y": 570,
+   "c": "zaklad",
+   "t": "Narození Mohameda",
+   "x": "V Mekce se narodil Muhammad ibn Abdalláh z kmene Kurajšovců, budoucí prorok islámu.",
+   "ap": 1
+  },
+  {
+   "id": "isl2",
+   "r": "islam",
+   "y": 610,
+   "c": "zaklad",
+   "t": "První zjevení",
+   "x": "V jeskyni Hira u Mekky podle tradice přijímá Mohamed první verše Koránu od anděla Džibríla.",
+   "ap": 1
+  },
+  {
+   "id": "isl3",
+   "r": "islam",
+   "y": 622,
+   "c": "zaklad",
+   "t": "Hidžra",
+   "x": "Mohamed se stoupenci odchází z Mekky do Medíny. Rok 622 je začátkem islámského letopočtu."
+  },
+  {
+   "id": "isl4",
+   "r": "islam",
+   "y": 630,
+   "c": "moc",
+   "t": "Dobytí Mekky",
+   "x": "Muslimové vstupují do Mekky téměř bez boje. Mohamed odstraňuje z Kaaby modly a Mekka se stává středem islámu."
+  },
+  {
+   "id": "isl5",
+   "r": "islam",
+   "y": 632,
+   "c": "moc",
+   "t": "Smrt proroka, první chalífa",
+   "x": "Po Mohamedově smrti je prvním chalífou zvolen Abú Bakr. Spor o nástupnictví později rozdělí islám na sunnity a šíity."
+  },
+  {
+   "id": "isl6",
+   "r": "islam",
+   "y": 650,
+   "c": "uceni",
+   "t": "Sepsání Koránu",
+   "x": "Za chalífy Uthmána je pořízeno jednotné znění Koránu a zničeny odlišné opisy.",
+   "ap": 1
+  },
+  {
+   "id": "isl7",
+   "r": "islam",
+   "y": 661,
+   "c": "moc",
+   "t": "Umajjovský chalífát",
+   "x": "Muawíja zakládá dynastii s hlavním městem v Damašku. Říše se rozpíná od Španělska po Indii."
+  },
+  {
+   "id": "isl8",
+   "r": "islam",
+   "y": 680,
+   "c": "rozkol",
+   "t": "Bitva u Karbalá",
+   "x": "Husajn, vnuk proroka, je zabit vojskem Umajjovců. Událost se stává základem šíitského vyznání a smutečního svátku Ášúrá."
+  },
+  {
+   "id": "isl9",
+   "r": "islam",
+   "y": 691,
+   "c": "stavba",
+   "t": "Dóm na skále",
+   "x": "Umajjovský chalífa Abd al-Malik dokončuje v Jeruzalémě jednu z nejstarších monumentálních staveb islámu."
+  },
+  {
+   "id": "isl10",
+   "r": "islam",
+   "y": 711,
+   "c": "sireni",
+   "t": "Dobytí Hispánie",
+   "x": "Berberský vojevůdce Tárik ibn Zijád překračuje Gibraltar. Většina Pyrenejského poloostrova se na staletí stává muslimskou."
+  },
+  {
+   "id": "isl11",
+   "r": "islam",
+   "y": 750,
+   "c": "moc",
+   "t": "Abbásovský chalífát",
+   "x": "Abbásovci svrhávají Umajjovce a přenášejí těžiště říše na východ."
+  },
+  {
+   "id": "isl12",
+   "r": "islam",
+   "y": 762,
+   "c": "stavba",
+   "t": "Založení Bagdádu",
+   "x": "Chalífa al-Mansúr zakládá kruhové město, které se stane střediskem islámského světa."
+  },
+  {
+   "id": "isl13",
+   "r": "islam",
+   "y": 830,
+   "c": "uceni",
+   "t": "Dům moudrosti",
+   "x": "Za chalífy al-Mamúna se v Bagdádu překládá řecká, perská a indická věda. Zlatý věk islámské vědy.",
+   "ap": 1
+  },
+  {
+   "id": "isl14",
+   "r": "islam",
+   "y": 909,
+   "c": "rozkol",
+   "t": "Fátimovský chalífát",
+   "x": "Šíitští ismáílíté zakládají v Tunisku vlastní chalífát a později Káhiru (969)."
+  },
+  {
+   "id": "isl15",
+   "r": "islam",
+   "y": 929,
+   "c": "moc",
+   "t": "Córdobský chalífát",
+   "x": "Abd ar-Rahmán III. se v Córdobě prohlašuje chalífou. Al-Andalus zažívá vrchol moci a kultury."
+  },
+  {
+   "id": "isl16",
+   "r": "islam",
+   "y": 1187,
+   "c": "moc",
+   "t": "Saladin dobývá Jeruzalém",
+   "x": "Sultán Salah ad-Dín porazil křižáky u Hattínu a vstoupil do Jeruzaléma."
+  },
+  {
+   "id": "isl17",
+   "r": "islam",
+   "y": 1258,
+   "c": "moc",
+   "t": "Mongolové dobývají Bagdád",
+   "x": "Hulagu Chán ničí město a ukončuje abbásovský chalífát v Bagdádu."
+  },
+  {
+   "id": "isl18",
+   "r": "islam",
+   "y": 1324,
+   "c": "sireni",
+   "t": "Pouť Mansy Músy",
+   "x": "Malijský císař koná pouť do Mekky s obrovským doprovodem a šíří slávu muslimské Afriky.",
+   "ap": 1
+  },
+  {
+   "id": "isl19",
+   "r": "islam",
+   "y": 1453,
+   "c": "moc",
+   "t": "Pád Konstantinopole",
+   "x": "Osmanský sultán Mehmed II. dobývá hlavní město Byzance a z Hagia Sofia se stává mešita."
+  },
+  {
+   "id": "isl20",
+   "r": "islam",
+   "y": 1492,
+   "c": "moc",
+   "t": "Pád Granady",
+   "x": "Poslední muslimský stát na Pyrenejském poloostrově zaniká po dobytí Kastilií a Aragonií."
+  },
+  {
+   "id": "isl21",
+   "r": "islam",
+   "y": 1501,
+   "c": "rozkol",
+   "t": "Safavidský Írán",
+   "x": "Šáh Ismáíl I. činí z dvanáctiimámovského šíismu státní víru Íránu."
+  },
+  {
+   "id": "isl22",
+   "r": "islam",
+   "y": 1526,
+   "c": "moc",
+   "t": "Mughalská říše",
+   "x": "Bábur zakládá říši, která později ovládne většinu Indie a spojí perskou a indickou kulturu."
+  },
+  {
+   "id": "isl23",
+   "r": "islam",
+   "y": 1744,
+   "c": "rozkol",
+   "t": "Wahhábismus",
+   "x": "Muhammad ibn Saúd uzavírá spojenectví s kazatelem Muhammadem ibn Abd al-Wahhábem. Základ pozdějšího Saúdského státu."
+  },
+  {
+   "id": "isl24",
+   "r": "islam",
+   "y": 1924,
+   "c": "moc",
+   "t": "Zrušení chalífátu",
+   "x": "Turecké národní shromáždění ruší osmanský chalífát. Po 1300 letech nemá sunnitský svět společného vůdce."
+  },
+  {
+   "id": "isl25",
+   "r": "islam",
+   "y": 1928,
+   "c": "rozkol",
+   "t": "Muslimské bratrstvo",
+   "x": "Hasan al-Banná zakládá v Egyptě hnutí, které spojuje islám s politikou a sociální činností."
+  },
+  {
+   "id": "isl26",
+   "r": "islam",
+   "y": 1947,
+   "c": "moc",
+   "t": "Vznik Pákistánu",
+   "x": "Při dělení britské Indie vzniká stát pro indické muslimy."
+  },
+  {
+   "id": "isl27",
+   "r": "islam",
+   "y": 1979,
+   "c": "moc",
+   "t": "Íránská revoluce",
+   "x": "Ajatolláh Chomejní svrhává šáha a zakládá islámskou republiku."
+  },
+  {
+   "id": "bud1",
+   "r": "buddhismus",
+   "y": -563,
+   "c": "zaklad",
+   "t": "Narození Siddhárthy Gautamy",
+   "x": "Podle tradiční datace se v Lumbiní narodil princ, pozdější Buddha. Moderní historici kladou jeho život spíše do 5. století př. n. l.",
+   "ap": 1
+  },
+  {
+   "id": "bud2",
+   "r": "buddhismus",
+   "y": -528,
+   "c": "zaklad",
+   "t": "Probuzení a první kázání",
+   "x": "Podle tradice dosahuje Siddhárta v Bódhgaji probuzení a v Sárnáthu poprvé káže o čtyřech vznešených pravdách.",
+   "ap": 1
+  },
+  {
+   "id": "bud3",
+   "r": "buddhismus",
+   "y": -483,
+   "c": "uceni",
+   "t": "Buddhova smrt a první koncil",
+   "x": "Buddha umírá v Kušinagaře (parinirvána). Mniši se sejdou v Rádžagrze a zapamatovávají jeho učení.",
+   "ap": 1
+  },
+  {
+   "id": "bud4",
+   "r": "buddhismus",
+   "y": -383,
+   "c": "rozkol",
+   "t": "Druhý koncil ve Vaišáli",
+   "x": "Spor o výklad mnišských pravidel. Podle tradice se od té doby buddhisté štěpí na různé školy.",
+   "ap": 1
+  },
+  {
+   "id": "bud5",
+   "r": "buddhismus",
+   "y": -261,
+   "c": "moc",
+   "t": "Ašókovo obrácení",
+   "x": "Císař Ašóka po krvavé válce v Kalinze obrací svůj pohled k dharmě a šíří toleranci.",
+   "ap": 1
+  },
+  {
+   "id": "bud6",
+   "r": "buddhismus",
+   "y": -250,
+   "c": "sireni",
+   "t": "Třetí koncil a vyslání misií",
+   "x": "V Pátaliputře se sejdou mniši a Ašóka vysílá misionáře do celé Asie.",
+   "ap": 1
+  },
+  {
+   "id": "bud7",
+   "r": "buddhismus",
+   "y": -247,
+   "c": "sireni",
+   "t": "Buddhismus na Cejlonu",
+   "x": "Ašókův syn Mahinda přináší učení na ostrov a obrací krále Dévánampijatissu.",
+   "ap": 1
+  },
+  {
+   "id": "bud8",
+   "r": "buddhismus",
+   "y": -29,
+   "c": "uceni",
+   "t": "Zapsání páliového kánonu",
+   "x": "Na Cejlonu jsou poprvé zapsány buddhistické texty, dosud předávané ústně.",
+   "ap": 1
+  },
+  {
+   "id": "bud9",
+   "r": "buddhismus",
+   "y": 50,
+   "c": "rozkol",
+   "t": "Vznik mahájány",
+   "x": "Vzniká velký směr mahájána s ideálem bódhisattvy, který odkládá vlastní osvobození, aby pomáhal ostatním.",
+   "ap": 1
+  },
+  {
+   "id": "bud10",
+   "r": "buddhismus",
+   "y": 67,
+   "c": "sireni",
+   "t": "Buddhismus v Číně",
+   "x": "Podle tradice císař Ming z dynastie Han zve do Luoyangu indické mnichy a zakládá první chrám."
+  },
+  {
+   "id": "bud11",
+   "r": "buddhismus",
+   "y": 372,
+   "c": "sireni",
+   "t": "Buddhismus v Koreji",
+   "x": "Do království Koguryo přichází mnich ze severní Číny s buddhistickými sútrami."
+  },
+  {
+   "id": "bud12",
+   "r": "buddhismus",
+   "y": 399,
+   "c": "sireni",
+   "t": "Pouť čínského mnicha Fa-siena",
+   "x": "Mnich Fa-sien putuje do Indie pro rukopisy a zanechává cenný popis tamního buddhismu.",
+   "e": 412
+  },
+  {
+   "id": "bud13",
+   "r": "buddhismus",
+   "y": 427,
+   "c": "stavba",
+   "t": "Univerzita Nálandá",
+   "x": "V Biháru vzniká velký klášter a učiliště, kde studují tisíce mnichů z celé Asie.",
+   "ap": 1
+  },
+  {
+   "id": "bud14",
+   "r": "buddhismus",
+   "y": 538,
+   "c": "sireni",
+   "t": "Buddhismus v Japonsku",
+   "x": "Korejské království Päkče posílá japonskému dvoru sochu Buddhy a sútry (tradičně též 552).",
+   "ap": 1
+  },
+  {
+   "id": "bud15",
+   "r": "buddhismus",
+   "y": 629,
+   "c": "sireni",
+   "t": "Cesta mnicha Süan-canga",
+   "x": "Čínský mnich putuje do Indie a vrací se s množstvím textů, které přeloží do čínštiny.",
+   "e": 645
+  },
+  {
+   "id": "bud16",
+   "r": "buddhismus",
+   "y": 640,
+   "c": "sireni",
+   "t": "Buddhismus v Tibetu",
+   "x": "Král Songcän Gampo zve do země indické učitele. Zakládá chrámy v Lhase.",
+   "ap": 1
+  },
+  {
+   "id": "bud17",
+   "r": "buddhismus",
+   "y": 800,
+   "c": "stavba",
+   "t": "Borobudur",
+   "x": "Na Jávě vzniká největší buddhistická stavba, stupňovitý chrám ve tvaru mandaly.",
+   "ap": 1
+  },
+  {
+   "id": "bud18",
+   "r": "buddhismus",
+   "y": 1191,
+   "c": "uceni",
+   "t": "Zen v Japonsku",
+   "x": "Mnich Eisai přináší do Japonska školu rinzai, která klade důraz na meditaci."
+  },
+  {
+   "id": "bud19",
+   "r": "buddhismus",
+   "y": 1193,
+   "c": "moc",
+   "t": "Zničení Nálandy",
+   "x": "Vojska Bachtijára Chiladžího ničí klášter. Buddhismus v Indii slábne.",
+   "ap": 1
+  },
+  {
+   "id": "bud20",
+   "r": "buddhismus",
+   "y": 1253,
+   "c": "rozkol",
+   "t": "Ničiren",
+   "x": "Japonský mnich začíná kázat o Lotosové sútře a zakládá vlastní školu."
+  },
+  {
+   "id": "bud21",
+   "r": "buddhismus",
+   "y": 1578,
+   "c": "moc",
+   "t": "Titul dalajláma",
+   "x": "Mongolský Altan Chán uděluje tibetskému mnichovi titul dalajláma, „oceán moudrosti“."
+  },
+  {
+   "id": "bud22",
+   "r": "buddhismus",
+   "y": 1642,
+   "c": "moc",
+   "t": "Dalajlámové vládnou Tibetu",
+   "x": "Pátý dalajláma stojí v čele tibetské vlády a Lhasa se stává duchovním i politickým střediskem."
+  },
+  {
+   "id": "bud23",
+   "r": "buddhismus",
+   "y": 1893,
+   "c": "sireni",
+   "t": "Buddhismus na Západě",
+   "x": "Na Parlamentu světových náboženství v Chicagu vystupují buddhističtí představitelé a zahajují zájem Západu."
+  },
+  {
+   "id": "bud24",
+   "r": "buddhismus",
+   "y": 1954,
+   "c": "uceni",
+   "t": "Šestý buddhistický koncil",
+   "x": "V Rangúnu se sejdou tisíce mnichů a znovu přezkoumají páliový kánon.",
+   "e": 1956
+  },
+  {
+   "id": "bud25",
+   "r": "buddhismus",
+   "y": 1956,
+   "c": "rozkol",
+   "t": "Ambedkarovo obrácení",
+   "x": "Bhímráo Ámbédkar přestupuje se statisíci „nedotknutelných“ k buddhismu a obnovuje jej v Indii."
+  },
+  {
+   "id": "bud26",
+   "r": "buddhismus",
+   "y": 1959,
+   "c": "moc",
+   "t": "Dalajláma v exilu",
+   "x": "Po neúspěšném povstání v Tibetu odchází čtrnáctý dalajláma do Indie."
+  },
+  {
+   "id": "jud1",
+   "r": "judaismus",
+   "y": -1250,
+   "c": "zaklad",
+   "t": "Exodus a smlouva na Sinaji",
+   "x": "Podle bible vede Mojžíš Izraelity z egyptského otroctví a na hoře Sinaj přijímá Desatero. Datace je nejistá.",
+   "ap": 1
+  },
+  {
+   "id": "jud2",
+   "r": "judaismus",
+   "y": -1000,
+   "c": "moc",
+   "t": "David v Jeruzalémě",
+   "x": "Král David dobývá Jeruzalém a činí z něj hlavní město sjednoceného království.",
+   "ap": 1
+  },
+  {
+   "id": "jud3",
+   "r": "judaismus",
+   "y": -960,
+   "c": "stavba",
+   "t": "První jeruzalémský chrám",
+   "x": "Král Šalamoun podle tradice staví chrám, který se stane středem židovského kultu.",
+   "ap": 1
+  },
+  {
+   "id": "jud4",
+   "r": "judaismus",
+   "y": -722,
+   "c": "moc",
+   "t": "Pád Severního království",
+   "x": "Asyrská říše dobývá Samaří. Deset izraelských kmenů mizí z dějin."
+  },
+  {
+   "id": "jud5",
+   "r": "judaismus",
+   "y": -586,
+   "c": "moc",
+   "t": "Zničení chrámu, babylonské zajetí",
+   "x": "Nabuchodonosor dobývá Jeruzalém, zbourá chrám a odvede obyvatele do Babylonu."
+  },
+  {
+   "id": "jud6",
+   "r": "judaismus",
+   "y": -539,
+   "c": "moc",
+   "t": "Návrat z Babylonu",
+   "x": "Perský král Kýros dobývá Babylon a dovolí Židům vrátit se do Jeruzaléma."
+  },
+  {
+   "id": "jud7",
+   "r": "judaismus",
+   "y": -516,
+   "c": "stavba",
+   "t": "Druhý chrám",
+   "x": "Obnovený chrám v Jeruzalémě je vysvěcen."
+  },
+  {
+   "id": "jud8",
+   "r": "judaismus",
+   "y": -450,
+   "c": "uceni",
+   "t": "Ezra a Nehemjáš",
+   "x": "Písař Ezra předčítá Tóru veřejně a Nehemjáš obnovuje jeruzalémské hradby.",
+   "ap": 1
+  },
+  {
+   "id": "jud9",
+   "r": "judaismus",
+   "y": -250,
+   "c": "uceni",
+   "t": "Septuaginta",
+   "x": "V egyptské Alexandrii vzniká řecký překlad hebrejské Bible.",
+   "ap": 1
+  },
+  {
+   "id": "jud10",
+   "r": "judaismus",
+   "y": -167,
+   "c": "moc",
+   "t": "Makabejské povstání",
+   "x": "Židé pod vedením Judy Makabejského povstávají proti seleukovskému králi Antiochovi IV.",
+   "e": -160
+  },
+  {
+   "id": "jud11",
+   "r": "judaismus",
+   "y": -164,
+   "c": "stavba",
+   "t": "Znovuvysvěcení chrámu",
+   "x": "Makabejci očišťují a znovu svěcí chrám. Na jeho památku se slaví Chanuka."
+  },
+  {
+   "id": "jud12",
+   "r": "judaismus",
+   "y": -63,
+   "c": "moc",
+   "t": "Pompeius v Jeruzalémě",
+   "x": "Římský vojevůdce dobývá Jeruzalém. Judea se stává závislou na Římě."
+  },
+  {
+   "id": "jud13",
+   "r": "judaismus",
+   "y": 70,
+   "c": "moc",
+   "t": "Zničení druhého chrámu",
+   "x": "Římané pod vedením Tita dobývají Jeruzalém a spálí chrám. Židé se rozptylují po celé říši."
+  },
+  {
+   "id": "jud14",
+   "r": "judaismus",
+   "y": 132,
+   "c": "moc",
+   "t": "Bar Kochbovo povstání",
+   "x": "Poslední velké povstání proti Římu končí porážkou. Židé nemají přístup do Jeruzaléma.",
+   "e": 135
+  },
+  {
+   "id": "jud15",
+   "r": "judaismus",
+   "y": 200,
+   "c": "uceni",
+   "t": "Mišna",
+   "x": "Rabi Jehuda ha-Nasi sepisuje ústní tradici do souboru Mišna, základ Talmudu.",
+   "ap": 1
+  },
+  {
+   "id": "jud16",
+   "r": "judaismus",
+   "y": 400,
+   "c": "uceni",
+   "t": "Jeruzalémský talmud",
+   "x": "V Galileji vzniká soubor rabínských výkladů, později zastíněný talmudem babylonským (kolem 500).",
+   "ap": 1
+  },
+  {
+   "id": "jud17",
+   "r": "judaismus",
+   "y": 1040,
+   "c": "uceni",
+   "t": "Raši",
+   "x": "Francouzský rabín Šlomo ben Jicchak píše výklady Bible a Talmudu, dodnes užívané.",
+   "e": 1105
+  },
+  {
+   "id": "jud18",
+   "r": "judaismus",
+   "y": 1096,
+   "c": "moc",
+   "t": "Pogromy za první křížové výpravy",
+   "x": "Křižáci vraždí židovské obce v rýnských městech, například ve Wormsu a Mohuči."
+  },
+  {
+   "id": "jud19",
+   "r": "judaismus",
+   "y": 1180,
+   "c": "uceni",
+   "t": "Maimonidovo Mišne Tora",
+   "x": "Rabi Mojžíš ben Maimon shrnuje židovské právo do přehledného kodexu.",
+   "ap": 1
+  },
+  {
+   "id": "jud20",
+   "r": "judaismus",
+   "y": 1290,
+   "c": "moc",
+   "t": "Vyhnání Židů z Anglie",
+   "x": "Král Eduard I. vyhání Židy z Anglie. Návrat je povolen až v 17. století."
+  },
+  {
+   "id": "jud21",
+   "r": "judaismus",
+   "y": 1492,
+   "c": "moc",
+   "t": "Vyhnání ze Španělska",
+   "x": "Alhambrský edikt nutí španělské Židy ke křtu nebo odchodu. Vzniká sefardská diaspora."
+  },
+  {
+   "id": "jud22",
+   "r": "judaismus",
+   "y": 1516,
+   "c": "moc",
+   "t": "Benátské ghetto",
+   "x": "V Benátkách vzniká první uzavřená židovská čtvrť, nazvaná ghetto."
+  },
+  {
+   "id": "jud23",
+   "r": "judaismus",
+   "y": 1666,
+   "c": "rozkol",
+   "t": "Šabtaj Cvi",
+   "x": "Sebeprohlášený mesiáš nadchne diasporu a roku 1666 konvertuje k islámu. Velké zklamání."
+  },
+  {
+   "id": "jud24",
+   "r": "judaismus",
+   "y": 1740,
+   "c": "rozkol",
+   "t": "Chasidismus",
+   "x": "Baal Šem Tov v Podolí zakládá hnutí zdůrazňující radost, modlitbu a blízkost k Bohu.",
+   "ap": 1
+  },
+  {
+   "id": "jud25",
+   "r": "judaismus",
+   "y": 1791,
+   "c": "moc",
+   "t": "Občanská práva ve Francii",
+   "x": "Francouzské národní shromáždění uděluje Židům rovná občanská práva."
+  },
+  {
+   "id": "jud26",
+   "r": "judaismus",
+   "y": 1810,
+   "c": "rozkol",
+   "t": "Reformní judaismus",
+   "x": "V Seesenu vzniká škola Israela Jacobsona, počátek reformního hnutí."
+  },
+  {
+   "id": "jud27",
+   "r": "judaismus",
+   "y": 1897,
+   "c": "moc",
+   "t": "První sionistický kongres",
+   "x": "Theodor Herzl svolává do Basileje kongres, který vyhlašuje cíl zřídit domov pro Židy v Palestině."
+  },
+  {
+   "id": "jud28",
+   "r": "judaismus",
+   "y": 1933,
+   "c": "moc",
+   "t": "Šoa",
+   "x": "Nacistické Německo systematicky vraždí asi šest milionů Židů.",
+   "e": 1945
+  },
+  {
+   "id": "jud29",
+   "r": "judaismus",
+   "y": 1948,
+   "c": "moc",
+   "t": "Vznik státu Izrael",
+   "x": "David Ben Gurion vyhlašuje nezávislý stát Izrael."
+  },
+  {
+   "id": "hin1",
+   "r": "hinduismus",
+   "y": -2600,
+   "c": "zaklad",
+   "t": "Civilizace údolí Indu",
+   "x": "Města jako Mohendžo-daro a Harappa mají plánované ulice a velkou zděnou lázeň, pravděpodobně rituální.",
+   "e": -1900,
+   "ap": 1
+  },
+  {
+   "id": "hin2",
+   "r": "hinduismus",
+   "y": -1500,
+   "c": "uceni",
+   "t": "Rigvéda",
+   "x": "Nejstarší védské hymny na počest bohů, jako jsou Indra, Agni a Varuna, se předávají ústně.",
+   "e": -1200,
+   "ap": 1
+  },
+  {
+   "id": "hin3",
+   "r": "hinduismus",
+   "y": -800,
+   "c": "uceni",
+   "t": "Upanišady",
+   "x": "Filosofické spisy o átmanu a brahmanu, o koloběhu zrození a o osvobození (móksa).",
+   "e": -500,
+   "ap": 1
+  },
+  {
+   "id": "hin4",
+   "r": "hinduismus",
+   "y": -400,
+   "c": "uceni",
+   "t": "Mahábhárata a Rámájana",
+   "x": "Velké eposy vznikají v průběhu staletí. Součástí Mahábháraty je Bhagavadgíta.",
+   "e": 400,
+   "ap": 1
+  },
+  {
+   "id": "hin5",
+   "r": "hinduismus",
+   "y": -200,
+   "c": "uceni",
+   "t": "Manuovy zákony",
+   "x": "Sanskrtský spis o dharmě popisuje povinnosti podle kast a životních stádií.",
+   "e": 200,
+   "ap": 1
+  },
+  {
+   "id": "hin6",
+   "r": "hinduismus",
+   "y": 300,
+   "c": "uceni",
+   "t": "Purány",
+   "x": "Příběhy o bozích Višnuovi, Šivovi a bohyni Dévi se rozšiřují mezi lidmi a tvoří základ chrámového uctívání.",
+   "e": 1000,
+   "ap": 1
+  },
+  {
+   "id": "hin7",
+   "r": "hinduismus",
+   "y": 320,
+   "c": "moc",
+   "t": "Guptovská říše",
+   "x": "Zlatý věk indické kultury: rozkvět sochařství, chrámů, matematiky a sanskrtské literatury.",
+   "e": 550
+  },
+  {
+   "id": "hin8",
+   "r": "hinduismus",
+   "y": 600,
+   "c": "rozkol",
+   "t": "Hnutí bhakti",
+   "x": "Tamilští básníci, Álváři a Nájanárové, vyzdvihují osobní lásku k Bohu a zpívají v lidové řeči.",
+   "e": 900,
+   "ap": 1
+  },
+  {
+   "id": "hin9",
+   "r": "hinduismus",
+   "y": 788,
+   "c": "uceni",
+   "t": "Ádi Šankara",
+   "x": "Filosof učí nedualistickou advaita vedántu: brahman a átman jsou jedno.",
+   "e": 820,
+   "ap": 1
+  },
+  {
+   "id": "hin10",
+   "r": "hinduismus",
+   "y": 1010,
+   "c": "stavba",
+   "t": "Chrám Brihadíšvara",
+   "x": "Cholský panovník Rádžaradža I. dokončuje v Thandžávúru obrovský chrám boha Šivy."
+  },
+  {
+   "id": "hin11",
+   "r": "hinduismus",
+   "y": 1017,
+   "c": "uceni",
+   "t": "Rámánudža",
+   "x": "Teolog zakládá školu višišta-advaita a zdůrazňuje oddanost Višnuovi.",
+   "e": 1137
+  },
+  {
+   "id": "hin12",
+   "r": "hinduismus",
+   "y": 1113,
+   "c": "stavba",
+   "t": "Angkor Wat",
+   "x": "Khmerský král Súrjavarman II. nechává postavit chrám zasvěcený bohu Višnuovi, největší náboženskou stavbu světa.",
+   "e": 1150
+  },
+  {
+   "id": "hin13",
+   "r": "hinduismus",
+   "y": 1336,
+   "c": "moc",
+   "t": "Vidžajanagarská říše",
+   "x": "Hinduistické království v jižní Indii brání kulturu a staví velké chrámy, například v Hampi.",
+   "e": 1646
+  },
+  {
+   "id": "hin14",
+   "r": "hinduismus",
+   "y": 1674,
+   "c": "moc",
+   "t": "Korunovace Šivádžiho",
+   "x": "Šivádží je korunován králem Maráthské říše. Hinduistické království vzdoruje Mughalům."
+  },
+  {
+   "id": "hin15",
+   "r": "hinduismus",
+   "y": 1828,
+   "c": "rozkol",
+   "t": "Brahmó samádž",
+   "x": "Rám Mohan Ráj zakládá v Kalkatě hnutí, které chce reformovat hinduismus a odmítá modlářství."
+  },
+  {
+   "id": "hin16",
+   "r": "hinduismus",
+   "y": 1829,
+   "c": "moc",
+   "t": "Zákaz sati",
+   "x": "Britský guvernér Bentinck zakazuje pálení vdov, po dlouhé kampani indických reformátorů."
+  },
+  {
+   "id": "hin17",
+   "r": "hinduismus",
+   "y": 1875,
+   "c": "rozkol",
+   "t": "Árja samádž",
+   "x": "Dajánanda Sarasvatí zakládá hnutí, které se vrací k Védám."
+  },
+  {
+   "id": "hin18",
+   "r": "hinduismus",
+   "y": 1893,
+   "c": "sireni",
+   "t": "Vivékánanda v Chicagu",
+   "x": "Svámí Vivékánanda zaujme Parlament světových náboženství a přináší hinduismus na Západ."
+  },
+  {
+   "id": "hin19",
+   "r": "hinduismus",
+   "y": 1947,
+   "c": "moc",
+   "t": "Nezávislost a dělení Indie",
+   "x": "Indie získává nezávislost a vzniká muslimský Pákistán. Přesuny milionů lidí provázejí násilí."
+  },
+  {
+   "id": "hin20",
+   "r": "hinduismus",
+   "y": 1948,
+   "c": "moc",
+   "t": "Zavražděn Gándhí",
+   "x": "Mahátma Gándhí, který ve své politice spojoval hinduistickou víru s nenásilím, je zavražděn v Dillí."
+  },
+  {
+   "id": "hin21",
+   "r": "hinduismus",
+   "y": 1950,
+   "c": "moc",
+   "t": "Ústava Indie",
+   "x": "Indie se stává sekulární republikou se svobodou vyznání, přestože většina obyvatel jsou hinduisté."
+  },
+  {
+   "id": "hin22",
+   "r": "hinduismus",
+   "y": 1966,
+   "c": "sireni",
+   "t": "Hnutí Haré Kršna",
+   "x": "Bhaktivédánta Swámí Prabhupáda zakládá v New Yorku Mezinárodní společnost pro vědomí Kršny (ISKCON)."
+  },
+  {
+   "id": "hin23",
+   "r": "hinduismus",
+   "y": 1992,
+   "c": "moc",
+   "t": "Zboření mešity v Ajódhjí",
+   "x": "Davy hinduistických aktivistů ničí mešitu Babrí, což vyvolává velké nepokoje."
+  },
+  {
+   "id": "hin24",
+   "r": "hinduismus",
+   "y": 2024,
+   "c": "stavba",
+   "t": "Chrám Rámy v Ajódhjí",
+   "x": "V Ajódhjí je slavnostně otevřen chrám zasvěcený Rámovi na sporném místě."
+  }
+ ]
+}

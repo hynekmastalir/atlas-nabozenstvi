@@ -1,0 +1,114 @@
+:root{
+  --parch:#ecdcb0; --parch2:#e3cf9b; --parch3:#f5ead0;
+  --ink:#2a1a08; --ink2:#5a4326; --rubric:#a3281a; --gold:#b8860b; --gold2:#e8c767;
+  --line:#6b4a1e; --shadow:rgba(60,35,5,.35);
+  --serif:"EB Garamond","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --display:"MedievalSharp","EB Garamond",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font:18px/1.5 var(--serif);
+  background:
+    radial-gradient(ellipse at 50% 30%,rgba(255,248,220,.55),rgba(255,248,220,0) 60%),
+    radial-gradient(ellipse at center,transparent 55%,rgba(110,60,10,.38) 100%),
+    var(--parch);
+  background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' seed='4'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .32  0 0 0 0 .14  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+[hidden]{display:none!important}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--rubric)}
+:focus-visible{outline:3px solid var(--rubric);outline-offset:2px}
+
+.page{position:relative;max-width:1240px;margin:0 auto;padding:14px 14px 40px;padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right))}
+
+/* ---------- záhlaví ---------- */
+.banner{position:relative;text-align:center;padding:22px 16px 18px;margin-bottom:14px;border:3px double var(--line);border-radius:6px;
+  background:linear-gradient(var(--parch3),var(--parch2));box-shadow:inset 0 0 40px rgba(120,80,20,.28),0 3px 12px var(--shadow)}
+.banner::before,.banner::after{content:"✠";position:absolute;top:6px;font-size:22px;color:var(--rubric)}
+.banner::before{left:12px}.banner::after{right:12px}
+.fleuron{color:var(--gold);letter-spacing:.4em;font-size:18px}
+h1{font:400 clamp(28px,5.4vw,50px)/1.1 var(--display);margin:4px 0 8px;letter-spacing:.02em}
+.drop{color:var(--rubric);font-size:1.25em}
+.sub{margin:0 auto;max-width:62ch;font-style:italic;color:var(--ink2)}
+.back{position:absolute;left:44px;top:10px;font-size:15px;text-decoration:none;border-bottom:1px dotted var(--rubric)}
+@media (max-width:560px){.back{position:static;display:block;margin-bottom:4px;font-size:14px}.banner::before,.banner::after{display:none}}
+
+/* ---------- nástroje ---------- */
+.tools{border:2px solid var(--line);border-radius:6px;padding:10px 12px;margin-bottom:14px;background:rgba(245,234,208,.75);box-shadow:inset 0 0 18px rgba(120,80,20,.2)}
+.tool-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:5px 0}
+.tool-row+.tool-row{border-top:1px dashed rgba(107,74,30,.45)}
+.tool-label{font:400 14px var(--display);color:var(--ink2);min-width:104px;letter-spacing:.03em}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{--c:var(--ink);display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:4px 16px 4px 12px;border:2px solid var(--c);border-radius:4px 4px 16px 16px/4px 4px 14px 14px;
+  background:var(--parch3);font-weight:700;font-size:16px;transition:background .15s,color .15s,transform .1s}
+.chip svg{width:18px;height:18px;flex:none}
+.chip[aria-pressed="true"]{background:var(--c);color:#f7ecce;box-shadow:inset 0 0 0 1px rgba(255,235,170,.7)}
+.chip[aria-pressed="false"]{opacity:.72}
+.chip:active{transform:scale(.97)}
+.chip.cat{--c:var(--ink2);min-height:40px;border-radius:999px;font-weight:500;font-size:15px;padding:2px 14px}
+.chip .n{font-weight:400;font-size:13px;opacity:.85}
+.search{display:flex;align-items:center;gap:10px;flex:1 1 260px}
+.search input{flex:1;min-width:140px;min-height:44px;padding:0 14px;border:2px solid var(--line);border-radius:4px;background:var(--parch3)}
+.btn{min-height:44px;padding:0 16px;border:2px solid var(--line);border-radius:4px;background:var(--parch3);font-weight:700}
+.btn.small{font-size:15px}
+.btn:hover{background:#f8efd8}
+@media (max-width:620px){.tool-label{min-width:100%}}
+
+/* ---------- osa ---------- */
+.view{border:3px double var(--line);border-radius:6px;background:rgba(245,234,208,.6);padding:10px;box-shadow:0 3px 12px var(--shadow)}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-bottom:8px}
+.zoom{display:flex;gap:8px}
+.seal{width:46px;height:46px;border-radius:50%;border:3px double var(--gold);background:radial-gradient(circle at 35% 30%,#c23a2a,#8e1c10 70%);color:#fbe7b5;font:700 26px/1 var(--display);box-shadow:0 2px 5px var(--shadow)}
+.seal:active{transform:translateY(1px)}
+.presets{display:flex;flex-wrap:wrap;gap:6px}
+.presets button{min-height:40px;padding:0 14px;border:2px solid var(--line);border-radius:4px;background:var(--parch3);font-weight:500;font-size:15px}
+.presets button:hover{background:#f8efd8}
+.range{margin-left:auto;font-style:italic;color:var(--ink2);font-size:15px}
+.tl{position:relative;border:2px solid var(--line);border-radius:4px;background:var(--parch);overflow:hidden;touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab;box-shadow:inset 0 0 26px rgba(120,80,20,.3)}
+.tl:active{cursor:grabbing}
+.tl svg{display:block;touch-action:pan-y}
+.empty{position:absolute;inset:80px 0 auto;text-align:center;font-style:italic;color:var(--ink2);margin:0}
+.mini-wrap{margin-top:8px;border:2px solid var(--line);border-radius:4px;background:var(--parch2);overflow:hidden;touch-action:none;cursor:pointer}
+.mini-wrap svg{display:block}
+.hint{margin:8px 2px 0;font-size:14.5px;color:var(--ink2);font-style:italic}
+
+/* SVG text */
+svg text{font-family:var(--serif)}
+svg .lbl{font-size:13.5px;fill:var(--ink)}
+svg .lbl b{font-weight:700}
+svg .tick{font-size:13px;fill:var(--ink2)}
+svg .per{font:12px var(--display);fill:var(--ink2);letter-spacing:.06em}
+svg .lane-name{font:13px var(--display);fill:#f7ecce}
+svg .ev{cursor:pointer}
+svg .ev:hover .shield{filter:brightness(1.15)}
+svg .cl{cursor:zoom-in}
+
+/* ---------- popis události ---------- */
+.detail{margin-top:14px;border:3px double var(--line);border-radius:6px;padding:0;background:linear-gradient(var(--parch3),var(--parch2));box-shadow:inset 0 0 30px rgba(120,80,20,.25),0 3px 12px var(--shadow);overflow:hidden}
+.detail-empty{margin:0;padding:20px 18px;font-style:italic;color:var(--ink2);text-align:center}
+.scroll{--c:var(--ink);border-left:10px solid var(--c);padding:14px 18px 16px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.tag{display:inline-block;padding:1px 12px;border:1.5px solid var(--ink2);border-radius:999px;font-size:14px;font-weight:500}
+.tag.rel{background:var(--c);border-color:var(--c);color:#f7ecce;font-weight:700}
+.date{font:400 20px var(--display);color:var(--rubric)}
+.scroll h2{font:400 clamp(24px,4vw,34px)/1.15 var(--display);margin:2px 0 8px}
+.scroll p{margin:0 0 10px;max-width:70ch}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.compare{margin:8px 0 2px;padding-top:8px;border-top:1px dashed rgba(107,74,30,.5);font-size:16px}
+.compare ul{margin:4px 0 0;padding-left:20px}
+.compare button{border:0;background:none;padding:0;text-align:left;text-decoration:underline dotted;color:var(--ink)}
+
+/* ---------- seznam ---------- */
+.list{margin-top:14px;border:2px solid var(--line);border-radius:6px;background:rgba(245,234,208,.7)}
+.list summary{cursor:pointer;min-height:48px;display:flex;align-items:center;padding:0 16px;font:400 18px var(--display)}
+.list ol{list-style:none;margin:0;padding:4px 10px 12px;columns:2 340px;column-gap:20px}
+.list li{break-inside:avoid;border-bottom:1px dotted rgba(107,74,30,.4)}
+.list li button{display:grid;grid-template-columns:7.2em 1fr;gap:8px;width:100%;min-height:44px;padding:6px 4px;border:0;background:none;text-align:left;align-items:baseline}
+.list li button:hover{background:rgba(255,248,220,.6)}
+.list time{font-weight:700;color:var(--rubric);font-variant-numeric:tabular-nums}
+.list .sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:baseline}
+.foot{margin-top:16px;text-align:center;font-size:14.5px;color:var(--ink2);font-style:italic}
+.foot p{margin:0 auto;max-width:90ch}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
