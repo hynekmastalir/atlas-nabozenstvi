@@ -160,3 +160,4 @@ code{font-size:.9em;background:rgba(107,74,30,.12);padding:0 4px;border-radius:3
 .f-err{margin:8px 0 0;padding:8px 12px;border:2px solid var(--rubric);border-radius:4px;background:#f6d9cf;color:#7a1a0e;font-weight:700}
 @media (max-width:480px){.f-row{grid-template-columns:1fr 1fr;gap:8px}}
 .list summary span{margin-left:8px;color:var(--ink2)}
+.install{margin-top:10px;background:var(--rubric);border-color:var(--rubric);color:#fbe7b5}

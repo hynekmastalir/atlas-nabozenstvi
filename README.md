@@ -69,3 +69,8 @@ Tlačítko **Přidat událost** (nebo dvojklik do dráhy na ose) otevře formul�
 druh, název, popis, odkaz na zdroj a obrázek. Událost se hned objeví na ose. Dá se upravit i smazat.
 Vlastní data se ukládají do `localStorage` v prohlížeči, nejsou na serveru. Panel **Moje materiály** je umí exportovat do JSON souboru a zpět importovat.
 Aby byly události trvale vidět všem, vlož záznamy z exportu do polí `events` a `religions` v `osa/data/udalosti.json`.
+
+### Instalace do telefonu (PWA)
+
+Časovou osu lze nainstalovat jako aplikaci a po první návštěvě běží i bez internetu. Android (Chrome): tlačítko **Instalovat aplikaci** nebo menu „Přidat na plochu“. iPhone (Safari): **Sdílet, Přidat na plochu**.
+Service worker je v `osa/sw.js`. Přidáš-li do `osa/` nový soubor, který má fungovat offline hned po první návštěvě, přidej ho do seznamu `PRECACHE` a zvyš `VERSION`.
