@@ -1,8 +1,8 @@
 /* Service worker pro Časovou osu: aplikace běží i bez internetu.
    Online se vždy bere čerstvá verze (a ukládá se), offline se použije uložená. Při změně seznamu souborů zvyš VERSION. */
-const VERSION = 'osa-v1';
+const VERSION = 'osa-v2';
 const PRECACHE = ['./', 'index.html', 'css/osa.css', 'js/osa.js', 'js/pwa.js', 'data/udalosti.json', 'manifest.webmanifest',
-  'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
+  'img/svitek-hore.webp', 'img/svitek-stred.webp', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 const FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
 
 self.addEventListener('install', e => {

@@ -342,7 +342,7 @@
     const i = list.findIndex(x => x.id === e.id);
     // co se dělo ve stejné době u ostatních náboženství
     const near = visibleEvents().filter(x => x.r !== e.r && Math.abs(x.y - e.y) <= Math.max(25, 0.04 * Math.abs(e.y))).sort((a, b) => Math.abs(a.y - e.y) - Math.abs(b.y - e.y)).slice(0, 4);
-    box.innerHTML = `<div class="scroll" style="--c:${r.color}">
+    box.innerHTML = `<div class="scroll" style="--c:${r.color}"><button class="scroll-x" type="button" data-close="1" aria-label="Zavřít svitek" title="Zavřít (Esc)">✕</button>
       <div class="meta"><span class="tag rel">${esc(r.name)}</span><span class="tag">${esc(catById[e.c].name)}</span>${e.u ? '<span class="tag own">✦ vlastní</span>' : ''}</div>
       <div class="date">${esc(span(e))}</div>
       <h2>${esc(e.t)}</h2>${paragraphs(e.d || e.x)}
@@ -406,7 +406,6 @@
       }
     };
     $('#detail').addEventListener('click', onDetail);
-    $('#scroll-x').onclick = closeScroll;
     const bg = $('#scroll-bg');
     // na dotykovém displeji přijde po puštění prstu ještě „duch“ kliknutí, který dopadne na právě zobrazené pozadí; krátce po otevření ho ignorujeme
     bg.addEventListener('click', e => { if (performance.now() - openedAt < 600) { e.preventDefault(); return; } closeScroll(); });                                   // klepnutí kamkoli vedle svitek zavře
