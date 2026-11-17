@@ -96,7 +96,7 @@ svg .cl{cursor:zoom-in}
 .unroll{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s cubic-bezier(.3,.7,.2,1);margin:-1.6% 3% -1.6%;position:relative;z-index:1}
 .detail.open .unroll{grid-template-rows:1fr}
 /* list papíru: světlý a čistý, nepravidelně roztrhané okraje po stranách (maska) */
-.sheet{min-height:0;display:flex;flex-direction:column;max-height:clamp(220px,50dvh,470px);overflow:hidden;
+.sheet{transition:height .4s cubic-bezier(.3,.7,.2,1);min-height:0;display:flex;flex-direction:column;max-height:clamp(220px,50dvh,470px);overflow:hidden;
   --e:36px;
   background:
     linear-gradient(90deg,rgba(160,125,60,.22),transparent 10%,transparent 90%,rgba(160,125,60,.22)),
@@ -192,3 +192,10 @@ code{font-size:.9em;background:rgba(107,74,30,.12);padding:0 4px;border-radius:3
 .f-note{margin:8px 0 0;font-size:14.5px;font-style:italic;color:var(--ink2)}
 .toast{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:80;max-width:min(520px,calc(100% - 20px));padding:10px 16px;border:2px solid var(--line);border-radius:6px;background:var(--parch3);box-shadow:0 6px 20px var(--shadow);font-size:15.5px}
 
+
+/* spodní válec se dá chytit a zatáhnout */
+.roll.bottom{cursor:grab;touch-action:none}
+.detail.dragging .roll.bottom{cursor:grabbing}
+.detail.dragging .sheet,.detail.dragging .unroll{transition:none}
+.roll.bottom::after{content:"⇣ zatáhni";position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);font:12px var(--display);letter-spacing:.04em;color:#6b4a1e;opacity:.8;pointer-events:none;white-space:nowrap}
+.detail.pulled .roll.bottom::after,.detail.known .roll.bottom::after{display:none}

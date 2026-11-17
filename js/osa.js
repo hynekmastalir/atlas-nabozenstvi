@@ -330,7 +330,7 @@
       openedAt = performance.now(); box.classList.add('open'); bg.classList.add('open');
     } else {
       if (!scrollOpen) return; scrollOpen = false; box.classList.remove('open'); bg.classList.remove('open');
-      scrollTimer = setTimeout(() => { box.hidden = true; bg.hidden = true; }, 560);
+      scrollTimer = setTimeout(() => { box.hidden = true; bg.hidden = true; const sh = box.querySelector('.sheet'); sh.style.height = ''; sh.style.maxHeight = ''; box.classList.remove('pulled'); }, 560);
     }
   }
   function closeScroll() { st.sel = null; renderDetail(); draw(); }
@@ -411,6 +411,31 @@
     bg.addEventListener('click', e => { if (performance.now() - openedAt < 600) { e.preventDefault(); return; } closeScroll(); });                                   // klepnutí kamkoli vedle svitek zavře
     bg.addEventListener('wheel', e => e.preventDefault(), { passive: false });   // pod svitkem se stránka neposouvá
     bg.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
+    // svitek lze chytit za spodní válec a zatažením roztáhnout až na celou obrazovku; klepnutí na válec přepíná mezi výchozí a největší výškou
+    const det = $('#detail'), sheet = det.querySelector('.sheet'), roll = det.querySelector('.roll.bottom');
+    const DEFH = () => Math.min(470, Math.max(220, innerHeight * 0.5));
+    const maxH = () => Math.max(160, innerHeight - 6 - (det.offsetHeight - sheet.offsetHeight));
+    const setH = h => { sheet.style.maxHeight = 'none'; sheet.style.height = Math.round(h) + 'px'; det.classList.add('pulled'); };
+    let pull = null;
+    roll.addEventListener('pointerdown', e => {
+      roll.setPointerCapture(e.pointerId); pull = { y: e.clientY, h: sheet.offsetHeight, moved: false };
+      det.classList.add('dragging'); setH(pull.h);
+    });
+    roll.addEventListener('pointermove', e => {
+      if (!pull) return; const dy = e.clientY - pull.y;
+      if (Math.abs(dy) > 5) pull.moved = true;
+      if (pull.moved) setH(clampN(pull.h + dy, 150, maxH()));
+    });
+    const endPull = e => {
+      if (!pull) return; const p = pull; pull = null; det.classList.remove('dragging');
+      const mh = maxH(), cur = sheet.offsetHeight;
+      if (!p.moved) setH(cur > mh * 0.85 ? DEFH() : mh);                // klepnutí: přepnout
+      else if (cur > mh * 0.8) setH(mh);                                  // dotažení do konce se přichytí na celou obrazovku
+      store.set('pulled', 1);
+    };
+    roll.addEventListener('pointerup', endPull); roll.addEventListener('pointercancel', endPull);
+    window.addEventListener('resize', () => { if (sheet.style.height) setH(Math.min(parseFloat(sheet.style.height), maxH())); });
+    if (store.get('pulled', 0)) det.classList.add('known');
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && scrollOpen && !$('#dlg').open) closeScroll(); });
     $('#list').addEventListener('click', ev => { const b = ev.target.closest('[data-id]'); if (b) select(b.dataset.id); });
 
