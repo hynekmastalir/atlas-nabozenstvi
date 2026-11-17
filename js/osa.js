@@ -54,7 +54,7 @@
 
   /* ---------- načtení ---------- */
   fetch('data/udalosti.json').then(r => r.json()).then(init).catch(err => {
-    $('#detail').innerHTML = `<p class="detail-empty">Data se nepodařilo načíst (${esc(err.message)}). Otevři stránku přes web server.</p>`;
+    $('#empty').hidden = false; $('#empty').textContent = `Data se nepodařilo načíst (${err.message}). Otevři stránku přes web server.`;
   });
 
   function init(d) {
@@ -74,8 +74,14 @@
     const c = store.get('custom', null);
     custom = { religions: Array.isArray(c?.religions) ? c.religions.filter(validRel) : [], events: Array.isArray(c?.events) ? c.events.filter(validEv) : [] };
   }
+  let toastT = 0;
+  function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 4500); }
   function saveCustom() {
-    try { localStorage.setItem('osa:custom', JSON.stringify(custom)); return true; }
+    try {
+      localStorage.setItem('osa:custom', JSON.stringify(custom));
+      navigator.storage?.persist?.().catch(() => {});          // požádá prohlížeč, aby data při nedostatku místa nemazal
+      return true;
+    }
     catch { alert('Vlastní materiály se nepodařilo uložit (prohlížeč blokuje úložiště nebo je plné). Exportuj je do souboru.'); return false; }
   }
   const HEX = /^#[0-9a-f]{6}$/i;
@@ -314,10 +320,24 @@
     for (let i = 0; i < sent.length; i += 2) out.push(sent.slice(i, i + 2).join(' '));
     return out.map(p => `<p>${esc(p)}</p>`).join('');
   }
+  // svitek s popisem: pevně u horního okraje okna, překrývá nadpis a filtry, stránku nijak neposouvá
+  let scrollOpen = false, scrollTimer = 0, shownId = null;
+  function setScrollOpen(on) {
+    const box = $('#detail'), bg = $('#scroll-bg');
+    clearTimeout(scrollTimer);
+    if (on) {
+      if (scrollOpen) return; scrollOpen = true; box.hidden = false; bg.hidden = false; void box.offsetHeight;
+      box.classList.add('open'); bg.classList.add('open');
+    } else {
+      if (!scrollOpen) return; scrollOpen = false; box.classList.remove('open'); bg.classList.remove('open');
+      scrollTimer = setTimeout(() => { box.hidden = true; bg.hidden = true; }, 560);
+    }
+  }
+  function closeScroll() { st.sel = null; renderDetail(); draw(); }
   function renderDetail() {
-    const box = $('#detail');
+    const box = $('#paper');
     const e = st.sel && events.find(x => x.id === st.sel);
-    if (!e) { box.innerHTML = '<p class="detail-empty">Klepni na štít na ose. Tady se objeví podrobnosti události.</p>'; return; }
+    if (!e) { shownId = null; setScrollOpen(false); return; }
     const r = relById[e.r], list = visibleEvents().filter(x => x.r === e.r).sort((a, b) => a.y - b.y || (a.e ?? a.y) - (b.e ?? b.y));
     const i = list.findIndex(x => x.id === e.id);
     // co se dělo ve stejné době u ostatních náboženství
@@ -337,15 +357,14 @@
       </div>
       ${near.length ? `<div class="compare"><b>Ve stejné době jinde:</b><ul>${near.map(x => `<li><button type="button" data-id="${x.id}">${esc(span(x))}: ${esc(x.t)} <i>(${esc(relById[x.r].name)})</i></button></li>`).join('')}</ul></div>` : ''}
     </div>`;
+    if (shownId !== e.id) box.scrollTop = 0;
+    shownId = e.id; setScrollOpen(true);
   }
   function select(id, { center = true } = {}) {
     st.sel = id; renderDetail(); draw();
     const e = events.find(x => x.id === id); if (!e) return;
     const x = gutter + (e.y - view.t0) * view.ppy;
     if (center && (x < gutter + 40 || x > W - 40)) centerOn(e.y);
-    if (!center) return;
-    const d = $('#detail'); const rc = d.getBoundingClientRect();
-    if (rc.top > innerHeight - 80) d.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
   function renderList() {
     $('#list').innerHTML = visibleEvents().sort((a, b) => a.y - b.y).map(e => `<li><button type="button" data-id="${e.id}"><time>${esc(span(e))}</time><span><i class="sw" style="background:${relById[e.r].color}"></i><b>${esc(e.t)}</b> <span style="opacity:.75">${esc(relById[e.r].name)}</span></span></button></li>`).join('');
@@ -377,7 +396,7 @@
       const t = ev.target.closest('button'); if (!t) return;
       if (t.dataset.id) { select(t.dataset.id); return; }
       const e = events.find(x => x.id === st.sel); if (!e) return;
-      if (t.dataset.close) { st.sel = null; renderDetail(); draw(); }
+      if (t.dataset.close) closeScroll();
       else if (t.dataset.edit) openForm({ edit: e.id });
       else if (t.dataset.del) deleteEvent(e.id);
       else if (t.dataset.zoom) { const sp = Math.max(8, ((e.e ?? e.y) - e.y) * 1.4); const ppy = clampN(pw() * 0.35 / sp, view.ppy, 40); go((e.e != null ? (e.y + e.e) / 2 : e.y) - pw() / 2 / ppy, ppy); }
@@ -387,7 +406,13 @@
       }
     };
     $('#detail').addEventListener('click', onDetail);
-    $('#list').addEventListener('click', ev => { const b = ev.target.closest('[data-id]'); if (b) { select(b.dataset.id); $('#tl').scrollIntoView({ behavior: 'smooth', block: 'center' }); } });
+    $('#scroll-x').onclick = closeScroll;
+    const bg = $('#scroll-bg');
+    bg.addEventListener('click', closeScroll);                                   // klepnutí kamkoli vedle svitek zavře
+    bg.addEventListener('wheel', e => e.preventDefault(), { passive: false });   // pod svitkem se stránka neposouvá
+    bg.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && scrollOpen && !$('#dlg').open) closeScroll(); });
+    $('#list').addEventListener('click', ev => { const b = ev.target.closest('[data-id]'); if (b) select(b.dataset.id); });
 
     // tažení a štípnutí na ose (rozlišení klepnutí a tažení)
     const ptrs = new Map(); let down = null, pinch = null;
@@ -544,6 +569,7 @@
     if (!saveCustom()) return;
     afterChange(rec.id, relId);
     closeForm();
+    toast('Událost je uložená jen v tomto prohlížeči (localStorage). Pro zálohu ji exportuj v části Moje materiály.');
   }
   // po změně dat: přepočítat, zapnout dráhu, zrušit filtry, které by novou událost skryly
   function afterChange(selectId, relId) {
@@ -571,11 +597,15 @@
   function renderMine() {
     const ce = events.filter(e => e.u);
     $('#mine-n').textContent = `(${ce.length})`;
+    let bytes = 0; try { bytes = new Blob([localStorage.getItem('osa:custom') || '']).size; } catch { /* úložiště nedostupné */ }
+    const size = bytes < 1024 ? `${bytes} B` : `${(bytes / 1024).toFixed(1)} kB`;
+    $('#mine-store').textContent = `Právě uloženo v tomto prohlížeči: ${ce.length} událostí a ${custom.religions.length} náboženství (${size} z přibližně 5 MB).`;
+    navigator.storage?.persisted?.().then(p => { $('#mine-store').textContent += p ? ' Prohlížeč data označil jako trvalá.' : ' Prohlížeč je může smazat při nedostatku místa, proto exportuj.'; }).catch(() => {});
     $('#mine-rels').innerHTML = custom.religions.length ? custom.religions.map(r => `<li><span class="sw" style="background:${esc(r.color)}"></span><b>${esc(r.name)}</b> <button type="button" class="lnk" data-act="del-rel" data-id="${esc(r.id)}">smazat</button></li>`).join('') : '<li class="none">Žádné vlastní náboženství.</li>';
     $('#mine-evs').innerHTML = ce.length ? ce.sort((a, b) => a.y - b.y).map(e => `<li><button type="button" class="lnk" data-act="show" data-id="${e.id}"><time>${esc(span(e))}</time> ${esc(e.t)}</button> <i class="muted">${esc(relById[e.r].name)}</i> <button type="button" class="lnk" data-act="edit" data-id="${e.id}">upravit</button> <button type="button" class="lnk" data-act="del" data-id="${e.id}">smazat</button></li>`).join('') : '<li class="none">Zatím nic. Klikni na „Přidat událost“.</li>';
   }
   function exportJson() {
-    const out = { verze: 1, poznamka: 'Vlastní materiály z Časové osy náboženství. Lze importovat zpět, nebo zkopírovat do osa/data/udalosti.json.', religions: custom.religions, events: custom.events };
+    const out = { verze: 1, poznamka: 'Vlastní materiály z Časové osy náboženství. Lze importovat zpět, nebo zkopírovat do data/udalosti.json.', religions: custom.religions, events: custom.events };
     const url = URL.createObjectURL(new Blob([JSON.stringify(out, null, 1)], { type: 'application/json' }));
     const a = document.createElement('a'); a.href = url; a.download = 'vlastni-udalosti-osa.json'; document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 2000);
@@ -621,7 +651,7 @@
     $('#f-color').addEventListener('input', e => setPicked(e.target.value, pickedIcon));
     $('#mine').addEventListener('click', e => {
       const b = e.target.closest('[data-act]'); if (!b) return; const id = b.dataset.id;
-      if (b.dataset.act === 'show') { select(id); $('#tl').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      if (b.dataset.act === 'show') select(id);
       else if (b.dataset.act === 'edit') openForm({ edit: id });
       else if (b.dataset.act === 'del') deleteEvent(id);
       else if (b.dataset.act === 'del-rel') deleteReligion(id);
