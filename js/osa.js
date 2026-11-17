@@ -321,13 +321,13 @@
     return out.map(p => `<p>${esc(p)}</p>`).join('');
   }
   // svitek s popisem: pevně u horního okraje okna, překrývá nadpis a filtry, stránku nijak neposouvá
-  let scrollOpen = false, scrollTimer = 0, shownId = null;
+  let scrollOpen = false, scrollTimer = 0, shownId = null, openedAt = 0;
   function setScrollOpen(on) {
     const box = $('#detail'), bg = $('#scroll-bg');
     clearTimeout(scrollTimer);
     if (on) {
       if (scrollOpen) return; scrollOpen = true; box.hidden = false; bg.hidden = false; void box.offsetHeight;
-      box.classList.add('open'); bg.classList.add('open');
+      openedAt = performance.now(); box.classList.add('open'); bg.classList.add('open');
     } else {
       if (!scrollOpen) return; scrollOpen = false; box.classList.remove('open'); bg.classList.remove('open');
       scrollTimer = setTimeout(() => { box.hidden = true; bg.hidden = true; }, 560);
@@ -408,7 +408,8 @@
     $('#detail').addEventListener('click', onDetail);
     $('#scroll-x').onclick = closeScroll;
     const bg = $('#scroll-bg');
-    bg.addEventListener('click', closeScroll);                                   // klepnutí kamkoli vedle svitek zavře
+    // na dotykovém displeji přijde po puštění prstu ještě „duch“ kliknutí, který dopadne na právě zobrazené pozadí; krátce po otevření ho ignorujeme
+    bg.addEventListener('click', e => { if (performance.now() - openedAt < 600) { e.preventDefault(); return; } closeScroll(); });                                   // klepnutí kamkoli vedle svitek zavře
     bg.addEventListener('wheel', e => e.preventDefault(), { passive: false });   // pod svitkem se stránka neposouvá
     bg.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && scrollOpen && !$('#dlg').open) closeScroll(); });
