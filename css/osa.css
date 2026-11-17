@@ -91,24 +91,33 @@ svg .cl{cursor:zoom-in}
 /* ---------- popis události: svitek papíru u horního okraje okna ---------- */
 .scroll-bg{position:fixed;inset:0;z-index:40;background:rgba(40,25,5,0);transition:background .45s;touch-action:none;overscroll-behavior:contain}
 .scroll-bg.open{background:rgba(40,25,5,.45)}
-.detail{position:fixed;z-index:50;top:max(0px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(640px,calc(100% - 2px));display:flex;flex-direction:column;filter:drop-shadow(0 12px 16px rgba(30,15,0,.5))}
-.roll{flex:none;aspect-ratio:800/141;position:relative;z-index:2;background:url("../img/svitek-hore.webp") center/100% 100% no-repeat}
-.roll.bottom{transform:scaleY(-1)}
-.unroll{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s cubic-bezier(.3,.7,.2,1);margin:-2.4% 0;position:relative;z-index:1}
+.detail{position:fixed;z-index:50;top:max(2px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(640px,calc(100% - 4px));display:flex;flex-direction:column;filter:drop-shadow(0 10px 14px rgba(30,15,0,.5))}
+.roll{flex:none;aspect-ratio:8/1;position:relative;z-index:2;background:url("../img/valec.svg") center/100% 100% no-repeat}
+.unroll{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s cubic-bezier(.3,.7,.2,1);margin:-1.6% 3% -1.6%;position:relative;z-index:1}
 .detail.open .unroll{grid-template-rows:1fr}
-.paper{min-height:0;overflow-y:auto;overscroll-behavior:contain;max-height:clamp(180px,44dvh,440px);scrollbar-width:thin;scrollbar-color:#8b5a2b transparent;
-  background:url("../img/svitek-stred.webp") top center/100% auto repeat-y}
-.scroll{--c:var(--ink);padding:max(14px,4.5%) 16% 12px 17%;margin:0}
-.scroll-x{position:sticky;top:0;z-index:3;float:right;margin:-4px -11% 0 6px;width:38px;height:38px;border-radius:50%;border:3px double var(--gold);background:radial-gradient(circle at 35% 30%,#c23a2a,#8e1c10 70%);color:#fbe7b5;font:700 17px/1 var(--display);padding:0;box-shadow:0 2px 5px var(--shadow)}
+/* list papíru: světlý a čistý, nepravidelně roztrhané okraje po stranách (maska) */
+.sheet{min-height:0;display:flex;flex-direction:column;max-height:clamp(220px,50dvh,470px);overflow:hidden;
+  --e:36px;
+  background:
+    linear-gradient(90deg,rgba(160,125,60,.22),transparent 10%,transparent 90%,rgba(160,125,60,.22)),
+    linear-gradient(#f3e9cd,#eee1bf 55%,#f1e5c6);
+  -webkit-mask:linear-gradient(#000,#000) var(--e) 0/calc(100% - 2 * var(--e)) 100% no-repeat,url("../img/okraj-l.svg") left top/var(--e) 420px repeat-y,url("../img/okraj-r.svg") right top/var(--e) 420px repeat-y;
+  mask:linear-gradient(#000,#000) var(--e) 0/calc(100% - 2 * var(--e)) 100% no-repeat,url("../img/okraj-l.svg") left top/var(--e) 420px repeat-y,url("../img/okraj-r.svg") right top/var(--e) 420px repeat-y}
+.sheet-head,.paper,.sheet-foot{padding-left:clamp(38px,11%,70px);padding-right:clamp(38px,11%,70px)}
+.sheet-head{flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:10px;padding-bottom:6px}
+.paper{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
+.paper::-webkit-scrollbar{display:none}
+.sheet-foot{flex:none;padding-top:8px;padding-bottom:10px;border-top:1px solid rgba(107,74,30,.35)}
+.scroll{--c:var(--ink);padding:2px 0 6px}
+.scroll-x{flex:none;width:36px;height:36px;border-radius:50%;border:3px double var(--gold);background:radial-gradient(circle at 35% 30%,#c23a2a,#8e1c10 70%);color:#fbe7b5;font:700 16px/1 var(--display);padding:0;box-shadow:0 2px 5px var(--shadow)}
 .scroll-x:hover{filter:brightness(1.15)}
-.meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px;padding-right:30px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
 .tag{display:inline-block;padding:1px 12px;border:1.5px solid var(--ink2);border-radius:999px;font-size:14px;font-weight:500;background:rgba(245,234,208,.55)}
 .tag.rel{background:var(--c);border-color:var(--c);color:#f7ecce;font-weight:700}
 .date{font:400 19px var(--display);color:var(--rubric)}
-.scroll h2{font:400 clamp(21px,4vw,30px)/1.15 var(--display);margin:2px 0 8px}
+.scroll h2{font:400 clamp(21px,4vw,28px)/1.15 var(--display);margin:2px 0 8px}
 .scroll p{margin:0 0 10px;max-width:70ch}
-.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
-.scroll .acts{position:sticky;bottom:0;padding:12px 0 6px;background:linear-gradient(rgba(224,200,152,0),#dfc896 42%)}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin:0}
 .compare{margin:8px 0 2px;padding-top:8px;border-top:1px dashed rgba(107,74,30,.5);font-size:16px}
 .compare ul{margin:4px 0 0;padding-left:20px}
 .compare button{border:0;background:none;padding:0;text-align:left;text-decoration:underline dotted;color:var(--ink)}

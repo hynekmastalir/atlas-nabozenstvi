@@ -342,21 +342,21 @@
     const i = list.findIndex(x => x.id === e.id);
     // co se dělo ve stejné době u ostatních náboženství
     const near = visibleEvents().filter(x => x.r !== e.r && Math.abs(x.y - e.y) <= Math.max(25, 0.04 * Math.abs(e.y))).sort((a, b) => Math.abs(a.y - e.y) - Math.abs(b.y - e.y)).slice(0, 4);
-    box.innerHTML = `<div class="scroll" style="--c:${r.color}"><button class="scroll-x" type="button" data-close="1" aria-label="Zavřít svitek" title="Zavřít (Esc)">✕</button>
-      <div class="meta"><span class="tag rel">${esc(r.name)}</span><span class="tag">${esc(catById[e.c].name)}</span>${e.u ? '<span class="tag own">✦ vlastní</span>' : ''}</div>
+    $('#sheet-head').innerHTML = `<div class="meta" style="--c:${r.color}"><span class="tag rel">${esc(r.name)}</span><span class="tag">${esc(catById[e.c].name)}</span>${e.u ? '<span class="tag own">✦ vlastní</span>' : ''}</div>
+      <button class="scroll-x" type="button" data-close="1" aria-label="Zavřít svitek" title="Zavřít (Esc)">✕</button>`;
+    box.innerHTML = `<div class="scroll" style="--c:${r.color}">
       <div class="date">${esc(span(e))}</div>
       <h2>${esc(e.t)}</h2>${paragraphs(e.d || e.x)}
       ${e.i && validUrl(e.i) ? `<img class="ev-img" src="${esc(e.i)}" alt="${esc(e.t)}" loading="lazy" referrerpolicy="no-referrer">` : ''}
       ${e.s && validUrl(e.s) ? `<p class="src"><a href="${esc(e.s)}" target="_blank" rel="noopener noreferrer">Zdroj: ${esc(new URL(e.s).hostname)} ↗</a></p>` : ''}
-      <div class="acts">
-        <button class="btn small" type="button" data-nav="-1" ${i <= 0 ? 'disabled' : ''}>◀ Předchozí</button>
-        <button class="btn small" type="button" data-zoom="1">Přiblížit</button>
-        <button class="btn small" type="button" data-nav="1" ${i >= list.length - 1 ? 'disabled' : ''}>Další ▶</button>
-        <button class="btn small" type="button" data-close="1">Zavřít</button>
-        ${e.u ? '<button class="btn small" type="button" data-edit="1">Upravit</button><button class="btn small danger" type="button" data-del="1">Smazat</button>' : ''}
-      </div>
       ${near.length ? `<div class="compare"><b>Ve stejné době jinde:</b><ul>${near.map(x => `<li><button type="button" data-id="${x.id}">${esc(span(x))}: ${esc(x.t)} <i>(${esc(relById[x.r].name)})</i></button></li>`).join('')}</ul></div>` : ''}
     </div>`;
+    $('#sheet-foot').innerHTML = `<div class="acts">
+        <button class="btn small" type="button" data-nav="-1" aria-label="Předchozí událost" ${i <= 0 ? 'disabled' : ''}>◀ Předchozí</button>
+        <button class="btn small" type="button" data-zoom="1">Přiblížit</button>
+        <button class="btn small" type="button" data-nav="1" aria-label="Další událost" ${i >= list.length - 1 ? 'disabled' : ''}>Další ▶</button>
+        ${e.u ? '<button class="btn small" type="button" data-edit="1">Upravit</button><button class="btn small danger" type="button" data-del="1">Smazat</button>' : ''}
+      </div>`;
     if (shownId !== e.id) box.scrollTop = 0;
     shownId = e.id; setScrollOpen(true);
   }
