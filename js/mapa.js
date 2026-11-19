@@ -116,12 +116,13 @@
     pane.querySelector('#m-share').innerHTML = sh.length ? '<b>Odhad podílu na světové populaci:</b> ' + sh.map(x => `<span class="sh" style="--c:${rel(x.r.id).color}">${esc(rel(x.r.id).name)} ${x.v < 1 ? '<1' : Math.round(x.v)} %</span>`).join('') : '';
   }
   function tap(e) {
-    const info = pane.querySelector('#m-info'), pin = e.target.closest('.pin');
+    // po setPointerCapture je e.target samotné SVG, proto se prvek pod prstem zjišťuje podle souřadnic
+    const hit = document.elementFromPoint(e.clientX, e.clientY) || e.target, info = pane.querySelector('#m-info'), pin = hit.closest?.('.pin');
     if (pin) {
       const [pid, rid] = pin.dataset.pl.split('|'), r = data.religions.find(x => x.id === rid), pl = r.places.find(x => x.id === pid);
       info.innerHTML = `<b>${esc(pl.name)}</b> <span class="muted">(${esc(rel(rid).name)})</span><br>${esc(pl.text)}`; return;
     }
-    const pth = e.target.closest('.land'); if (!pth) return;
+    const pth = hit.closest?.('.land'); if (!pth) { info.textContent = 'Klepni na zemi nebo na značku svatého místa.'; return; }
     const code = pth.dataset.code, list = byCountry.get(code) || [], name = paths.get(code).name;
     info.innerHTML = `<b>${esc(name)}</b>: ${list.length ? list.map(id => `<span class="sh" style="--c:${rel(id).color}">${esc(rel(id).name)}</span>`).join(' ') : '<span class="muted">v této době tu mapa žádné z vybraných náboženství nevyznačuje</span>'}`;
   }
