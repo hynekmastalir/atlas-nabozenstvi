@@ -42,6 +42,12 @@
     if (D) draw();
   }
   P = PAL[themeNow()];
+  // přepínač motivu nezávisí na načtení dat, takže funguje hned
+  const themeBtn = document.querySelector('#theme');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => applyTheme(themeNow() === 'dark' ? 'light' : 'dark'));
+    themeBtn.textContent = themeNow() === 'dark' ? '☀' : '☾';
+  }
 
   let D, rels = [], relById = {}, catById = {}, events = [];
   let custom = { religions: [], events: [] };   // vlastní materiály z localStorage
@@ -84,7 +90,6 @@
     bind(); bindForm(); refresh();
     publish();
     applyTheme(themeNow(), false);
-    $('#theme').onclick = () => applyTheme(themeNow() === 'dark' ? 'light' : 'dark');
     matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', e => { if (store.get('theme', null) == null) applyTheme(e.matches ? 'dark' : 'light', false); });
     new ResizeObserver(() => { const old = W; measure(); if (old) { clampView(); } refresh(); }).observe(tl);
   }
