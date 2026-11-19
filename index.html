@@ -24,6 +24,16 @@
     <button id="install" class="btn small install" type="button" hidden>⬇ Instalovat</button>
   </header>
 
+  <nav id="nav" class="nav" aria-label="Části aplikace">
+    <button type="button" data-tab="osa" aria-pressed="true">Osa</button>
+    <button type="button" data-tab="mapa" aria-pressed="false">Mapa</button>
+    <button type="button" data-tab="kviz" aria-pressed="false">Kvíz</button>
+    <button type="button" data-tab="porovnani" aria-pressed="false">Porovnání</button>
+    <button type="button" data-tab="osobnosti" aria-pressed="false">Osobnosti</button>
+    <button type="button" data-tab="svatky" aria-pressed="false">Svátky</button>
+  </nav>
+
+  <div id="pane-osa" class="pane">
   <section class="tools" aria-label="Filtry">
     <div class="tool-row scrollrow"><span class="tool-label">Náboženství</span><div id="rel-chips" class="chips"></div></div>
     <div class="tool-row scrollrow"><span class="tool-label">Druh</span><div id="cat-chips" class="chips"></div></div>
@@ -42,6 +52,14 @@
       </div>
       <div id="presets" class="presets" role="group" aria-label="Období"></div>
       <div id="range" class="range" aria-live="polite"></div>
+      <div class="share">
+        <button id="share-btn" class="seal small" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Sdílet a exportovat" title="Sdílet a exportovat">⇪</button>
+        <div id="share-menu" class="share-menu" hidden>
+          <button type="button" data-share="link">🔗 Kopírovat odkaz na tento pohled</button>
+          <button type="button" data-share="png">🖼 Uložit osu jako obrázek</button>
+          <button type="button" data-share="print">🖨 Tisk nebo PDF</button>
+        </div>
+      </div>
     </div>
     <div id="tl" class="tl" tabindex="0" aria-label="Časová osa. Šipky posouvají, plus a mínus mění měřítko.">
       <svg id="svg" role="img" aria-label="Časová osa náboženství"></svg>
@@ -93,6 +111,14 @@
     </div>
   </details>
 
+  </div>
+
+  <section id="pane-mapa" class="pane" hidden aria-label="Mapa šíření"></section>
+  <section id="pane-kviz" class="pane" hidden aria-label="Kvíz"></section>
+  <section id="pane-porovnani" class="pane" hidden aria-label="Porovnání náboženství"></section>
+  <section id="pane-osobnosti" class="pane" hidden aria-label="Osobnosti"></section>
+  <section id="pane-svatky" class="pane" hidden aria-label="Kalendář svátků"></section>
+
   <footer class="foot">
     <p>Letopočty označené „kolem“ jsou přibližné nebo se u nich historici neshodují (například datace Buddhy, exodu či védských textů). Období jsou schematická. Data vznikla pro tuto ukázku a je rozumné je před studijním použitím ověřit v odborné literatuře.</p>
   </footer>
@@ -130,6 +156,8 @@
 </dialog>
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 <script src="js/osa.js"></script>
+<script src="js/sdileni.js"></script>
+<script src="js/nav.js"></script>
 <script src="js/pwa.js"></script>
 </body>
 </html>

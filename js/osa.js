@@ -66,7 +66,29 @@
     buildChips(); buildPresets(); buildForm();
     measure(); fit(false);
     bind(); bindForm(); refresh();
+    publish();
     new ResizeObserver(() => { const old = W; measure(); if (old) { clampView(); } refresh(); }).observe(tl);
+  }
+
+  /* ---------- rozhraní pro ostatní části aplikace (mapa, kvíz, porovnání, osobnosti, svátky, sdílení) ---------- */
+  const OSA = window.OSA = { ready: false, onSelect: null };
+  function publish() {
+    Object.assign(OSA, {
+      ready: true, span, fy, esc, select, closeScroll, toast,
+      get events() { return events; }, get rels() { return rels; }, get relById() { return relById; }, get catById() { return catById; }, get cats() { return D.categories; },
+      get svg() { return svg; }, get W() { return W; }, get H() { return H; }, get view() { return view; }, get selected() { return st.sel; },
+      // stav pohledu pro odkaz: rok vlevo, měřítko, zapnutá náboženství a druhy
+      getState() { return { v: [Math.round(view.t0), +view.ppy.toFixed(4)], r: [...st.rel], c: [...st.cat], e: st.sel }; },
+      applyState(s) {
+        if (s.r?.length) st.rel = new Set(s.r.filter(id => relById[id]));
+        if (s.c) st.cat = new Set(s.c.filter(id => catById[id]));
+        if (s.v && isFinite(s.v[0]) && isFinite(s.v[1])) { view.ppy = +s.v[1]; view.t0 = +s.v[0]; clampView(); }
+        saveFilters(); refresh();
+        if (s.e && events.some(e => e.id === s.e)) select(s.e, { center: !s.v });
+      },
+      fitAll(animate) { fit(animate); },
+    });
+    document.dispatchEvent(new Event('osa-ready'));
   }
 
   /* ---------- vlastní materiály (ukládají se jen v prohlížeči) ---------- */
@@ -108,11 +130,11 @@
     $('#cat-chips').innerHTML = D.categories.map(c => `<button class="chip cat" type="button" data-cat="${c.id}" aria-pressed="${st.cat.has(c.id)}">${esc(c.name)}</button>`).join('');
   }
   function syncChips() {
-    document.querySelectorAll('[data-rel]').forEach(b => {
+    document.querySelectorAll('#rel-chips [data-rel]').forEach(b => {
       b.setAttribute('aria-pressed', st.rel.has(b.dataset.rel));
       b.querySelector('.n').textContent = `(${matching(b.dataset.rel).length})`;
     });
-    document.querySelectorAll('[data-cat]').forEach(b => b.setAttribute('aria-pressed', st.cat.has(b.dataset.cat)));
+    document.querySelectorAll('#cat-chips [data-cat]').forEach(b => b.setAttribute('aria-pressed', st.cat.has(b.dataset.cat)));
   }
   const textMatch = e => !st.q || norm(`${e.t} ${e.x} ${e.d || ''} ${span(e)} ${catById[e.c].name} ${relById[e.r].name}`).includes(norm(st.q));
   const matching = rid => events.filter(e => e.r === rid && (!st.cat.size || st.cat.has(e.c)) && textMatch(e));
@@ -333,7 +355,7 @@
       scrollTimer = setTimeout(() => { box.hidden = true; bg.hidden = true; const sh = box.querySelector('.sheet'); sh.style.height = ''; sh.style.maxHeight = ''; box.classList.remove('pulled'); }, 560);
     }
   }
-  function closeScroll() { st.sel = null; renderDetail(); draw(); }
+  function closeScroll() { st.sel = null; renderDetail(); draw(); OSA.onSelect?.(null); }
   function renderDetail() {
     const box = $('#paper');
     const e = st.sel && events.find(x => x.id === st.sel);
@@ -354,6 +376,7 @@
     $('#sheet-foot').innerHTML = `<div class="acts">
         <button class="btn small" type="button" data-nav="-1" aria-label="Předchozí událost" ${i <= 0 ? 'disabled' : ''}>◀ Předchozí</button>
         <button class="btn small" type="button" data-zoom="1">Přiblížit</button>
+        <button class="btn small" type="button" data-sharev="1" title="Sdílet odkaz na tuto událost">🔗 Odkaz</button>
         <button class="btn small" type="button" data-nav="1" aria-label="Další událost" ${i >= list.length - 1 ? 'disabled' : ''}>Další ▶</button>
         ${e.u ? '<button class="btn small" type="button" data-edit="1">Upravit</button><button class="btn small danger" type="button" data-del="1">Smazat</button>' : ''}
       </div>`;
@@ -361,7 +384,7 @@
     shownId = e.id; setScrollOpen(true);
   }
   function select(id, { center = true } = {}) {
-    st.sel = id; renderDetail(); draw();
+    st.sel = id; renderDetail(); draw(); OSA.onSelect?.(id);
     const e = events.find(x => x.id === id); if (!e) return;
     const x = gutter + (e.y - view.t0) * view.ppy;
     if (center && (x < gutter + 40 || x > W - 40)) centerOn(e.y);
@@ -397,6 +420,7 @@
       if (t.dataset.id) { select(t.dataset.id); return; }
       const e = events.find(x => x.id === st.sel); if (!e) return;
       if (t.dataset.close) closeScroll();
+      else if (t.dataset.sharev) window.OSA.shareEvent?.(e.id);
       else if (t.dataset.edit) openForm({ edit: e.id });
       else if (t.dataset.del) deleteEvent(e.id);
       else if (t.dataset.zoom) { const sp = Math.max(8, ((e.e ?? e.y) - e.y) * 1.4); const ppy = clampN(pw() * 0.35 / sp, view.ppy, 40); go((e.e != null ? (e.y + e.e) / 2 : e.y) - pw() / 2 / ppy, ppy); }

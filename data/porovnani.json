@@ -1,0 +1,141 @@
+{
+ "religions": [
+  "krestanstvi",
+  "islam",
+  "buddhismus",
+  "judaismus",
+  "hinduismus"
+ ],
+ "rows": [
+  {
+   "k": "Vznik",
+   "v": {
+    "krestanstvi": "1. století n. l., Palestina (Římská říše)",
+    "islam": "7. století n. l., Arábie (Mekka a Medína)",
+    "buddhismus": "6.–5. století př. n. l., severní Indie",
+    "judaismus": "Kolem 2. tisíciletí př. n. l., Kanaán a Izrael",
+    "hinduismus": "Kořeny v údolí Indu a védské době, od 2. tisíciletí př. n. l., Indie"
+   }
+  },
+  {
+   "k": "Zakladatel a klíčové postavy",
+   "v": {
+    "krestanstvi": "Ježíš z Nazaretu, apoštolé a Pavel z Tarsu",
+    "islam": "Prorok Mohamed (poslední z proroků, po Abrahamovi, Mojžíšovi a Ježíšovi)",
+    "buddhismus": "Siddhártha Gautama, zvaný Buddha",
+    "judaismus": "Abraham, Mojžíš a proroci",
+    "hinduismus": "Nemá jednoho zakladatele, rozvíjel se staletími; učitelé jako Šankara a Rámánudža"
+   }
+  },
+  {
+   "k": "Pojetí Boha",
+   "v": {
+    "krestanstvi": "Jeden Bůh ve třech osobách: Otec, Syn a Duch svatý",
+    "islam": "Jediný Bůh Alláh, naprosto jedinečný (tawhíd)",
+    "buddhismus": "Bez stvořitele a boha. Důraz na probuzení mysli, bohové hrají vedlejší roli",
+    "judaismus": "Jeden Bůh, který uzavřel smlouvu s izraelským lidem",
+    "hinduismus": "Jedno absolutno (Brahman), které se projevuje v mnoha bozích, např. Višnu, Šiva a Dévi"
+   }
+  },
+  {
+   "k": "Svaté texty",
+   "v": {
+    "krestanstvi": "Bible: Starý zákon (společný s judaismem) a Nový zákon",
+    "islam": "Korán, jako výklad také hadísy (výroky a skutky proroka)",
+    "buddhismus": "Páliový kánon (Tipitaka) a sútry mahájány",
+    "judaismus": "Tanach (Tóra, Proroci, Spisy), k výkladu Talmud",
+    "hinduismus": "Védy, Upanišady, Bhagavadgíta, eposy Mahábhárata a Rámájana"
+   }
+  },
+  {
+   "k": "Hlavní nauka",
+   "v": {
+    "krestanstvi": "Ježíš je Boží Syn, jeho smrt a vzkříšení přináší spásu. Láska k Bohu a k bližnímu",
+    "islam": "Podřízení se Boží vůli, pět pilířů: vyznání víry, modlitba, almužna, půst, pouť do Mekky",
+    "buddhismus": "Čtyři ušlechtilé pravdy a osmidílná stezka vedoucí k ukončení utrpení",
+    "judaismus": "Smlouva Boha s Izraelem, zachovávání přikázání (micvot) a Tóry",
+    "hinduismus": "Dharma (řád a povinnost), karma, koloběh znovuzrozování, cesta k osvobození"
+   }
+  },
+  {
+   "k": "Duchovní a vedení",
+   "v": {
+    "krestanstvi": "Kněží a biskupové (u katolíků papež), u protestantů pastoři",
+    "islam": "Žádné kněžstvo: imámové vedou modlitby, učenci (ulamá) vykládají právo",
+    "buddhismus": "Sangha: společenství mnichů a jeptišek",
+    "judaismus": "Rabíni: učitelé a znalci zákona, ne kněží",
+    "hinduismus": "Bráhmani (kněží), guruové a světci (sádhuové)"
+   }
+  },
+  {
+   "k": "Místo bohoslužby",
+   "v": {
+    "krestanstvi": "Kostel nebo chrám",
+    "islam": "Mešita",
+    "buddhismus": "Klášter, chrám a stúpa",
+    "judaismus": "Synagoga (kdysi jeruzalémský chrám)",
+    "hinduismus": "Chrám (mandir) a domácí oltář"
+   }
+  },
+  {
+   "k": "Hlavní svátky",
+   "v": {
+    "krestanstvi": "Vánoce, Velikonoce, Letnice",
+    "islam": "Ramadán, Íd al-fitr, Íd al-adhá",
+    "buddhismus": "Vesak (narození, probuzení a smrt Buddhy)",
+    "judaismus": "Šabat, Pesach, Roš ha-šana, Jom kipur, Chanuka",
+    "hinduismus": "Dívalí, Holi, Navarátri"
+   }
+  },
+  {
+   "k": "Symbol",
+   "v": {
+    "krestanstvi": "Kříž",
+    "islam": "Půlměsíc s hvězdou (zvykový symbol, islám symbol nepotřebuje)",
+    "buddhismus": "Kolo dharmy, lotos",
+    "judaismus": "Davidova hvězda, menora",
+    "hinduismus": "Óm (om)"
+   }
+  },
+  {
+   "k": "Hlavní směry",
+   "v": {
+    "krestanstvi": "Katolictví, pravoslaví, protestantismus",
+    "islam": "Sunnité (asi 85 až 90 %), šíité, mystický proud súfismus",
+    "buddhismus": "Théravāda, mahájána, vadžrajána",
+    "judaismus": "Ortodoxní, konzervativní, reformní, chasidismus",
+    "hinduismus": "Višnuismus, šivaismus, šaktismus, smártismus"
+   }
+  },
+  {
+   "k": "Smrt a cíl",
+   "v": {
+    "krestanstvi": "Vzkříšení a poslední soud, nebe a peklo (katolíci i očistec)",
+    "islam": "Den soudu, ráj (džanna) a peklo (džahannam)",
+    "buddhismus": "Znovuzrození, cílem je nirvána, vyvázání z koloběhu",
+    "judaismus": "Důraz na život zde. Představy o budoucím světě a vzkříšení mrtvých",
+    "hinduismus": "Znovuzrození podle karmy, cílem je móksa (osvobození)"
+   }
+  },
+  {
+   "k": "Počet věřících (odhad)",
+   "v": {
+    "krestanstvi": "Asi 2,3 miliardy (kolem 30 % lidstva)",
+    "islam": "Asi 1,9 miliardy (kolem 25 %)",
+    "buddhismus": "Odhady kolísají, asi 0,3 až 0,5 miliardy",
+    "judaismus": "Asi 15 milionů",
+    "hinduismus": "Asi 1,2 miliardy (kolem 15 %)"
+   }
+  },
+  {
+   "k": "Každodenní praxe",
+   "v": {
+    "krestanstvi": "Nedělní bohoslužba, modlitba, křest a svátosti (u protestantů hlavně křest a večeře Páně)",
+    "islam": "Modlitba pětkrát denně, půst v Ramadánu, zákaz vepřového a alkoholu",
+    "buddhismus": "Meditace, dodržování pěti pravidel (nezabíjet, nekrást, …), úcta k mnichům",
+    "judaismus": "Šabat jako den odpočinku, košer pravidla stravování, modlitby",
+    "hinduismus": "Púdža (uctívání bohů), řada se vyhýbá hovězímu, vegetariánství, poutě"
+   }
+  }
+ ]
+}

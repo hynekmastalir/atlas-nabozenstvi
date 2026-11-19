@@ -1,0 +1,502 @@
+{
+ "items": [
+  {
+   "r": "krestanstvi",
+   "n": "První neděle adventní",
+   "rule": {
+    "type": "advent"
+   },
+   "dur": 1,
+   "t": "Začátek církevního roku a přípravy na Vánoce. Čtyři neděle před Vánoci se zapaluje svíce na adventním věnci."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Vánoce (Narození Páně)",
+   "rule": {
+    "type": "fixed",
+    "m": 12,
+    "d": 24
+   },
+   "dur": 3,
+   "t": "Připomínají narození Ježíše Krista. Ve většině církví se slaví 24. až 26. prosince."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Tři králové (Zjevení Páně)",
+   "rule": {
+    "type": "fixed",
+    "m": 1,
+    "d": 6
+   },
+   "dur": 1,
+   "t": "Připomíná příchod mudrců z východu k novorozenému Ježíši a jeho zjevení světu."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Pravoslavné Vánoce",
+   "rule": {
+    "type": "fixed",
+    "m": 1,
+    "d": 7
+   },
+   "dur": 1,
+   "t": "Pravoslavné církve, které používají juliánský kalendář, slaví Vánoce 7. ledna."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Popeleční středa",
+   "rule": {
+    "type": "easter",
+    "off": -46
+   },
+   "dur": 1,
+   "t": "Začátek čtyřicetidenního postu před Velikonocemi. Věřící dostávají na čelo popel jako znamení pokání."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Velký pátek",
+   "rule": {
+    "type": "easter",
+    "off": -2
+   },
+   "dur": 1,
+   "t": "Připomíná ukřižování a smrt Ježíše. Je to den půstu a ticha."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Velikonoční neděle",
+   "rule": {
+    "type": "easter",
+    "off": 0
+   },
+   "dur": 2,
+   "t": "Nejdůležitější křesťanský svátek. Oslavuje vzkříšení Ježíše z mrtvých. Slaví se první neděli po prvním jarním úplňku."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Nanebevstoupení Páně",
+   "rule": {
+    "type": "easter",
+    "off": 39
+   },
+   "dur": 1,
+   "t": "Čtyřicátý den po Velikonocích, kdy podle evangelií Ježíš vystoupil do nebe."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Letnice (Seslání Ducha svatého)",
+   "rule": {
+    "type": "easter",
+    "off": 49
+   },
+   "dur": 2,
+   "t": "Padesátý den po Velikonocích, kdy na apoštoly sestoupil Duch svatý. Bývá označován za narozeniny církve."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Boží tělo",
+   "rule": {
+    "type": "easter",
+    "off": 60
+   },
+   "dur": 1,
+   "t": "Slavnost Eucharistie, tedy Kristovy přítomnosti v chlebu a vínu. Koná se průvody městem."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Nanebevzetí Panny Marie",
+   "rule": {
+    "type": "fixed",
+    "m": 8,
+    "d": 15
+   },
+   "dur": 1,
+   "t": "Slavnost, kdy katolická a pravoslavná církev připomíná, že Marie byla po životě vzata do nebe."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Všech svatých",
+   "rule": {
+    "type": "fixed",
+    "m": 11,
+    "d": 1
+   },
+   "dur": 1,
+   "t": "Den, kdy se připomínají všichni svatí. Následujícího dne (2. 11.) jsou Dušičky, vzpomínka na zemřelé."
+  },
+  {
+   "r": "krestanstvi",
+   "n": "Pravoslavné Velikonoce",
+   "rule": {
+    "type": "orthoeaster",
+    "off": 0
+   },
+   "dur": 2,
+   "t": "Pravoslavné církve počítají Velikonoce podle juliánského kalendáře, proto je slaví většinou později než západní církve."
+  },
+  {
+   "r": "islam",
+   "n": "Islámský nový rok",
+   "rule": {
+    "type": "islamic",
+    "m": 1,
+    "d": 1
+   },
+   "dur": 1,
+   "t": "První den měsíce muharramu, začátek islámského letopočtu, který se počítá od hidžry roku 622."
+  },
+  {
+   "r": "islam",
+   "n": "Ášúrá",
+   "rule": {
+    "type": "islamic",
+    "m": 1,
+    "d": 10
+   },
+   "dur": 1,
+   "t": "Desátý den muharramu. Šíité smutkem připomínají smrt Husajna v Karbalá, sunnité se tento den postí."
+  },
+  {
+   "r": "islam",
+   "n": "Mawlid (narození proroka)",
+   "rule": {
+    "type": "islamic",
+    "m": 3,
+    "d": 12
+   },
+   "dur": 1,
+   "t": "Oslava narození proroka Mohameda, kterou mnoho muslimů slaví recitací, modlitbami a vyprávěním o jeho životě."
+  },
+  {
+   "r": "islam",
+   "n": "Noční cesta a vzestup (al-Isrá a al-Mi'radž)",
+   "rule": {
+    "type": "islamic",
+    "m": 7,
+    "d": 27
+   },
+   "dur": 1,
+   "t": "Připomíná noc, kdy Mohamed podle tradice cestoval z Mekky do Jeruzaléma a odtud do nebe."
+  },
+  {
+   "r": "islam",
+   "n": "Začátek Ramadánu",
+   "rule": {
+    "type": "islamic",
+    "m": 9,
+    "d": 1
+   },
+   "dur": 30,
+   "t": "Devátý měsíc islámského roku. Muslimové se od úsvitu do západu slunce zdržují jídla, pití a dalších věcí. Půst je jedním z pěti pilířů islámu."
+  },
+  {
+   "r": "islam",
+   "n": "Noc moci (Lajlat al-kadr)",
+   "rule": {
+    "type": "islamic",
+    "m": 9,
+    "d": 27
+   },
+   "dur": 1,
+   "t": "Noc, kdy byl Mohamedovi podle tradice poprvé zjeven Korán. Slaví se v posledních deseti dnech Ramadánu, nejčastěji 27. noc."
+  },
+  {
+   "r": "islam",
+   "n": "Íd al-fitr (konec Ramadánu)",
+   "rule": {
+    "type": "islamic",
+    "m": 10,
+    "d": 1
+   },
+   "dur": 3,
+   "t": "Svátek přerušení půstu. Rodiny se scházejí, dávají se dary a almužna (zakát al-fitr)."
+  },
+  {
+   "r": "islam",
+   "n": "Den Arafát",
+   "rule": {
+    "type": "islamic",
+    "m": 12,
+    "d": 9
+   },
+   "dur": 1,
+   "t": "Vrcholný den poutě hadždž, kdy poutníci stojí na pláni Arafát. Muslimové, kteří nejsou na pouti, se postí."
+  },
+  {
+   "r": "islam",
+   "n": "Íd al-adhá (svátek oběti)",
+   "rule": {
+    "type": "islamic",
+    "m": 12,
+    "d": 10
+   },
+   "dur": 4,
+   "t": "Připomíná Abrahámovu ochotu obětovat syna. Obětuje se zvíře a maso se dělí s chudými. Slaví se 3 až 4 dny."
+  },
+  {
+   "r": "judaismus",
+   "n": "Roš ha-šana (židovský nový rok)",
+   "rule": {
+    "type": "hebrew",
+    "m": "Tishri",
+    "d": 1
+   },
+   "dur": 2,
+   "t": "První den měsíce tišri. Začátek desetidenního období pokání. Troubí se na šofar (beraní roh)."
+  },
+  {
+   "r": "judaismus",
+   "n": "Jom kipur (Den smíření)",
+   "rule": {
+    "type": "hebrew",
+    "m": "Tishri",
+    "d": 10
+   },
+   "dur": 1,
+   "t": "Nejsvětější den židovského roku. Půst a modlitby, odprošení za hříchy a smíření s Bohem i s lidmi."
+  },
+  {
+   "r": "judaismus",
+   "n": "Sukot (svátek stánků)",
+   "rule": {
+    "type": "hebrew",
+    "m": "Tishri",
+    "d": 15
+   },
+   "dur": 7,
+   "t": "Sedm dní se jí a někdy spí ve stánku (suka). Připomíná putování Izraelitů pouští."
+  },
+  {
+   "r": "judaismus",
+   "n": "Chanuka (svátek světel)",
+   "rule": {
+    "type": "hebrew",
+    "m": "Kislev",
+    "d": 25
+   },
+   "dur": 8,
+   "t": "Osm dní. Připomíná znovuposvěcení jeruzalémského chrámu po Makabejském povstání. Každý den se zapaluje další svíce na svícnu (chanukija)."
+  },
+  {
+   "r": "judaismus",
+   "n": "Purim",
+   "rule": {
+    "type": "hebrew",
+    "m": "Adar",
+    "d": 14
+   },
+   "dur": 1,
+   "t": "Připomíná záchranu Židů v Persii podle knihy Ester. Čte se kniha Ester, slaví se maškarami a dary."
+  },
+  {
+   "r": "judaismus",
+   "n": "Pesach (svátek přesnic)",
+   "rule": {
+    "type": "hebrew",
+    "m": "Nisan",
+    "d": 15
+   },
+   "dur": 8,
+   "t": "Sedm až osm dní. Připomíná odchod z egyptského otroctví. Jí se macesy a koná se rodinná večeře sederu."
+  },
+  {
+   "r": "judaismus",
+   "n": "Šavuot (svátek týdnů)",
+   "rule": {
+    "type": "hebrew",
+    "m": "Sivan",
+    "d": 6
+   },
+   "dur": 2,
+   "t": "Padesátý den po Pesachu, kdy podle tradice Mojžíš přijal Tóru na Sinaji."
+  },
+  {
+   "r": "judaismus",
+   "n": "Tiša be-Av",
+   "rule": {
+    "type": "hebrew",
+    "m": "Av",
+    "d": 9
+   },
+   "dur": 1,
+   "t": "Postní den smutku nad zničením prvního a druhého jeruzalémského chrámu."
+  },
+  {
+   "r": "buddhismus",
+   "n": "Vesak (Buddhovy narozeniny)",
+   "rule": {
+    "type": "approx",
+    "month": 5,
+    "note": "úplněk v květnu"
+   },
+   "dur": 1,
+   "t": "Nejdůležitější buddhistický svátek. Připomíná narození, probuzení a smrt Buddhy. Datum se řídí lunárním kalendářem a liší se podle země."
+  },
+  {
+   "r": "buddhismus",
+   "n": "Hanamacuri (Buddhovy narozeniny v Japonsku)",
+   "rule": {
+    "type": "fixed",
+    "m": 4,
+    "d": 8
+   },
+   "dur": 1,
+   "t": "V Japonsku se narození Buddhy slaví 8. dubna. Soška dítěte se polévá sladkým čajem."
+  },
+  {
+   "r": "buddhismus",
+   "n": "Parinirvána (Buddhova smrt)",
+   "rule": {
+    "type": "fixed",
+    "m": 2,
+    "d": 15
+   },
+   "dur": 1,
+   "t": "Mahájánové země (Čína, Japonsko) si 15. února připomínají Buddhovu smrt a vstup do nirvány."
+  },
+  {
+   "r": "buddhismus",
+   "n": "Ásálha púdža (Dharmový den)",
+   "rule": {
+    "type": "approx",
+    "month": 7,
+    "note": "úplněk v červenci"
+   },
+   "dur": 1,
+   "t": "Připomíná první Buddhovo kázání v Sárnáthu. Po něm začíná tříměsíční období dešťového ústraní mnichů."
+  },
+  {
+   "r": "buddhismus",
+   "n": "Obon",
+   "rule": {
+    "type": "fixed",
+    "m": 8,
+    "d": 13
+   },
+   "dur": 3,
+   "t": "Japonský svátek předků (13. až 15. srpna). Vzpomíná se na zemřelé, rodiny navštěvují hroby, tančí se."
+  },
+  {
+   "r": "buddhismus",
+   "n": "Rohacu (Den probuzení)",
+   "rule": {
+    "type": "fixed",
+    "m": 12,
+    "d": 8
+   },
+   "dur": 1,
+   "t": "V japonských zenových klášterech se 8. prosince připomíná Buddhovo probuzení pod stromem bódhi."
+  },
+  {
+   "r": "buddhismus",
+   "n": "Losar (tibetský nový rok)",
+   "rule": {
+    "type": "approx",
+    "month": 2,
+    "note": "únor až březen podle tibetského kalendáře"
+   },
+   "dur": 1,
+   "t": "Tibetský nový rok se slaví několik dní: očista domů, modlitby, tance a návštěvy příbuzných."
+  },
+  {
+   "r": "hinduismus",
+   "n": "Makar sankránti",
+   "rule": {
+    "type": "fixed",
+    "m": 1,
+    "d": 14
+   },
+   "dur": 1,
+   "t": "Svátek slunovratu: slunce přechází do znamení Kozoroha. V Tamilnádu se slaví jako Pongal. Zpívají se písně, létají draci, koupe se v řekách."
+  },
+  {
+   "r": "hinduismus",
+   "n": "Maháširarátri",
+   "rule": {
+    "type": "approx",
+    "month": 2,
+    "note": "únor až březen"
+   },
+   "dur": 1,
+   "t": "Velká noc boha Šivy. Věřící se postí, v noci bdí a uctívají Šivu v chrámech."
+  },
+  {
+   "r": "hinduismus",
+   "n": "Holi (svátek barev)",
+   "rule": {
+    "type": "table",
+    "t": {
+     "2025": "03-14",
+     "2026": "03-04",
+     "2027": "03-22",
+     "2028": "03-11",
+     "2029": "03-01",
+     "2030": "03-20"
+    }
+   },
+   "dur": 1,
+   "t": "Svátek jara a vítězství dobra nad zlem. Lidé se polévají barevným práškem a vodou."
+  },
+  {
+   "r": "hinduismus",
+   "n": "Rámanavamí",
+   "rule": {
+    "type": "approx",
+    "month": 4,
+    "note": "březen až duben"
+   },
+   "dur": 1,
+   "t": "Slaví narození boha Rámy, hrdiny eposu Rámájana."
+  },
+  {
+   "r": "hinduismus",
+   "n": "Ganéš čaturthí",
+   "rule": {
+    "type": "approx",
+    "month": 9,
+    "note": "srpen až září"
+   },
+   "dur": 10,
+   "t": "Několikadenní svátek na počest boha Ganéši, který odstraňuje překážky. Vyrábějí se sochy, které se nakonec ponoří do vody."
+  },
+  {
+   "r": "hinduismus",
+   "n": "Džanmáštamí (narození Kršny)",
+   "rule": {
+    "type": "approx",
+    "month": 8,
+    "note": "srpen až září"
+   },
+   "dur": 1,
+   "t": "Slaví narození Kršny, osmého avatára Višnua. Věřící se postí a o půlnoci zpívají."
+  },
+  {
+   "r": "hinduismus",
+   "n": "Navarátri a Dasara",
+   "rule": {
+    "type": "approx",
+    "month": 10,
+    "note": "září až říjen"
+   },
+   "dur": 10,
+   "t": "Devět nocí bohyně Dévi, nakonec Dasara slaví vítězství Rámy nad Rávanou a dobra nad zlem."
+  },
+  {
+   "r": "hinduismus",
+   "n": "Dívalí (svátek světel)",
+   "rule": {
+    "type": "table",
+    "t": {
+     "2025": "10-20",
+     "2026": "11-08",
+     "2027": "10-29",
+     "2028": "10-17",
+     "2029": "11-05",
+     "2030": "10-26"
+    }
+   },
+   "dur": 5,
+   "t": "Nejznámější hinduistický svátek, svátek světel a vítězství světla nad tmou. Rozsvěcují se lampičky (díja), uctívá se bohyně Lakšmí a slaví se ohňostroji. Slaví ho i džinisté a sikhové."
+  }
+ ]
+}

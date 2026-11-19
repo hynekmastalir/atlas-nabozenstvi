@@ -4,6 +4,16 @@ Zoomovací časová osa křesťanství, islámu, buddhismu, judaismu a hinduismu
 
 Adresa po nasazení: `https://hynekmastalir.github.io/atlas-nabozenstvi/`
 
+## Části aplikace
+
+- **Osa:** zoomovací osa se svitkem popisu událostí, filtry, vlastními událostmi.
+- **Mapa:** posuvník doby (12 období od 3000 př. n. l. po současnost), vybarvené země podle rozšíření náboženství, svatá místa, odhad podílu na populaci (`data/sireni.json`, `data/svet.json`).
+- **Kvíz:** otázky generované z událostí na ose (kdy, které náboženství, co se stalo, co bylo dříve), skóre, série a rekord.
+- **Porovnání:** dvě náboženství vedle sebe (`data/porovnani.json`).
+- **Osobnosti:** 56 karet propojených s událostmi na ose (`data/osobnosti.json`).
+- **Svátky:** kalendář na zvolený rok. Velikonoce, židovské a islámské svátky se počítají, ostatní jsou pevné nebo přibližné (`data/svatky.json`).
+- **Sdílení a export:** odkaz na událost (`#e=ID`) nebo pohled, uložení osy jako PNG, tisk do PDF.
+
 ## Soubory
 
 - `index.html`, `css/osa.css`, `js/osa.js`: aplikace
