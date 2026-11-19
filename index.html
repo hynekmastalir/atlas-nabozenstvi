@@ -6,6 +6,7 @@
 <title>Časová osa náboženství</title>
 <meta name="description" content="Zoomovací časová osa křesťanství, islámu, buddhismu, judaismu a hinduismu s konkrétními letopočty. Filtrování podle náboženství a typu události.">
 <meta name="theme-color" content="#d9c08a">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem("osa:theme"));if(t!=="dark"&&t!=="light")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t;if(t==="dark")document.querySelector("meta[name=theme-color]").setAttribute("content","#1b160f")}catch(e){}})()</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -21,6 +22,7 @@
 <div class="page">
   <header class="banner">
     <h1><span class="drop">Č</span>asová osa náboženství</h1>
+    <button id="theme" class="btn small theme-btn" type="button" aria-label="Přepnout na tmavý režim" title="Světlý nebo tmavý režim">☾</button>
     <button id="install" class="btn small install" type="button" hidden>⬇ Instalovat</button>
   </header>
 

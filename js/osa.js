@@ -27,6 +27,22 @@
   const MINOR = { 5: 1, 10: 1, 20: 5, 25: 5, 50: 10, 100: 10, 200: 50, 250: 50, 500: 100, 1000: 100 };
   const STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000];
 
+  /* ---------- barevné schéma (světlé a tmavé) pro kresbu osy ---------- */
+  const PAL = {
+    light: { per: ['#d9bf86', '#e6c76a', '#d7b98f', '#cfb69a'], line: '#6b4a1e', grid: 'rgba(107,74,30,.28)', laneA: 'rgba(255,248,220,.30)', laneB: 'rgba(150,100,40,.10)', gut: '#e3cf9b', sel: '#a3281a', selFill: 'rgba(163,40,26,.14)', bg: '#ecdcb0', meta: '#d9c08a' },
+    dark: { per: ['#4a3b24', '#5a4519', '#47382a', '#3e3329'], line: '#a58a5a', grid: 'rgba(200,170,110,.25)', laneA: 'rgba(255,240,200,.05)', laneB: 'rgba(0,0,0,.2)', gut: '#2b2218', sel: '#ff7a63', selFill: 'rgba(255,122,99,.16)', bg: '#1b160f', meta: '#1b160f' },
+  };
+  let P = PAL.light;
+  const themeNow = () => document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+  function applyTheme(t, save = true) {
+    document.documentElement.dataset.theme = t; P = PAL[t];
+    document.querySelector('meta[name=theme-color]')?.setAttribute('content', P.meta);
+    const b = $('#theme'); if (b) { b.textContent = t === 'dark' ? '☀' : '☾'; b.setAttribute('aria-label', t === 'dark' ? 'Přepnout na světlý režim' : 'Přepnout na tmavý režim'); }
+    if (save) store.set('theme', t);
+    if (D) draw();
+  }
+  P = PAL[themeNow()];
+
   let D, rels = [], relById = {}, catById = {}, events = [];
   let custom = { religions: [], events: [] };   // vlastní materiály z localStorage
   const st = { rel: new Set(), cat: new Set(), q: '', sel: null };
@@ -67,6 +83,9 @@
     measure(); fit(false);
     bind(); bindForm(); refresh();
     publish();
+    applyTheme(themeNow(), false);
+    $('#theme').onclick = () => applyTheme(themeNow() === 'dark' ? 'light' : 'dark');
+    matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', e => { if (store.get('theme', null) == null) applyTheme(e.matches ? 'dark' : 'light', false); });
     new ResizeObserver(() => { const old = W; measure(); if (old) { clampView(); } refresh(); }).observe(tl);
   }
 
@@ -74,7 +93,7 @@
   const OSA = window.OSA = { ready: false, onSelect: null };
   function publish() {
     Object.assign(OSA, {
-      ready: true, span, fy, esc, select, closeScroll, toast,
+      ready: true, span, fy, esc, select, closeScroll, toast, get theme() { return themeNow(); }, get pal() { return P; },
       get events() { return events; }, get rels() { return rels; }, get relById() { return relById; }, get catById() { return catById; }, get cats() { return D.categories; },
       get svg() { return svg; }, get W() { return W; }, get H() { return H; }, get view() { return view; }, get selected() { return st.sel; },
       // stav pohledu pro odkaz: rok vlevo, měřítko, zapnutá náboženství a druhy
@@ -210,11 +229,11 @@
 
     // --- období a mřížka (ořezané na plochu osy) ---
     o += '<g clip-path="url(#clip)">';
-    const pcol = ['#d9bf86', '#e6c76a', '#d7b98f', '#cfb69a'];
+    const pcol = P.per;
     D.periods.forEach((p, i) => {
       const x1 = X(p.from), x2 = X(p.to);
       if (x2 < gutter || x1 > W) return;
-      o += `<rect x="${x1}" y="2" width="${Math.max(0, x2 - x1)}" height="22" fill="${pcol[i]}" stroke="#6b4a1e" stroke-width="1.2"/>`;
+      o += `<rect x="${x1}" y="2" width="${Math.max(0, x2 - x1)}" height="22" fill="${pcol[i]}" stroke="${P.line}" stroke-width="1.2"/>`;
       if (i === 1) o += `<rect x="${x1}" y="${rulerH}" width="${Math.max(0, x2 - x1)}" height="${H - rulerH}" fill="rgba(184,134,11,.10)"/>`;
       const a = Math.max(x1, gutter), b = Math.min(x2, W);
       if (b - a > 46) o += `<text class="per" x="${(a + b) / 2}" y="18" text-anchor="middle">${esc(p.name)}</text>`;
@@ -222,12 +241,12 @@
     // ticks
     const step = STEPS.find(s => s * ppy >= (compact ? 70 : 96)) || 1000;
     const ms = MINOR[step];
-    o += `<line x1="${gutter}" x2="${W}" y1="${rulerH - 8}" y2="${rulerH - 8}" stroke="#6b4a1e" stroke-width="2"/>`;
-    if (ms && ms * ppy >= 7) for (let t = Math.ceil(t0 / ms) * ms; X(t) < W + 10; t += ms) o += `<line x1="${X(t)}" x2="${X(t)}" y1="${rulerH - 14}" y2="${rulerH - 8}" stroke="#6b4a1e" stroke-width="1"/>`;
+    o += `<line x1="${gutter}" x2="${W}" y1="${rulerH - 8}" y2="${rulerH - 8}" stroke="${P.line}" stroke-width="2"/>`;
+    if (ms && ms * ppy >= 7) for (let t = Math.ceil(t0 / ms) * ms; X(t) < W + 10; t += ms) o += `<line x1="${X(t)}" x2="${X(t)}" y1="${rulerH - 14}" y2="${rulerH - 8}" stroke="${P.line}" stroke-width="1"/>`;
     for (let t = Math.ceil(t0 / step) * step; X(t) < W + 60; t += step) {
       const x = X(t);
-      o += `<line x1="${x}" x2="${x}" y1="${rulerH - 22}" y2="${rulerH - 8}" stroke="#6b4a1e" stroke-width="2"/>`;
-      o += `<line x1="${x}" x2="${x}" y1="${rulerH - 6}" y2="${H}" stroke="rgba(107,74,30,.28)" stroke-dasharray="3 5"/>`;
+      o += `<line x1="${x}" x2="${x}" y1="${rulerH - 22}" y2="${rulerH - 8}" stroke="${P.line}" stroke-width="2"/>`;
+      o += `<line x1="${x}" x2="${x}" y1="${rulerH - 6}" y2="${H}" stroke="${P.grid}" stroke-dasharray="3 5"/>`;
       o += `<text class="tick" x="${x}" y="${rulerH - 28}" text-anchor="middle">${t === 0 ? 'přelom letopočtu' : tickLabel(t, step)}</text>`;
     }
 
@@ -235,8 +254,8 @@
     const selEv = st.sel && events.find(e => e.id === st.sel);
     lanes.forEach((r, li) => {
       const top = rulerH + li * laneH, cy = top + laneH / 2;
-      o += `<rect x="${gutter}" y="${top}" width="${w}" height="${laneH}" fill="${li % 2 ? 'rgba(255,248,220,.30)' : 'rgba(150,100,40,.10)'}"/>`;
-      o += `<line x1="${gutter}" x2="${W}" y1="${top}" y2="${top}" stroke="#6b4a1e" stroke-width="1.2"/>`;
+      o += `<rect x="${gutter}" y="${top}" width="${w}" height="${laneH}" fill="${li % 2 ? P.laneA : P.laneB}"/>`;
+      o += `<line x1="${gutter}" x2="${W}" y1="${top}" y2="${top}" stroke="${P.line}" stroke-width="1.2"/>`;
       o += `<line x1="${gutter}" x2="${W}" y1="${cy}" y2="${cy}" stroke="${r.color}" stroke-width="3" stroke-opacity=".38" stroke-dasharray="1 7" stroke-linecap="round"/>`;
       const items = vis.filter(e => e.r === r.id).map(e => ({ e, x: X(e.y), x2: e.e != null ? X(e.e) : X(e.y) }))
         .filter(m => m.x2 > gutter - 30 && m.x < W + 30).sort((a, b) => a.x - b.x);
@@ -275,7 +294,7 @@
           clusters.push({ a: Math.min(...ys), b: Math.max(...ys) });
           const sel = g.items.some(m => m.e.id === st.sel);
           g.items.forEach(m => { if (m.e.e != null && m.x2 - m.x > 6) bars += bar(m, .5); });
-          marks += `<g class="cl" data-cl="${clusters.length - 1}" transform="translate(${cx} ${cy})"><title>${g.items.length} událostí, ${esc(span(g.items[0].e))}${g.items.length > 1 ? ' a další' : ''}. Klepnutím přiblížíš.</title><circle r="16" fill="transparent"/><circle r="11.5" fill="${r.color}" stroke="${sel ? '#a3281a' : '#e8c767'}" stroke-width="${sel ? 3 : 2}"/><text x="0" y="4.6" text-anchor="middle" font-size="13" font-weight="700" fill="#f7ecce" style="pointer-events:none">${g.items.length}</text></g>`;
+          marks += `<g class="cl" data-cl="${clusters.length - 1}" transform="translate(${cx} ${cy})"><title>${g.items.length} událostí, ${esc(span(g.items[0].e))}${g.items.length > 1 ? ' a další' : ''}. Klepnutím přiblížíš.</title><circle r="16" fill="transparent"/><circle r="11.5" fill="${r.color}" stroke="${sel ? P.sel : '#e8c767'}" stroke-width="${sel ? 3 : 2}"/><text x="0" y="4.6" text-anchor="middle" font-size="13" font-weight="700" fill="#f7ecce" style="pointer-events:none">${g.items.length}</text></g>`;
         }
       }
       o += bars + labels + marks;
@@ -284,18 +303,18 @@
     if (selEv) {
       const x = X(selEv.y);
       if (x > gutter && x < W) {
-        o += `<line x1="${x}" x2="${x}" y1="${rulerH - 8}" y2="${H}" stroke="#a3281a" stroke-width="1.5" stroke-dasharray="6 4" style="pointer-events:none"/>`;
-        o += `<g transform="translate(${x} ${rulerH - 8})" style="pointer-events:none"><rect x="-30" y="-2" width="60" height="18" rx="3" fill="#a3281a"/><text y="11" text-anchor="middle" font-size="12.5" font-weight="700" fill="#f7ecce">${esc(selEv.y < 0 ? -selEv.y + ' př.' : selEv.y)}</text></g>`;
+        o += `<line x1="${x}" x2="${x}" y1="${rulerH - 8}" y2="${H}" stroke="${P.sel}" stroke-width="1.5" stroke-dasharray="6 4" style="pointer-events:none"/>`;
+        o += `<g transform="translate(${x} ${rulerH - 8})" style="pointer-events:none"><rect x="-30" y="-2" width="60" height="18" rx="3" fill="${P.sel}"/><text y="11" text-anchor="middle" font-size="12.5" font-weight="700" fill="#f7ecce">${esc(selEv.y < 0 ? -selEv.y + ' př.' : selEv.y)}</text></g>`;
       }
     }
     o += '</g>';
 
     // --- levý sloupec s názvy náboženství (nad obsahem) ---
-    o += `<rect x="0" y="0" width="${gutter}" height="${H}" fill="#e3cf9b"/><line x1="${gutter - 1}" x2="${gutter - 1}" y1="0" y2="${H}" stroke="#6b4a1e" stroke-width="2"/><line x1="${gutter - 5}" x2="${gutter - 5}" y1="0" y2="${H}" stroke="#6b4a1e" stroke-width=".8"/>`;
+    o += `<rect x="0" y="0" width="${gutter}" height="${H}" fill="${P.gut}"/><line x1="${gutter - 1}" x2="${gutter - 1}" y1="0" y2="${H}" stroke="${P.line}" stroke-width="2"/><line x1="${gutter - 5}" x2="${gutter - 5}" y1="0" y2="${H}" stroke="${P.line}" stroke-width=".8"/>`;
     o += `<text class="per" x="${gutter / 2}" y="18" text-anchor="middle">${compact ? '' : 'Rok'}</text>`;
     lanes.forEach((r, li) => {
       const top = rulerH + li * laneH, cy = top + laneH / 2;
-      o += `<line x1="0" x2="${gutter}" y1="${top}" y2="${top}" stroke="#6b4a1e" stroke-width="1.2"/>`;
+      o += `<line x1="0" x2="${gutter}" y1="${top}" y2="${top}" stroke="${P.line}" stroke-width="1.2"/>`;
       if (compact) {
         o += `<g><rect x="5" y="${cy - 52}" width="34" height="104" rx="5" fill="${r.color}" stroke="#e8c767" stroke-width="1.5"/><g transform="translate(22 ${cy - 36})" color="#f7ecce">${ICONS[r.icon]}</g><text class="lane-name" transform="translate(27 ${cy + 14}) rotate(-90)" text-anchor="middle" style="font-size:13px">${esc(r.short)}</text></g>`;
       } else {
@@ -311,8 +330,8 @@
     const dash = e.ap ? ' stroke-dasharray="2.5 2"' : '';
     return `<g class="ev" data-id="${e.id}" transform="translate(${x} ${cy})"><title>${esc(span(e))}: ${esc(e.t)}</title>` +
       `<circle r="16" fill="transparent"/>` +
-      (sel ? `<circle r="17" fill="none" stroke="#a3281a" stroke-width="2.5"/>` : '') +
-      `<path class="shield" d="${SHIELD}" fill="${r.color}" stroke="${sel ? '#a3281a' : '#f0d27a'}" stroke-width="${sel ? 2.2 : 1.6}"${dash}/>` +
+      (sel ? `<circle r="17" fill="none" stroke="${P.sel}" stroke-width="2.5"/>` : '') +
+      `<path class="shield" d="${SHIELD}" fill="${r.color}" stroke="${sel ? P.sel : '#f0d27a'}" stroke-width="${sel ? 2.2 : 1.6}"${dash}/>` +
       `<circle cx="0" cy="-1.5" r="2" fill="#f7ecce"/>` + (e.u ? `<text x="5" y="-8" font-size="11" fill="#b8860b" stroke="#fff6d8" stroke-width=".6" style="pointer-events:none">✦</text>` : '') + `</g>`;
   }
 
@@ -320,15 +339,15 @@
   function drawMini(vis) {
     const h = Math.max(56, 26 + rels.length * 8), w = pw(); mini.setAttribute('width', W); mini.setAttribute('height', h); mini.setAttribute('viewBox', `0 0 ${W} ${h}`);
     const mx = y => gutter + (y - DMIN) / (DMAX - DMIN) * w;
-    let o = `<rect width="${W}" height="${h}" fill="#e3cf9b"/>`;
-    D.periods.forEach((p, i) => { o += `<rect x="${mx(p.from)}" y="0" width="${mx(p.to) - mx(p.from)}" height="12" fill="${['#d9bf86', '#e6c76a', '#d7b98f', '#cfb69a'][i]}" stroke="#6b4a1e" stroke-width=".6"/>`; });
+    let o = `<rect width="${W}" height="${h}" fill="${P.gut}"/>`;
+    D.periods.forEach((p, i) => { o += `<rect x="${mx(p.from)}" y="0" width="${mx(p.to) - mx(p.from)}" height="12" fill="${P.per[i]}" stroke="${P.line}" stroke-width=".6"/>`; });
     rels.forEach((r, i) => {
       const y = 18 + i * 7.5;
       o += `<line x1="${gutter}" x2="${W}" y1="${y + 2}" y2="${y + 2}" stroke="${r.color}" stroke-opacity=".18"/>`;
       if (st.rel.has(r.id)) vis.filter(e => e.r === r.id).forEach(e => { o += `<rect x="${mx(e.y) - 1}" y="${y - 1}" width="2.2" height="6" fill="${r.color}"/>`; });
     });
     const a = mx(view.t0), b = mx(view.t0 + w / view.ppy);
-    o += `<rect x="${Math.max(gutter, a)}" y="1" width="${Math.max(6, Math.min(W, b) - Math.max(gutter, a))}" height="${h - 2}" fill="rgba(163,40,26,.14)" stroke="#a3281a" stroke-width="2" rx="3"/>`;
+    o += `<rect x="${Math.max(gutter, a)}" y="1" width="${Math.max(6, Math.min(W, b) - Math.max(gutter, a))}" height="${h - 2}" fill="${P.selFill}" stroke="${P.sel}" stroke-width="2" rx="3"/>`;
     o += `<text class="per" x="${gutter / 2}" y="34" text-anchor="middle">${compact ? '' : 'Přehled'}</text>`;
     mini.innerHTML = o;
   }

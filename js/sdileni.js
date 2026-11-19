@@ -26,8 +26,8 @@
     a.forEach((el, i) => { const cs = getComputedStyle(el), o = b[i]; props.forEach(p => { const v = cs.getPropertyValue(p); if (v) o.style.setProperty(p, v); }); });
     clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg'); clone.setAttribute('width', W); clone.setAttribute('height', H + pad);
     clone.setAttribute('viewBox', `0 ${-pad} ${W} ${H + pad}`);
-    const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect'); bg.setAttribute('x', 0); bg.setAttribute('y', -pad); bg.setAttribute('width', W); bg.setAttribute('height', H + pad); bg.setAttribute('fill', '#ecdcb0');
-    const title = document.createElementNS('http://www.w3.org/2000/svg', 'text'); title.setAttribute('x', 12); title.setAttribute('y', -16); title.setAttribute('font-size', 20); title.setAttribute('fill', '#2a1a08'); title.setAttribute('font-family', 'Georgia, serif');
+    const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect'); bg.setAttribute('x', 0); bg.setAttribute('y', -pad); bg.setAttribute('width', W); bg.setAttribute('height', H + pad); bg.setAttribute('fill', OSA.pal.bg);
+    const title = document.createElementNS('http://www.w3.org/2000/svg', 'text'); title.setAttribute('x', 12); title.setAttribute('y', -16); title.setAttribute('font-size', 20); title.setAttribute('fill', getComputedStyle(document.body).color); title.setAttribute('font-family', 'Georgia, serif');
     title.textContent = 'Časová osa náboženství'; 
     clone.insertBefore(title, clone.firstChild); clone.insertBefore(bg, clone.firstChild);
     const url = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(new XMLSerializer().serializeToString(clone));
