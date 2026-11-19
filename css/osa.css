@@ -340,3 +340,9 @@ code{font-size:.9em;background:rgba(var(--lr),.12);padding:0 4px;border-radius:3
 @media print{:root[data-theme="dark"] body{background:#fff!important;color:#000}}
 :root[data-theme="dark"] .chip{--on:var(--parch)}
 :root[data-theme="dark"] .chip.rel{--on:#fff6e0}
+
+.map-bar .btn{flex:none;min-width:38px;padding:0 8px}
+.tool-row.p-year{display:grid;grid-template-columns:auto auto 1fr auto;align-items:center;gap:4px 8px}
+.p-year input[type=range]{flex:1 1 140px;min-width:100px;accent-color:var(--rubric)}
+.p-year .check{min-height:36px}
+.p-year #p-yl{grid-column:1/-1;font-size:14.5px;color:var(--ink2);font-weight:400}

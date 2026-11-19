@@ -1,6 +1,6 @@
 /* Service worker pro Časovou osu: aplikace běží i bez internetu.
    Online se vždy bere čerstvá verze (a ukládá se), offline se použije uložená. Při změně seznamu souborů zvyš VERSION. */
-const VERSION = 'osa-v5';
+const VERSION = 'osa-v6';
 const PRECACHE = ['./', 'index.html', 'css/osa.css', 'js/osa.js', 'js/pwa.js', 'data/udalosti.json', 'data/sireni.json', 'data/svet.json', 'data/porovnani.json', 'data/osobnosti.json', 'data/svatky.json', 'js/mapa.js', 'js/kviz.js', 'js/porovnani.js', 'js/osobnosti.js', 'js/svatky.js', 'manifest.webmanifest',
   'img/valec.svg', 'img/okraj-l.svg', 'img/okraj-r.svg', 'js/sdileni.js', 'js/nav.js', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 const FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];

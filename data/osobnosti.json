@@ -8,7 +8,9 @@
   "t": "Putující učitel z Galileje, který hlásal příchod Božího království a lásku k Bohu i k bližnímu. Byl ukřižován v Jeruzalémě. Jeho následovníci věří v jeho vzkříšení.",
   "ev": [
    "kre1"
-  ]
+  ],
+  "s": -4,
+  "e": 30
  },
  {
   "id": "o2",
@@ -19,7 +21,9 @@
   "t": "Původně farizeus a pronásledovatel křesťanů, po setkání se vzkříšeným Ježíšem se stal jeho misionářem. Zakládal obce po celém východním Středomoří a jeho listy tvoří velkou část Nového zákona.",
   "ev": [
    "kre2"
-  ]
+  ],
+  "s": 5,
+  "e": 75
  },
  {
   "id": "o3",
@@ -31,7 +35,9 @@
   "ev": [
    "kre7",
    "kre8"
-  ]
+  ],
+  "s": 272,
+  "e": 337
  },
  {
   "id": "o4",
@@ -42,7 +48,9 @@
   "t": "Biskup v severoafrickém Hippu, autor Vyznání a spisu O Boží obci. Jeho učení o hříchu a milosti ovlivnilo západní teologii až do dnešní doby.",
   "ev": [
    "kre11"
-  ]
+  ],
+  "s": 354,
+  "e": 430
  },
  {
   "id": "o5",
@@ -53,7 +61,9 @@
   "t": "Založil klášter na Monte Cassinu a sepsal řeholi pod heslem modli se a pracuj. Řeholí benediktinů se řídila velká část středověkých klášterů.",
   "ev": [
    "kre15"
-  ]
+  ],
+  "s": 480,
+  "e": 547
  },
  {
   "id": "o6",
@@ -64,7 +74,9 @@
   "t": "Bratři ze Soluně přišli roku 863 na Velkou Moravu. Vytvořili hlaholici, přeložili bohoslužebné texty do staroslověnštiny a zavedli slovanskou liturgii.",
   "ev": [
    "kre18"
-  ]
+  ],
+  "s": 815,
+  "e": 885
  },
  {
   "id": "o7",
@@ -75,7 +87,9 @@
   "t": "Zřekl se majetku rodiny a žil v chudobě, v pokoře a v lásce ke stvoření. Jeho bratrstvo se stalo jedním z nejrozšířenějších řádů.",
   "ev": [
    "kre24"
-  ]
+  ],
+  "s": 1181,
+  "e": 1226
  },
  {
   "id": "o8",
@@ -86,7 +100,9 @@
   "t": "Spojil křesťanské učení s filozofií Aristotela v díle Summa theologiae. Je považován za nejvýznamnějšího scholastického myslitele.",
   "ev": [
    "kre26"
-  ]
+  ],
+  "s": 1225,
+  "e": 1274
  },
  {
   "id": "o9",
@@ -97,7 +113,9 @@
   "t": "Kazatel v Betlémské kaple v Praze a rektor univerzity. Kritizoval mravy církve a hájil důraz na Písmo. Byl upálen na koncilu v Kostnici.",
   "ev": [
    "kre28"
-  ]
+  ],
+  "s": 1371,
+  "e": 1415
  },
  {
   "id": "o10",
@@ -108,7 +126,9 @@
   "t": "Augustiniánský mnich, který zveřejnil 95 tezí proti odpustkům. Učil, že člověk je spasen vírou, a přeložil Bibli do němčiny. Jeho hnutí vedlo ke vzniku protestantských církví.",
   "ev": [
    "kre30"
-  ]
+  ],
+  "s": 1483,
+  "e": 1546
  },
  {
   "id": "o11",
@@ -119,7 +139,9 @@
   "t": "Francouzský teolog, autor díla Institutio. Zdůrazňoval Boží svrchovanost a vznik církve řízené staršími. Jeho učení se rozšířilo do reformovaných církví.",
   "ev": [
    "kre32"
-  ]
+  ],
+  "s": 1509,
+  "e": 1564
  },
  {
   "id": "o12",
@@ -130,7 +152,9 @@
   "t": "Bývalý voják, který založil Tovaryšstvo Ježíšovo. Jezuité se proslavili vzděláním, školami a misiemi.",
   "ev": [
    "kre33"
-  ]
+  ],
+  "s": 1491,
+  "e": 1556
  },
  {
   "id": "o13",
@@ -141,7 +165,9 @@
   "t": "Polák Karol Wojtyła, papežem od roku 1978. Hodně cestoval, podpořil dialog náboženství a přispěl ke změnám v Evropě. Jako biskup se účastnil Druhého vatikánského koncilu.",
   "ev": [
    "kre41"
-  ]
+  ],
+  "s": 1920,
+  "e": 2005
  },
  {
   "id": "o14",
@@ -152,7 +178,9 @@
   "t": "Argentinec Jorge Bergoglio, od roku 2013 první jezuita a první papež z Ameriky. Klade důraz na chudé, ekologii a otevřenost církve.",
   "ev": [
    "kre42"
-  ]
+  ],
+  "s": 1936,
+  "e": 2025
  },
  {
   "id": "o15",
@@ -167,7 +195,9 @@
    "isl3",
    "isl5",
    "isl6"
-  ]
+  ],
+  "s": 570,
+  "e": 632
  },
  {
   "id": "o16",
@@ -178,7 +208,9 @@
   "t": "Mohamedův přítel a tchán, po jeho smrti zvolen prvním chalífou. Udržel jednotu obce a zahájil šíření islámu mimo Arábii.",
   "ev": [
    "isl6"
-  ]
+  ],
+  "s": 573,
+  "e": 634
  },
  {
   "id": "o17",
@@ -190,7 +222,9 @@
   "ev": [
    "isl7",
    "isl8"
-  ]
+  ],
+  "s": 576,
+  "e": 656
  },
  {
   "id": "o18",
@@ -202,7 +236,9 @@
   "ev": [
    "isl8",
    "isl9"
-  ]
+  ],
+  "s": 600,
+  "e": 661
  },
  {
   "id": "o19",
@@ -213,7 +249,9 @@
   "t": "Syn Alího, padl v bitvě u Karbalá. Jeho smrt je pro šíity symbolem odporu proti nespravedlnosti a každoročně se připomíná při Ášúrá.",
   "ev": [
    "isl10"
-  ]
+  ],
+  "s": 626,
+  "e": 680
  },
  {
   "id": "o20",
@@ -224,7 +262,9 @@
   "t": "Zakladatel dynastie Ajjúbovců, který roku 1187 dobyl Jeruzalém. Proslul vojenskými schopnostmi i čestným jednáním s nepřáteli.",
   "ev": [
    "isl23"
-  ]
+  ],
+  "s": 1137,
+  "e": 1193
  },
  {
   "id": "o21",
@@ -235,7 +275,9 @@
   "t": "Perský básník a mystik žijící v Konyi. Napsal Masnavi a založil řád mevlevíjů, zvaný také točící se dervišové.",
   "ev": [
    "isl27"
-  ]
+  ],
+  "s": 1207,
+  "e": 1273
  },
  {
   "id": "o22",
@@ -246,7 +288,9 @@
   "t": "Jeho pouť do Mekky roku 1324 proslula bohatstvím. Mnoho zlata rozdal a z cesty přivezl učence a architekty.",
   "ev": [
    "isl28"
-  ]
+  ],
+  "s": 1280,
+  "e": 1337
  },
  {
   "id": "o23",
@@ -257,7 +301,9 @@
   "t": "Marocký cestovatel, který za téměř 30 let navštívil velkou část islámského světa od Afriky po Čínu. Jeho cestopis patří ke klíčovým pramenům o středověku.",
   "ev": [
    "isl29"
-  ]
+  ],
+  "s": 1304,
+  "e": 1368
  },
  {
   "id": "o24",
@@ -268,7 +314,9 @@
   "t": "Učenec z Arábie, který hlásal návrat k čistému monoteismu a odmítal uctívání světců. Spojil se s rodem Saúdů a jeho učení je základem wahhábismu.",
   "ev": [
    "isl36"
-  ]
+  ],
+  "s": 1703,
+  "e": 1792
  },
  {
   "id": "o25",
@@ -281,7 +329,9 @@
    "bud1",
    "bud2",
    "bud3"
-  ]
+  ],
+  "s": -563,
+  "e": -483
  },
  {
   "id": "o26",
@@ -293,7 +343,9 @@
   "ev": [
    "bud5",
    "bud6"
-  ]
+  ],
+  "s": -304,
+  "e": -232
  },
  {
   "id": "o27",
@@ -304,7 +356,9 @@
   "t": "Rozvinul učení o prázdnotě (šúnjatá) a o středním způsobu. Patří k nejvlivnějším buddhistickým myslitelům.",
   "ev": [
    "bud12"
-  ]
+  ],
+  "s": 150,
+  "e": 250
  },
  {
   "id": "o28",
@@ -315,7 +369,9 @@
   "t": "Indický nebo střední asijský mnich, který podle tradice přinesl do Číny meditaci, z níž vznikl čchan a později japonský zen.",
   "ev": [
    "bud17"
-  ]
+  ],
+  "s": 450,
+  "e": 550
  },
  {
   "id": "o29",
@@ -326,7 +382,9 @@
   "t": "Vydal se pěšky do Indie, studoval v Nálandě a vrátil se s mnoha texty, které pak překládal. Jeho zprávy jsou cenným zdrojem o Indii.",
   "ev": [
    "bud20"
-  ]
+  ],
+  "s": 602,
+  "e": 664
  },
  {
   "id": "o30",
@@ -337,7 +395,9 @@
   "t": "Podporoval buddhismus jako základ státu a stavěl chrámy. Platí za zakladatele japonské buddhistické kultury.",
   "ev": [
    "bud19"
-  ]
+  ],
+  "s": 574,
+  "e": 622
  },
  {
   "id": "o31",
@@ -348,7 +408,9 @@
   "t": "Japonský mnich, který se vrátil z Číny s esoterickým buddhismem a založil klášter na hoře Kója.",
   "ev": [
    "bud25"
-  ]
+  ],
+  "s": 774,
+  "e": 835
  },
  {
   "id": "o32",
@@ -359,7 +421,9 @@
   "t": "Hlásal, že spásu přináší oddanost Lotosové sútře a recitování jejího jména. Zakladatel školy, která je v Japonsku dodnes velmi živá.",
   "ev": [
    "bud29"
-  ]
+  ],
+  "s": 1222,
+  "e": 1282
  },
  {
   "id": "o33",
@@ -370,7 +434,9 @@
   "t": "Tibetský reformátor zdůrazňující kázeň a studium. Škola gelug se stala vedoucí v Tibetu a patří k ní dalajlámové.",
   "ev": [
    "bud31"
-  ]
+  ],
+  "s": 1357,
+  "e": 1419
  },
  {
   "id": "o34",
@@ -381,7 +447,9 @@
   "t": "Jeden z autorů indické ústavy. Roku 1956 přijal buddhismus spolu se statisíci následovníků a odmítl kastovní systém.",
   "ev": [
    "bud38"
-  ]
+  ],
+  "s": 1891,
+  "e": 1956
  },
  {
   "id": "o35",
@@ -392,7 +460,9 @@
   "t": "Tändzin Gjamccho odešel roku 1959 do exilu v Indii. Je nositelem Nobelovy ceny míru a hlásá soucit a dialog.",
   "ev": [
    "bud39"
-  ]
+  ],
+  "s": 1935,
+  "e": 2025
  },
  {
   "id": "o36",
@@ -403,7 +473,9 @@
   "t": "Podle Tóry vyvedl Izraelity z egyptského otroctví a na Sinaji přijal Desatero a zákon.",
   "ev": [
    "jud1"
-  ]
+  ],
+  "s": -1250,
+  "e": -1200
  },
  {
   "id": "o37",
@@ -414,7 +486,9 @@
   "t": "Podle tradice dobyl Jeruzalém a udělal z něj hlavní město. V židovské tradici je spojen s Žalmy a s příslibem mesiáše.",
   "ev": [
    "jud2"
-  ]
+  ],
+  "s": -1000,
+  "e": -960
  },
  {
   "id": "o38",
@@ -425,7 +499,9 @@
   "t": "Podle tradice postavil první jeruzalémský chrám. Je spojován s moudrostí a s knihami Přísloví a Písně písní.",
   "ev": [
    "jud3"
-  ]
+  ],
+  "s": -970,
+  "e": -930
  },
  {
   "id": "o39",
@@ -436,7 +512,9 @@
   "t": "Po návratu z Babylonu podle tradice sjednotil společenství kolem Tóry a pomáhal obnovit Jeruzalém.",
   "ev": [
    "jud8"
-  ]
+  ],
+  "s": -450,
+  "e": -400
  },
  {
   "id": "o40",
@@ -448,7 +526,9 @@
   "ev": [
    "jud10",
    "jud11"
-  ]
+  ],
+  "s": -200,
+  "e": -160
  },
  {
   "id": "o41",
@@ -459,7 +539,9 @@
   "t": "Shromáždil a zapsal ústní tradici do Mišny, na které stojí Talmud.",
   "ev": [
    "jud18"
-  ]
+  ],
+  "s": 135,
+  "e": 217
  },
  {
   "id": "o42",
@@ -470,7 +552,9 @@
   "t": "Francouzský učenec, jehož komentáře k Tóře a Talmudu se čtou dodnes. Jeho srozumitelný výklad uchytil celé generace studentů.",
   "ev": [
    "jud22"
-  ]
+  ],
+  "s": 1040,
+  "e": 1105
  },
  {
   "id": "o43",
@@ -481,7 +565,9 @@
   "t": "Rabi Mojžíš ben Maimon, autor Mišne Tory a Průvodce zbloudilých. Spojil židovské právo s filozofií.",
   "ev": [
    "jud24"
-  ]
+  ],
+  "s": 1138,
+  "e": 1204
  },
  {
   "id": "o44",
@@ -492,7 +578,9 @@
   "t": "Rabín a znalec práva ze Safedu. Jeho Šulchan aruch je dosud základní právní příručkou ortodoxního judaismu.",
   "ev": [
    "jud31"
-  ]
+  ],
+  "s": 1488,
+  "e": 1575
  },
  {
   "id": "o45",
@@ -503,7 +591,9 @@
   "t": "Východoevropský učitel, který zdůrazňoval radostnou, upřímnou modlitbu a přímý vztah k Bohu. Z jeho učení vzniklo chasidské hnutí.",
   "ev": [
    "jud34"
-  ]
+  ],
+  "s": 1698,
+  "e": 1760
  },
  {
   "id": "o46",
@@ -514,7 +604,9 @@
   "t": "Vídeňský novinář, který svolal první sionistický kongres. Pomohl vyvolat hnutí, které vedlo ke vzniku státu Izrael.",
   "ev": [
    "jud39"
-  ]
+  ],
+  "s": 1860,
+  "e": 1904
  },
  {
   "id": "o47",
@@ -525,7 +617,9 @@
   "t": "Učil, že Brahman a vlastní já jsou jedno (advaita védánta). Založil kláštery, které existují dodnes, a obnovil hinduistickou učenost.",
   "ev": [
    "hin10"
-  ]
+  ],
+  "s": 788,
+  "e": 820
  },
  {
   "id": "o48",
@@ -536,7 +630,9 @@
   "t": "Zdůrazňoval oddanost Višnuovi a lásku k Bohu. Jeho škola višištádvaita patří k nejvlivnějším.",
   "ev": [
    "hin12"
-  ]
+  ],
+  "s": 1017,
+  "e": 1137
  },
  {
   "id": "o49",
@@ -547,7 +643,9 @@
   "t": "Hlásal Boha mimo hranice hinduismu a islámu a kritizoval kastovnictví a prázdné obřady. Jeho verše zpívají dodnes.",
   "ev": [
    "hin18"
-  ]
+  ],
+  "s": 1440,
+  "e": 1518
  },
  {
   "id": "o50",
@@ -558,7 +656,9 @@
   "t": "Bengálský světec, který šířil společné zpívání jmen Kršny. Z jeho učení vychází i hnutí Haré Kršna.",
   "ev": [
    "hin19"
-  ]
+  ],
+  "s": 1486,
+  "e": 1534
  },
  {
   "id": "o51",
@@ -569,7 +669,9 @@
   "t": "Autor básně Rámčaritmánas, hindského převyprávění Rámájany. Dílo se stalo jedním z nejoblíbenějších textů severní Indie.",
   "ev": [
    "hin21"
-  ]
+  ],
+  "s": 1532,
+  "e": 1623
  },
  {
   "id": "o52",
@@ -581,7 +683,9 @@
   "ev": [
    "hin23",
    "hin24"
-  ]
+  ],
+  "s": 1772,
+  "e": 1833
  },
  {
   "id": "o53",
@@ -592,7 +696,9 @@
   "t": "Bengálský světec, který zdůrazňoval, že různé cesty vedou ke stejnému Bohu. Jeho žák Vivékánanda založil Misii Rámakrišny.",
   "ev": [
    "hin27"
-  ]
+  ],
+  "s": 1836,
+  "e": 1886
  },
  {
   "id": "o54",
@@ -604,7 +710,9 @@
   "ev": [
    "hin26",
    "hin27"
-  ]
+  ],
+  "s": 1863,
+  "e": 1902
  },
  {
   "id": "o55",
@@ -617,7 +725,9 @@
    "hin28",
    "hin29",
    "hin30"
-  ]
+  ],
+  "s": 1869,
+  "e": 1948
  },
  {
   "id": "o56",
@@ -628,6 +738,445 @@
   "t": "Indický učitel, který roku 1966 založil v New Yorku Mezinárodní společnost pro vědomí Kršny.",
   "ev": [
    "hin32"
-  ]
+  ],
+  "s": 1896,
+  "e": 1977
+ },
+ {
+  "id": "o57",
+  "r": "krestanstvi",
+  "n": "Řehoř I. Veliký",
+  "d": "kolem 540–604",
+  "role": "papež a církevní učitel",
+  "t": "Před zvolením papežem spravoval Řím. Podporoval mnišský život a vyslal misionáře k Anglosasům. Po něm se jmenuje gregoriánský chorál.",
+  "ev": [
+   "kre46"
+  ],
+  "s": 540,
+  "e": 604
+ },
+ {
+  "id": "o58",
+  "r": "krestanstvi",
+  "n": "Alopen",
+  "d": "7. století",
+  "role": "nestoriánský misionář",
+  "t": "Syrský mnich Církve Východu, který roku 635 přišel do Číny. Císař mu dovolil překládat knihy a kázat v hlavním městě.",
+  "ev": [
+   "kre47"
+  ],
+  "s": 650,
+  "e": 700
+ },
+ {
+  "id": "o59",
+  "r": "krestanstvi",
+  "n": "Karel V.",
+  "d": "1500–1558",
+  "role": "císař Svaté říše římské",
+  "t": "Na sněmu ve Wormsu roku 1521 vyslechl Luthera a prohlásil jeho knihy za zakázané. Do konce života se snažil udržet jednotu církve a říše.",
+  "ev": [
+   "kre49"
+  ],
+  "s": 1500,
+  "e": 1558
+ },
+ {
+  "id": "o60",
+  "r": "krestanstvi",
+  "n": "Jan Amos Komenský",
+  "d": "1592–1670",
+  "role": "biskup Jednoty bratrské, pedagog",
+  "t": "Po bitvě na Bílé hoře odešel do exilu. Napsal Labyrint světa a Orbis pictus a stal se zakladatelem moderní pedagogiky.",
+  "ev": [
+   "kre50"
+  ],
+  "s": 1592,
+  "e": 1670
+ },
+ {
+  "id": "o61",
+  "r": "krestanstvi",
+  "n": "John Wesley",
+  "d": "1703–1791",
+  "role": "zakladatel metodismu",
+  "t": "Anglikánský kněz, který kázal pod širým nebem a zakládal společenství s přísnou kázní. Zdůrazňoval osobní víru a pomoc chudým.",
+  "ev": [
+   "kre51"
+  ],
+  "s": 1703,
+  "e": 1791
+ },
+ {
+  "id": "o62",
+  "r": "krestanstvi",
+  "n": "Matka Tereza",
+  "d": "1910–1997",
+  "role": "řeholnice a misionářka",
+  "t": "Albánka, která v Kalkatě založila řád Misionářek lásky pro péči o nemocné a umírající. Roku 1979 dostala Nobelovu cenu míru.",
+  "ev": [],
+  "s": 1910,
+  "e": 1997
+ },
+ {
+  "id": "o63",
+  "r": "krestanstvi",
+  "n": "Dominik de Guzmán",
+  "d": "kolem 1170–1221",
+  "role": "zakladatel dominikánů",
+  "t": "Španělský kněz, který založil kazatelský řád. Dominikáni se věnovali vzdělání a kázání a později vedli inkvizici.",
+  "ev": [],
+  "s": 1170,
+  "e": 1221
+ },
+ {
+  "id": "o64",
+  "r": "krestanstvi",
+  "n": "Erazmus Rotterdamský",
+  "d": "kolem 1466–1536",
+  "role": "humanista",
+  "t": "Vydal řecký Nový zákon a kritizoval církev, ale s Lutherem se rozešel. Zůstal věrný starému způsobu a obhajoval svobodnou vůli.",
+  "ev": [
+   "kre30"
+  ],
+  "s": 1466,
+  "e": 1536
+ },
+ {
+  "id": "o65",
+  "r": "islam",
+  "n": "Umar ibn al-Chattáb",
+  "d": "kolem 584–644",
+  "role": "druhý chalífa",
+  "t": "Za jeho vlády muslimové dobyli Sýrii, Palestinu, Egypt a Persii. Zavedl islámský letopočet a správu dobytých zemí.",
+  "ev": [
+   "isl42",
+   "isl43"
+  ],
+  "s": 584,
+  "e": 644
+ },
+ {
+  "id": "o66",
+  "r": "islam",
+  "n": "Abú Hanífa",
+  "d": "699–767",
+  "role": "právník, zakladatel právní školy",
+  "t": "Učenec z Kúfy, podle něhož se jmenuje hanífovská škola. Je největší ze čtyř sunnitských právních škol a stojí na úsudku a analogii.",
+  "ev": [
+   "isl16"
+  ],
+  "s": 699,
+  "e": 767
+ },
+ {
+  "id": "o67",
+  "r": "islam",
+  "n": "Aš-Šáfi'í",
+  "d": "767–820",
+  "role": "právník, zakladatel právní školy",
+  "t": "Pracoval v Egyptě a v Bagdádu. Stanovil pravidla výkladu práva: Korán, sunna, shoda učenců a analogie.",
+  "ev": [
+   "isl16"
+  ],
+  "s": 767,
+  "e": 820
+ },
+ {
+  "id": "o68",
+  "r": "islam",
+  "n": "Al-Chvárizmí",
+  "d": "kolem 780–850",
+  "role": "matematik a astronom",
+  "t": "Perský učenec z Bagdádu. Jeho kniha o počítání dala jméno algebře a z jeho jména vzniklo slovo algoritmus.",
+  "ev": [
+   "isl44"
+  ],
+  "s": 780,
+  "e": 850
+ },
+ {
+  "id": "o69",
+  "r": "islam",
+  "n": "Ibn Sína (Avicenna)",
+  "d": "980–1037",
+  "role": "lékař a filozof",
+  "t": "Perský učenec, jehož Kánon lékařství se používal po několik století v Asii i v Evropě. Psal také o filozofii a logice.",
+  "ev": [
+   "isl45"
+  ],
+  "s": 980,
+  "e": 1037
+ },
+ {
+  "id": "o70",
+  "r": "islam",
+  "n": "Osman I.",
+  "d": "1258–1326",
+  "role": "zakladatel Osmanské říše",
+  "t": "Turkmenský vůdce v Anatolii. Po něm se dynastie jmenuje Osmané, sama se pak rozrostla na říši na třech kontinentech.",
+  "ev": [
+   "isl46"
+  ],
+  "s": 1258,
+  "e": 1326
+ },
+ {
+  "id": "o71",
+  "r": "islam",
+  "n": "Mustafa Kemal Atatürk",
+  "d": "1881–1938",
+  "role": "první prezident Turecka",
+  "t": "Vůdce války za nezávislost. Po vyhlášení republiky zavedl laicismus, latinku a rovnoprávnost žen.",
+  "ev": [
+   "isl48"
+  ],
+  "s": 1881,
+  "e": 1938
+ },
+ {
+  "id": "o72",
+  "r": "islam",
+  "n": "Abdulazíz ibn Saúd",
+  "d": "1875–1953",
+  "role": "zakladatel Saúdské Arábie",
+  "t": "V roce 1902 dobyl Rijád a během dvaceti let ovládl většinu poloostrova. Roku 1932 vyhlásil království.",
+  "ev": [
+   "isl49"
+  ],
+  "s": 1875,
+  "e": 1953
+ },
+ {
+  "id": "o73",
+  "r": "buddhismus",
+  "n": "Kaniška",
+  "d": "1.–2. století",
+  "role": "král kušánské říše",
+  "t": "Podporoval buddhismus a obchod po Hedvábné stezce. Za jeho vlády vzkvétalo gandhárské umění.",
+  "ev": [
+   "bud40"
+  ],
+  "s": 50,
+  "e": 150
+ },
+ {
+  "id": "o74",
+  "r": "buddhismus",
+  "n": "Padmasambhava",
+  "d": "8. století",
+  "role": "tantrický mistr",
+  "t": "Podle tradice přinesl buddhismus do Tibetu a pomáhal při stavbě kláštera Samjä. Tibeťané ho uctívají jako druhého Buddhu.",
+  "ev": [
+   "bud23"
+  ],
+  "s": 750,
+  "e": 800
+ },
+ {
+  "id": "o75",
+  "r": "buddhismus",
+  "n": "Anawrahta",
+  "d": "1015–1078",
+  "role": "barmský král",
+  "t": "Sjednotil Barmu, přivezl z Thatonu mnichy a texty a učinil z Baganu středisko théravády.",
+  "ev": [
+   "bud42"
+  ],
+  "s": 1015,
+  "e": 1078
+ },
+ {
+  "id": "o76",
+  "r": "buddhismus",
+  "n": "Džajavarman VII.",
+  "d": "kolem 1122–1218",
+  "role": "khmérský král",
+  "t": "Obnovil říši po porážce Čámů a postavil Angkor Thom a chrám Bajon. Byl oddaným mahájánovým buddhistou.",
+  "ev": [
+   "bud43"
+  ],
+  "s": 1122,
+  "e": 1218
+ },
+ {
+  "id": "o77",
+  "r": "buddhismus",
+  "n": "Ramkhamhaeng",
+  "d": "kolem 1237–1298",
+  "role": "král Sukhothai",
+  "t": "Podporoval théravádový buddhismus a podle tradice vytvořil thajské písmo.",
+  "ev": [
+   "bud44"
+  ],
+  "s": 1237,
+  "e": 1298
+ },
+ {
+  "id": "o78",
+  "r": "buddhismus",
+  "n": "Anagárika Dharmapála",
+  "d": "1864–1933",
+  "role": "srílanský buddhista a reformátor",
+  "t": "Založil společnost Mahábódhi a usiloval o obnovu svatých míst v Indii, zejména Bódhgajá. Vystoupil také na Parlamentu náboženství v Chicagu.",
+  "ev": [
+   "bud46"
+  ],
+  "s": 1864,
+  "e": 1933
+ },
+ {
+  "id": "o79",
+  "r": "buddhismus",
+  "n": "Thomas W. Rhys Davids",
+  "d": "1843–1922",
+  "role": "učenec",
+  "t": "Zakladatel Společnosti pro páliové texty, která zpřístupnila Západu buddhistický kánon.",
+  "ev": [
+   "bud45"
+  ],
+  "s": 1843,
+  "e": 1922
+ },
+ {
+  "id": "o80",
+  "r": "judaismus",
+  "n": "Abraham",
+  "d": "druhé tisíciletí př. n. l.",
+  "role": "praotec",
+  "t": "Podle Tóry opustil Mezopotámii a uzavřel s Bohem smlouvu. Je společným předkem židů, křesťanů a muslimů.",
+  "ev": [
+   "jud44"
+  ],
+  "s": -1800,
+  "e": -1600
+ },
+ {
+  "id": "o81",
+  "r": "judaismus",
+  "n": "Jošijáš",
+  "d": "kolem 648–609 př. n. l.",
+  "role": "judský král",
+  "t": "Provedl reformu, při níž se uctívání soustředilo na jeruzalémský chrám. Podle Bible nalezl v chrámu knihu zákona.",
+  "ev": [
+   "jud45"
+  ],
+  "s": -648,
+  "e": -609
+ },
+ {
+  "id": "o82",
+  "r": "judaismus",
+  "n": "Rabi Geršom",
+  "d": "kolem 960–1040",
+  "role": "rabín v Mohuči",
+  "t": "Zvaný Světlo Exilu. Zakázal mnohoženství u aškenázských židů a rozvod bez souhlasu manželky.",
+  "ev": [
+   "jud47"
+  ],
+  "s": 960,
+  "e": 1040
+ },
+ {
+  "id": "o83",
+  "r": "judaismus",
+  "n": "Baruch Spinoza",
+  "d": "1632–1677",
+  "role": "filozof",
+  "t": "Pocházel z amsterdamské židovské obce, která ho roku 1656 vyloučila. Napsal Etiku a patří k zakladatelům moderního myšlení.",
+  "ev": [
+   "jud48"
+  ],
+  "s": 1632,
+  "e": 1677
+ },
+ {
+  "id": "o84",
+  "r": "judaismus",
+  "n": "Moses Mendelssohn",
+  "d": "1729–1786",
+  "role": "filozof, představitel Haskaly",
+  "t": "Německý židovský myslitel, který překládal Tóru do němčiny a hájil vzdělání a rovnoprávnost židů.",
+  "ev": [
+   "jud49"
+  ],
+  "s": 1729,
+  "e": 1786
+ },
+ {
+  "id": "o85",
+  "r": "judaismus",
+  "n": "David Ben Gurion",
+  "d": "1886–1973",
+  "role": "první ministerský předseda Izraele",
+  "t": "Vůdce sionistického hnutí. Roku 1948 vyhlásil nezávislost Izraele a vedl zemi v prvních letech.",
+  "ev": [
+   "jud42"
+  ],
+  "s": 1886,
+  "e": 1973
+ },
+ {
+  "id": "o86",
+  "r": "hinduismus",
+  "n": "Madhva",
+  "d": "1238–1317",
+  "role": "filozof dvaity",
+  "t": "Učil, že Bůh a duše jsou odlišné bytosti. Založil v Udupi klášter a školu uctívání Višnua.",
+  "ev": [
+   "hin37"
+  ],
+  "s": 1238,
+  "e": 1317
+ },
+ {
+  "id": "o87",
+  "r": "hinduismus",
+  "n": "Guru Nának",
+  "d": "1469–1539",
+  "role": "zakladatel sikhismu",
+  "t": "Hlásal jediného Boha a rovnost všech lidí. Z jeho učení vznikl sikhismus.",
+  "ev": [
+   "hin38"
+  ],
+  "s": 1469,
+  "e": 1539
+ },
+ {
+  "id": "o88",
+  "r": "hinduismus",
+  "n": "Robert Clive",
+  "d": "1725–1774",
+  "role": "britský vojevůdce",
+  "t": "Vítězstvím u Plassey roku 1757 položil základ britské nadvlády v Indii.",
+  "ev": [
+   "hin39"
+  ],
+  "s": 1725,
+  "e": 1774
+ },
+ {
+  "id": "o89",
+  "r": "hinduismus",
+  "n": "Madan Mohan Malavíja",
+  "d": "1861–1946",
+  "role": "vzdělanec a politik",
+  "t": "Zakladatel Hinduistické univerzity v Benáresu a vůdčí osobnost indického hnutí za nezávislost.",
+  "ev": [
+   "hin41"
+  ],
+  "s": 1861,
+  "e": 1946
+ },
+ {
+  "id": "o90",
+  "r": "hinduismus",
+  "n": "Swami Sivananda",
+  "d": "1887–1963",
+  "role": "učitel jógy a védánty",
+  "t": "Lékař, který se stal asketou. Zakládal školy jógy a rozšiřoval jógu mezi lidmi v Indii i na Západě.",
+  "ev": [],
+  "s": 1887,
+  "e": 1963
  }
 ]

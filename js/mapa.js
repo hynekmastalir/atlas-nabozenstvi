@@ -3,7 +3,7 @@
   'use strict';
   const NS = 'http://www.w3.org/2000/svg';
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  let pane, world, data, era = 7, on = new Set(), timer = 0, vb = { x: 0, y: 0, w: 1000, h: 500 }, paths = new Map(), pinsG, patDefs, seaRect, svg;
+  let pane, world, data, era = 12, on = new Set(), timer = 0, vb = { x: 0, y: 0, w: 1000, h: 500 }, paths = new Map(), pinsG, patDefs, seaRect, svg;
   const proj = (lon, lat) => [(lon + 180) / 360 * 1000, (90 - lat) / 180 * 500];
 
   // zóny: když pro danou éru chybí záznam, platí poslední dřívější; prázdné pole zónu ukončí
@@ -23,7 +23,9 @@
   const rel = id => OSA.relById[id] || { name: id, color: '#666' };
   function build() {
     pane.innerHTML = `<div class="map-bar">
+        <button id="m-prev" class="btn small" type="button" aria-label="Předchozí období" title="Předchozí období">◀</button>
         <button id="m-play" class="btn small" type="button" aria-label="Přehrát" title="Přehrát vývoj">▶</button>
+        <button id="m-next" class="btn small" type="button" aria-label="Další období" title="Další období">⏭</button>
         <input id="m-era" type="range" min="0" max="${data.eras.length - 1}" step="1" value="${era}" aria-label="Doba">
       </div>
       <div class="map-era"><b id="m-label"></b><span id="m-title"></span></div>
@@ -44,6 +46,9 @@
     pane.querySelector('#m-chips').innerHTML = data.religions.map(r => { const x = rel(r.id); return `<button type="button" class="chip rel" data-mr="${r.id}" style="--c:${x.color}" aria-pressed="true"><span>${esc(x.name)}</span></button>`; }).join('');
     pane.querySelector('#m-era').addEventListener('input', e => { era = +e.target.value; stop(); draw(); });
     pane.querySelector('#m-play').addEventListener('click', () => (timer ? stop() : play()));
+    const step = d => { stop(); era = Math.min(data.eras.length - 1, Math.max(0, era + d)); draw(); };
+    pane.querySelector('#m-prev').addEventListener('click', () => step(-1)); pane.querySelector('#m-next').addEventListener('click', () => step(1));
+    svg.parentElement.parentElement.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') step(-1); else if (e.key === 'ArrowRight') step(1); });
     pane.querySelector('#m-chips').addEventListener('click', e => { const b = e.target.closest('[data-mr]'); if (!b) return; const id = b.dataset.mr; on.has(id) ? on.delete(id) : on.add(id); b.setAttribute('aria-pressed', String(on.has(id))); draw(); });
     pane.querySelector('.map-zoom').addEventListener('click', e => { const b = e.target.closest('[data-z]'); if (!b) return; const f = +b.dataset.z; if (!f) vb = { x: 0, y: 0, w: 1000, h: 500 }; else zoomBy(f, vb.x + vb.w / 2, vb.y + vb.h / 2); applyVb(); });
     // tažení a kolečko
@@ -69,7 +74,7 @@
   function play() {
     if (era >= data.eras.length - 1) era = 0;
     pane.querySelector('#m-play').textContent = '⏸'; draw();
-    timer = setInterval(() => { if (era >= data.eras.length - 1) { stop(); return; } era++; pane.querySelector('#m-era').value = era; draw(); }, 1700);
+    timer = setInterval(() => { if (era >= data.eras.length - 1) { stop(); return; } era++; pane.querySelector('#m-era').value = era; draw(); }, 1300);
   }
   function stop() { if (timer) { clearInterval(timer); timer = 0; } const b = pane?.querySelector('#m-play'); if (b) b.textContent = '▶'; }
 
